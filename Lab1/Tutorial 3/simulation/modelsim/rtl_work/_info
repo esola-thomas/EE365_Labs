@@ -1,0 +1,153 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\schumae\Desktop\Lab1\Tutorial 3\simulation\modelsim
+Eadderk
+Z1 w1662597202
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx4 ieee 16 std_logic_signed 0 22 E>OLoMaBGQ?hbGgOoNXM^1
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 dC:\Users\schumae\Desktop\Lab1\Tutorial 3\simulation\modelsim
+Z7 8C:/Users/schumae/Desktop/Lab1/Tutorial 3/adderk.vhd
+Z8 FC:/Users/schumae/Desktop/Lab1/Tutorial 3/adderk.vhd
+l0
+L5
+Vz;MVEE@`JDeQ7<Tjz:1@f2
+Z9 OV;C;10.1d;51
+31
+Z10 !s108 1662763700.229000
+Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/schumae/Desktop/Lab1/Tutorial 3/adderk.vhd|
+Z12 !s107 C:/Users/schumae/Desktop/Lab1/Tutorial 3/adderk.vhd|
+Z13 o-93 -work work -O0
+Z14 tExplicit 1
+!s100 9ZMj0VQ?>I7O4Y>mN:SQm1
+!i10b 1
+Abehavior
+R2
+R3
+R4
+R5
+DEx4 work 6 adderk 0 22 z;MVEE@`JDeQ7<Tjz:1@f2
+l14
+L12
+VIdT1GQbQamVQ9LWA>QckN1
+R9
+31
+R10
+R11
+R12
+R13
+R14
+!s100 3NS:d]3oGS[7A;>_M1bYS3
+!i10b 1
+Eaddersubtractor
+Z15 w1662597264
+R4
+R5
+R6
+Z16 8C:/Users/schumae/Desktop/Lab1/Tutorial 3/addersubtractor.vhd
+Z17 FC:/Users/schumae/Desktop/Lab1/Tutorial 3/addersubtractor.vhd
+l0
+L4
+VJ:k[oB?8E4MXlS0`J]lEj1
+R9
+31
+Z18 !s108 1662763700.055000
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/schumae/Desktop/Lab1/Tutorial 3/addersubtractor.vhd|
+Z20 !s107 C:/Users/schumae/Desktop/Lab1/Tutorial 3/addersubtractor.vhd|
+R13
+R14
+!s100 JbGObdLTk8HFU1dHzH1KS0
+!i10b 1
+Abehavior
+R4
+R5
+DEx4 work 15 addersubtractor 0 22 J:k[oB?8E4MXlS0`J]lEj1
+l27
+L11
+V^di[D7`00h8Oi2VK`z3^^3
+R9
+31
+R18
+R19
+R20
+R13
+R14
+!s100 e[EeNifT3l6<0Me2A7GUQ0
+!i10b 1
+Eaddersubtractor_rtl_tb
+Z21 w1662763687
+R2
+R3
+R4
+R5
+R6
+Z22 8C:/Users/schumae/Desktop/Lab1/Tutorial 3/simulation/modelsim/addersubtractor_RTL_tb.vhd
+Z23 FC:/Users/schumae/Desktop/Lab1/Tutorial 3/simulation/modelsim/addersubtractor_RTL_tb.vhd
+l0
+L5
+VJVU8_7eU`M2=M@5czo20c2
+!s100 A>i<]NmMMNc[MKS:ziKA22
+R9
+32
+!i10b 1
+Z24 !s108 1662763722.837000
+Z25 !s90 -reportprogress|300|-work|work|C:/Users/schumae/Desktop/Lab1/Tutorial 3/simulation/modelsim/addersubtractor_RTL_tb.vhd|
+Z26 !s107 C:/Users/schumae/Desktop/Lab1/Tutorial 3/simulation/modelsim/addersubtractor_RTL_tb.vhd|
+Z27 o-work work -O0
+R14
+Abehavior
+R2
+R3
+R4
+R5
+Z28 DEx4 work 22 addersubtractor_rtl_tb 0 22 JVU8_7eU`M2=M@5czo20c2
+l25
+L9
+Z29 VhBCV5T2DSXGM`<0C@JhZ43
+Z30 !s100 bOMAVGbXNRNEH8`m>;7881
+R9
+32
+!i10b 1
+R24
+R25
+R26
+R27
+R14
+Emux2to1
+Z31 w1662597186
+R4
+R5
+R6
+Z32 8C:/Users/schumae/Desktop/Lab1/Tutorial 3/mux2to1.vhd
+Z33 FC:/Users/schumae/Desktop/Lab1/Tutorial 3/mux2to1.vhd
+l0
+L4
+V3Y>jPzoJoT8WBD?Fc3[lR3
+R9
+31
+Z34 !s108 1662763700.142000
+Z35 !s90 -reportprogress|300|-93|-work|work|C:/Users/schumae/Desktop/Lab1/Tutorial 3/mux2to1.vhd|
+Z36 !s107 C:/Users/schumae/Desktop/Lab1/Tutorial 3/mux2to1.vhd|
+R13
+R14
+!s100 zQ2LRLBOMJQWZm@YS2TOi2
+!i10b 1
+Abehavior
+R4
+R5
+DEx4 work 7 mux2to1 0 22 3Y>jPzoJoT8WBD?Fc3[lR3
+l11
+L10
+V1]4dXT5HnmiL77fAH_<Yf1
+R9
+31
+R34
+R35
+R36
+R13
+R14
+!s100 k]0ko^Cbz3`4njO?z86OK2
+!i10b 1

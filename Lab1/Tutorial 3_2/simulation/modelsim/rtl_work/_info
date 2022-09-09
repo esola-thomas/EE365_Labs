@@ -1,0 +1,151 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\schumae\Desktop\Lab1\Tutorial 3_2\simulation\modelsim
+Eaddersubtractor2
+Z1 w1662600390
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\schumae\Desktop\Lab1\Tutorial 3_2\simulation\modelsim
+Z5 8C:/Users/schumae/Desktop/Lab1/Tutorial 3_2/addersubtractor2.vhd
+Z6 FC:/Users/schumae/Desktop/Lab1/Tutorial 3_2/addersubtractor2.vhd
+l0
+L4
+V]bVN?G<9FidDUb?GO;Wac3
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1662761847.608000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/schumae/Desktop/Lab1/Tutorial 3_2/addersubtractor2.vhd|
+Z10 !s107 C:/Users/schumae/Desktop/Lab1/Tutorial 3_2/addersubtractor2.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 RNzo:]bjJ@n@W80W0ZT<31
+!i10b 1
+Abehavior
+R2
+R3
+DEx4 work 16 addersubtractor2 0 22 ]bVN?G<9FidDUb?GO;Wac3
+l26
+L11
+V3;U?l`GJBVUKQLomHNY2c0
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 `Dd;e^ZfXn[QH@L3>dC@P1
+!i10b 1
+Eaddersubtractor_rtl_tb
+Z13 w1662762624
+Z14 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z15 DPx4 ieee 16 std_logic_signed 0 22 E>OLoMaBGQ?hbGgOoNXM^1
+R2
+R3
+R4
+Z16 8C:/Users/schumae/Desktop/Lab1/Tutorial 3_2/simulation/modelsim/addersubtractor_RTL_tb.vhd
+Z17 FC:/Users/schumae/Desktop/Lab1/Tutorial 3_2/simulation/modelsim/addersubtractor_RTL_tb.vhd
+l0
+L5
+VJVU8_7eU`M2=M@5czo20c2
+!s100 A>i<]NmMMNc[MKS:ziKA22
+R7
+32
+!i10b 1
+Z18 !s108 1662762633.409000
+Z19 !s90 -reportprogress|300|-work|work|-O0|C:/Users/schumae/Desktop/Lab1/Tutorial 3_2/simulation/modelsim/addersubtractor_RTL_tb.vhd|
+Z20 !s107 C:/Users/schumae/Desktop/Lab1/Tutorial 3_2/simulation/modelsim/addersubtractor_RTL_tb.vhd|
+Z21 o-work work -O0
+R12
+Abehavior
+R14
+R15
+R2
+R3
+Z22 DEx4 work 22 addersubtractor_rtl_tb 0 22 JVU8_7eU`M2=M@5czo20c2
+l25
+L9
+V@>Dg;BzbK;;=R@EB=]ElJ2
+!s100 >MeaWLZo^P7:_ZcP<A8R30
+R7
+32
+!i10b 1
+R18
+R19
+R20
+R21
+R12
+Emegaddsub
+R1
+Z23 DPx3 lpm 14 lpm_components 0 22 aHRA3clF>2DcWDhgFTAbM3
+R2
+R3
+R4
+R5
+R6
+l0
+L71
+VQQ>dmk3M5Ve@`@NLU0e_h1
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 Ad70=HZj9EH[PS7JM:Mi60
+!i10b 1
+Asyn
+R23
+R2
+R3
+DEx4 work 9 megaddsub 0 22 QQ>dmk3M5Ve@`@NLU0e_h1
+l92
+L78
+V>@hFJJCgA:Sk3KPYWTVd50
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 olVTBkZElRCF:S?e1hU4V3
+!i10b 1
+Emux2to1
+R1
+R2
+R3
+R4
+R5
+R6
+l0
+L49
+V3Y>jPzoJoT8WBD?Fc3[lR3
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 ^O]c?dW@63a`gN40fz[dO3
+!i10b 1
+Abehavior
+R2
+R3
+DEx4 work 7 mux2to1 0 22 3Y>jPzoJoT8WBD?Fc3[lR3
+l56
+L55
+V1]4dXT5HnmiL77fAH_<Yf1
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 =LnS1N6h<im:H22_DL@Ol1
+!i10b 1
