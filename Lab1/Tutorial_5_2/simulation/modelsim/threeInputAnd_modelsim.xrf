@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/schumae/Desktop/EE365/Lab1/Tutorial_5_2/threeInputAnd.vhd
+source_file = 1, C:/Users/schumae/Desktop/EE365/Lab1/Tutorial_5_2/db/threeInputAnd.cbx.xml
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = threeInputAnd
+instance = comp, \LEDR[0]~output\, LEDR[0]~output, threeInputAnd, 1
+instance = comp, \CLOCK_50~input\, CLOCK_50~input, threeInputAnd, 1
+instance = comp, \SW[2]~input\, SW[2]~input, threeInputAnd, 1
+instance = comp, \SW[0]~input\, SW[0]~input, threeInputAnd, 1
+instance = comp, \SW[1]~input\, SW[1]~input, threeInputAnd, 1
+instance = comp, \LEDR[0]~reg0\, LEDR[0]~reg0, threeInputAnd, 1

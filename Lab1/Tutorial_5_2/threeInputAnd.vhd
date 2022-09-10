@@ -1,0 +1,21 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+ENTITY threeInputAnd IS
+PORT ( CLOCK_50 : IN STD_LOGIC;
+SW : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+LED : OUT STD_LOGIC_VECTOR(0 DOWNTO 0));
+END threeInputAnd;
+ARCHITECTURE Behavior OF threeInputAnd IS
+SIGNAL ab, abc : STD_LOGIC;
+ATTRIBUTE keep : BOOLEAN;
+ATTRIBUTE keep OF ab, abc : SIGNAL IS true;
+BEGIN
+ab <= SW(0) AND SW(1);
+abc <= ab AND SW(2);
+PROCESS (CLOCK_50)
+BEGIN
+IF (RISING_EDGE(CLOCK_50)) THEN
+LED(0) <= abc;
+END IF;
+END PROCESS;
+END Behavior;
