@@ -1,0 +1,18 @@
+Partition Merge Status : Successful - Mon Sep 12 22:40:47 2022
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : Tutorial_6_DE2
+Top-level Entity Name : reaction_tester
+Family : Cyclone IV GX
+Total logic elements : 1,445 / 14,400 ( 10 % )
+    Total combinational functions : 678 / 14,400 ( 5 % )
+    Dedicated logic registers : 1,169 / 14,400 ( 8 % )
+Total registers : 1169
+Total pins : 34 / 81 ( 42 % )
+Total virtual pins : 0
+Total memory bits : 8,576 / 552,960 ( 2 % )
+Embedded Multiplier 9-bit elements : 0
+Total GXB Receiver Channel PCS : 0 / 2 ( 0 % )
+Total GXB Receiver Channel PMA : 0 / 2 ( 0 % )
+Total GXB Transmitter Channel PCS : 0 / 2 ( 0 % )
+Total GXB Transmitter Channel PMA : 0 / 2 ( 0 % )
+Total PLLs : 0 / 3 ( 0 % )
