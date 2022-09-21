@@ -1,0 +1,246 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\schumae\Documents\GitHub\EE365\lab2\simulation\modelsim
+Eclk_enabler
+Z1 w1663708180
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\schumae\Documents\GitHub\EE365\lab2\simulation\modelsim
+Z6 8C:/Users/schumae/Documents/GitHub/EE365/lab2/clk_enabler.vhd
+Z7 FC:/Users/schumae/Documents/GitHub/EE365/lab2/clk_enabler.vhd
+l0
+L7
+V5`@OBnOj4Z5bM5RWn7B<C2
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1663720123.573000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/schumae/Documents/GitHub/EE365/lab2/clk_enabler.vhd|
+Z11 !s107 C:/Users/schumae/Documents/GitHub/EE365/lab2/clk_enabler.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 AFSH;@Fal[B52>>mUX?gJ1
+!i10b 1
+Abehv
+R2
+R3
+R4
+DEx4 work 11 clk_enabler 0 22 5`@OBnOj4Z5bM5RWn7B<C2
+l22
+L18
+V^@JF<XHidU@?>Ie4H1PLA0
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 ]58g:ONa8FXaYPJkg6W=I2
+!i10b 1
+Ede0_nano
+R1
+Z14 DPx4 work 6 values 0 22 2gDb4SXWDYj^CJ8Tj>=8N3
+R3
+R4
+R5
+Z15 8C:/Users/schumae/Documents/GitHub/EE365/lab2/DE0_NANO.vhd
+Z16 FC:/Users/schumae/Documents/GitHub/EE365/lab2/DE0_NANO.vhd
+l0
+L5
+V^H=fEMXag^P2EV0iQgNm12
+R8
+31
+Z17 !s108 1663720124.728000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/schumae/Documents/GitHub/EE365/lab2/DE0_NANO.vhd|
+Z19 !s107 C:/Users/schumae/Documents/GitHub/EE365/lab2/DE0_NANO.vhd|
+R12
+R13
+!s100 ll7S1nCa4F^@N00]E^?]o2
+!i10b 1
+Astructural
+R14
+R3
+R4
+DEx4 work 8 de0_nano 0 22 ^H=fEMXag^P2EV0iQgNm12
+l81
+L60
+VXYhBb;:??YM=;mG?N:]ib2
+R8
+31
+R17
+R18
+R19
+R12
+R13
+!s100 j2SXaZ_k5]O=7D[;W6jHX2
+!i10b 1
+Ede0_nano_tb
+Z20 w1663720247
+R3
+R4
+R5
+Z21 8C:/Users/schumae/Documents/GitHub/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd
+Z22 FC:/Users/schumae/Documents/GitHub/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd
+l0
+L4
+V>3ABS_8H^h>Q_oCn1l[=b3
+!s100 fNcLfbbKE6BZN4J4zFD8o3
+R8
+32
+!i10b 1
+Z23 !s108 1663720283.550000
+Z24 !s90 -reportprogress|300|-work|work|C:/Users/schumae/Documents/GitHub/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd|
+Z25 !s107 C:/Users/schumae/Documents/GitHub/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd|
+Z26 o-work work -O0
+R13
+Atb
+R14
+Z27 DEx4 work 9 top_level 0 22 K5GZLS[Sh6g^=<4=eC9??0
+R3
+R4
+Z28 DEx4 work 11 de0_nano_tb 0 22 >3ABS_8H^h>Q_oCn1l[=b3
+l16
+L8
+VTdf9Jk:6_TGdJfFiBHD>c2
+!s100 Wi7BGJE2TgF3[mVz92B2Q3
+R8
+32
+!i10b 1
+R23
+R24
+R25
+R26
+R13
+Ereset_delay
+R1
+R2
+R3
+R4
+R5
+Z29 8C:/Users/schumae/Documents/GitHub/EE365/lab2/reset_delay.vhd
+Z30 FC:/Users/schumae/Documents/GitHub/EE365/lab2/reset_delay.vhd
+l0
+L8
+VVYzN<:7B5eDEnQeDIfIR10
+R8
+31
+Z31 !s108 1663720123.485000
+Z32 !s90 -reportprogress|300|-93|-work|work|C:/Users/schumae/Documents/GitHub/EE365/lab2/reset_delay.vhd|
+Z33 !s107 C:/Users/schumae/Documents/GitHub/EE365/lab2/reset_delay.vhd|
+R12
+R13
+!s100 fFYnn8Om3ghlPH^NLT5WD2
+!i10b 1
+Aarch
+R2
+R3
+R4
+DEx4 work 11 reset_delay 0 22 VYzN<:7B5eDEnQeDIfIR10
+l21
+L17
+VXBT^WIUbIR:HNzJO7PUCH0
+R8
+31
+R31
+R32
+R33
+R12
+R13
+!s100 FjJR@=hZzS9NG9P?k4K?I2
+!i10b 1
+Etop_level
+Z34 w1663718213
+R14
+R3
+R4
+R5
+Z35 8C:/Users/schumae/Documents/GitHub/EE365/lab2/top_level.vhd
+Z36 FC:/Users/schumae/Documents/GitHub/EE365/lab2/top_level.vhd
+l0
+L10
+VK5GZLS[Sh6g^=<4=eC9??0
+R8
+31
+Z37 !s108 1663720124.641000
+Z38 !s90 -reportprogress|300|-93|-work|work|C:/Users/schumae/Documents/GitHub/EE365/lab2/top_level.vhd|
+Z39 !s107 C:/Users/schumae/Documents/GitHub/EE365/lab2/top_level.vhd|
+R12
+R13
+!s100 LRTRmH6bj_z`F04EzER6<2
+!i10b 1
+Astructural
+R14
+R3
+R4
+R27
+l59
+L25
+VLJBZ:m<JJJ23fT_fklDAA1
+R8
+31
+R37
+R38
+R39
+R12
+R13
+!s100 =AXzO>OH@SXXMRfRzORof2
+!i10b 1
+Euniv_bin_counter
+Z40 w1663718212
+R2
+R3
+R4
+R5
+Z41 8C:/Users/schumae/Documents/GitHub/EE365/lab2/univ_bin_counter.vhd
+Z42 FC:/Users/schumae/Documents/GitHub/EE365/lab2/univ_bin_counter.vhd
+l0
+L10
+V8=JU[DgL;5WW]l<lLQm`T1
+R8
+31
+Z43 !s108 1663720123.397000
+Z44 !s90 -reportprogress|300|-93|-work|work|C:/Users/schumae/Documents/GitHub/EE365/lab2/univ_bin_counter.vhd|
+Z45 !s107 C:/Users/schumae/Documents/GitHub/EE365/lab2/univ_bin_counter.vhd|
+R12
+R13
+!s100 gng9f_=YKL7JYi1S=fl992
+!i10b 1
+Aarch
+R2
+R3
+R4
+DEx4 work 16 univ_bin_counter 0 22 8=JU[DgL;5WW]l<lLQm`T1
+l28
+L22
+VYHET8i]2YNfUG4I:d8F<M3
+R8
+31
+R43
+R44
+R45
+R12
+R13
+!s100 D;`@`o8RFWo4LI4VO44D12
+!i10b 1
+Pvalues
+R3
+R4
+R1
+R5
+8C:/Users/schumae/Documents/GitHub/EE365/lab2/values.vhd
+FC:/Users/schumae/Documents/GitHub/EE365/lab2/values.vhd
+l0
+L4
+V2gDb4SXWDYj^CJ8Tj>=8N3
+R8
+31
+R12
+R13
+!s100 nPlZAeOJO0`7;`lCGDKkN2
+!i10b 1
+!s108 1663720123.314000
+!s90 -reportprogress|300|-93|-work|work|C:/Users/schumae/Documents/GitHub/EE365/lab2/values.vhd|
+!s107 C:/Users/schumae/Documents/GitHub/EE365/lab2/values.vhd|

@@ -1,0 +1,202 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do DE0_NANO_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/schumae/Documents/GitHub/EE365/lab2/values.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package values
+# vcom -93 -work work {C:/Users/schumae/Documents/GitHub/EE365/lab2/univ_bin_counter.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity univ_bin_counter
+# -- Compiling architecture arch of univ_bin_counter
+# vcom -93 -work work {C:/Users/schumae/Documents/GitHub/EE365/lab2/reset_delay.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Reset_Delay
+# -- Compiling architecture Arch of Reset_Delay
+# vcom -93 -work work {C:/Users/schumae/Documents/GitHub/EE365/lab2/clk_enabler.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity clk_enabler
+# -- Compiling architecture behv of clk_enabler
+# vcom -93 -work work {C:/Users/schumae/Documents/GitHub/EE365/lab2/top_level.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package values
+# -- Compiling entity top_level
+# -- Compiling architecture Structural of top_level
+# vcom -93 -work work {C:/Users/schumae/Documents/GitHub/EE365/lab2/DE0_NANO.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package values
+# -- Compiling entity DE0_NANO
+# -- Compiling architecture structural of DE0_NANO
+# ** Warning: C:/Users/schumae/Documents/GitHub/EE365/lab2/DE0_NANO.vhd(95): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# 
+# 
+vcom -reportprogress 300 -work work C:/Users/schumae/Documents/GitHub/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DE0_NANO_TB
+# -- Compiling architecture tb of DE0_NANO_TB
+# -- Loading package values
+# -- Loading entity top_level
+vsim -voptargs=+acc work.de0_nano_tb
+# vsim -voptargs=+acc work.de0_nano_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.values
+# Loading work.de0_nano_tb(tb)
+# Loading work.top_level(structural)
+# ** Fatal: (vsim-3348) Port length (4) does not match actual length (5) for port '/de0_nano_tb/UUT/iData'.
+#    Time: 0 ps  Iteration: 0  Instance: /de0_nano_tb/UUT File: C:/Users/schumae/Documents/GitHub/EE365/lab2/top_level.vhd Line: 18
+# FATAL ERROR while loading design
+# Error loading design
+vsim work.de0_nano_tb(tb)
+# vsim work.de0_nano_tb(tb) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.values
+# Loading work.de0_nano_tb(tb)
+# Loading work.top_level(structural)
+# ** Fatal: (vsim-3348) Port length (4) does not match actual length (5) for port '/de0_nano_tb/UUT/iData'.
+#    Time: 0 ps  Iteration: 0  Instance: /de0_nano_tb/UUT File: C:/Users/schumae/Documents/GitHub/EE365/lab2/top_level.vhd Line: 18
+# FATAL ERROR while loading design
+# Error loading design
+vsim work.de0_nano_tb(tb)
+# vsim work.de0_nano_tb(tb) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.values
+# Loading work.de0_nano_tb(tb)
+# Loading work.top_level(structural)
+# ** Fatal: (vsim-3348) Port length (4) does not match actual length (5) for port '/de0_nano_tb/UUT/iData'.
+#    Time: 0 ps  Iteration: 0  Instance: /de0_nano_tb/UUT File: C:/Users/schumae/Documents/GitHub/EE365/lab2/top_level.vhd Line: 18
+# FATAL ERROR while loading design
+# Error loading design
+vcom -reportprogress 300 -work work C:/Users/schumae/Documents/GitHub/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DE0_NANO_TB
+# -- Compiling architecture tb of DE0_NANO_TB
+# -- Loading package values
+# -- Loading entity top_level
+vsim -voptargs=+acc work.de0_nano_tb
+# vsim -voptargs=+acc work.de0_nano_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.values
+# Loading work.de0_nano_tb(tb)
+# Loading work.top_level(structural)
+# ** Fatal: (vsim-3348) Port length (4) does not match actual length (6) for port '/de0_nano_tb/UUT/iData'.
+#    Time: 0 ps  Iteration: 0  Instance: /de0_nano_tb/UUT File: C:/Users/schumae/Documents/GitHub/EE365/lab2/top_level.vhd Line: 18
+# FATAL ERROR while loading design
+# Error loading design
+vsim -voptargs=+acc work.de0_nano_tb(tb)
+# vsim -voptargs=+acc work.de0_nano_tb(tb) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.values
+# Loading work.de0_nano_tb(tb)
+# Loading work.top_level(structural)
+# ** Fatal: (vsim-3348) Port length (4) does not match actual length (6) for port '/de0_nano_tb/UUT/iData'.
+#    Time: 0 ps  Iteration: 0  Instance: /de0_nano_tb/UUT File: C:/Users/schumae/Documents/GitHub/EE365/lab2/top_level.vhd Line: 18
+# FATAL ERROR while loading design
+# Error loading design
+vcom -reportprogress 300 -work work C:/Users/schumae/Documents/GitHub/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DE0_NANO_TB
+# -- Compiling architecture tb of DE0_NANO_TB
+# -- Loading package values
+# -- Loading entity top_level
+vsim -voptargs=+acc work.de0_nano_tb
+# vsim -voptargs=+acc work.de0_nano_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.values
+# Loading work.de0_nano_tb(tb)
+# Loading work.top_level(structural)
+# Loading ieee.numeric_std(body)
+# Loading work.reset_delay(arch)
+# Loading work.clk_enabler(behv)
+# Loading work.univ_bin_counter(arch)
+add wave -position insertpoint  \
+sim:/de0_nano_tb/Clock_50
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /de0_nano_tb/UUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /de0_nano_tb/UUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /de0_nano_tb/UUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /de0_nano_tb/UUT/Inst_univ_bin_counter
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+add wave -position insertpoint  \
+sim:/de0_nano_tb/KEY0
+force -freeze sim:/de0_nano_tb/KEY0 1 0
