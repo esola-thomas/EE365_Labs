@@ -1,246 +1,335 @@
 m255
-K3
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+R0
+R0
+R0
+R0
+R0
+!s11e vcom 2021.2 2021.04, Apr 14 2021
 13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
 cModel Technology
-Z0 dC:\Users\schumae\Documents\GitHub\EE365\lab2\simulation\modelsim
-Eclk_enabler
-Z1 w1663708180
-Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
-Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
-Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z5 dC:\Users\schumae\Documents\GitHub\EE365\lab2\simulation\modelsim
-Z6 8C:/Users/schumae/Documents/GitHub/EE365/lab2/clk_enabler.vhd
-Z7 FC:/Users/schumae/Documents/GitHub/EE365/lab2/clk_enabler.vhd
-l0
-L7
-V5`@OBnOj4Z5bM5RWn7B<C2
-Z8 OV;C;10.1d;51
-31
-Z9 !s108 1663720123.573000
-Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/schumae/Documents/GitHub/EE365/lab2/clk_enabler.vhd|
-Z11 !s107 C:/Users/schumae/Documents/GitHub/EE365/lab2/clk_enabler.vhd|
-Z12 o-93 -work work -O0
-Z13 tExplicit 1
-!s100 AFSH;@Fal[B52>>mUX?gJ1
-!i10b 1
-Abehv
-R2
-R3
-R4
-DEx4 work 11 clk_enabler 0 22 5`@OBnOj4Z5bM5RWn7B<C2
-l22
-L18
-V^@JF<XHidU@?>Ie4H1PLA0
-R8
-31
-R9
-R10
-R11
-R12
-R13
-!s100 ]58g:ONa8FXaYPJkg6W=I2
-!i10b 1
-Ede0_nano
+Z1 dD:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim
+T_opt
+!s110 1663952278
+VCJlcj[=>=EoZE=ek?HY8`2
+Z2 04 11 4 work clk_enabler behv 1
+=1-7478276e9360-632de596-ec-1c2c
+Z3 !s124 OEM10U1 
+o-quiet -auto_acc_if_foreign -work work
+Z4 tCvgOpt 0
+n@_opt
+Z5 OL;O;2021.2;73
 R1
-Z14 DPx4 work 6 values 0 22 2gDb4SXWDYj^CJ8Tj>=8N3
+T_opt1
+!s110 1663952271
+V5SRPXjVCj1S7Fd7]M]9fL2
+R2
+=1-7478276e9360-632de58e-2d1-74dc
 R3
+Z6 o-quiet -auto_acc_if_foreign -work work +acc
 R4
+n@_opt1
 R5
-Z15 8C:/Users/schumae/Documents/GitHub/EE365/lab2/DE0_NANO.vhd
-Z16 FC:/Users/schumae/Documents/GitHub/EE365/lab2/DE0_NANO.vhd
-l0
-L5
-V^H=fEMXag^P2EV0iQgNm12
-R8
-31
-Z17 !s108 1663720124.728000
-Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/schumae/Documents/GitHub/EE365/lab2/DE0_NANO.vhd|
-Z19 !s107 C:/Users/schumae/Documents/GitHub/EE365/lab2/DE0_NANO.vhd|
-R12
-R13
-!s100 ll7S1nCa4F^@N00]E^?]o2
-!i10b 1
-Astructural
-R14
-R3
+R1
+T_opt2
+!s110 1663974583
+VcGY]O^25m?<9J6oN07Cab3
+04 11 2 work de0_nano_tb tb 1
+=1-7478276e9360-632e3cb7-27c-853c
+!s124 OEM10U6 
+R6
 R4
-DEx4 work 8 de0_nano 0 22 ^H=fEMXag^P2EV0iQgNm12
-l81
-L60
-VXYhBb;:??YM=;mG?N:]ib2
-R8
+n@_opt2
+R5
+Eclk_enabler
+Z7 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 31
+Z10 !s110 1663952264
+!i10b 1
+Z11 w1663952029
+!i122 8
+R1
+Z12 8D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/clk_enabler.vhd
+Z13 FD:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/clk_enabler.vhd
+l0
+L7 1
+VlRkIMXh3cDSe^:9]W7JUW2
+!s100 fCE@S4<L3llLU]?Jc3dlm3
+Z14 OL;C;2021.2;73
+Z15 !s108 1663952264.000000
+Z16 !s90 -reportprogress|300|-93|-work|work|D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/clk_enabler.vhd|
+Z17 !s107 D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/clk_enabler.vhd|
+!i113 0
+Z18 o-93 -work work
+Z19 tExplicit 1 CvgOpt 0
+Abehv
+R7
+R8
+R9
+Z20 DEx4 work 11 clk_enabler 0 22 lRkIMXh3cDSe^:9]W7JUW2
+31
+R10
+!i10b 1
+!i122 8
+l22
+L18 20
+V0CF<SbI;iRm26cXOZflY70
+!s100 gmm_3SlCh@f^?H_Ch9jIl1
+R14
+R15
+R16
 R17
+!i113 0
 R18
 R19
-R12
-R13
-!s100 j2SXaZ_k5]O=7D[;W6jHX2
+Ede0_nano
+Z21 DPx4 work 6 values 0 22 18@O_`TiI1iZ3V4I[=06B2
+R8
+R9
+31
+Z22 !s110 1663951287
 !i10b 1
-Ede0_nano_tb
-Z20 w1663720247
-R3
-R4
-R5
-Z21 8C:/Users/schumae/Documents/GitHub/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd
-Z22 FC:/Users/schumae/Documents/GitHub/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd
+Z23 w1663944984
+!i122 5
+R1
+Z24 8D:/My_DevOps/Fall_2022/EE365/Lab/EE365/Lab2/DE0_NANO.vhd
+Z25 FD:/My_DevOps/Fall_2022/EE365/Lab/EE365/Lab2/DE0_NANO.vhd
 l0
-L4
-V>3ABS_8H^h>Q_oCn1l[=b3
-!s100 fNcLfbbKE6BZN4J4zFD8o3
-R8
-32
-!i10b 1
-Z23 !s108 1663720283.550000
-Z24 !s90 -reportprogress|300|-work|work|C:/Users/schumae/Documents/GitHub/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd|
-Z25 !s107 C:/Users/schumae/Documents/GitHub/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd|
-Z26 o-work work -O0
-R13
-Atb
+L5 1
+VizEacZcZV91a9i8X5BT^>1
+!s100 LeiV`9LZ[[8jA:=co=P<B3
 R14
-Z27 DEx4 work 9 top_level 0 22 K5GZLS[Sh6g^=<4=eC9??0
-R3
-R4
-Z28 DEx4 work 11 de0_nano_tb 0 22 >3ABS_8H^h>Q_oCn1l[=b3
-l16
-L8
-VTdf9Jk:6_TGdJfFiBHD>c2
-!s100 Wi7BGJE2TgF3[mVz92B2Q3
+Z26 !s108 1663951287.000000
+Z27 !s90 -reportprogress|300|-93|-work|work|D:/My_DevOps/Fall_2022/EE365/Lab/EE365/Lab2/DE0_NANO.vhd|
+Z28 !s107 D:/My_DevOps/Fall_2022/EE365/Lab/EE365/Lab2/DE0_NANO.vhd|
+!i113 0
+R18
+R19
+Astructural
+R21
 R8
+R9
+DEx4 work 8 de0_nano 0 22 izEacZcZV91a9i8X5BT^>1
+31
+R22
+!i10b 1
+!i122 5
+l81
+L60 43
+V6nL[5FVXW5hEbD=cOWl2@1
+!s100 A8PRITRJ4_B>995WP3DGl0
+R14
+R26
+R27
+R28
+!i113 0
+R18
+R19
+Ede0_nano_tb
+Z29 w1663974564
+R8
+R9
+!i122 17
+R1
+Z30 8D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd
+Z31 FD:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd
+l0
+L4 1
+V4Sl3IVHDE6QUZ2nm4YWTK1
+!s100 =mU74;jzdJ[9B9DTETM=P1
+R14
 32
+Z32 !s110 1663974574
+!i10b 1
+Z33 !s108 1663974574.000000
+Z34 !s90 -reportprogress|300|-work|work|D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd|
+Z35 !s107 D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd|
+!i113 0
+Z36 o-work work
+R19
+Atb
+R7
+R20
+R21
+Z37 DEx4 work 9 top_level 0 22 I;GP4IV>S5`4bR4UQ5_VR1
+R8
+R9
+DEx4 work 11 de0_nano_tb 0 22 4Sl3IVHDE6QUZ2nm4YWTK1
+!i122 17
+l16
+L8 128
+Vj4Z9_Gdc9[<>=2>gfRR`j2
+!s100 M6D]zTi5VVL]UlL9RGN8Y3
+R14
+32
+R32
+!i10b 1
+R33
+R34
+R35
+!i113 0
+R36
+R19
+Ereset_delay
+R7
+R8
+R9
+31
+R22
 !i10b 1
 R23
-R24
-R25
+!i122 2
+R1
+Z38 8D:/My_DevOps/Fall_2022/EE365/Lab/EE365/Lab2/reset_delay.vhd
+Z39 FD:/My_DevOps/Fall_2022/EE365/Lab/EE365/Lab2/reset_delay.vhd
+l0
+L8 1
+V9<ENP@gDTkPZMd??>VRVJ3
+!s100 jffSbkk=z;^a6`;jmFI]E0
+R14
 R26
-R13
-Ereset_delay
-R1
-R2
-R3
-R4
-R5
-Z29 8C:/Users/schumae/Documents/GitHub/EE365/lab2/reset_delay.vhd
-Z30 FC:/Users/schumae/Documents/GitHub/EE365/lab2/reset_delay.vhd
-l0
-L8
-VVYzN<:7B5eDEnQeDIfIR10
-R8
-31
-Z31 !s108 1663720123.485000
-Z32 !s90 -reportprogress|300|-93|-work|work|C:/Users/schumae/Documents/GitHub/EE365/lab2/reset_delay.vhd|
-Z33 !s107 C:/Users/schumae/Documents/GitHub/EE365/lab2/reset_delay.vhd|
-R12
-R13
-!s100 fFYnn8Om3ghlPH^NLT5WD2
-!i10b 1
+Z40 !s90 -reportprogress|300|-93|-work|work|D:/My_DevOps/Fall_2022/EE365/Lab/EE365/Lab2/reset_delay.vhd|
+Z41 !s107 D:/My_DevOps/Fall_2022/EE365/Lab/EE365/Lab2/reset_delay.vhd|
+!i113 0
+R18
+R19
 Aarch
-R2
-R3
-R4
-DEx4 work 11 reset_delay 0 22 VYzN<:7B5eDEnQeDIfIR10
+R7
+R8
+R9
+DEx4 work 11 reset_delay 0 22 9<ENP@gDTkPZMd??>VRVJ3
+31
+R22
+!i10b 1
+!i122 2
 l21
-L17
-VXBT^WIUbIR:HNzJO7PUCH0
-R8
-31
-R31
-R32
-R33
-R12
-R13
-!s100 FjJR@=hZzS9NG9P?k4K?I2
-!i10b 1
+L17 19
+V`QRBNI=[>DUCzI^8P;WJZ3
+!s100 ?2MK=89<<CZT94:l;ncTz0
+R14
+R26
+R40
+R41
+!i113 0
+R18
+R19
 Etop_level
-Z34 w1663718213
-R14
-R3
-R4
-R5
-Z35 8C:/Users/schumae/Documents/GitHub/EE365/lab2/top_level.vhd
-Z36 FC:/Users/schumae/Documents/GitHub/EE365/lab2/top_level.vhd
-l0
-L10
-VK5GZLS[Sh6g^=<4=eC9??0
+R21
 R8
+R9
 31
-Z37 !s108 1663720124.641000
-Z38 !s90 -reportprogress|300|-93|-work|work|C:/Users/schumae/Documents/GitHub/EE365/lab2/top_level.vhd|
-Z39 !s107 C:/Users/schumae/Documents/GitHub/EE365/lab2/top_level.vhd|
-R12
-R13
-!s100 LRTRmH6bj_z`F04EzER6<2
+R22
 !i10b 1
-Astructural
-R14
-R3
-R4
-R27
-l59
-L25
-VLJBZ:m<JJJ23fT_fklDAA1
-R8
-31
-R37
-R38
-R39
-R12
-R13
-!s100 =AXzO>OH@SXXMRfRzORof2
-!i10b 1
-Euniv_bin_counter
-Z40 w1663718212
-R2
-R3
-R4
-R5
-Z41 8C:/Users/schumae/Documents/GitHub/EE365/lab2/univ_bin_counter.vhd
-Z42 FC:/Users/schumae/Documents/GitHub/EE365/lab2/univ_bin_counter.vhd
-l0
-L10
-V8=JU[DgL;5WW]l<lLQm`T1
-R8
-31
-Z43 !s108 1663720123.397000
-Z44 !s90 -reportprogress|300|-93|-work|work|C:/Users/schumae/Documents/GitHub/EE365/lab2/univ_bin_counter.vhd|
-Z45 !s107 C:/Users/schumae/Documents/GitHub/EE365/lab2/univ_bin_counter.vhd|
-R12
-R13
-!s100 gng9f_=YKL7JYi1S=fl992
-!i10b 1
-Aarch
-R2
-R3
-R4
-DEx4 work 16 univ_bin_counter 0 22 8=JU[DgL;5WW]l<lLQm`T1
-l28
-L22
-VYHET8i]2YNfUG4I:d8F<M3
-R8
-31
-R43
-R44
-R45
-R12
-R13
-!s100 D;`@`o8RFWo4LI4VO44D12
-!i10b 1
-Pvalues
-R3
-R4
+R23
+!i122 4
 R1
-R5
-8C:/Users/schumae/Documents/GitHub/EE365/lab2/values.vhd
-FC:/Users/schumae/Documents/GitHub/EE365/lab2/values.vhd
+Z42 8D:/My_DevOps/Fall_2022/EE365/Lab/EE365/Lab2/top_level.vhd
+Z43 FD:/My_DevOps/Fall_2022/EE365/Lab/EE365/Lab2/top_level.vhd
 l0
-L4
-V2gDb4SXWDYj^CJ8Tj>=8N3
+Z44 L10 1
+VI;GP4IV>S5`4bR4UQ5_VR1
+!s100 l_<KOU_U5ld331zX=b;HD0
+R14
+R26
+Z45 !s90 -reportprogress|300|-93|-work|work|D:/My_DevOps/Fall_2022/EE365/Lab/EE365/Lab2/top_level.vhd|
+Z46 !s107 D:/My_DevOps/Fall_2022/EE365/Lab/EE365/Lab2/top_level.vhd|
+!i113 0
+R18
+R19
+Astructural
+R21
 R8
+R9
+R37
 31
-R12
-R13
-!s100 nPlZAeOJO0`7;`lCGDKkN2
+R22
 !i10b 1
-!s108 1663720123.314000
-!s90 -reportprogress|300|-93|-work|work|C:/Users/schumae/Documents/GitHub/EE365/lab2/values.vhd|
-!s107 C:/Users/schumae/Documents/GitHub/EE365/lab2/values.vhd|
+!i122 4
+l59
+L25 70
+Vgohg3]8Q^bgR7zETn6Xo12
+!s100 NU;_o9oA^?:k7SbA^oM??0
+R14
+R26
+R45
+R46
+!i113 0
+R18
+R19
+Euniv_bin_counter
+R7
+R8
+R9
+31
+R22
+!i10b 1
+R23
+!i122 1
+R1
+Z47 8D:/My_DevOps/Fall_2022/EE365/Lab/EE365/Lab2/univ_bin_counter.vhd
+Z48 FD:/My_DevOps/Fall_2022/EE365/Lab/EE365/Lab2/univ_bin_counter.vhd
+l0
+R44
+VCR`Ua8bnP3JQHHH[^lV880
+!s100 HiJFaiz<9D;F`fUX4Aa<a3
+R14
+R26
+Z49 !s90 -reportprogress|300|-93|-work|work|D:/My_DevOps/Fall_2022/EE365/Lab/EE365/Lab2/univ_bin_counter.vhd|
+Z50 !s107 D:/My_DevOps/Fall_2022/EE365/Lab/EE365/Lab2/univ_bin_counter.vhd|
+!i113 0
+R18
+R19
+Aarch
+R7
+R8
+R9
+DEx4 work 16 univ_bin_counter 0 22 CR`Ua8bnP3JQHHH[^lV880
+31
+R22
+!i10b 1
+!i122 1
+l28
+L22 34
+V8aAHnDh<QHa0JV?U54gOL0
+!s100 ?7=6OTf7;42G>SQ7^nNC[3
+R14
+R26
+R49
+R50
+!i113 0
+R18
+R19
+Pvalues
+R8
+R9
+31
+R22
+!i10b 1
+!i122 0
+R23
+R1
+8D:/My_DevOps/Fall_2022/EE365/Lab/EE365/Lab2/values.vhd
+FD:/My_DevOps/Fall_2022/EE365/Lab/EE365/Lab2/values.vhd
+l0
+L4 1
+V18@O_`TiI1iZ3V4I[=06B2
+!s100 RY0[JKJD?7c<6XdD;Rk:H1
+R14
+R26
+!s90 -reportprogress|300|-93|-work|work|D:/My_DevOps/Fall_2022/EE365/Lab/EE365/Lab2/values.vhd|
+!s107 D:/My_DevOps/Fall_2022/EE365/Lab/EE365/Lab2/values.vhd|
+!i113 0
+R18
+R19

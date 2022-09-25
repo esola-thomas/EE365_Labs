@@ -1,66 +1,105 @@
-# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
-# do DE0_NANO_run_msim_rtl_vhdl.do 
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2021.2 win64 Apr 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do DE0_NANO_run_msim_rtl_vhdl.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
 # vlib rtl_work
 # vmap work rtl_work
-# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/21.1/questa_fse/win64/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
-# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
-#          Updated modelsim.ini.
 # 
-# vcom -93 -work work {C:/Users/schumae/Documents/GitHub/EE365/lab2/values.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# vcom -93 -work work {D:/My_DevOps/Fall_2022/EE365/Lab/EE365/Lab2/values.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 12:41:27 on Sep 23,2022
+# vcom -reportprogress 300 -93 -work work D:/My_DevOps/Fall_2022/EE365/Lab/EE365/Lab2/values.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling package values
-# vcom -93 -work work {C:/Users/schumae/Documents/GitHub/EE365/lab2/univ_bin_counter.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# End time: 12:41:27 on Sep 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/My_DevOps/Fall_2022/EE365/Lab/EE365/Lab2/univ_bin_counter.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 12:41:27 on Sep 23,2022
+# vcom -reportprogress 300 -93 -work work D:/My_DevOps/Fall_2022/EE365/Lab/EE365/Lab2/univ_bin_counter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity univ_bin_counter
 # -- Compiling architecture arch of univ_bin_counter
-# vcom -93 -work work {C:/Users/schumae/Documents/GitHub/EE365/lab2/reset_delay.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# End time: 12:41:27 on Sep 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/My_DevOps/Fall_2022/EE365/Lab/EE365/Lab2/reset_delay.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 12:41:27 on Sep 23,2022
+# vcom -reportprogress 300 -93 -work work D:/My_DevOps/Fall_2022/EE365/Lab/EE365/Lab2/reset_delay.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Reset_Delay
 # -- Compiling architecture Arch of Reset_Delay
-# vcom -93 -work work {C:/Users/schumae/Documents/GitHub/EE365/lab2/clk_enabler.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# End time: 12:41:27 on Sep 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/My_DevOps/Fall_2022/EE365/Lab/EE365/Lab2/clk_enabler.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 12:41:27 on Sep 23,2022
+# vcom -reportprogress 300 -93 -work work D:/My_DevOps/Fall_2022/EE365/Lab/EE365/Lab2/clk_enabler.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity clk_enabler
 # -- Compiling architecture behv of clk_enabler
-# vcom -93 -work work {C:/Users/schumae/Documents/GitHub/EE365/lab2/top_level.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# End time: 12:41:27 on Sep 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/My_DevOps/Fall_2022/EE365/Lab/EE365/Lab2/top_level.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 12:41:27 on Sep 23,2022
+# vcom -reportprogress 300 -93 -work work D:/My_DevOps/Fall_2022/EE365/Lab/EE365/Lab2/top_level.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package values
 # -- Compiling entity top_level
 # -- Compiling architecture Structural of top_level
-# vcom -93 -work work {C:/Users/schumae/Documents/GitHub/EE365/lab2/DE0_NANO.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# End time: 12:41:27 on Sep 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/My_DevOps/Fall_2022/EE365/Lab/EE365/Lab2/DE0_NANO.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 12:41:27 on Sep 23,2022
+# vcom -reportprogress 300 -93 -work work D:/My_DevOps/Fall_2022/EE365/Lab/EE365/Lab2/DE0_NANO.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package values
 # -- Compiling entity DE0_NANO
 # -- Compiling architecture structural of DE0_NANO
-# ** Warning: C:/Users/schumae/Documents/GitHub/EE365/lab2/DE0_NANO.vhd(95): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# ** Warning: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/Lab2/DE0_NANO.vhd(95): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# End time: 12:41:27 on Sep 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
 # 
-# 
-vcom -reportprogress 300 -work work C:/Users/schumae/Documents/GitHub/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+vcom -reportprogress 300 -work work D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 12:41:33 on Sep 23,2022
+# vcom -reportprogress 300 -work work D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -68,107 +107,323 @@ vcom -reportprogress 300 -work work C:/Users/schumae/Documents/GitHub/EE365/lab2
 # -- Compiling architecture tb of DE0_NANO_TB
 # -- Loading package values
 # -- Loading entity top_level
-vsim -voptargs=+acc work.de0_nano_tb
-# vsim -voptargs=+acc work.de0_nano_tb 
+# -- Loading package NUMERIC_STD
+# -- Loading entity clk_enabler
+# End time: 12:41:33 on Sep 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -l msim_transcript work.de0_nano_tb -t ns
+# vsim -gui -l msim_transcript work.de0_nano_tb -t ns 
+# Start time: 12:41:47 on Sep 23,2022
+# ** Note: (vsim-3812) Design is being optimized...
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading work.values
-# Loading work.de0_nano_tb(tb)
-# Loading work.top_level(structural)
-# ** Fatal: (vsim-3348) Port length (4) does not match actual length (5) for port '/de0_nano_tb/UUT/iData'.
-#    Time: 0 ps  Iteration: 0  Instance: /de0_nano_tb/UUT File: C:/Users/schumae/Documents/GitHub/EE365/lab2/top_level.vhd Line: 18
-# FATAL ERROR while loading design
-# Error loading design
-vsim work.de0_nano_tb(tb)
-# vsim work.de0_nano_tb(tb) 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.values
-# Loading work.de0_nano_tb(tb)
-# Loading work.top_level(structural)
-# ** Fatal: (vsim-3348) Port length (4) does not match actual length (5) for port '/de0_nano_tb/UUT/iData'.
-#    Time: 0 ps  Iteration: 0  Instance: /de0_nano_tb/UUT File: C:/Users/schumae/Documents/GitHub/EE365/lab2/top_level.vhd Line: 18
-# FATAL ERROR while loading design
-# Error loading design
-vsim work.de0_nano_tb(tb)
-# vsim work.de0_nano_tb(tb) 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.values
-# Loading work.de0_nano_tb(tb)
-# Loading work.top_level(structural)
-# ** Fatal: (vsim-3348) Port length (4) does not match actual length (5) for port '/de0_nano_tb/UUT/iData'.
-#    Time: 0 ps  Iteration: 0  Instance: /de0_nano_tb/UUT File: C:/Users/schumae/Documents/GitHub/EE365/lab2/top_level.vhd Line: 18
-# FATAL ERROR while loading design
-# Error loading design
-vcom -reportprogress 300 -work work C:/Users/schumae/Documents/GitHub/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity DE0_NANO_TB
-# -- Compiling architecture tb of DE0_NANO_TB
-# -- Loading package values
-# -- Loading entity top_level
-vsim -voptargs=+acc work.de0_nano_tb
-# vsim -voptargs=+acc work.de0_nano_tb 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.values
-# Loading work.de0_nano_tb(tb)
-# Loading work.top_level(structural)
-# ** Fatal: (vsim-3348) Port length (4) does not match actual length (6) for port '/de0_nano_tb/UUT/iData'.
-#    Time: 0 ps  Iteration: 0  Instance: /de0_nano_tb/UUT File: C:/Users/schumae/Documents/GitHub/EE365/lab2/top_level.vhd Line: 18
-# FATAL ERROR while loading design
-# Error loading design
-vsim -voptargs=+acc work.de0_nano_tb(tb)
-# vsim -voptargs=+acc work.de0_nano_tb(tb) 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.values
-# Loading work.de0_nano_tb(tb)
-# Loading work.top_level(structural)
-# ** Fatal: (vsim-3348) Port length (4) does not match actual length (6) for port '/de0_nano_tb/UUT/iData'.
-#    Time: 0 ps  Iteration: 0  Instance: /de0_nano_tb/UUT File: C:/Users/schumae/Documents/GitHub/EE365/lab2/top_level.vhd Line: 18
-# FATAL ERROR while loading design
-# Error loading design
-vcom -reportprogress 300 -work work C:/Users/schumae/Documents/GitHub/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity DE0_NANO_TB
-# -- Compiling architecture tb of DE0_NANO_TB
-# -- Loading package values
-# -- Loading entity top_level
-vsim -voptargs=+acc work.de0_nano_tb
-# vsim -voptargs=+acc work.de0_nano_tb 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.values
-# Loading work.de0_nano_tb(tb)
-# Loading work.top_level(structural)
 # Loading ieee.numeric_std(body)
-# Loading work.reset_delay(arch)
-# Loading work.clk_enabler(behv)
-# Loading work.univ_bin_counter(arch)
+# Loading work.de0_nano_tb(tb)#1
+# Loading work.top_level(structural)#1
+# Loading work.clk_enabler(behv)#2
+add wave -position insertpoint  \
+sim:/de0_nano_tb/Clock_50
+add wave -position insertpoint  \
+sim:/de0_nano_tb/Clk_en
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -position insertpoint  \
+sim:/de0_nano_tb/UUT/clock
+add wave -position insertpoint  \
+sim:/de0_nano_tb/UUT/clk_en
+vsim -voptargs=+acc work.clk_enabler
+# End time: 12:45:33 on Sep 23,2022, Elapsed time: 0:03:46
+# Errors: 0, Warnings: 4
+# vsim -voptargs="+acc" work.clk_enabler 
+# Start time: 12:45:33 on Sep 23,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.clk_enabler(behv)#1
+add wave -position insertpoint  \
+sim:/clk_enabler/clock
+add wave -position insertpoint  \
+sim:/clk_enabler/clk_en
+add wave -position insertpoint  \
+sim:/clk_enabler/clk_cnt
+add wave -position insertpoint  \
+sim:/clk_enabler/cnt_max
+force -freeze sim:/clk_enabler/clock 1 0, 0 {50 ns} -r 100
+run
+run
+run
+run
+run
+run
+run
+run
+vcom -reportprogress 300 -work work D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 12:54:40 on Sep 23,2022
+# vcom -reportprogress 300 -work work D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DE0_NANO_TB
+# -- Compiling architecture tb of DE0_NANO_TB
+# -- Loading package values
+# -- Loading entity top_level
+# -- Loading package NUMERIC_STD
+# -- Loading entity clk_enabler
+# End time: 12:54:40 on Sep 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.de0_nano_tb
+# End time: 12:55:10 on Sep 23,2022, Elapsed time: 0:09:37
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.de0_nano_tb 
+# Start time: 12:55:10 on Sep 23,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.values
+# Loading ieee.numeric_std(body)
+# Loading work.de0_nano_tb(tb)#1
+# Loading work.top_level(structural)#1
+# Loading work.reset_delay(arch)#1
+# Loading work.clk_enabler(behv)#1
+# Loading work.univ_bin_counter(arch)#1
+# Loading work.clk_enabler(behv)#2
+add wave -position insertpoint  \
+sim:/de0_nano_tb/Clock_50
+add wave -position insertpoint  \
+sim:/de0_nano_tb/Clk_en
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+vsim -voptargs=+acc work.clk_enabler
+# End time: 12:57:34 on Sep 23,2022, Elapsed time: 0:02:24
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.clk_enabler 
+# Start time: 12:57:34 on Sep 23,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.clk_enabler(behv)#1
+vcom -93 -work work D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/clk_enabler.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 12:57:44 on Sep 23,2022
+# vcom -reportprogress 300 -93 -work work D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/clk_enabler.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity clk_enabler
+# -- Compiling architecture behv of clk_enabler
+# End time: 12:57:44 on Sep 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.clk_enabler
+# End time: 12:57:50 on Sep 23,2022, Elapsed time: 0:00:16
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.clk_enabler 
+# Start time: 12:57:50 on Sep 23,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.clk_enabler(behv)#1
+vsim work.clk_enabler
+# End time: 12:57:57 on Sep 23,2022, Elapsed time: 0:00:07
+# Errors: 0, Warnings: 0
+# vsim work.clk_enabler 
+# Start time: 12:57:57 on Sep 23,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.clk_enabler(behv)#1
+add wave -position insertpoint  \
+sim:/clk_enabler/cnt_max
+add wave -position insertpoint  \
+sim:/clk_enabler/clock
+add wave -position insertpoint  \
+sim:/clk_enabler/clk_en
+add wave -position insertpoint  \
+sim:/clk_enabler/clk_cnt
+force -freeze sim:/clk_enabler/clock 1 0, 0 {50 ns} -r 100
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -work rtl_work -refresh -force_refresh
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 13:00:25 on Sep 23,2022
+# vlog -reportprogress 300 -work rtl_work -refresh -force_refresh 
+# -- Skipping entity clk_enabler
+# -- Skipping entity de0_nano
+# -- Skipping entity de0_nano_tb
+# -- Skipping entity reset_delay
+# -- Skipping entity top_level
+# -- Skipping entity univ_bin_counter
+# -- Skipping package values
+# End time: 13:00:25 on Sep 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work rtl_work -refresh -force_refresh
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 13:00:25 on Sep 23,2022
+# vcom -reportprogress 300 -work rtl_work -refresh -force_refresh 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity clk_enabler
+# -- Compiling architecture behv of clk_enabler
+# -- Loading package values
+# -- Compiling entity DE0_NANO
+# -- Compiling architecture structural of DE0_NANO
+# -- Compiling entity DE0_NANO_TB
+# -- Compiling architecture tb of DE0_NANO_TB
+# -- Loading entity top_level
+# -- Loading entity clk_enabler
+# -- Compiling entity Reset_Delay
+# -- Compiling architecture Arch of Reset_Delay
+# -- Compiling entity top_level
+# -- Compiling architecture Structural of top_level
+# -- Compiling entity univ_bin_counter
+# -- Compiling architecture arch of univ_bin_counter
+# -- Compiling package values
+# End time: 13:00:26 on Sep 23,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -work work D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 13:00:39 on Sep 23,2022
+# vcom -reportprogress 300 -work work D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DE0_NANO_TB
+# -- Compiling architecture tb of DE0_NANO_TB
+# -- Loading package values
+# -- Loading entity top_level
+# -- Loading package NUMERIC_STD
+# -- Loading entity clk_enabler
+# End time: 13:00:39 on Sep 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.de0_nano_tb
+# End time: 13:00:43 on Sep 23,2022, Elapsed time: 0:02:46
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.de0_nano_tb 
+# Start time: 13:00:43 on Sep 23,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.values
+# Loading ieee.numeric_std(body)
+# Loading work.de0_nano_tb(tb)#1
+# Loading work.top_level(structural)#1
+# Loading work.reset_delay(arch)#1
+# Loading work.clk_enabler(behv)#1
+# Loading work.univ_bin_counter(arch)#1
+add wave -position insertpoint  \
+sim:/de0_nano_tb/KEY0
+add wave -position insertpoint  \
+sim:/de0_nano_tb/counter_enable
 add wave -position insertpoint  \
 sim:/de0_nano_tb/Clock_50
 run
 # ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /de0_nano_tb/UUT/Inst_univ_bin_counter
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
 # ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /de0_nano_tb/UUT/Inst_univ_bin_counter
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
 # ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /de0_nano_tb/UUT/Inst_univ_bin_counter
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
 # ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /de0_nano_tb/UUT/Inst_univ_bin_counter
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+run
+run
+add wave -position insertpoint  \
+sim:/de0_nano_tb/Clk_en
 run
 run
 run
@@ -177,14 +432,18 @@ run
 run
 run
 run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
 run
-run
-run
-run
-run
-run
-run
-run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
 run
 run
 run
@@ -197,6 +456,743 @@ run
 run
 run
 restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
 add wave -position insertpoint  \
-sim:/de0_nano_tb/KEY0
+sim:/de0_nano_tb/KEY0 \
+sim:/de0_nano_tb/counter_enable \
+sim:/de0_nano_tb/Key1 \
+sim:/de0_nano_tb/UporDown \
+sim:/de0_nano_tb/Data
+add wave -position insertpoint  \
+sim:/de0_nano_tb/Q_LEDs
+add wave -position insertpoint  \
+sim:/de0_nano_tb/LED0 \
+sim:/de0_nano_tb/LED1
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/testbench_names.do
+force -freeze sim:/de0_nano_tb/KEY0 0 0
+force -freeze sim:/de0_nano_tb/counter_enable 1 0
+force -freeze sim:/de0_nano_tb/Key1 0 0
+force -freeze sim:/de0_nano_tb/UporDown 1 0
+force -freeze sim:/de0_nano_tb/Data 4'b1010 0
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+run
+run
+run
+force -freeze sim:/de0_nano_tb/Key1 1 0
+run
+run
+force -freeze sim:/de0_nano_tb/Key1 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
 force -freeze sim:/de0_nano_tb/KEY0 1 0
+run
+force -freeze sim:/de0_nano_tb/KEY0 0 0
+run
+run
+run
+run
+run
+force -freeze sim:/de0_nano_tb/UporDown 0 0
+run
+run
+run
+run
+force -freeze sim:/de0_nano_tb/counter_enable 0 0
+run
+run
+run
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+testbench_names.do
+# couldn't execute ".\testbench_names.do": no such file or directory
+pwd
+# D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim
+ls
+# DE0_NANO.sft                         DE0_NANO_run_msim_rtl_vhdl.do.bak2  
+# DE0_NANO.tis_db_list.ddb             DE0_NANO_run_msim_rtl_vhdl.do.bak3  
+# DE0_NANO.vho                         DE0_NANO_run_msim_rtl_vhdl.do.bak4  
+# DE0_NANO_6_1200mv_0c_slow.vho        DE0_NANO_run_msim_rtl_vhdl.do.bak5  
+# DE0_NANO_6_1200mv_0c_vhd_slow.sdo    DE0_NANO_run_msim_rtl_vhdl.do.bak6  
+# DE0_NANO_6_1200mv_85c_slow.vho       DE0_NANO_run_msim_rtl_vhdl.do.bak7  
+# DE0_NANO_6_1200mv_85c_vhd_slow.sdo   DE0_NANO_run_msim_rtl_vhdl.do.bak8  
+# DE0_NANO_TB.vhd                      DE0_NANO_vhd.sdo                    
+# DE0_NANO_TB.vhd.bak                  modelsim.ini                        
+# DE0_NANO_min_1200mv_0c_fast.vho      msim_transcript                     
+# DE0_NANO_min_1200mv_0c_vhd_fast.sdo  rtl_work                            
+# DE0_NANO_modelsim.xrf                testbench_names.do                  
+# DE0_NANO_run_msim_rtl_vhdl.do        vsim.wlf                            
+# DE0_NANO_run_msim_rtl_vhdl.do.bak    wave.do                             
+# DE0_NANO_run_msim_rtl_vhdl.do.bak1                                       
+wave.do
+# couldn't execute ".\wave.do": no such file or directory
+./wave.do
+# couldn't execute ".\wave.do": no such file or directory
+force -freeze sim:/de0_nano_tb/KEY0 1 0
+force -freeze sim:/de0_nano_tb/counter_enable 1 0
+force -freeze sim:/de0_nano_tb/KEY0 1 0
+force -freeze sim:/de0_nano_tb/Key1 0. 0
+# ** UI-Msg: (vsim-4026) Value "0." does not represent a literal of the enumeration type.
+# ** UI-Msg: (vsim-4011) Invalid force value: 0. 0.
+# 
+force -freeze sim:/de0_nano_tb/Key1 0 0
+force -freeze sim:/de0_nano_tb/UporDown 1 0
+force -freeze sim:/de0_nano_tb/Data 4'hA 0
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+run
+force -freeze sim:/de0_nano_tb/UporDown 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/de0_nano_tb/UporDown 1 0
+run
+run
+run
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/testbench_names.do
+			KEY0 				<= 1; -- Reset pin (active low)
+# invalid command name "KEY0"
+			counter_enable <= 1;
+# invalid command name "counter_enable"
+			Key1				<= 0; -- Load
+# invalid command name "Key1"
+			UporDown 		<= 0;
+# invalid command name "UporDown"
+		   Data 				<= 4'b1010; 
+# ambiguous command name "Data": DataflowActivePaneType DataflowCreateMenus DataflowDock DataflowFooter DataflowFullName DataflowToolbars DataflowType DataflowUnDock DatasetAlias DatasetClear DatasetClose DatasetConfig DatasetDump DatasetFileList DatasetFileTypes DatasetFilename DatasetGenerateLogicalName DatasetHasMsgs DatasetInfo DatasetList DatasetNameExists DatasetNewsigClear DatasetOpen DatasetRename DatasetTime
+			wait for 20 ns;
+# invalid command name "wait"
+			
+			KEY0 				<= 1; -- Reset pin (active low)
+# invalid command name "KEY0"
+			counter_enable <= 1;
+# invalid command name "counter_enable"
+			Key1				<= 0; -- Load
+# invalid command name "Key1"
+			UporDown 		<= 0;
+# invalid command name "UporDown"
+		   Data 				<= 4'b1010; 
+# ambiguous command name "Data": DataflowActivePaneType DataflowCreateMenus DataflowDock DataflowFooter DataflowFullName DataflowToolbars DataflowType DataflowUnDock DatasetAlias DatasetClear DatasetClose DatasetConfig DatasetDump DatasetFileList DatasetFileTypes DatasetFilename DatasetGenerateLogicalName DatasetHasMsgs DatasetInfo DatasetList DatasetNameExists DatasetNewsigClear DatasetOpen DatasetRename DatasetTime
+			wait for 20 ns;
+# invalid command name "wait"
+			
+			KEY0 				<= 1; -- Reset pin (active low)
+# invalid command name "KEY0"
+			counter_enable <= 1;
+# invalid command name "counter_enable"
+			Key1				<= 0; -- Load
+# invalid command name "Key1"
+			UporDown 		<= 0;
+# invalid command name "UporDown"
+		   Data 				<= 4'b1010; 
+# ambiguous command name "Data": DataflowActivePaneType DataflowCreateMenus DataflowDock DataflowFooter DataflowFullName DataflowToolbars DataflowType DataflowUnDock DatasetAlias DatasetClear DatasetClose DatasetConfig DatasetDump DatasetFileList DatasetFileTypes DatasetFilename DatasetGenerateLogicalName DatasetHasMsgs DatasetInfo DatasetList DatasetNameExists DatasetNewsigClear DatasetOpen DatasetRename DatasetTime
+			wait for 20 ns;
+# invalid command name "wait"
+
+			KEY0 				<= 1; -- Reset pin (active low)
+# invalid command name "KEY0"
+			counter_enable <= 1;
+# invalid command name "counter_enable"
+			Key1				<= 0; -- Load
+# invalid command name "Key1"
+			UporDown 		<= 0;
+# invalid command name "UporDown"
+		   Data 				<= 4'b1010; 
+# ambiguous command name "Data": DataflowActivePaneType DataflowCreateMenus DataflowDock DataflowFooter DataflowFullName DataflowToolbars DataflowType DataflowUnDock DatasetAlias DatasetClear DatasetClose DatasetConfig DatasetDump DatasetFileList DatasetFileTypes DatasetFilename DatasetGenerateLogicalName DatasetHasMsgs DatasetInfo DatasetList DatasetNameExists DatasetNewsigClear DatasetOpen DatasetRename DatasetTime
+			wait for 20 ns;
+# invalid command name "wait"
+D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/testbench_names.do
+# couldn't execute "D:\My_DevOps\Fall_2022\EE365\Lab\EE365\lab2\simulation\modelsim\testbench_names.do": no such file or directory
+do D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/testbench_names.do
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+do D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/testbench_names.do
+vcom -work work D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 14:39:42 on Sep 23,2022
+# vcom -reportprogress 300 -work work D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DE0_NANO_TB
+# -- Compiling architecture tb of DE0_NANO_TB
+# -- Loading package values
+# -- Loading entity top_level
+# -- Loading package NUMERIC_STD
+# -- Loading entity clk_enabler
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(37): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(38): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(39): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(40): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(41): Integer literal 4 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(41): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(44): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(45): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(46): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(47): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(48): Integer literal 4 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(48): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(51): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(52): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(53): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(54): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(55): Integer literal 4 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(55): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(58): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(59): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(60): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(61): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(62): Integer literal 4 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(62): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(65): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(66): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(67): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(68): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(69): Integer literal 4 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(69): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(72): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(73): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(74): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(75): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(76): Integer literal 4 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(76): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(79): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(80): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(81): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(82): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(83): Integer literal 4 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(83): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(86): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(87): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(88): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(89): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(90): Integer literal 4 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(90): near "'": (vcom-1576) expecting ';'.
+# ** Note: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(96): VHDL Compiler exiting
+# End time: 14:39:42 on Sep 23,2022, Elapsed time: 0:00:00
+# Errors: 48, Warnings: 0
+# C:/intelFPGA_lite/21.1/questa_fse/win64/vcom failed.
+vcom -work work D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 14:46:07 on Sep 23,2022
+# vcom -reportprogress 300 -work work D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DE0_NANO_TB
+# -- Compiling architecture tb of DE0_NANO_TB
+# -- Loading package values
+# -- Loading entity top_level
+# -- Loading package NUMERIC_STD
+# -- Loading entity clk_enabler
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(37): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(37): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(38): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(38): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(39): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(39): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(40): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(40): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(41): Integer literal 4 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(41): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(44): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(44): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(45): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(45): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(46): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(46): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(47): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(47): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(48): Integer literal 4 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(48): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(51): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(51): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(52): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(52): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(53): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(53): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(54): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(54): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(55): Integer literal 4 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(55): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(58): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(58): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(59): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(59): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(60): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(60): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(61): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(61): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(62): Integer literal 4 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(62): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(65): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(65): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(66): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(66): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(67): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(67): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(68): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(68): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(69): Integer literal 4 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(69): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(72): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(72): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(73): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(73): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(74): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(74): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(75): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(75): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(76): Integer literal 4 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(76): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(79): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(79): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(80): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(80): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(81): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(81): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(82): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(82): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(83): Integer literal 4 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(83): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(86): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(86): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(87): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(87): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(88): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(88): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(89): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(89): near "'": (vcom-1576) expecting ';'.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(90): Integer literal 4 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(90): near "'": (vcom-1576) expecting ';'.
+# ** Note: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(96): VHDL Compiler exiting
+# End time: 14:46:07 on Sep 23,2022, Elapsed time: 0:00:00
+# Errors: 80, Warnings: 0
+# C:/intelFPGA_lite/21.1/questa_fse/win64/vcom failed.
+vcom -work work D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 14:47:38 on Sep 23,2022
+# vcom -reportprogress 300 -work work D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DE0_NANO_TB
+# -- Compiling architecture tb of DE0_NANO_TB
+# -- Loading package values
+# -- Loading entity top_level
+# -- Loading package NUMERIC_STD
+# -- Loading entity clk_enabler
+# ** Warning: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(37): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(37): near "1": syntax error
+# ** Warning: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(38): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(38): near "1": syntax error
+# ** Warning: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(39): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(39): near "0": syntax error
+# ** Warning: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(40): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(40): near "0": syntax error
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(41): Integer literal 4 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(41): near "'": (vcom-1576) expecting ';'.
+# ** Warning: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(44): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(44): near "1": syntax error
+# ** Warning: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(45): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(45): near "1": syntax error
+# ** Warning: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(46): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(46): near "0": syntax error
+# ** Warning: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(47): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(47): near "0": syntax error
+# ** Warning: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(48): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(48): near "1010": syntax error
+# ** Warning: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(51): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(51): near "1": syntax error
+# ** Warning: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(52): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(52): near "1": syntax error
+# ** Warning: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(53): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(53): near "0": syntax error
+# ** Warning: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(54): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(54): near "0": syntax error
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(55): Integer literal 4 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(55): near "'": (vcom-1576) expecting ';'.
+# ** Warning: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(58): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(58): near "1": syntax error
+# ** Warning: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(59): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(59): near "1": syntax error
+# ** Warning: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(60): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(60): near "0": syntax error
+# ** Warning: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(61): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(61): near "0": syntax error
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(62): Integer literal 4 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(62): near "'": (vcom-1576) expecting ';'.
+# ** Warning: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(65): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(65): near "1": syntax error
+# ** Warning: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(66): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(66): near "1": syntax error
+# ** Warning: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(67): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(67): near "0": syntax error
+# ** Warning: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(68): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(68): near "0": syntax error
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(69): Integer literal 4 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(69): near "'": (vcom-1576) expecting ';'.
+# ** Warning: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(72): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(72): near "1": syntax error
+# ** Warning: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(73): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(73): near "1": syntax error
+# ** Warning: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(74): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(74): near "0": syntax error
+# ** Warning: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(75): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(75): near "0": syntax error
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(76): Integer literal 4 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(76): near "'": (vcom-1576) expecting ';'.
+# ** Warning: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(79): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(79): near "1": syntax error
+# ** Warning: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(80): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(80): near "1": syntax error
+# ** Warning: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(81): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(81): near "0": syntax error
+# ** Warning: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(82): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(82): near "0": syntax error
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(83): Integer literal 4 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(83): near "'": (vcom-1576) expecting ';'.
+# ** Warning: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(86): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(86): near "1": syntax error
+# ** Warning: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(87): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(87): near "1": syntax error
+# ** Warning: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(88): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(88): near "0": syntax error
+# ** Warning: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(89): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(89): near "0": syntax error
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(90): Integer literal 4 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(90): near "'": (vcom-1576) expecting ';'.
+# ** Note: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(96): VHDL Compiler exiting
+# End time: 14:47:38 on Sep 23,2022, Elapsed time: 0:00:00
+# Errors: 47, Warnings: 33
+# C:/intelFPGA_lite/21.1/questa_fse/win64/vcom failed.
+vcom -work work D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 14:51:13 on Sep 23,2022
+# vcom -reportprogress 300 -work work D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DE0_NANO_TB
+# -- Compiling architecture tb of DE0_NANO_TB
+# -- Loading package values
+# -- Loading entity top_level
+# -- Loading package NUMERIC_STD
+# -- Loading entity clk_enabler
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(41): near "'": syntax error
+# ** Warning: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(48): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(48): near "1010": syntax error
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(55): near "'": syntax error
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(62): near "'": syntax error
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(69): near "'": syntax error
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(76): near "'": syntax error
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(83): near "'": syntax error
+# ** Error: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(90): near "'": syntax error
+# ** Note: D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(96): VHDL Compiler exiting
+# End time: 14:51:13 on Sep 23,2022, Elapsed time: 0:00:00
+# Errors: 8, Warnings: 1
+# C:/intelFPGA_lite/21.1/questa_fse/win64/vcom failed.
+clear
+# invalid command name "clear"
+clr
+# invalid command name "clr"
+vcom -work work D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 14:55:48 on Sep 23,2022
+# vcom -reportprogress 300 -work work D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DE0_NANO_TB
+# -- Compiling architecture tb of DE0_NANO_TB
+# -- Loading package values
+# -- Loading entity top_level
+# -- Loading package NUMERIC_STD
+# -- Loading entity clk_enabler
+# End time: 14:55:48 on Sep 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Load canceled
+vcom -work work D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 14:56:28 on Sep 23,2022
+# vcom -reportprogress 300 -work work D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DE0_NANO_TB
+# -- Compiling architecture tb of DE0_NANO_TB
+# -- Loading package values
+# -- Loading entity top_level
+# -- Loading package NUMERIC_STD
+# -- Loading entity clk_enabler
+# End time: 14:56:28 on Sep 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.de0_nano_tb -t ns
+# End time: 14:56:42 on Sep 23,2022, Elapsed time: 1:55:59
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.de0_nano_tb -t ns 
+# Start time: 14:56:42 on Sep 23,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.values
+# Loading ieee.numeric_std(body)
+# Loading work.de0_nano_tb(tb)#1
+# Loading work.top_level(structural)#1
+# Loading work.reset_delay(arch)#1
+# Loading work.clk_enabler(behv)#1
+# Loading work.univ_bin_counter(arch)#1
+do D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/testbench_names.do
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vsim -voptargs=+acc -t ns work.de0_nano_tb
+# End time: 14:58:12 on Sep 23,2022, Elapsed time: 0:01:30
+# Errors: 0, Warnings: 4
+# vsim -voptargs="+acc" -t ns work.de0_nano_tb 
+# Start time: 14:58:12 on Sep 23,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.values
+# Loading ieee.numeric_std(body)
+# Loading work.de0_nano_tb(tb)#1
+# Loading work.top_level(structural)#1
+# Loading work.reset_delay(arch)#1
+# Loading work.clk_enabler(behv)#1
+# Loading work.univ_bin_counter(arch)#1
+do D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/testbench_names.do
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+run
+run
+run
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+force -freeze sim:/de0_nano_tb/Key1 1 0
+run
+noforce sim:/de0_nano_tb/Key1
+run
+vcom -work work D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 19:07:16 on Sep 23,2022
+# vcom -reportprogress 300 -work work D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DE0_NANO_TB
+# -- Compiling architecture tb of DE0_NANO_TB
+# -- Loading package values
+# -- Loading entity top_level
+# -- Loading package NUMERIC_STD
+# -- Loading entity clk_enabler
+# End time: 19:07:16 on Sep 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.de0_nano_tb
+# End time: 19:07:20 on Sep 23,2022, Elapsed time: 4:09:08
+# Errors: 0, Warnings: 4
+# vsim -voptargs="+acc" work.de0_nano_tb 
+# Start time: 19:07:20 on Sep 23,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.values
+# Loading ieee.numeric_std(body)
+# Loading work.de0_nano_tb(tb)#1
+# Loading work.top_level(structural)#1
+# Loading work.reset_delay(arch)#1
+# Loading work.clk_enabler(behv)#1
+# Loading work.univ_bin_counter(arch)#1
+do D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/testbench_names.do
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+vcom -work work D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 19:09:34 on Sep 23,2022
+# vcom -reportprogress 300 -work work D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DE0_NANO_TB
+# -- Compiling architecture tb of DE0_NANO_TB
+# -- Loading package values
+# -- Loading entity top_level
+# -- Loading package NUMERIC_STD
+# -- Loading entity clk_enabler
+# End time: 19:09:34 on Sep 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.de0_nano_tb
+# End time: 19:09:43 on Sep 23,2022, Elapsed time: 0:02:23
+# Errors: 0, Warnings: 4
+# vsim -voptargs="+acc" work.de0_nano_tb 
+# Start time: 19:09:43 on Sep 23,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.values
+# Loading ieee.numeric_std(body)
+# Loading work.de0_nano_tb(tb)#1
+# Loading work.top_level(structural)#1
+# Loading work.reset_delay(arch)#1
+# Loading work.clk_enabler(behv)#1
+# Loading work.univ_bin_counter(arch)#1
+do D:/My_DevOps/Fall_2022/EE365/Lab/EE365/lab2/simulation/modelsim/testbench_names.do
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+# End time: 10:35:39 on Sep 25,2022, Elapsed time: 39:25:56
+# Errors: 0, Warnings: 4
