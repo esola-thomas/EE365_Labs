@@ -157,7 +157,36 @@ signal Q_LEDs	: 	std_LOGIC_VECTOR(7 DOWNTO 4);
 		   Data 				<= "1010"; 
 			wait for 200 ns;
 			
-			wait; -- 17 * 200 = 3400
+			-- Load Iligal values (over/bellow min - max)
+			KEY0 				<= '1'; -- Reset pin (active low)
+			counter_enable <= '1';
+			Key1				<= '1'; -- Load
+			UporDown 		<= '0';
+		   Data 				<= "0000"; 
+			wait for 200 ns;
+			
+			KEY0 				<= '1'; -- Reset pin (active low)
+			counter_enable <= '1';
+			Key1				<= '0'; -- Load
+			UporDown 		<= '0';
+		   Data 				<= "0000"; 
+			wait for 200 ns;
+			
+			KEY0 				<= '1'; -- Reset pin (active low)
+			counter_enable <= '1';
+			Key1				<= '1'; -- Load
+			UporDown 		<= '0';
+		   Data 				<= "1111"; 
+			wait for 200 ns;
+			
+			KEY0 				<= '1'; -- Reset pin (active low)
+			counter_enable <= '1';
+			Key1				<= '0'; -- Load
+			UporDown 		<= '0';
+		   Data 				<= "1111"; 
+			wait for 200 ns;
+			
+			wait; -- 4400
 		end process;
 			
 END tb;
