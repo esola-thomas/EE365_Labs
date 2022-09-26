@@ -1,63 +1,103 @@
 # Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
-# ** Error: (vish-42) Unsupported ModelSim library format for "C:/Users/schumae/Documents/GitHub/EE365/lab2/simulation/modelsim/rtl_work". (Format: 4)
 # do DE0_NANO_run_msim_rtl_vhdl.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
-# ** Error: (vdel-42) Unsupported ModelSim library format for "C:/Users/schumae/Documents/GitHub/EE365/lab2/simulation/modelsim/rtl_work". (Format: 4)
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
 # 
-# ** Warning: (vdel-57) Library 'C:/Users/schumae/Documents/GitHub/EE365/lab2/simulation/modelsim/rtl_work' is missing or is not a valid ModelSim library.
+# vcom -93 -work work {C:/Users/schumae/Documents/Lab2_restored/values.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package values
+# vcom -93 -work work {C:/Users/schumae/Documents/Lab2_restored/reset_delay.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Reset_Delay
+# -- Compiling architecture Arch of Reset_Delay
+# vcom -93 -work work {C:/Users/schumae/Documents/Lab2_restored/clk_enabler.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity clk_enabler
+# -- Compiling architecture behv of clk_enabler
+# vcom -93 -work work {C:/Users/schumae/Documents/Lab2_restored/univ_bin_counter.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package values
+# -- Compiling entity univ_bin_counter
+# -- Compiling architecture arch of univ_bin_counter
+# vcom -93 -work work {C:/Users/schumae/Documents/Lab2_restored/top_level.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package values
+# -- Compiling entity top_level
+# -- Compiling architecture Structural of top_level
+# vcom -93 -work work {C:/Users/schumae/Documents/Lab2_restored/DE0_NANO.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package values
+# -- Compiling entity DE0_NANO
+# -- Compiling architecture structural of DE0_NANO
+# ** Warning: C:/Users/schumae/Documents/Lab2_restored/DE0_NANO.vhd(95): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
 # 
-# ** Error: C:/altera/13.0sp1/modelsim_ase/win32aloem/vdel failed.
-# Error in macro ./DE0_NANO_run_msim_rtl_vhdl.do line 4
-# C:/altera/13.0sp1/modelsim_ase/win32aloem/vdel failed.
-#     while executing
-# "vdel -lib rtl_work -all"
-#     invoked from within
-# "if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }"
-# ** Error: (vish-42) Unsupported ModelSim library format for "C:/Users/schumae/Documents/GitHub/EE365/lab2/simulation/modelsim/rtl_work". (Format: 4)
-vlib work
-vcom -reportprogress 300 -work work C:/Users/schumae/Documents/GitHub/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd
+# 
+vcom -reportprogress 300 -work work C:/Users/schumae/Documents/Lab2_restored/simulation/modelsim/DE0_NANO_TB.vhd
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity DE0_NANO_TB
 # -- Compiling architecture tb of DE0_NANO_TB
-# ** Error: (vcom-11) Could not find work.top_level.
-# 
-# ** Error: C:/Users/schumae/Documents/GitHub/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(17): (vcom-1195) Cannot find expanded name "work.top_level".
-# 
-# ** Error: C:/Users/schumae/Documents/GitHub/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(17): Unknown expanded name.
-# ** Error: (vcom-11) Could not find work.clk_enabler.
-# 
-# ** Error: C:/Users/schumae/Documents/GitHub/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(28): (vcom-1195) Cannot find expanded name "work.clk_enabler".
-# 
-# ** Error: C:/Users/schumae/Documents/GitHub/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(28): Unknown expanded name.
-# ** Error: C:/Users/schumae/Documents/GitHub/EE365/lab2/simulation/modelsim/DE0_NANO_TB.vhd(135): VHDL Compiler exiting
-# ** Error: (vish-42) Unsupported ModelSim library format for "C:/Users/schumae/Documents/GitHub/EE365/lab2/simulation/modelsim/rtl_work". (Format: 4)
-vcom -reportprogress 300 -work work C:/Users/schumae/Documents/GitHub/EE365/lab2/clk_enabler.vhd
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
+# -- Loading package values
+# -- Loading entity top_level
 # -- Loading package NUMERIC_STD
-# -- Compiling entity clk_enabler
-# -- Compiling architecture behv of clk_enabler
-vcom -reportprogress 300 -work work C:/Users/schumae/Documents/GitHub/EE365/lab2/DE0_NANO.vhd
+# -- Loading entity clk_enabler
+vsim +altera -do DE0_NANO_run_msim_rtl_vhdl.do -l msim_transcript -gui -t ns work.de0_nano_tb
+# vsim +altera -do DE0_NANO_run_msim_rtl_vhdl.do -l msim_transcript -gui -t ns work.de0_nano_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.values
+# Loading ieee.numeric_std(body)
+# Loading work.de0_nano_tb(tb)
+# Loading work.top_level(structural)
+# Loading work.reset_delay(arch)
+# Loading work.clk_enabler(behv)
+# Loading work.univ_bin_counter(arch)
+# do DE0_NANO_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/schumae/Documents/Lab2_restored/values.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# ** Error: (vcom-11) Could not find work.values.
-# 
-# ** Error: C:/Users/schumae/Documents/GitHub/EE365/lab2/DE0_NANO.vhd(3): (vcom-1195) Cannot find expanded name "work.values".
-# 
-# ** Error: C:/Users/schumae/Documents/GitHub/EE365/lab2/DE0_NANO.vhd(3): Unknown expanded name.
-# ** Error: C:/Users/schumae/Documents/GitHub/EE365/lab2/DE0_NANO.vhd(5): VHDL Compiler exiting
-vcom -reportprogress 300 -work work C:/Users/schumae/Documents/GitHub/EE365/lab2/reset_delay.vhd
+# -- Compiling package values
+# vcom -93 -work work {C:/Users/schumae/Documents/Lab2_restored/reset_delay.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -65,34 +105,7 @@ vcom -reportprogress 300 -work work C:/Users/schumae/Documents/GitHub/EE365/lab2
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Reset_Delay
 # -- Compiling architecture Arch of Reset_Delay
-vcom -reportprogress 300 -work work C:/Users/schumae/Documents/GitHub/EE365/lab2/top_level.vhd
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# ** Error: (vcom-11) Could not find work.values.
-# 
-# ** Error: C:/Users/schumae/Documents/GitHub/EE365/lab2/top_level.vhd(3): (vcom-1195) Cannot find expanded name "work.values".
-# 
-# ** Error: C:/Users/schumae/Documents/GitHub/EE365/lab2/top_level.vhd(3): Unknown expanded name.
-# ** Error: C:/Users/schumae/Documents/GitHub/EE365/lab2/top_level.vhd(10): VHDL Compiler exiting
-vcom -reportprogress 300 -work work C:/Users/schumae/Documents/GitHub/EE365/lab2/univ_bin_counter.vhd
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity univ_bin_counter
-# -- Compiling architecture arch of univ_bin_counter
-vcom -reportprogress 300 -work work C:/Users/schumae/Documents/GitHub/EE365/lab2/values.vhd
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling package values
-# ** Error: (vish-42) Unsupported ModelSim library format for "C:/Users/schumae/Documents/GitHub/EE365/lab2/simulation/modelsim/rtl_work". (Format: 4)
-vlib work
-vcom -reportprogress 300 -work work C:/Users/schumae/Documents/GitHub/EE365/lab2/clk_enabler.vhd
+# vcom -93 -work work {C:/Users/schumae/Documents/Lab2_restored/clk_enabler.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -100,47 +113,43 @@ vcom -reportprogress 300 -work work C:/Users/schumae/Documents/GitHub/EE365/lab2
 # -- Loading package NUMERIC_STD
 # -- Compiling entity clk_enabler
 # -- Compiling architecture behv of clk_enabler
-vcom -reportprogress 300 -work work C:/Users/schumae/Documents/GitHub/EE365/lab2/DE0_NANO.vhd
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# ** Error: (vcom-11) Could not find work.values.
-# 
-# ** Error: C:/Users/schumae/Documents/GitHub/EE365/lab2/DE0_NANO.vhd(3): (vcom-1195) Cannot find expanded name "work.values".
-# 
-# ** Error: C:/Users/schumae/Documents/GitHub/EE365/lab2/DE0_NANO.vhd(3): Unknown expanded name.
-# ** Error: C:/Users/schumae/Documents/GitHub/EE365/lab2/DE0_NANO.vhd(5): VHDL Compiler exiting
-vcom -reportprogress 300 -work work C:/Users/schumae/Documents/GitHub/EE365/lab2/reset_delay.vhd
+# vcom -93 -work work {C:/Users/schumae/Documents/Lab2_restored/univ_bin_counter.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity Reset_Delay
-# -- Compiling architecture Arch of Reset_Delay
-vcom -reportprogress 300 -work work C:/Users/schumae/Documents/GitHub/EE365/lab2/top_level.vhd
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# ** Error: (vcom-11) Could not find work.values.
-# 
-# ** Error: C:/Users/schumae/Documents/GitHub/EE365/lab2/top_level.vhd(3): (vcom-1195) Cannot find expanded name "work.values".
-# 
-# ** Error: C:/Users/schumae/Documents/GitHub/EE365/lab2/top_level.vhd(3): Unknown expanded name.
-# ** Error: C:/Users/schumae/Documents/GitHub/EE365/lab2/top_level.vhd(10): VHDL Compiler exiting
-vcom -reportprogress 300 -work work C:/Users/schumae/Documents/GitHub/EE365/lab2/univ_bin_counter.vhd
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
+# -- Loading package values
 # -- Compiling entity univ_bin_counter
 # -- Compiling architecture arch of univ_bin_counter
-vcom -reportprogress 300 -work work C:/Users/schumae/Documents/GitHub/EE365/lab2/values.vhd
+# vcom -93 -work work {C:/Users/schumae/Documents/Lab2_restored/top_level.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling package values
+# -- Loading package values
+# -- Compiling entity top_level
+# -- Compiling architecture Structural of top_level
+# vcom -93 -work work {C:/Users/schumae/Documents/Lab2_restored/DE0_NANO.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package values
+# -- Compiling entity DE0_NANO
+# -- Compiling architecture structural of DE0_NANO
+# ** Warning: C:/Users/schumae/Documents/Lab2_restored/DE0_NANO.vhd(95): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# 
+# 
+do tesbench_names.do
+add wave -position insertpoint  \
+sim:/de0_nano_tb/DUT/Inst_clk_enabler/clk_en
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /de0_nano_tb/DUT/Inst_univ_bin_counter

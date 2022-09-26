@@ -6,6 +6,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
+use work.values.all;
 
 entity univ_bin_counter is
    generic(N: integer := 8; N2: integer := 9; N1: integer := 0);
@@ -29,15 +30,18 @@ begin
    -- register
    process(clk,reset)
    begin
-      if (reset='1') then -- Set r_reg to 0 if reset is high
-         r_reg <= (others=>'0');
+      if (reset='1' and up='1') then -- Set r_reg to 0 if reset is high
+         r_reg <= to_unsigned(N1, r_reg'length);
+		elsif (reset='1' and up='0')then
+			r_reg <= to_unsigned(N2, r_reg'length);
       elsif rising_edge(clk) and clk_en = '1' then
          r_reg <= r_next;
       end if;
    end process;
 	
    -- next-state logic
-   r_next <= (others=>'0') when syn_clr='1' else
+   r_next <= to_unsigned(N1, r_reg'length) when syn_clr='1' and up='1' else
+				 to_unsigned(N2, r_reg'length) when syn_clr='1' and up='0' else
              unsigned(d)   when load='1' else
 			 r_1     	   when en ='1' and up='1' else
              r_2     	   when en ='1' and up='0' else

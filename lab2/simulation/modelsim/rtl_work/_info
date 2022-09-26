@@ -1,0 +1,211 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\schumae\Documents\Lab2_restored\simulation\modelsim
+Eclk_enabler
+Z1 w1664148054
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\schumae\Documents\Lab2_restored\simulation\modelsim
+Z6 8C:/Users/schumae/Documents/Lab2_restored/clk_enabler.vhd
+Z7 FC:/Users/schumae/Documents/Lab2_restored/clk_enabler.vhd
+l0
+L7
+V5`@OBnOj4Z5bM5RWn7B<C2
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1664151514.251000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/schumae/Documents/Lab2_restored/clk_enabler.vhd|
+Z11 !s107 C:/Users/schumae/Documents/Lab2_restored/clk_enabler.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 AFSH;@Fal[B52>>mUX?gJ1
+!i10b 1
+Abehv
+R2
+R3
+R4
+DEx4 work 11 clk_enabler 0 22 5`@OBnOj4Z5bM5RWn7B<C2
+l22
+L18
+V^@JF<XHidU@?>Ie4H1PLA0
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 ]58g:ONa8FXaYPJkg6W=I2
+!i10b 1
+Ede0_nano
+Z14 w1663944984
+Z15 DPx4 work 6 values 0 22 2gDb4SXWDYj^CJ8Tj>=8N3
+R3
+R4
+R5
+Z16 8C:/Users/schumae/Documents/Lab2_restored/DE0_NANO.vhd
+Z17 FC:/Users/schumae/Documents/Lab2_restored/DE0_NANO.vhd
+l0
+L5
+V^H=fEMXag^P2EV0iQgNm12
+!s100 ll7S1nCa4F^@N00]E^?]o2
+R8
+31
+!i10b 1
+Z18 !s108 1664151514.501000
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/schumae/Documents/Lab2_restored/DE0_NANO.vhd|
+Z20 !s107 C:/Users/schumae/Documents/Lab2_restored/DE0_NANO.vhd|
+R12
+R13
+Astructural
+R15
+R3
+R4
+DEx4 work 8 de0_nano 0 22 ^H=fEMXag^P2EV0iQgNm12
+l81
+L60
+VXYhBb;:??YM=;mG?N:]ib2
+!s100 j2SXaZ_k5]O=7D[;W6jHX2
+R8
+31
+!i10b 1
+R18
+R19
+R20
+R12
+R13
+Ereset_delay
+R14
+R2
+R3
+R4
+R5
+Z21 8C:/Users/schumae/Documents/Lab2_restored/reset_delay.vhd
+Z22 FC:/Users/schumae/Documents/Lab2_restored/reset_delay.vhd
+l0
+L8
+VVYzN<:7B5eDEnQeDIfIR10
+R8
+31
+Z23 !s108 1664151514.169000
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/schumae/Documents/Lab2_restored/reset_delay.vhd|
+Z25 !s107 C:/Users/schumae/Documents/Lab2_restored/reset_delay.vhd|
+R12
+R13
+!s100 fFYnn8Om3ghlPH^NLT5WD2
+!i10b 1
+Aarch
+R2
+R3
+R4
+DEx4 work 11 reset_delay 0 22 VYzN<:7B5eDEnQeDIfIR10
+l21
+L17
+VXBT^WIUbIR:HNzJO7PUCH0
+R8
+31
+R23
+R24
+R25
+R12
+R13
+!s100 FjJR@=hZzS9NG9P?k4K?I2
+!i10b 1
+Etop_level
+Z26 w1664149491
+R15
+R3
+R4
+R5
+Z27 8C:/Users/schumae/Documents/Lab2_restored/top_level.vhd
+Z28 FC:/Users/schumae/Documents/Lab2_restored/top_level.vhd
+l0
+L10
+VK5GZLS[Sh6g^=<4=eC9??0
+R8
+31
+Z29 !s108 1664151514.419000
+Z30 !s90 -reportprogress|300|-93|-work|work|C:/Users/schumae/Documents/Lab2_restored/top_level.vhd|
+Z31 !s107 C:/Users/schumae/Documents/Lab2_restored/top_level.vhd|
+R12
+R13
+!s100 LRTRmH6bj_z`F04EzER6<2
+!i10b 1
+Astructural
+R15
+R3
+R4
+DEx4 work 9 top_level 0 22 K5GZLS[Sh6g^=<4=eC9??0
+l59
+L25
+VLJBZ:m<JJJ23fT_fklDAA1
+R8
+31
+R29
+R30
+R31
+R12
+R13
+!s100 =AXzO>OH@SXXMRfRzORof2
+!i10b 1
+Euniv_bin_counter
+Z32 w1664150973
+R15
+R2
+R3
+R4
+R5
+Z33 8C:/Users/schumae/Documents/Lab2_restored/univ_bin_counter.vhd
+Z34 FC:/Users/schumae/Documents/Lab2_restored/univ_bin_counter.vhd
+l0
+L11
+VB6OlR11VI[9YnO7D`2ikk1
+R8
+31
+Z35 !s108 1664151514.336000
+Z36 !s90 -reportprogress|300|-93|-work|work|C:/Users/schumae/Documents/Lab2_restored/univ_bin_counter.vhd|
+Z37 !s107 C:/Users/schumae/Documents/Lab2_restored/univ_bin_counter.vhd|
+R12
+R13
+!s100 `LGzYn3fZ`k<Qz1`=SASG3
+!i10b 1
+Aarch
+R15
+R2
+R3
+R4
+DEx4 work 16 univ_bin_counter 0 22 B6OlR11VI[9YnO7D`2ikk1
+l29
+L23
+VSKRkBMmhE1NhKQjG@deK82
+R8
+31
+R35
+R36
+R37
+R12
+R13
+!s100 faeKWRd]1PWOj2i>8>[Cf1
+!i10b 1
+Pvalues
+R3
+R4
+R14
+R5
+8C:/Users/schumae/Documents/Lab2_restored/values.vhd
+FC:/Users/schumae/Documents/Lab2_restored/values.vhd
+l0
+L4
+V2gDb4SXWDYj^CJ8Tj>=8N3
+R8
+31
+R12
+R13
+!s100 nPlZAeOJO0`7;`lCGDKkN2
+!i10b 1
+!s108 1664151514.091000
+!s90 -reportprogress|300|-93|-work|work|C:/Users/schumae/Documents/Lab2_restored/values.vhd|
+!s107 C:/Users/schumae/Documents/Lab2_restored/values.vhd|

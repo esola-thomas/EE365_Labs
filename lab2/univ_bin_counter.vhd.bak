@@ -29,7 +29,7 @@ begin
    -- register
    process(clk,reset)
    begin
-      if (reset='1') then
+      if (reset='1') then -- Set r_reg to 0 if reset is high
          r_reg <= (others=>'0');
       elsif rising_edge(clk) and clk_en = '1' then
          r_reg <= r_next;

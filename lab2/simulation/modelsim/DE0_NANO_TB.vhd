@@ -62,6 +62,20 @@ signal Q_LEDs	: 	std_LOGIC_VECTOR(7 DOWNTO 4);
 			UporDown 		<= '0';
 		   Data 				<= "1010"; 
 			wait for 200 ns;
+			
+			KEY0 				<= '1'; -- Reset pin (active low)
+			counter_enable <= '0';
+			Key1				<= '0'; -- Load
+			UporDown 		<= '0';
+		   Data 				<= "1010"; 
+			wait for 200 ns;
+			
+			KEY0 				<= '1'; -- Reset pin (active low)
+			counter_enable <= '0';
+			Key1				<= '0'; -- Load
+			UporDown 		<= '0';
+		   Data 				<= "1010"; 
+			wait for 200 ns;
 
 			-- After counting down for 3 cycles, load number 4 to counter
 			KEY0 				<= '1'; -- Reset pin (active low)
@@ -129,7 +143,21 @@ signal Q_LEDs	: 	std_LOGIC_VECTOR(7 DOWNTO 4);
 		   Data 				<= "1010"; 
 			wait for 200 ns;
 			
-			wait;
+			KEY0 				<= '1'; -- Reset pin (active low)
+			counter_enable <= '1';
+			Key1				<= '0'; -- Load
+			UporDown 		<= '0';
+		   Data 				<= "1010"; 
+			wait for 200 ns;
+			
+			KEY0 				<= '1'; -- Reset pin (active low)
+			counter_enable <= '1';
+			Key1				<= '0'; -- Load
+			UporDown 		<= '0';
+		   Data 				<= "1010"; 
+			wait for 200 ns;
+			
+			wait; -- 17 * 200 = 3400
 		end process;
 			
 END tb;

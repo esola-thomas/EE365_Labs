@@ -6,7 +6,7 @@ use ieee.numeric_std.all;
 
 entity clk_enabler is
 	GENERIC (
-		CONSTANT cnt_max : integer := 9);      --  1.0 Hz Changed from 49999999 to 9
+		CONSTANT cnt_max : integer := 49999999);      --  1.0 Hz Changed from 49999999 to 9
 	port(	
 		clock:		in std_logic;	 
 		clk_en: 		out std_logic
