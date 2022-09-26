@@ -6,14 +6,14 @@ SW[0] => top_level:Inst_top_level.iCnt_en
 SW[1] => top_level:Inst_top_level.iUp
 SW[2] => ~NO_FANOUT~
 SW[3] => ~NO_FANOUT~
-LED[0] << top_level:Inst_top_level.oMin
-LED[1] << top_level:Inst_top_level.oMax
-LED[2] << <GND>
-LED[3] << <GND>
-LED[4] << top_level:Inst_top_level.oQ[0]
-LED[5] << top_level:Inst_top_level.oQ[1]
-LED[6] << top_level:Inst_top_level.oQ[2]
-LED[7] << top_level:Inst_top_level.oQ[3]
+LED[0] <= top_level:Inst_top_level.oMin
+LED[1] <= top_level:Inst_top_level.oMax
+LED[2] <= <GND>
+LED[3] <= <GND>
+LED[4] <= top_level:Inst_top_level.oQ[0]
+LED[5] <= top_level:Inst_top_level.oQ[1]
+LED[6] <= top_level:Inst_top_level.oQ[2]
+LED[7] <= top_level:Inst_top_level.oQ[3]
 
 
 |DE0_NANO|top_level:Inst_top_level
