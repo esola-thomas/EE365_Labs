@@ -25,9 +25,22 @@ architecture arch of univ_bin_counter is
    signal r_next				 	: unsigned(N-1 downto 0);
    signal r_1				    	: unsigned(N-1 downto 0);
    signal r_2				    	: unsigned(N-1 downto 0);
+	signal d_inRange : std_logic;
+	
+	signal unsigned_Data : unsigned(N-1 downto 0);
+	signal usnigned_N1 	: unsigned(N-1 downto 0);
+	signal usnigned_N2	: unsigned(N-1 downto 0);
 	
 begin
    -- register
+	
+	unsigned_Data 	<= unsigned(d);
+	usnigned_N1 	<= to_unsigned(N1, r_reg'length);
+	usnigned_N2		<= to_unsigned(N2, r_reg'length);
+	
+	d_inRange <= 	'1' when unsigned_Data < usnigned_N2 and unsigned_Data > usnigned_N1 else 
+						'0';
+	
    process(clk,reset)
    begin
       if (reset='1' and up='1') then -- Set r_reg to 0 if reset is high
@@ -42,7 +55,7 @@ begin
    -- next-state logic
    r_next <= to_unsigned(N1, r_reg'length) when syn_clr='1' and up='1' else
 				 to_unsigned(N2, r_reg'length) when syn_clr='1' and up='0' else
-             unsigned(d)   when load='1' else
+             unsigned(d)   when load='1' and d_inRange = '1' else
 			 r_1     	   when en ='1' and up='1' else
              r_2     	   when en ='1' and up='0' else
              r_reg;
