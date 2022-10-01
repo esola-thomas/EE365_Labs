@@ -1,64 +1,73 @@
 LIBRARY ieee;
    USE ieee.std_logic_1164.all;
 
-ENTITY StateMachine_Rotary_Encoder_tb IS
+ENTITY all_design_tb IS
 
-END StateMachine_Rotary_Encoder_tb;
+END all_design_tb;
 
-ARCHITECTURE tb OF StateMachine_Rotary_Encoder_tb IS
-
--- TOP LEVEL COMPONENT
-
-signal Clock_50 					: std_LOGIC := '0';
-signal reset, A, B, min, max 	: std_logic := '0'; 
-signal en, up, clk_en 			: std_logic := '0';
-
+ARCHITECTURE all_tb OF all_design_tb IS
+	
+	-- Define signals
+	signal load 		: std_logic := '0'; -- Maped to KEY[0]
+	signal reset		: std_logic := '0'; -- SW in digital encoder
+	signal Clock_50	: std_logic := '0';
+	signal A, B 		: std_logic := '1'; -- A and B inputs from digital encoder
+	signal LEDs			: std_logic_vector (3 downto 0) := "0000"; 
+	
 	begin
-		DUT : entity work.StateMachine_Rotary_Encoder port map (
-			clock 	=> Clock_50,
-			reset 	=> reset,
-			A 			=> A,
-			B 			=> B,
-			min		=> min,
-			max		=> max,
-			en			=> en, 
-			up 		=> up,
-			clk_en 	=> clk_en);
-			
-		Clock_50 <= not Clock_50 after 10 ns; -- Half of 1 period, we want 5 MHz so thats 20 ns 
-		min		<= '0'; -- Set min_max to zero default
-		max 		<= '0';
+		-- DUT create instances
+		
+		DUT : entity work.digital_encoder_lab3_vhdl port map(
+				load		=> load, 		-- Load by default number 10;
+				SW_reset	=> reset,
+				Clock_50 => Clock_50,
+				A 			=> A,
+				B			=> B,
+				LED		=> LEDs);
+				
+		-- Any concurrent statements
+		
+		Clock_50 <= not Clock_50 after 10 ns;
 		
 		process is 
-		begin 
+		begin
+		
+			wait for 340 ns;
 			
 			-- Test for Car Going In 
 			reset 	<= '0'; -- Reset pin (active high)
+			load 		<= '0';
 			A 			<= '1';
 			B			<= '1'; 
+			
 			wait for 20 ns;
 			
 			reset 	<= '0'; -- Reset pin (active high)
+			load 		<= '0';
 			A 			<= '0';
 			B			<= '1'; 
 			wait for 20 ns;
 			
 			reset 	<= '0'; -- Reset pin (active high)
+			load 		<= '0';
 			A 			<= '0';
 			B			<= '0'; 
 			wait for 20 ns;
 			
 			reset 	<= '0'; -- Reset pin (active high)
+			load 		<= '0';
 			A 			<= '1';
 			B			<= '0'; 
 			wait for 20 ns;
 			
 			reset 	<= '0'; -- Reset pin (active high)
+			load 		<= '0';
 			A 			<= '1';
 			B			<= '1'; 
 			wait for 20 ns;
 			
 			reset 	<= '0'; -- Reset pin (active high)
+			load 		<= '0';
 			A 			<= '1';
 			B			<= '1'; 
 			wait for 20 ns;
@@ -68,51 +77,53 @@ signal en, up, clk_en 			: std_logic := '0';
 			-- Car Going Out with Regrets	
 			
 			reset 	<= '0'; -- Reset pin (active high)
+			load 		<= '0';
 			A 			<= '1';
 			B			<= '1'; 
 			wait for 20 ns;
 			
 			reset 	<= '0'; -- Reset pin (active high)
+			load 		<= '0';
 			A 			<= '1';
 			B			<= '0'; 
 			wait for 20 ns;
 			
 			reset 	<= '0'; -- Reset pin (active high)
+			load 		<= '0';
 			A 			<= '0';
 			B			<= '0'; 
 			wait for 20 ns;
 			
 			reset 	<= '0'; -- Reset pin (active high)
+			load 		<= '0';
 			A 			<= '1';
 			B			<= '0'; 
 			wait for 20 ns;
 			
 			reset 	<= '0'; -- Reset pin (active high)
+			load 		<= '0';
 			A 			<= '0';
 			B			<= '0'; 
 			wait for 20 ns;
 			
 			reset 	<= '0'; -- Reset pin (active high)
+			load 		<= '0';
 			A 			<= '0';
 			B			<= '1'; 
 			wait for 20 ns;
 			
 			reset 	<= '0'; -- Reset pin (active high)
+			load 		<= '0';
 			A 			<= '1';
 			B			<= '1'; 
 			wait for 20 ns;
 
 			reset 	<= '0'; -- Reset pin (active high)
+			load 		<= '0';
 			A 			<= '1';
 			B			<= '1'; 
 			wait for 20 ns;
 			
-		-- End of Car Going out unsure	
-			
-			wait; -- 140ns
+			wait;
 		end process;
-			
-END tb;
-
-
-
+END all_tb;
