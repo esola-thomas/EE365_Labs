@@ -22,7 +22,7 @@ https://fpgasoftware.intel.com/eula.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 312 720 480 736)
+	(rect 1584 680 1752 696)
 	(text "INPUT" (rect 125 0 178 18)(font "Arial" (font_size 6)))
 	(text "A" (rect 5 0 19 25)(font "Intel Clear" ))
 	(pt 168 8)
@@ -35,11 +35,11 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 169 25)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 200 720 296 752))
+	(annotation_block (location)(rect 1408 720 1504 752))
 )
 (pin
 	(input)
-	(rect 312 920 480 936)
+	(rect 1584 696 1752 712)
 	(text "INPUT" (rect 125 0 178 18)(font "Arial" (font_size 6)))
 	(text "B" (rect 5 0 19 25)(font "Intel Clear" ))
 	(pt 168 8)
@@ -52,13 +52,13 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 169 25)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 208 920 304 952))
+	(annotation_block (location)(rect 1432 760 1528 792))
 )
 (pin
 	(input)
-	(rect -128 512 72 528)
+	(rect 1224 624 1424 640)
 	(text "INPUT" (rect 157 0 210 18)(font "Arial" (font_size 6)))
-	(text "SW_reset" (rect 5 0 107 22)(font "Arial" ))
+	(text "SW_reset" (rect 5 0 106 22)(font "Arial" ))
 	(pt 200 8)
 	(drawing
 		(line (pt 116 12)(pt 141 12))
@@ -69,13 +69,13 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 141 12)(pt 145 8))
 	)
 	(text "VCC" (rect 160 7 201 25)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect -248 504 -144 536))
+	(annotation_block (location)(rect 1104 592 1208 624))
 )
 (pin
 	(input)
-	(rect 608 584 808 600)
+	(rect 1552 664 1752 680)
 	(text "INPUT" (rect 157 0 210 18)(font "Arial" (font_size 6)))
-	(text "Clock_50" (rect 5 0 99 25)(font "Intel Clear" ))
+	(text "Clock_50" (rect 5 0 98 25)(font "Intel Clear" ))
 	(pt 200 8)
 	(drawing
 		(line (pt 116 12)(pt 141 12))
@@ -86,13 +86,13 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 141 12)(pt 145 8))
 	)
 	(text "VCC" (rect 160 7 201 25)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 496 584 584 616))
+	(annotation_block (location)(rect 1400 680 1488 712))
 )
 (pin
 	(input)
-	(rect 704 496 872 512)
+	(rect 1576 608 1744 624)
 	(text "INPUT" (rect 125 0 178 18)(font "Arial" (font_size 6)))
-	(text "load" (rect 5 0 48 22)(font "Arial" ))
+	(text "load" (rect 5 0 47 22)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -103,11 +103,11 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 169 25)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 608 480 704 512))
+	(annotation_block (location)(rect 1480 544 1576 576))
 )
 (pin
 	(output)
-	(rect 1592 536 1782 552)
+	(rect 2392 616 2582 632)
 	(text "OUTPUT" (rect 1 0 75 18)(font "Arial" (font_size 6)))
 	(text "LED[7..4]" (rect 90 0 184 22)(font "Arial" ))
 	(pt 0 8)
@@ -120,10 +120,10 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 1784 528 2016 648))
+	(annotation_block (location)(rect 2600 632 2832 752))
 )
 (symbol
-	(rect 1296 480 1464 656)
+	(rect 2096 560 2264 736)
 	(text "univ_bin_counter" (rect 5 0 173 22)(font "Arial" ))
 	(text "inst_univ_counter" (rect 8 160 181 182)(font "Arial" ))
 	(port
@@ -221,10 +221,10 @@ https://fpgasoftware.intel.com/eula.
 	(drawing
 		(rectangle (rect 16 16 152 160))
 	)
-	(annotation_block (parameter)(rect 1464 360 1779 476))
+	(annotation_block (parameter)(rect 2264 440 2579 556))
 )
 (symbol
-	(rect 984 400 1144 480)
+	(rect 1784 480 1944 560)
 	(text "Reset_Delay" (rect 5 0 134 22)(font "Arial" ))
 	(text "inst_rst_delay" (rect 8 64 150 89)(font "Intel Clear" ))
 	(port
@@ -249,10 +249,10 @@ https://fpgasoftware.intel.com/eula.
 	(drawing
 		(rectangle (rect 16 16 144 64))
 	)
-	(annotation_block (parameter)(rect 984 312 1304 376))
+	(annotation_block (parameter)(rect 1784 392 2104 456))
 )
 (symbol
-	(rect 968 760 1080 808)
+	(rect 1768 840 1880 888)
 	(text "LPM_CONSTANT" (rect 4 0 260 32)(font "Arial" (font_size 10)))
 	(text "Load_Constant" (rect 3 37 171 61)(font "Arial" (font_size 8)))
 	(port
@@ -280,10 +280,10 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 64 40)(pt 64 24))
 		(line (pt 16 40)(pt 16 24))
 	)
-	(annotation_block (parameter)(rect 968 824 1340 911))
+	(annotation_block (parameter)(rect 1768 904 2140 991))
 )
 (symbol
-	(rect 648 520 712 568)
+	(rect 1448 600 1512 648)
 	(text "OR2" (rect 1 0 38 18)(font "Arial" (font_size 6)))
 	(text "inst_or_2" (rect 3 37 98 62)(font "Intel Clear" ))
 	(port
@@ -316,7 +316,7 @@ https://fpgasoftware.intel.com/eula.
 	)
 )
 (symbol
-	(rect 984 544 1128 688)
+	(rect 1784 624 1928 768)
 	(text "StateMachine_Rotary_Encoder" (rect 5 0 315 22)(font "Arial" ))
 	(text "STM_Rotary_Encoder" (rect 8 128 231 150)(font "Arial" ))
 	(port
@@ -365,498 +365,202 @@ https://fpgasoftware.intel.com/eula.
 		(pt 144 32)
 		(output)
 		(text "en" (rect 0 0 24 22)(font "Arial" ))
-		(text "en" (rect 103 27 123 49)(font "Arial" ))
+		(text "en" (rect 103 27 127 49)(font "Arial" ))
 		(line (pt 144 32)(pt 128 32))
 	)
 	(port
 		(pt 144 48)
 		(output)
 		(text "up" (rect 0 0 24 22)(font "Arial" ))
-		(text "up" (rect 103 43 123 65)(font "Arial" ))
+		(text "up" (rect 103 43 127 65)(font "Arial" ))
 		(line (pt 144 48)(pt 128 48))
 	)
 	(port
 		(pt 144 64)
 		(output)
 		(text "clk_en" (rect 0 0 64 22)(font "Arial" ))
-		(text "clk_en" (rect 69 59 123 81)(font "Arial" ))
+		(text "clk_en" (rect 69 59 133 81)(font "Arial" ))
 		(line (pt 144 64)(pt 128 64))
 	)
 	(drawing
 		(rectangle (rect 16 16 128 128))
 	)
 )
-(symbol
-	(rect 312 488 496 600)
-	(text "btn_debounce_toggle" (rect 5 0 224 22)(font "Arial" ))
-	(text "reset_debouncer2" (rect 8 96 190 121)(font "Intel Clear" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "BTN_I" (rect 0 0 64 22)(font "Arial" ))
-		(text "BTN_I" (rect 21 27 85 49)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "CLK" (rect 0 0 44 22)(font "Arial" ))
-		(text "CLK" (rect 21 43 65 65)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 184 32)
-		(output)
-		(text "BTN_O" (rect 0 0 75 22)(font "Arial" ))
-		(text "BTN_O" (rect 100 27 175 49)(font "Arial" ))
-		(line (pt 184 32)(pt 168 32))
-	)
-	(port
-		(pt 184 48)
-		(output)
-		(text "TOGGLE_O" (rect 0 0 126 22)(font "Arial" ))
-		(text "TOGGLE_O" (rect 57 43 183 65)(font "Arial" ))
-		(line (pt 184 48)(pt 168 48))
-	)
-	(port
-		(pt 184 64)
-		(output)
-		(text "PULSE_O" (rect 0 0 105 22)(font "Arial" ))
-		(text "PULSE_O" (rect 75 59 180 81)(font "Arial" ))
-		(line (pt 184 64)(pt 168 64))
-	)
-	(parameter
-		"CNTR_MAX"
-		"1111111111111111"
-		""
-		(type "PARAMETER_UNSIGNED_BIN")	)
-	(drawing
-		(rectangle (rect 16 16 168 96))
-	)
-	(annotation_block (parameter)(rect 0 432 476 490))
-)
-(symbol
-	(rect 488 696 672 808)
-	(text "btn_debounce_toggle" (rect 5 0 224 22)(font "Arial" ))
-	(text "A_debouncer" (rect 8 96 143 118)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "BTN_I" (rect 0 0 64 22)(font "Arial" ))
-		(text "BTN_I" (rect 21 27 85 49)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "CLK" (rect 0 0 44 22)(font "Arial" ))
-		(text "CLK" (rect 21 43 65 65)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 184 32)
-		(output)
-		(text "BTN_O" (rect 0 0 75 22)(font "Arial" ))
-		(text "BTN_O" (rect 100 27 175 49)(font "Arial" ))
-		(line (pt 184 32)(pt 168 32))
-	)
-	(port
-		(pt 184 48)
-		(output)
-		(text "TOGGLE_O" (rect 0 0 126 22)(font "Arial" ))
-		(text "TOGGLE_O" (rect 57 43 183 65)(font "Arial" ))
-		(line (pt 184 48)(pt 168 48))
-	)
-	(port
-		(pt 184 64)
-		(output)
-		(text "PULSE_O" (rect 0 0 105 22)(font "Arial" ))
-		(text "PULSE_O" (rect 75 59 180 81)(font "Arial" ))
-		(line (pt 184 64)(pt 168 64))
-	)
-	(parameter
-		"CNTR_MAX"
-		"1111111111111111"
-		""
-		(type "PARAMETER_UNSIGNED_BIN")	)
-	(drawing
-		(rectangle (rect 16 16 168 96))
-	)
-	(annotation_block (parameter)(rect 416 632 892 690))
-)
-(symbol
-	(rect 488 896 672 1008)
-	(text "btn_debounce_toggle" (rect 5 0 224 22)(font "Arial" ))
-	(text "B_debouncer1" (rect 8 96 154 121)(font "Intel Clear" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "BTN_I" (rect 0 0 64 22)(font "Arial" ))
-		(text "BTN_I" (rect 21 27 85 49)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "CLK" (rect 0 0 44 22)(font "Arial" ))
-		(text "CLK" (rect 21 43 65 65)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 184 32)
-		(output)
-		(text "BTN_O" (rect 0 0 75 22)(font "Arial" ))
-		(text "BTN_O" (rect 100 27 175 49)(font "Arial" ))
-		(line (pt 184 32)(pt 168 32))
-	)
-	(port
-		(pt 184 48)
-		(output)
-		(text "TOGGLE_O" (rect 0 0 126 22)(font "Arial" ))
-		(text "TOGGLE_O" (rect 57 43 183 65)(font "Arial" ))
-		(line (pt 184 48)(pt 168 48))
-	)
-	(port
-		(pt 184 64)
-		(output)
-		(text "PULSE_O" (rect 0 0 105 22)(font "Arial" ))
-		(text "PULSE_O" (rect 75 59 180 81)(font "Arial" ))
-		(line (pt 184 64)(pt 168 64))
-	)
-	(parameter
-		"CNTR_MAX"
-		"1111111111111111"
-		""
-		(type "PARAMETER_UNSIGNED_BIN")	)
-	(drawing
-		(rectangle (rect 16 16 168 96))
-	)
-	(annotation_block (parameter)(rect 424 832 900 890))
-)
-(symbol
-	(rect 80 504 128 536)
-	(text "NOT" (rect 1 0 38 18)(font "Arial" (font_size 6)))
-	(text "not_reset" (rect 3 21 97 43)(font "Arial" ))
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN" (rect 2 7 27 29)(font "Courier New" (bold))(invisible))
-		(text "IN" (rect 2 7 27 29)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 13 16))
-	)
-	(port
-		(pt 48 16)
-		(output)
-		(text "OUT" (rect 32 7 70 29)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 70 29)(font "Courier New" (bold))(invisible))
-		(line (pt 39 16)(pt 48 16))
-	)
-	(drawing
-		(line (pt 13 25)(pt 13 7))
-		(line (pt 13 7)(pt 31 16))
-		(line (pt 13 25)(pt 31 16))
-		(circle (rect 31 12 39 20))
-	)
-)
-(symbol
-	(rect 888 520 936 552)
-	(text "NOT" (rect 1 0 38 18)(font "Arial" (font_size 6)))
-	(text "not_load" (rect 3 21 89 43)(font "Arial" ))
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN" (rect 2 7 27 29)(font "Courier New" (bold))(invisible))
-		(text "IN" (rect 2 7 27 29)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 13 16))
-	)
-	(port
-		(pt 48 16)
-		(output)
-		(text "OUT" (rect 32 7 70 29)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 70 29)(font "Courier New" (bold))(invisible))
-		(line (pt 39 16)(pt 48 16))
-	)
-	(drawing
-		(line (pt 13 25)(pt 13 7))
-		(line (pt 13 7)(pt 31 16))
-		(line (pt 13 25)(pt 31 16))
-		(circle (rect 31 12 39 20))
-	)
+(connector
+	(pt 2264 608)
+	(pt 2288 608)
 )
 (connector
-	(pt 1464 528)
-	(pt 1488 528)
+	(pt 1752 688)
+	(pt 1784 688)
 )
 (connector
-	(pt 1464 544)
-	(pt 1592 544)
+	(pt 1752 704)
+	(pt 1784 704)
+)
+(connector
+	(pt 2096 592)
+	(pt 1776 592)
+)
+(connector
+	(pt 1784 512)
+	(pt 1776 512)
+)
+(connector
+	(pt 2072 640)
+	(pt 2096 640)
+)
+(connector
+	(pt 2096 704)
+	(pt 2048 704)
 	(bus)
 )
 (connector
-	(pt 1296 512)
-	(pt 976 512)
-)
-(connector
-	(pt 984 432)
-	(pt 976 432)
-)
-(connector
-	(pt 976 432)
-	(pt 976 512)
-)
-(connector
-	(pt 976 512)
-	(pt 976 592)
-)
-(connector
-	(pt 1272 560)
-	(pt 1296 560)
-)
-(connector
-	(pt 1296 624)
-	(pt 1248 624)
+	(pt 2048 704)
+	(pt 2048 872)
 	(bus)
 )
 (connector
-	(pt 1248 624)
-	(pt 1248 792)
+	(pt 2072 640)
+	(pt 2072 616)
+)
+(connector
+	(pt 1424 632)
+	(pt 1448 632)
+)
+(connector
+	(pt 2056 624)
+	(pt 2096 624)
+)
+(connector
+	(pt 1448 616)
+	(pt 1408 616)
+)
+(connector
+	(pt 1408 472)
+	(pt 1408 616)
+)
+(connector
+	(text "o_reset_delay" (rect 1418 448 1559 473)(font "Intel Clear" ))
+	(pt 1408 472)
+	(pt 2056 472)
+)
+(connector
+	(pt 2096 608)
+	(pt 1768 608)
+)
+(connector
+	(text "or_reset" (rect 1624 632 1707 657)(font "Intel Clear" ))
+	(pt 1512 624)
+	(pt 1568 624)
+)
+(connector
+	(pt 1568 624)
+	(pt 1568 656)
+)
+(connector
+	(pt 2288 776)
+	(pt 1776 776)
+)
+(connector
+	(pt 1776 776)
+	(pt 1776 736)
+)
+(connector
+	(pt 1784 736)
+	(pt 1776 736)
+)
+(connector
+	(pt 1784 720)
+	(pt 1760 720)
+)
+(connector
+	(pt 1760 720)
+	(pt 1760 792)
+)
+(connector
+	(pt 2304 792)
+	(pt 2304 592)
+)
+(connector
+	(pt 2264 592)
+	(pt 2304 592)
+)
+(connector
+	(pt 1760 792)
+	(pt 2304 792)
+)
+(connector
+	(pt 2288 608)
+	(pt 2288 776)
+)
+(connector
+	(pt 1768 608)
+	(pt 1768 656)
+)
+(connector
+	(pt 1752 672)
+	(pt 1776 672)
+)
+(connector
+	(pt 1776 672)
+	(pt 1784 672)
+)
+(connector
+	(pt 1776 512)
+	(pt 1776 592)
+)
+(connector
+	(pt 1776 592)
+	(pt 1776 672)
+)
+(connector
+	(pt 2056 472)
+	(pt 2056 512)
+)
+(connector
+	(pt 2056 512)
+	(pt 2056 624)
+)
+(connector
+	(pt 1568 656)
+	(pt 1768 656)
+)
+(connector
+	(pt 1768 656)
+	(pt 1784 656)
+)
+(connector
+	(pt 2264 624)
+	(pt 2392 624)
 	(bus)
 )
 (connector
-	(pt 1080 792)
-	(pt 1248 792)
+	(pt 1944 512)
+	(pt 2056 512)
+)
+(connector
+	(pt 1880 872)
+	(pt 2048 872)
 	(bus)
 )
 (connector
-	(pt 1144 432)
-	(pt 1256 432)
+	(pt 1928 656)
+	(pt 2096 656)
 )
 (connector
-	(pt 1256 544)
-	(pt 1296 544)
+	(pt 1928 672)
+	(pt 2096 672)
 )
 (connector
-	(pt 648 536)
-	(pt 608 536)
+	(pt 1928 688)
+	(pt 2096 688)
 )
 (connector
-	(pt 608 392)
-	(pt 608 536)
+	(pt 1744 616)
+	(pt 2072 616)
 )
-(connector
-	(text "o_reset_delay" (rect 618 368 759 393)(font "Intel Clear" ))
-	(pt 608 392)
-	(pt 1256 392)
-)
-(connector
-	(pt 1256 392)
-	(pt 1256 432)
-)
-(connector
-	(pt 1256 432)
-	(pt 1256 544)
-)
-(connector
-	(pt 1296 528)
-	(pt 968 528)
-)
-(connector
-	(pt 968 528)
-	(pt 968 576)
-)
-(connector
-	(text "or_reset" (rect 824 552 907 577)(font "Intel Clear" ))
-	(pt 712 544)
-	(pt 768 544)
-)
-(connector
-	(pt 768 544)
-	(pt 768 576)
-)
-(connector
-	(pt 768 576)
-	(pt 968 576)
-)
-(connector
-	(pt 968 576)
-	(pt 984 576)
-)
-(connector
-	(pt 1128 576)
-	(pt 1296 576)
-)
-(connector
-	(pt 1128 592)
-	(pt 1296 592)
-)
-(connector
-	(pt 1128 608)
-	(pt 1296 608)
-)
-(connector
-	(pt 1488 696)
-	(pt 1488 528)
-)
-(connector
-	(pt 1488 696)
-	(pt 976 696)
-)
-(connector
-	(pt 976 696)
-	(pt 976 656)
-)
-(connector
-	(pt 984 656)
-	(pt 976 656)
-)
-(connector
-	(pt 984 640)
-	(pt 960 640)
-)
-(connector
-	(pt 960 640)
-	(pt 960 712)
-)
-(connector
-	(pt 960 712)
-	(pt 1504 712)
-)
-(connector
-	(pt 1504 712)
-	(pt 1504 512)
-)
-(connector
-	(pt 1464 512)
-	(pt 1504 512)
-)
-(connector
-	(pt 496 520)
-	(pt 568 520)
-)
-(connector
-	(pt 568 520)
-	(pt 568 552)
-)
-(connector
-	(pt 568 552)
-	(pt 648 552)
-)
-(connector
-	(pt 672 728)
-	(pt 912 728)
-)
-(connector
-	(pt 912 728)
-	(pt 912 608)
-)
-(connector
-	(pt 912 608)
-	(pt 984 608)
-)
-(connector
-	(pt 984 624)
-	(pt 936 624)
-)
-(connector
-	(pt 936 928)
-	(pt 936 624)
-)
-(connector
-	(pt 936 928)
-	(pt 672 928)
-)
-(connector
-	(pt 488 744)
-	(pt 360 744)
-)
-(connector
-	(pt 488 944)
-	(pt 360 944)
-)
-(connector
-	(pt 312 536)
-	(pt 168 536)
-)
-(connector
-	(pt 168 536)
-	(pt 168 840)
-)
-(connector
-	(pt 168 840)
-	(pt 360 840)
-)
-(connector
-	(pt 360 840)
-	(pt 360 944)
-)
-(connector
-	(pt 976 592)
-	(pt 984 592)
-)
-(connector
-	(pt 360 624)
-	(pt 360 744)
-)
-(connector
-	(pt 360 744)
-	(pt 360 840)
-)
-(connector
-	(pt 488 928)
-	(pt 480 928)
-)
-(connector
-	(pt 488 728)
-	(pt 480 728)
-)
-(connector
-	(pt 360 624)
-	(pt 872 624)
-)
-(connector
-	(pt 872 592)
-	(pt 872 624)
-)
-(connector
-	(pt 808 592)
-	(pt 872 592)
-)
-(connector
-	(pt 872 592)
-	(pt 976 592)
-)
-(connector
-	(pt 312 520)
-	(pt 128 520)
-)
-(connector
-	(pt 72 520)
-	(pt 80 520)
-)
-(connector
-	(pt 872 504)
-	(pt 880 504)
-)
-(connector
-	(pt 1272 560)
-	(pt 1272 536)
-)
-(connector
-	(pt 880 536)
-	(pt 888 536)
-)
-(connector
-	(pt 880 504)
-	(pt 880 536)
-)
-(connector
-	(pt 936 536)
-	(pt 1272 536)
-)
-(junction (pt 976 592))
-(junction (pt 976 512))
-(junction (pt 968 576))
-(junction (pt 1256 432))
-(junction (pt 360 840))
-(junction (pt 360 744))
-(junction (pt 872 592))
+(junction (pt 1776 592))
+(junction (pt 1776 672))
+(junction (pt 2056 512))
+(junction (pt 1768 656))

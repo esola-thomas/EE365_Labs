@@ -15,14 +15,14 @@
 
 -- PROGRAM		"Quartus Prime"
 -- VERSION		"Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition"
--- CREATED		"Sat Oct  1 11:37:00 2022"
+-- CREATED		"Sat Oct  1 13:52:25 2022"
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.all; 
 
 LIBRARY work;
 
-ENTITY Digital_Encoder_Lab3_VHDL IS 
+ENTITY Digital_Encoder_Lab3_vhdl IS 
 	PORT
 	(
 		A :  IN  STD_LOGIC;
@@ -32,9 +32,9 @@ ENTITY Digital_Encoder_Lab3_VHDL IS
 		load :  IN  STD_LOGIC;
 		LED :  OUT  STD_LOGIC_VECTOR(7 DOWNTO 4)
 	);
-END Digital_Encoder_Lab3_VHDL;
+END Digital_Encoder_Lab3_vhdl;
 
-ARCHITECTURE bdf_type OF Digital_Encoder_Lab3_VHDL IS 
+ARCHITECTURE bdf_type OF Digital_Encoder_Lab3_vhdl IS 
 
 ATTRIBUTE black_box : BOOLEAN;
 ATTRIBUTE noopt : BOOLEAN;
@@ -77,35 +77,36 @@ COMPONENT statemachine_rotary_encoder
 		 clock : IN STD_LOGIC;
 		 A : IN STD_LOGIC;
 		 B : IN STD_LOGIC;
-		 min_max : IN STD_LOGIC;
+		 max : IN STD_LOGIC;
+		 min : IN STD_LOGIC;
 		 en : OUT STD_LOGIC;
 		 up : OUT STD_LOGIC;
 		 clk_en : OUT STD_LOGIC
 	);
 END COMPONENT;
 
+SIGNAL	o_reset_delay :  STD_LOGIC;
+SIGNAL	or_reset :  STD_LOGIC;
 SIGNAL	SYNTHESIZED_WIRE_0 :  STD_LOGIC;
 SIGNAL	SYNTHESIZED_WIRE_1 :  STD_LOGIC;
 SIGNAL	SYNTHESIZED_WIRE_2 :  STD_LOGIC;
-SIGNAL	SYNTHESIZED_WIRE_3 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_3 :  STD_LOGIC_VECTOR(3 DOWNTO 0);
 SIGNAL	SYNTHESIZED_WIRE_4 :  STD_LOGIC;
 SIGNAL	SYNTHESIZED_WIRE_5 :  STD_LOGIC;
-SIGNAL	SYNTHESIZED_WIRE_6 :  STD_LOGIC_VECTOR(3 DOWNTO 0);
-SIGNAL	SYNTHESIZED_WIRE_7 :  STD_LOGIC;
 
 
 BEGIN 
 
 
 
-SYNTHESIZED_WIRE_7 <= SYNTHESIZED_WIRE_0 OR SYNTHESIZED_WIRE_1;
+or_reset <= SW_reset OR o_reset_delay;
 
 
 b2v_inst_rst_delay : reset_delay
 GENERIC MAP(MAX => 15
 			)
 PORT MAP(iCLK => Clock_50,
-		 oRESET => SYNTHESIZED_WIRE_2);
+		 oRESET => o_reset_delay);
 
 
 b2v_inst_univ_counter : univ_bin_counter
@@ -114,30 +115,32 @@ GENERIC MAP(N => 4,
 			N2 => 15
 			)
 PORT MAP(clk => Clock_50,
-		 reset => SW_reset,
-		 syn_clr => SYNTHESIZED_WIRE_2,
+		 reset => or_reset,
+		 syn_clr => o_reset_delay,
 		 load => load,
-		 en => SYNTHESIZED_WIRE_3,
-		 up => SYNTHESIZED_WIRE_4,
-		 clk_en => SYNTHESIZED_WIRE_5,
-		 d => SYNTHESIZED_WIRE_6,
-		 max_tick => SYNTHESIZED_WIRE_1,
-		 min_tick => SYNTHESIZED_WIRE_0,
+		 en => SYNTHESIZED_WIRE_0,
+		 up => SYNTHESIZED_WIRE_1,
+		 clk_en => SYNTHESIZED_WIRE_2,
+		 d => SYNTHESIZED_WIRE_3,
+		 max_tick => SYNTHESIZED_WIRE_4,
+		 min_tick => SYNTHESIZED_WIRE_5,
 		 q => LED);
 
 
 b2v_Load_Constant : lpm_constant_0
-PORT MAP(		 result => SYNTHESIZED_WIRE_6);
+PORT MAP(		 result => SYNTHESIZED_WIRE_3);
 
 
 b2v_STM_Rotary_Encoder : statemachine_rotary_encoder
-PORT MAP(reset => SW_reset,
+PORT MAP(reset => or_reset,
 		 clock => Clock_50,
 		 A => A,
 		 B => B,
-		 min_max => SYNTHESIZED_WIRE_7,
-		 en => SYNTHESIZED_WIRE_3,
-		 up => SYNTHESIZED_WIRE_4,
-		 clk_en => SYNTHESIZED_WIRE_5);
+		 max => SYNTHESIZED_WIRE_4,
+		 min => SYNTHESIZED_WIRE_5,
+		 en => SYNTHESIZED_WIRE_0,
+		 up => SYNTHESIZED_WIRE_1,
+		 clk_en => SYNTHESIZED_WIRE_2);
+
 
 END bdf_type;
