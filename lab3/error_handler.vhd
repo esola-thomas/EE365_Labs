@@ -3,7 +3,7 @@ USE ieee.std_logic_1164.all;
 
 ENTITY error_handler IS
 	port (
-		led_in		: in std_logic_vector(3 downto 0);
+		led_in		: in std_logic_vector(4 downto 0);
 		max_tick		: in std_logic;
 		min_tick 	: in std_logic;
 		clk			: in std_logic;
@@ -39,17 +39,17 @@ begin
 	begin 
 		if rising_edge(clk) then 
 			counter_sclk <= counter_sclk + 1;
-			if counter_sclk >= 19999999 then 
+			if counter_sclk >= 999 then 
 				slow_clock_reg <= not slow_clock_reg;
 				counter_sclk <= 0;
 			end if;
 		end if;
 	end process slow_clock;
 	
-	MinorMax <= max_tick or min_tick;
+	MinorMax <= max_tick; --or min_tick;
 	
 	with MinorMax select 
 		led_out <= (LED_state, not LED_state, LED_state, not LED_state, LED_state, not LED_state, LED_state, not LED_state) when '1',
-		(led_in(0), led_in(1), led_in(2), led_in(3), '0', '0', '0', '0') when '0';
+		('0', '0', '0',led_in(4), led_in(3), led_in(2), led_in(1), led_in(0)) when '0';
 		
 end handle_min_max; 
