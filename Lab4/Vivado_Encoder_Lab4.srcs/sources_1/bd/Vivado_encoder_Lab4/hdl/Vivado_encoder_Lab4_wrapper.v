@@ -1,8 +1,8 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-//Date        : Thu Oct 13 00:27:42 2022
-//Host        : CB172-44 running 64-bit major release  (build 9200)
+//Date        : Thu Oct 13 13:56:49 2022
+//Host        : CB195-UL-52 running 64-bit major release  (build 9200)
 //Command     : generate_target Vivado_encoder_Lab4_wrapper.bd
 //Design      : Vivado_encoder_Lab4_wrapper
 //Purpose     : IP block netlist

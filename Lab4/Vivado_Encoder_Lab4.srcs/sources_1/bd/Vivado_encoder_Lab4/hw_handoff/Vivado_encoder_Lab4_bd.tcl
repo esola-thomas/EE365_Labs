@@ -172,6 +172,7 @@ proc create_root_design { parentCell } {
   set B [ create_bd_port -dir I B ]
   set LED [ create_bd_port -dir O -from 7 -to 0 LED ]
   set SW_reset [ create_bd_port -dir I -type rst SW_reset ]
+  set load_0 [ create_bd_port -dir I load_0 ]
 
   # Create instance: processing_system7_0, and set properties
   set processing_system7_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0 ]
@@ -278,6 +279,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net A_1 [get_bd_ports A] [get_bd_pins topLevel_0/A]
   connect_bd_net -net B_1 [get_bd_ports B] [get_bd_pins topLevel_0/B]
   connect_bd_net -net SW_reset_1 [get_bd_ports SW_reset] [get_bd_pins topLevel_0/SW_reset]
+  connect_bd_net -net load_0_1 [get_bd_ports load_0] [get_bd_pins topLevel_0/load]
   connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins topLevel_0/Clock_50]
   connect_bd_net -net topLevel_0_LED [get_bd_ports LED] [get_bd_pins topLevel_0/LED]
 

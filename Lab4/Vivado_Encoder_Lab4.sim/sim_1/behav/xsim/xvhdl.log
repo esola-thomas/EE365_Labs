@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/schumae/Documents/GitHub/EE365/Lab4/topLevel.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'topLevel'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/all_design_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'all_design_tb'

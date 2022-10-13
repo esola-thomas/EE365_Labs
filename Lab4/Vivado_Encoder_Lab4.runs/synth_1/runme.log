@@ -23,14 +23,16 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Device 21-403] Loading part xc7z010clg225-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 14988 
+INFO: Helper process launched with PID 10688 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 727.895 ; gain = 177.875
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 728.145 ; gain = 177.484
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'Vivado_encoder_Lab4_wrapper' [C:/Users/schumae/Documents/GitHub/EE365/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/hdl/Vivado_encoder_Lab4_wrapper.v:12]
-INFO: [Synth 8-6157] synthesizing module 'Vivado_encoder_Lab4' [C:/Users/schumae/Documents/GitHub/EE365/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/synth/Vivado_encoder_Lab4.v:13]
-INFO: [Synth 8-6157] synthesizing module 'Vivado_encoder_Lab4_processing_system7_0_0' [c:/Users/schumae/Documents/GitHub/EE365/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/ip/Vivado_encoder_Lab4_processing_system7_0_0/synth/Vivado_encoder_Lab4_processing_system7_0_0.v:60]
-INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [c:/Users/schumae/Documents/GitHub/EE365/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/ip/Vivado_encoder_Lab4_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
+INFO: [Synth 8-638] synthesizing module 'Vivado_encoder_Lab4_wrapper' [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/hdl/Vivado_encoder_Lab4_wrapper.vhd:45]
+INFO: [Synth 8-3491] module 'Vivado_encoder_Lab4' declared at 'C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/synth/Vivado_encoder_Lab4.vhd:14' bound to instance 'Vivado_encoder_Lab4_i' of component 'Vivado_encoder_Lab4' [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/hdl/Vivado_encoder_Lab4_wrapper.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'Vivado_encoder_Lab4' [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/synth/Vivado_encoder_Lab4.vhd:49]
+INFO: [Synth 8-3491] module 'Vivado_encoder_Lab4_processing_system7_0_0' declared at 'c:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/ip/Vivado_encoder_Lab4_processing_system7_0_0/synth/Vivado_encoder_Lab4_processing_system7_0_0.v:60' bound to instance 'processing_system7_0' of component 'Vivado_encoder_Lab4_processing_system7_0_0' [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/synth/Vivado_encoder_Lab4.vhd:148]
+INFO: [Synth 8-6157] synthesizing module 'Vivado_encoder_Lab4_processing_system7_0_0' [c:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/ip/Vivado_encoder_Lab4_processing_system7_0_0/synth/Vivado_encoder_Lab4_processing_system7_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [c:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/ip/Vivado_encoder_Lab4_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
 	Parameter C_USE_DEFAULT_ACP_USER_VAL bound to: 0 - type: integer 
 	Parameter C_S_AXI_ACP_ARUSER_VAL bound to: 31 - type: integer 
 	Parameter C_S_AXI_ACP_AWUSER_VAL bound to: 31 - type: integer 
@@ -87,58 +89,59 @@ INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_sys
 	Parameter C_USE_S_AXI_ACP bound to: 0 - type: integer 
 	Parameter C_GP0_EN_MODIFIABLE_TXN bound to: 1 - type: integer 
 	Parameter C_GP1_EN_MODIFIABLE_TXN bound to: 1 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [c:/Users/schumae/Documents/GitHub/EE365/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/ip/Vivado_encoder_Lab4_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1347]
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [c:/Users/schumae/Documents/GitHub/EE365/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/ip/Vivado_encoder_Lab4_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1348]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [c:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/ip/Vivado_encoder_Lab4_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1347]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [c:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/ip/Vivado_encoder_Lab4_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1348]
 INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (1#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
 INFO: [Synth 8-6157] synthesizing module 'BIBUF' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:722]
 INFO: [Synth 8-6155] done synthesizing module 'BIBUF' (2#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:722]
 INFO: [Synth 8-6157] synthesizing module 'PS7' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:61707]
 INFO: [Synth 8-6155] done synthesizing module 'PS7' (3#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:61707]
-INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (4#1) [c:/Users/schumae/Documents/GitHub/EE365/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/ip/Vivado_encoder_Lab4_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
-WARNING: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [c:/Users/schumae/Documents/GitHub/EE365/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/ip/Vivado_encoder_Lab4_processing_system7_0_0/synth/Vivado_encoder_Lab4_processing_system7_0_0.v:194]
-INFO: [Synth 8-6155] done synthesizing module 'Vivado_encoder_Lab4_processing_system7_0_0' (5#1) [c:/Users/schumae/Documents/GitHub/EE365/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/ip/Vivado_encoder_Lab4_processing_system7_0_0/synth/Vivado_encoder_Lab4_processing_system7_0_0.v:60]
-WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'Vivado_encoder_Lab4_processing_system7_0_0' has 23 connections declared, but only 22 given [C:/Users/schumae/Documents/GitHub/EE365/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/synth/Vivado_encoder_Lab4.v:96]
-INFO: [Synth 8-6157] synthesizing module 'Vivado_encoder_Lab4_topLevel_0_1' [c:/Users/schumae/Documents/GitHub/EE365/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/ip/Vivado_encoder_Lab4_topLevel_0_1/synth/Vivado_encoder_Lab4_topLevel_0_1.v:58]
-INFO: [Synth 8-638] synthesizing module 'topLevel' [C:/Users/schumae/Documents/GitHub/EE365/Lab4/topLevel.vhd:35]
+INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (4#1) [c:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/ip/Vivado_encoder_Lab4_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
+WARNING: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [c:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/ip/Vivado_encoder_Lab4_processing_system7_0_0/synth/Vivado_encoder_Lab4_processing_system7_0_0.v:194]
+INFO: [Synth 8-6155] done synthesizing module 'Vivado_encoder_Lab4_processing_system7_0_0' (5#1) [c:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/ip/Vivado_encoder_Lab4_processing_system7_0_0/synth/Vivado_encoder_Lab4_processing_system7_0_0.v:60]
+INFO: [Synth 8-3491] module 'Vivado_encoder_Lab4_topLevel_0_1' declared at 'c:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/ip/Vivado_encoder_Lab4_topLevel_0_1/synth/Vivado_encoder_Lab4_topLevel_0_1.vhd:56' bound to instance 'topLevel_0' of component 'Vivado_encoder_Lab4_topLevel_0_1' [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/synth/Vivado_encoder_Lab4.vhd:174]
+INFO: [Synth 8-638] synthesizing module 'Vivado_encoder_Lab4_topLevel_0_1' [c:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/ip/Vivado_encoder_Lab4_topLevel_0_1/synth/Vivado_encoder_Lab4_topLevel_0_1.vhd:67]
+INFO: [Synth 8-3491] module 'topLevel' declared at 'C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/topLevel.vhd:23' bound to instance 'U0' of component 'topLevel' [c:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/ip/Vivado_encoder_Lab4_topLevel_0_1/synth/Vivado_encoder_Lab4_topLevel_0_1.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'topLevel' [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/topLevel.vhd:35]
 	Parameter CNTR_MAX bound to: 16'b1111111111111111 
-INFO: [Synth 8-3491] module 'btn_debounce_toggle' declared at 'C:/Users/schumae/Documents/GitHub/EE365/Lab4/btn_debounce_toggle.vhd:32' bound to instance 'b2v_A_debouncer' of component 'btn_debounce_toggle' [C:/Users/schumae/Documents/GitHub/EE365/Lab4/topLevel.vhd:123]
-INFO: [Synth 8-638] synthesizing module 'btn_debounce_toggle' [C:/Users/schumae/Documents/GitHub/EE365/Lab4/btn_debounce_toggle.vhd:42]
+INFO: [Synth 8-3491] module 'btn_debounce_toggle' declared at 'C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/btn_debounce_toggle.vhd:32' bound to instance 'b2v_A_debouncer' of component 'btn_debounce_toggle' [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/topLevel.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'btn_debounce_toggle' [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/btn_debounce_toggle.vhd:42]
 	Parameter CNTR_MAX bound to: 16'b1111111111111111 
-INFO: [Synth 8-256] done synthesizing module 'btn_debounce_toggle' (6#1) [C:/Users/schumae/Documents/GitHub/EE365/Lab4/btn_debounce_toggle.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'btn_debounce_toggle' (6#1) [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/btn_debounce_toggle.vhd:42]
 	Parameter CNTR_MAX bound to: 16'b1111111111111111 
-INFO: [Synth 8-3491] module 'btn_debounce_toggle' declared at 'C:/Users/schumae/Documents/GitHub/EE365/Lab4/btn_debounce_toggle.vhd:32' bound to instance 'b2v_B_debouncer1' of component 'btn_debounce_toggle' [C:/Users/schumae/Documents/GitHub/EE365/Lab4/topLevel.vhd:131]
-INFO: [Synth 8-3491] module 'error_handler' declared at 'C:/Users/schumae/Documents/GitHub/EE365/Lab4/error_handler.vhd:4' bound to instance 'b2v_inst' of component 'error_handler' [C:/Users/schumae/Documents/GitHub/EE365/Lab4/topLevel.vhd:139]
-INFO: [Synth 8-638] synthesizing module 'error_handler' [C:/Users/schumae/Documents/GitHub/EE365/Lab4/error_handler.vhd:15]
-INFO: [Synth 8-226] default block is never used [C:/Users/schumae/Documents/GitHub/EE365/Lab4/error_handler.vhd:51]
-INFO: [Synth 8-256] done synthesizing module 'error_handler' (7#1) [C:/Users/schumae/Documents/GitHub/EE365/Lab4/error_handler.vhd:15]
-INFO: [Synth 8-3491] module 'lpm_constant_0' declared at 'C:/Users/schumae/Documents/GitHub/EE365/Lab4/lpm_constant_0.vhd:5' bound to instance 'b2v_inst1' of component 'lpm_constant_0' [C:/Users/schumae/Documents/GitHub/EE365/Lab4/topLevel.vhd:148]
-INFO: [Synth 8-638] synthesizing module 'lpm_constant_0' [C:/Users/schumae/Documents/GitHub/EE365/Lab4/lpm_constant_0.vhd:12]
-INFO: [Synth 8-256] done synthesizing module 'lpm_constant_0' (8#1) [C:/Users/schumae/Documents/GitHub/EE365/Lab4/lpm_constant_0.vhd:12]
+INFO: [Synth 8-3491] module 'btn_debounce_toggle' declared at 'C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/btn_debounce_toggle.vhd:32' bound to instance 'b2v_B_debouncer1' of component 'btn_debounce_toggle' [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/topLevel.vhd:131]
+INFO: [Synth 8-3491] module 'error_handler' declared at 'C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/error_handler.vhd:4' bound to instance 'b2v_inst' of component 'error_handler' [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/topLevel.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'error_handler' [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/error_handler.vhd:15]
+INFO: [Synth 8-226] default block is never used [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/error_handler.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'error_handler' (7#1) [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/error_handler.vhd:15]
+INFO: [Synth 8-3491] module 'lpm_constant_0' declared at 'C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/lpm_constant_0.vhd:5' bound to instance 'b2v_inst1' of component 'lpm_constant_0' [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/topLevel.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'lpm_constant_0' [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/lpm_constant_0.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'lpm_constant_0' (8#1) [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/lpm_constant_0.vhd:12]
 	Parameter MAX bound to: 15 - type: integer 
-INFO: [Synth 8-3491] module 'Reset_Delay' declared at 'C:/Users/schumae/Documents/GitHub/EE365/Lab4/reset_delay.vhd:8' bound to instance 'b2v_inst_rst_delay' of component 'reset_delay' [C:/Users/schumae/Documents/GitHub/EE365/Lab4/topLevel.vhd:155]
-INFO: [Synth 8-638] synthesizing module 'Reset_Delay' [C:/Users/schumae/Documents/GitHub/EE365/Lab4/reset_delay.vhd:17]
+INFO: [Synth 8-3491] module 'Reset_Delay' declared at 'C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/reset_delay.vhd:8' bound to instance 'b2v_inst_rst_delay' of component 'reset_delay' [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/topLevel.vhd:155]
+INFO: [Synth 8-638] synthesizing module 'Reset_Delay' [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/reset_delay.vhd:17]
 	Parameter MAX bound to: 15 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'Reset_Delay' (9#1) [C:/Users/schumae/Documents/GitHub/EE365/Lab4/reset_delay.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'Reset_Delay' (9#1) [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/reset_delay.vhd:17]
 	Parameter N bound to: 5 - type: integer 
 	Parameter N1 bound to: 0 - type: integer 
 	Parameter N2 bound to: 25 - type: integer 
-INFO: [Synth 8-3491] module 'univ_bin_counter' declared at 'C:/Users/schumae/Documents/GitHub/EE365/Lab4/univ_bin_counter.vhd:10' bound to instance 'b2v_inst_univ_counter' of component 'univ_bin_counter' [C:/Users/schumae/Documents/GitHub/EE365/Lab4/topLevel.vhd:162]
-INFO: [Synth 8-638] synthesizing module 'univ_bin_counter' [C:/Users/schumae/Documents/GitHub/EE365/Lab4/univ_bin_counter.vhd:22]
+INFO: [Synth 8-3491] module 'univ_bin_counter' declared at 'C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/univ_bin_counter.vhd:10' bound to instance 'b2v_inst_univ_counter' of component 'univ_bin_counter' [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/topLevel.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'univ_bin_counter' [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/univ_bin_counter.vhd:22]
 	Parameter N bound to: 5 - type: integer 
 	Parameter N2 bound to: 25 - type: integer 
 	Parameter N1 bound to: 0 - type: integer 
-WARNING: [Synth 8-614] signal 'clk_en' is read in the process but is not in the sensitivity list [C:/Users/schumae/Documents/GitHub/EE365/Lab4/univ_bin_counter.vhd:30]
-INFO: [Synth 8-256] done synthesizing module 'univ_bin_counter' (10#1) [C:/Users/schumae/Documents/GitHub/EE365/Lab4/univ_bin_counter.vhd:22]
+WARNING: [Synth 8-614] signal 'clk_en' is read in the process but is not in the sensitivity list [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/univ_bin_counter.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'univ_bin_counter' (10#1) [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/univ_bin_counter.vhd:22]
 	Parameter CNTR_MAX bound to: 16'b1111111111111111 
-INFO: [Synth 8-3491] module 'btn_debounce_toggle' declared at 'C:/Users/schumae/Documents/GitHub/EE365/Lab4/btn_debounce_toggle.vhd:32' bound to instance 'b2v_reset_debouncer2' of component 'btn_debounce_toggle' [C:/Users/schumae/Documents/GitHub/EE365/Lab4/topLevel.vhd:188]
-INFO: [Synth 8-3491] module 'StateMachine_Rotary_Encoder' declared at 'C:/Users/schumae/Documents/GitHub/EE365/Lab4/StateMachine_Rotary_Encoder.vhd:22' bound to instance 'b2v_STM_Rotary_Encoder' of component 'statemachine_rotary_encoder' [C:/Users/schumae/Documents/GitHub/EE365/Lab4/topLevel.vhd:196]
-INFO: [Synth 8-638] synthesizing module 'StateMachine_Rotary_Encoder' [C:/Users/schumae/Documents/GitHub/EE365/Lab4/StateMachine_Rotary_Encoder.vhd:36]
-INFO: [Synth 8-256] done synthesizing module 'StateMachine_Rotary_Encoder' (11#1) [C:/Users/schumae/Documents/GitHub/EE365/Lab4/StateMachine_Rotary_Encoder.vhd:36]
-INFO: [Synth 8-256] done synthesizing module 'topLevel' (12#1) [C:/Users/schumae/Documents/GitHub/EE365/Lab4/topLevel.vhd:35]
-INFO: [Synth 8-6155] done synthesizing module 'Vivado_encoder_Lab4_topLevel_0_1' (13#1) [c:/Users/schumae/Documents/GitHub/EE365/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/ip/Vivado_encoder_Lab4_topLevel_0_1/synth/Vivado_encoder_Lab4_topLevel_0_1.v:58]
-INFO: [Synth 8-6155] done synthesizing module 'Vivado_encoder_Lab4' (14#1) [C:/Users/schumae/Documents/GitHub/EE365/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/synth/Vivado_encoder_Lab4.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'Vivado_encoder_Lab4_wrapper' (15#1) [C:/Users/schumae/Documents/GitHub/EE365/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/hdl/Vivado_encoder_Lab4_wrapper.v:12]
+INFO: [Synth 8-3491] module 'btn_debounce_toggle' declared at 'C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/btn_debounce_toggle.vhd:32' bound to instance 'b2v_reset_debouncer2' of component 'btn_debounce_toggle' [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/topLevel.vhd:188]
+INFO: [Synth 8-3491] module 'StateMachine_Rotary_Encoder' declared at 'C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/StateMachine_Rotary_Encoder.vhd:22' bound to instance 'b2v_STM_Rotary_Encoder' of component 'statemachine_rotary_encoder' [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/topLevel.vhd:196]
+INFO: [Synth 8-638] synthesizing module 'StateMachine_Rotary_Encoder' [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/StateMachine_Rotary_Encoder.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'StateMachine_Rotary_Encoder' (11#1) [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/StateMachine_Rotary_Encoder.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'topLevel' (12#1) [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/topLevel.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'Vivado_encoder_Lab4_topLevel_0_1' (13#1) [c:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/ip/Vivado_encoder_Lab4_topLevel_0_1/synth/Vivado_encoder_Lab4_topLevel_0_1.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'Vivado_encoder_Lab4' (14#1) [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/synth/Vivado_encoder_Lab4.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'Vivado_encoder_Lab4_wrapper' (15#1) [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/hdl/Vivado_encoder_Lab4_wrapper.vhd:45]
 WARNING: [Synth 8-3331] design error_handler has unconnected port min_tick
 WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_COL
 WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_CRS
@@ -220,7 +223,7 @@ WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has un
 WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_ATID[1]
 WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_ATID[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 795.004 ; gain = 244.984
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 794.500 ; gain = 243.840
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -233,57 +236,59 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 795.004 ; gain = 244.984
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 794.500 ; gain = 243.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 795.004 ; gain = 244.984
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 794.500 ; gain = 243.840
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/schumae/Documents/GitHub/EE365/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/ip/Vivado_encoder_Lab4_processing_system7_0_0/Vivado_encoder_Lab4_processing_system7_0_0.xdc] for cell 'Vivado_encoder_Lab4_i/processing_system7_0/inst'
-Finished Parsing XDC File [c:/Users/schumae/Documents/GitHub/EE365/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/ip/Vivado_encoder_Lab4_processing_system7_0_0/Vivado_encoder_Lab4_processing_system7_0_0.xdc] for cell 'Vivado_encoder_Lab4_i/processing_system7_0/inst'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/schumae/Documents/GitHub/EE365/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/ip/Vivado_encoder_Lab4_processing_system7_0_0/Vivado_encoder_Lab4_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Vivado_encoder_Lab4_wrapper_propImpl.xdc].
+Parsing XDC File [c:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/ip/Vivado_encoder_Lab4_processing_system7_0_0/Vivado_encoder_Lab4_processing_system7_0_0.xdc] for cell 'Vivado_encoder_Lab4_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/ip/Vivado_encoder_Lab4_processing_system7_0_0/Vivado_encoder_Lab4_processing_system7_0_0.xdc] for cell 'Vivado_encoder_Lab4_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/ip/Vivado_encoder_Lab4_processing_system7_0_0/Vivado_encoder_Lab4_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Vivado_encoder_Lab4_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Vivado_encoder_Lab4_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/Users/schumae/Documents/GitHub/EE365/Lab4/TE0726.xdc]
-Finished Parsing XDC File [C:/Users/schumae/Documents/GitHub/EE365/Lab4/TE0726.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/schumae/Documents/GitHub/EE365/Lab4/TE0726.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Vivado_encoder_Lab4_wrapper_propImpl.xdc].
+Parsing XDC File [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/TE0726.xdc]
+CRITICAL WARNING: [Netlist 29-75] Setting 'PULLUP' property on 'net' objects from input source 'XDC' is not supported. [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/TE0726.xdc:5]
+Resolution: Please refer to Vivado Properties Reference Guide (UG912) for more information on setting properties.
+Finished Parsing XDC File [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/TE0726.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/TE0726.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Vivado_encoder_Lab4_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Vivado_encoder_Lab4_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/Users/schumae/Documents/GitHub/EE365/Lab4/Vivado_Encoder_Lab4.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/schumae/Documents/GitHub/EE365/Lab4/Vivado_Encoder_Lab4.runs/synth_1/dont_touch.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/schumae/Documents/GitHub/EE365/Lab4/Vivado_Encoder_Lab4.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Vivado_encoder_Lab4_wrapper_propImpl.xdc].
+Parsing XDC File [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Vivado_encoder_Lab4_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Vivado_encoder_Lab4_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 869.562 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 873.941 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 869.562 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 873.941 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 869.562 ; gain = 319.543
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 873.941 ; gain = 323.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg225-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 869.562 ; gain = 319.543
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 873.941 ; gain = 323.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for Vivado_encoder_Lab4_i/processing_system7_0/inst. (constraint file  C:/Users/schumae/Documents/GitHub/EE365/Lab4/Vivado_Encoder_Lab4.runs/synth_1/dont_touch.xdc, line 16).
+Applied set_property DONT_TOUCH = true for Vivado_encoder_Lab4_i/processing_system7_0/inst. (constraint file  C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.runs/synth_1/dont_touch.xdc, line 16).
 Applied set_property DONT_TOUCH = true for Vivado_encoder_Lab4_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for Vivado_encoder_Lab4_i/processing_system7_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for Vivado_encoder_Lab4_i/topLevel_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 869.562 ; gain = 319.543
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 873.941 ; gain = 323.281
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-327] inferring latch for variable 'reg_fstate_reg' [C:/Users/schumae/Documents/GitHub/EE365/Lab4/StateMachine_Rotary_Encoder.vhd:44]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_fstate_reg' [C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/StateMachine_Rotary_Encoder.vhd:44]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 869.562 ; gain = 319.543
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 873.941 ; gain = 323.281
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -394,7 +399,7 @@ WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has un
 WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET1_GMII_RXD[4]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 869.562 ; gain = 319.543
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 873.941 ; gain = 323.281
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -406,13 +411,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1039.281 ; gain = 489.262
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1038.215 ; gain = 487.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1072.949 ; gain = 522.930
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1071.621 ; gain = 520.961
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -424,7 +429,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1075.965 ; gain = 525.945
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1074.598 ; gain = 523.938
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -448,7 +453,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1081.707 ; gain = 531.688
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1081.434 ; gain = 530.773
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -461,7 +466,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1081.707 ; gain = 531.688
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1081.434 ; gain = 530.773
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -473,25 +478,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1081.707 ; gain = 531.688
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1081.434 ; gain = 530.773
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1081.707 ; gain = 531.688
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1081.434 ; gain = 530.773
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1081.707 ; gain = 531.688
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1081.434 ; gain = 530.773
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1081.707 ; gain = 531.688
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1081.434 ; gain = 530.773
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -521,7 +526,7 @@ Report Cell Usage:
 |12    |FDRE   |    75|
 |13    |LDC    |     2|
 |14    |LDP    |     2|
-|15    |IBUF   |     3|
+|15    |IBUF   |     4|
 |16    |OBUF   |     8|
 +------+-------+------+
 
@@ -529,12 +534,12 @@ Report Instance Areas:
 +------+-------------------------------+-------------------------------------------+------+
 |      |Instance                       |Module                                     |Cells |
 +------+-------------------------------+-------------------------------------------+------+
-|1     |top                            |                                           |   385|
+|1     |top                            |                                           |   386|
 |2     |  Vivado_encoder_Lab4_i        |Vivado_encoder_Lab4                        |   374|
 |3     |    processing_system7_0       |Vivado_encoder_Lab4_processing_system7_0_0 |   200|
 |4     |      inst                     |processing_system7_v5_5_processing_system7 |   200|
 |5     |    topLevel_0                 |Vivado_encoder_Lab4_topLevel_0_1           |   174|
-|6     |      inst                     |topLevel                                   |   174|
+|6     |      U0                       |topLevel                                   |   174|
 |7     |        b2v_STM_Rotary_Encoder |StateMachine_Rotary_Encoder                |    18|
 |8     |        b2v_inst               |error_handler                              |    70|
 |9     |        b2v_inst_rst_delay     |Reset_Delay                                |    32|
@@ -542,29 +547,29 @@ Report Instance Areas:
 |11    |        b2v_reset_debouncer2   |btn_debounce_toggle                        |    29|
 +------+-------------------------------+-------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1081.707 ; gain = 531.688
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1081.434 ; gain = 530.773
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 80 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1081.707 ; gain = 457.129
-Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1081.707 ; gain = 531.688
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1081.434 ; gain = 451.332
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1081.434 ; gain = 530.773
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1096.520 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1101.684 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 4 instances were transformed.
   LDC => LDCE: 2 instances
   LDP => LDPE: 2 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-63 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
+67 Infos, 105 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1096.520 ; gain = 797.289
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1096.520 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1101.684 ; gain = 802.738
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1101.684 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/schumae/Documents/GitHub/EE365/Lab4/Vivado_Encoder_Lab4.runs/synth_1/Vivado_encoder_Lab4_wrapper.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.runs/synth_1/Vivado_encoder_Lab4_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Vivado_encoder_Lab4_wrapper_utilization_synth.rpt -pb Vivado_encoder_Lab4_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Oct 13 00:28:29 2022...
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 13 14:47:12 2022...

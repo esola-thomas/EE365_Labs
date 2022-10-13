@@ -1,9 +1,29 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Oct 13 00:27:42 2022" VIVADOVERSION="2019.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Oct 13 14:39:59 2022" VIVADOVERSION="2019.1">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z010" NAME="Vivado_encoder_Lab4" PACKAGE="clg225" SPEEDGRADE="-1"/>
 
   <EXTERNALPORTS>
+    <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="External_Ports_A">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="topLevel_0" PORT="A"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="B" SIGIS="undef" SIGNAME="External_Ports_B">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="topLevel_0" PORT="B"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="SW_reset" SIGIS="rst" SIGNAME="External_Ports_SW_reset">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="topLevel_0" PORT="SW_reset"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="LED" RIGHT="0" SIGIS="undef" SIGNAME="topLevel_0_LED">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="topLevel_0" PORT="LED"/>
+      </CONNECTIONS>
+    </PORT>
     <PORT DIR="IO" NAME="DDR_cas_n" SIGIS="undef" SIGNAME="processing_system7_0_DDR_CAS_n">
       <CONNECTIONS>
         <CONNECTION INSTANCE="processing_system7_0" PORT="DDR_CAS_n"/>
@@ -109,24 +129,9 @@
         <CONNECTION INSTANCE="processing_system7_0" PORT="PS_PORB"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="External_Ports_A">
+    <PORT DIR="I" NAME="load_0" SIGIS="undef" SIGNAME="External_Ports_load_0">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="topLevel_0" PORT="A"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="B" SIGIS="undef" SIGNAME="External_Ports_B">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="topLevel_0" PORT="B"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="SW_reset" SIGIS="rst" SIGNAME="External_Ports_SW_reset">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="topLevel_0" PORT="SW_reset"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="7" NAME="LED" RIGHT="0" SIGIS="undef" SIGNAME="topLevel_0_LED">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="topLevel_0" PORT="LED"/>
+        <CONNECTION INSTANCE="topLevel_0" PORT="load"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -1309,7 +1314,11 @@
             <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="load" SIGIS="undef"/>
+        <PORT DIR="I" NAME="load" SIGIS="undef" SIGNAME="External_Ports_load_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="load_0"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" LEFT="7" NAME="LED" RIGHT="0" SIGIS="undef" SIGNAME="topLevel_0_LED">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="LED"/>

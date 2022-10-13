@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xEEA80A268336DD30",
+      "boundary_crc": "0xC52F463573FF90C9",
       "device": "xc7z010clg225-1",
       "name": "Vivado_encoder_Lab4",
       "synth_flow_mode": "None",
@@ -103,6 +103,9 @@
         "direction": "O",
         "left": "7",
         "right": "0"
+      },
+      "load_0": {
+        "direction": "I"
       }
     },
     "components": {
@@ -328,6 +331,12 @@
         "ports": [
           "topLevel_0/LED",
           "LED"
+        ]
+      },
+      "load_0_1": {
+        "ports": [
+          "load_0",
+          "topLevel_0/load"
         ]
       }
     }

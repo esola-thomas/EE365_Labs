@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/schumae/Documents/GitHub/EE365/Lab4/Vivado_Encoder_Lab4.runs/synth_1'
+HD_PWD='C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

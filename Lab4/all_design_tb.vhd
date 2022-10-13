@@ -46,39 +46,39 @@ ARCHITECTURE all_tb OF all_design_tb IS
 			wait for 340 ns;
 			
 			-- Test for Car Going In 
-			reset 	<= '1'; -- Reset pin (active high)
-			load 		<= '0';
+			reset 	<= '0'; -- Reset pin (active high)
+			load 		<= '1';
 			A 			<= '1';
 			B			<= '1'; 
 			
 			wait for 20 ns;
 			
-			reset 	<= '1'; -- Reset pin (active high)
-			load 		<= '0';
+			reset 	<= '0'; -- Reset pin (active high)
+			load 		<= '1';
 			A 			<= '0';
 			B			<= '1'; 
 			wait for 20 ns;
 			
-			reset 	<= '1'; -- Reset pin (active high)
-			load 		<= '0';
+			reset 	<= '0'; -- Reset pin (active high)
+			load 		<= '1';
 			A 			<= '0';
 			B			<= '0'; 
 			wait for 20 ns;
 			
-			reset 	<= '1'; -- Reset pin (active high)
-			load 		<= '0';
+			reset 	<= '0'; -- Reset pin (active high)
+			load 		<= '1';
 			A 			<= '1';
 			B			<= '0'; 
 			wait for 20 ns;
 			
-			reset 	<= '1'; -- Reset pin (active high)
-			load 		<= '0';
+			reset 	<= '0'; -- Reset pin (active high)
+			load 		<= '1';
 			A 			<= '1';
 			B			<= '1'; 
 			wait for 20 ns;
 			
-			reset 	<= '1'; -- Reset pin (active high)
-			load 		<= '0';
+			reset 	<= '0'; -- Reset pin (active high)
+			load 		<= '1';
 			A 			<= '1';
 			B			<= '1'; 
 			wait for 20 ns;
@@ -87,50 +87,50 @@ ARCHITECTURE all_tb OF all_design_tb IS
 			
 			-- Car Going Out with Regrets	
 			
-			reset 	<= '1'; -- Reset pin (active high)
-			load 		<= '0';
+			reset 	<= '0'; -- Reset pin (active high)
+			load 		<= '1';
 			A 			<= '1';
 			B			<= '1'; 
 			wait for 20 ns;
 			
-			reset 	<= '1'; -- Reset pin (active high)
-			load 		<= '0';
+			reset 	<= '0'; -- Reset pin (active high)
+			load 		<= '1';
 			A 			<= '1';
 			B			<= '0'; 
 			wait for 20 ns;
 			
-			reset 	<= '1'; -- Reset pin (active high)
-			load 		<= '0';
+			reset 	<= '0'; -- Reset pin (active high)
+			load 		<= '1';
 			A 			<= '0';
 			B			<= '0'; 
 			wait for 20 ns;
 			
-			reset 	<= '1'; -- Reset pin (active high)
-			load 		<= '0';
+			reset 	<= '0'; -- Reset pin (active high)
+			load 		<= '1';
 			A 			<= '1';
 			B			<= '0'; 
 			wait for 20 ns;
 			
-			reset 	<= '1'; -- Reset pin (active high)
-			load 		<= '0';
+			reset 	<= '0'; -- Reset pin (active high)
+			load 		<= '1';
 			A 			<= '0';
 			B			<= '0'; 
 			wait for 20 ns;
 			
-			reset 	<= '1'; -- Reset pin (active high)
-			load 		<= '0';
+			reset 	<= '0'; -- Reset pin (active high)
+			load 		<= '1';
 			A 			<= '0';
 			B			<= '1'; 
 			wait for 20 ns;
 			
-			reset 	<= '1'; -- Reset pin (active high)
-			load 		<= '0';
+			reset 	<= '0'; -- Reset pin (active high)
+			load 		<= '1';
 			A 			<= '1';
 			B			<= '1'; 
 			wait for 20 ns;
 
-			reset 	<= '1'; -- Reset pin (active high)
-			load 		<= '0';
+			reset 	<= '0'; -- Reset pin (active high)
+			load 		<= '1';
 			A 			<= '1';
 			B			<= '1'; 
 			wait for 20 ns;

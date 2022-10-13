@@ -1,17 +1,20 @@
 #set_property IOSTANDARD LVCMOS33 [get_ports spdif_tx_o]
 #set_property PACKAGE_PIN K15 [get_ports spdif_tx_o]
 
+# Set pull-up for load pin because its active low
+set_property PULLUP TRUE [get_nets load_0]
+
 #set_property IOSTANDARD LVCMOS33 [get_ports {GPIO_1_tri_io[*]}]
 ## GPIO Pins
 ## GPIO2
-set_property PACKAGE_PIN K15 [get_ports {A}]
-set_property IOSTANDARD LVCMOS33 [get_ports {A}]
+set_property PACKAGE_PIN K15 [get_ports A]
+set_property IOSTANDARD LVCMOS33 [get_ports A]
 ## GPIO3
-set_property PACKAGE_PIN J14 [get_ports {B}]
-set_property IOSTANDARD LVCMOS33 [get_ports {B}]
+set_property PACKAGE_PIN J14 [get_ports B]
+set_property IOSTANDARD LVCMOS33 [get_ports B]
 ## GPIO4
-set_property PACKAGE_PIN H12 [get_ports {SW_reset}]
-set_property IOSTANDARD LVCMOS33 [get_ports {SW_reset}]
+set_property PACKAGE_PIN H12 [get_ports SW_reset]
+set_property IOSTANDARD LVCMOS33 [get_ports SW_reset]
 ## GPIO5
 set_property PACKAGE_PIN N14 [get_ports {LED[0]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {LED[0]}]
@@ -28,8 +31,8 @@ set_property IOSTANDARD LVCMOS33 [get_ports {LED[3]}]
 set_property PACKAGE_PIN J13 [get_ports {LED[4]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {LED[4]}]
 ## GPIO10
-set_property PACKAGE_PIN H14 [get_ports {LED[5]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {LED[5]}]
+#set_property PACKAGE_PIN H14 [get_ports {LED[5]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {LED[5]}]
 ## GPIO11
 set_property PACKAGE_PIN J15 [get_ports {LED[6]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {LED[6]}]
@@ -45,7 +48,8 @@ set_property IOSTANDARD LVCMOS33 [get_ports {LED[7]}]
 ## GPIO18
 #set_property PACKAGE_PIN H11 [get_ports {GPIO_1_tri_io[14]}]
 ## GPIO19
-#set_property PACKAGE_PIN R12 [get_ports {GPIO_1_tri_io[15]}]
+set_property PACKAGE_PIN R12 [get_ports {LED[5]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LED[5]}]
 ## GPIO20
 #set_property PACKAGE_PIN M14 [get_ports {GPIO_1_tri_io[16]}]
 ## GPIO21
@@ -99,3 +103,56 @@ set_property IOSTANDARD LVCMOS33 [get_ports {LED[7]}]
 #set_property PACKAGE_PIN N7 [get_ports PWM_L]
 #set_property IOSTANDARD LVCMOS33 [get_ports PWM_*]
 
+
+set_property IOSTANDARD LVCMOS33 [get_ports load_0]
+set_property PULLUP true [get_ports load_0]
+
+set_property PACKAGE_PIN J11 [get_ports load_0]
+
+set_property MARK_DEBUG true [get_nets Vivado_encoder_Lab4_i/topLevel_0/U0/A]
+set_property MARK_DEBUG true [get_nets Vivado_encoder_Lab4_i/topLevel_0/U0/B]
+set_property MARK_DEBUG true [get_nets Vivado_encoder_Lab4_i/topLevel_0/U0/SW_reset]
+set_property MARK_DEBUG true [get_nets {Vivado_encoder_Lab4_i/LED[0]}]
+set_property MARK_DEBUG true [get_nets {Vivado_encoder_Lab4_i/LED[1]}]
+set_property MARK_DEBUG true [get_nets {Vivado_encoder_Lab4_i/LED[2]}]
+set_property MARK_DEBUG true [get_nets {Vivado_encoder_Lab4_i/LED[3]}]
+set_property MARK_DEBUG true [get_nets {Vivado_encoder_Lab4_i/LED[4]}]
+set_property MARK_DEBUG true [get_nets {Vivado_encoder_Lab4_i/LED[5]}]
+set_property MARK_DEBUG true [get_nets {Vivado_encoder_Lab4_i/LED[6]}]
+set_property MARK_DEBUG true [get_nets {Vivado_encoder_Lab4_i/LED[7]}]
+set_property MARK_DEBUG true [get_nets Vivado_encoder_Lab4_i/topLevel_0/load]
+set_property MARK_DEBUG false [get_nets Vivado_encoder_Lab4_i/topLevel_0/U0/Clock_50]
+create_debug_core u_ila_0 ila
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER true [get_debug_cores u_ila_0]
+set_property C_DATA_DEPTH 16384 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list Vivado_encoder_Lab4_i/processing_system7_0/inst/FCLK_CLK0]]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+set_property port_width 8 [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {Vivado_encoder_Lab4_i/LED[0]} {Vivado_encoder_Lab4_i/LED[1]} {Vivado_encoder_Lab4_i/LED[2]} {Vivado_encoder_Lab4_i/LED[3]} {Vivado_encoder_Lab4_i/LED[4]} {Vivado_encoder_Lab4_i/LED[5]} {Vivado_encoder_Lab4_i/LED[6]} {Vivado_encoder_Lab4_i/LED[7]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+set_property port_width 1 [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list Vivado_encoder_Lab4_i/topLevel_0/U0/A]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+set_property port_width 1 [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list Vivado_encoder_Lab4_i/topLevel_0/U0/B]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+set_property port_width 1 [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list Vivado_encoder_Lab4_i/topLevel_0/load]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+set_property port_width 1 [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list Vivado_encoder_Lab4_i/topLevel_0/U0/SW_reset]]
+set_property C_CLK_INPUT_FREQ_HZ 300000000 [get_debug_cores dbg_hub]
+set_property C_ENABLE_CLK_DIVIDER false [get_debug_cores dbg_hub]
+set_property C_USER_SCAN_CHAIN 1 [get_debug_cores dbg_hub]
+connect_debug_port dbg_hub/clk [get_nets u_ila_0_FCLK_CLK0]
