@@ -2,7 +2,6 @@
 #set_property PACKAGE_PIN K15 [get_ports spdif_tx_o]
 
 # Set pull-up for load pin because its active low
-set_property PULLUP TRUE [get_nets load_0]
 
 #set_property IOSTANDARD LVCMOS33 [get_ports {GPIO_1_tri_io[*]}]
 ## GPIO Pins
@@ -122,6 +121,18 @@ set_property MARK_DEBUG true [get_nets {Vivado_encoder_Lab4_i/LED[6]}]
 set_property MARK_DEBUG true [get_nets {Vivado_encoder_Lab4_i/LED[7]}]
 set_property MARK_DEBUG true [get_nets Vivado_encoder_Lab4_i/topLevel_0/load]
 set_property MARK_DEBUG false [get_nets Vivado_encoder_Lab4_i/topLevel_0/U0/Clock_50]
+
+set_property MARK_DEBUG true [get_nets Vivado_encoder_Lab4_i/topLevel_0/U0/SYNTHESIZED_WIRE_10]
+set_property MARK_DEBUG true [get_nets Vivado_encoder_Lab4_i/topLevel_0/U0/SYNTHESIZED_WIRE_11]
+set_property MARK_DEBUG true [get_nets Vivado_encoder_Lab4_i/topLevel_0/U0/SYNTHESIZED_WIRE_3]
+
+connect_debug_port u_ila_0/probe4 [get_nets [list Vivado_encoder_Lab4_i/topLevel_0/U0/r_reg0]]
+set_property MARK_DEBUG false [get_nets Vivado_encoder_Lab4_i/topLevel_0/U0/r_reg0]
+set_property MARK_DEBUG true [get_nets Vivado_encoder_Lab4_i/topLevel_0/U0/SYNTHESIZED_WIRE_5]
+set_property MARK_DEBUG true [get_nets Vivado_encoder_Lab4_i/topLevel_0/U0/SYNTHESIZED_WIRE_6]
+
+
+set_property MARK_DEBUG true [get_nets Vivado_encoder_Lab4_i/topLevel_0/U0/Slow_Clk]
 create_debug_core u_ila_0 ila
 set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
 set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_0]
@@ -151,7 +162,31 @@ connect_debug_port u_ila_0/probe3 [get_nets [list Vivado_encoder_Lab4_i/topLevel
 create_debug_port u_ila_0 probe
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
 set_property port_width 1 [get_debug_ports u_ila_0/probe4]
-connect_debug_port u_ila_0/probe4 [get_nets [list Vivado_encoder_Lab4_i/topLevel_0/U0/SW_reset]]
+connect_debug_port u_ila_0/probe4 [get_nets [list Vivado_encoder_Lab4_i/topLevel_0/U0/Slow_Clk]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+set_property port_width 1 [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list Vivado_encoder_Lab4_i/topLevel_0/U0/SW_reset]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+set_property port_width 1 [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list Vivado_encoder_Lab4_i/topLevel_0/U0/SYNTHESIZED_WIRE_3]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+set_property port_width 1 [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list Vivado_encoder_Lab4_i/topLevel_0/U0/SYNTHESIZED_WIRE_5]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+set_property port_width 1 [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list Vivado_encoder_Lab4_i/topLevel_0/U0/SYNTHESIZED_WIRE_6]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list Vivado_encoder_Lab4_i/topLevel_0/U0/SYNTHESIZED_WIRE_10]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list Vivado_encoder_Lab4_i/topLevel_0/U0/SYNTHESIZED_WIRE_11]]
 set_property C_CLK_INPUT_FREQ_HZ 300000000 [get_debug_cores dbg_hub]
 set_property C_ENABLE_CLK_DIVIDER false [get_debug_cores dbg_hub]
 set_property C_USER_SCAN_CHAIN 1 [get_debug_cores dbg_hub]

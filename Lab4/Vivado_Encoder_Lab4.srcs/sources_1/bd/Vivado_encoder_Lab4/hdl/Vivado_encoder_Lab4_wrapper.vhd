@@ -1,8 +1,8 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
---Date        : Thu Oct 13 14:39:59 2022
---Host        : CB195-UL-52 running 64-bit major release  (build 9200)
+--Date        : Thu Oct 13 17:51:19 2022
+--Host        : CB195-UL-53 running 64-bit major release  (build 9200)
 --Command     : generate_target Vivado_encoder_Lab4_wrapper.bd
 --Design      : Vivado_encoder_Lab4_wrapper
 --Purpose     : IP block netlist
@@ -49,6 +49,7 @@ architecture STRUCTURE of Vivado_encoder_Lab4_wrapper is
     B : in STD_LOGIC;
     SW_reset : in STD_LOGIC;
     LED : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    load_0 : in STD_LOGIC;
     DDR_cas_n : inout STD_LOGIC;
     DDR_cke : inout STD_LOGIC;
     DDR_ck_n : inout STD_LOGIC;
@@ -69,8 +70,7 @@ architecture STRUCTURE of Vivado_encoder_Lab4_wrapper is
     FIXED_IO_ddr_vrp : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     FIXED_IO_ps_clk : inout STD_LOGIC;
-    FIXED_IO_ps_porb : inout STD_LOGIC;
-    load_0 : in STD_LOGIC
+    FIXED_IO_ps_porb : inout STD_LOGIC
   );
   end component Vivado_encoder_Lab4;
 begin

@@ -17,34 +17,34 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param tcl.collectionResultDisplayLimit 0
 set_param chipscope.maxJobs 3
-set_msg_config -id {HDL 9-1061} -limit 100000
-set_msg_config -id {HDL 9-1654} -limit 100000
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7z010clg225-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.cache/wt [current_project]
-set_property parent.project_path C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/schumae/Desktop/EE365/Lab4/Vivado_Encoder_Lab4.cache/wt [current_project]
+set_property parent.project_path C:/Users/schumae/Desktop/EE365/Lab4/Vivado_Encoder_Lab4.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo c:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.cache/ip [current_project]
+set_property ip_output_repo c:/Users/schumae/Desktop/EE365/Lab4/Vivado_Encoder_Lab4.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/StateMachine_Rotary_Encoder.vhd
-  C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/btn_debounce_toggle.vhd
-  C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/error_handler.vhd
-  C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/lpm_constant_0.vhd
-  C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/reset_delay.vhd
-  C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/univ_bin_counter.vhd
-  C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/topLevel.vhd
-  C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/hdl/Vivado_encoder_Lab4_wrapper.vhd
+  C:/Users/schumae/Desktop/EE365/Lab4/StateMachine_Rotary_Encoder.vhd
+  C:/Users/schumae/Desktop/EE365/Lab4/btn_debounce_toggle.vhd
+  C:/Users/schumae/Desktop/EE365/Lab4/error_handler.vhd
+  C:/Users/schumae/Desktop/EE365/Lab4/lpm_constant_0.vhd
+  C:/Users/schumae/Desktop/EE365/Lab4/reset_delay.vhd
+  C:/Users/schumae/Desktop/EE365/Lab4/univ_bin_counter.vhd
+  C:/Users/schumae/Desktop/EE365/Lab4/topLevel.vhd
+  C:/Users/schumae/Desktop/EE365/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/hdl/Vivado_encoder_Lab4_wrapper.vhd
 }
-add_files C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/Vivado_encoder_Lab4.bd
-set_property used_in_implementation false [get_files -all c:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/ip/Vivado_encoder_Lab4_processing_system7_0_0/Vivado_encoder_Lab4_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/Vivado_encoder_Lab4_ooc.xdc]
+add_files C:/Users/schumae/Desktop/EE365/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/Vivado_encoder_Lab4.bd
+set_property used_in_implementation false [get_files -all c:/Users/schumae/Desktop/EE365/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/ip/Vivado_encoder_Lab4_processing_system7_0_0/Vivado_encoder_Lab4_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all C:/Users/schumae/Desktop/EE365/Lab4/Vivado_Encoder_Lab4.srcs/sources_1/bd/Vivado_encoder_Lab4/Vivado_encoder_Lab4_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -54,8 +54,8 @@ set_property used_in_implementation false [get_files -all C:/Users/schumae/Docum
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/TE0726.xdc
-set_property used_in_implementation false [get_files C:/Users/schumae/Documents/GitHub/EE365_Labs/Lab4/TE0726.xdc]
+read_xdc C:/Users/schumae/Desktop/EE365/Lab4/TE0726.xdc
+set_property used_in_implementation false [get_files C:/Users/schumae/Desktop/EE365/Lab4/TE0726.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

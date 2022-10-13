@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Oct 13 14:39:59 2022" VIVADOVERSION="2019.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Oct 13 17:51:20 2022" VIVADOVERSION="2019.1">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z010" NAME="Vivado_encoder_Lab4" PACKAGE="clg225" SPEEDGRADE="-1"/>
 
@@ -22,6 +22,11 @@
     <PORT DIR="O" LEFT="7" NAME="LED" RIGHT="0" SIGIS="undef" SIGNAME="topLevel_0_LED">
       <CONNECTIONS>
         <CONNECTION INSTANCE="topLevel_0" PORT="LED"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="load_0" SIGIS="undef" SIGNAME="External_Ports_load_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="topLevel_0" PORT="load"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="IO" NAME="DDR_cas_n" SIGIS="undef" SIGNAME="processing_system7_0_DDR_CAS_n">
@@ -127,11 +132,6 @@
     <PORT DIR="IO" NAME="FIXED_IO_ps_porb" SIGIS="undef" SIGNAME="processing_system7_0_PS_PORB">
       <CONNECTIONS>
         <CONNECTION INSTANCE="processing_system7_0" PORT="PS_PORB"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="load_0" SIGIS="undef" SIGNAME="External_Ports_load_0">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="topLevel_0" PORT="load"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>

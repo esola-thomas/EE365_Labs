@@ -52,3 +52,8 @@ con
 
 23:14:41 INFO  : Launch script is exported to file 'C:\Users\schumae\Documents\GitHub\EE365\Lab4\Vivado_Encoder_Lab4.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_helloworld.elf_on_local.tcl'
 00:34:50 INFO  : Disconnected from the channel tcfchan#1.
+15:43:34 INFO  : Registering command handlers for SDK TCF services
+15:43:35 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\schumae\Desktop\EE365\Lab4\Vivado_Encoder_Lab4.sdk.v1\temp_xsdb_launch_script.tcl
+15:43:38 INFO  : XSCT server has started successfully.
+15:43:39 INFO  : Successfully done setting XSCT server connection channel  
+15:43:39 INFO  : Successfully done setting SDK workspace  

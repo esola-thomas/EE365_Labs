@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Thu Oct 13 14:47:12 2022
-| Host         : CB195-UL-52 running 64-bit major release  (build 9200)
+| Date         : Thu Oct 13 17:52:01 2022
+| Host         : CB195-UL-53 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Vivado_encoder_Lab4_wrapper_utilization_synth.rpt -pb Vivado_encoder_Lab4_wrapper_utilization_synth.pb
 | Design       : Vivado_encoder_Lab4_wrapper
 | Device       : 7z010clg225-1
@@ -30,11 +30,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  170 |     0 |     17600 |  0.97 |
-|   LUT as Logic          |  170 |     0 |     17600 |  0.97 |
+| Slice LUTs*             |  207 |     0 |     17600 |  1.18 |
+|   LUT as Logic          |  207 |     0 |     17600 |  1.18 |
 |   LUT as Memory         |    0 |     0 |      6000 |  0.00 |
-| Slice Registers         |   84 |     0 |     35200 |  0.24 |
-|   Register as Flip Flop |   80 |     0 |     35200 |  0.23 |
+| Slice Registers         |  163 |     0 |     35200 |  0.46 |
+|   Register as Flip Flop |  159 |     0 |     35200 |  0.45 |
 |   Register as Latch     |    4 |     0 |     35200 |  0.01 |
 | F7 Muxes                |    0 |     0 |      8800 |  0.00 |
 | F8 Muxes                |    0 |     0 |      4400 |  0.00 |
@@ -57,7 +57,7 @@ Table of Contents
 | 2     |          Yes |           - |          Set |
 | 7     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 75    |          Yes |       Reset |            - |
+| 154   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -146,18 +146,18 @@ Table of Contents
 +----------+------+----------------------+
 | Ref Name | Used |  Functional Category |
 +----------+------+----------------------+
-| LUT1     |  115 |                  LUT |
+| FDRE     |  154 |         Flop & Latch |
+| LUT1     |  120 |                  LUT |
 | BIBUF    |   86 |                   IO |
-| FDRE     |   75 |         Flop & Latch |
-| LUT2     |   26 |                  LUT |
-| CARRY4   |   21 |           CarryLogic |
+| LUT2     |   63 |                  LUT |
+| CARRY4   |   41 |           CarryLogic |
 | LUT6     |   18 |                  LUT |
-| LUT4     |   10 |                  LUT |
-| LUT5     |    9 |                  LUT |
+| LUT4     |   18 |                  LUT |
+| LUT5     |   11 |                  LUT |
 | OBUF     |    8 |                   IO |
+| LUT3     |    5 |                  LUT |
 | FDCE     |    5 |         Flop & Latch |
 | IBUF     |    4 |                   IO |
-| LUT3     |    3 |                  LUT |
 | LDPE     |    2 |         Flop & Latch |
 | LDCE     |    2 |         Flop & Latch |
 | PS7      |    1 | Specialized Resource |

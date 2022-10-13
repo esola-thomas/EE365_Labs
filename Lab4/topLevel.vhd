@@ -116,9 +116,10 @@ SIGNAL	SYNTHESIZED_WIRE_10 :  STD_LOGIC;
 SIGNAL	SYNTHESIZED_WIRE_11 :  STD_LOGIC;
 SIGNAL  Slow_Clk : STD_LOGIC;
 
+attribute keep : string;
+attribute keep of Slow_Clk : signal is "true";
+
 BEGIN 
-
-
 
 b2v_A_debouncer : btn_debounce_toggle
 GENERIC MAP(CNTR_MAX => "1111111111111111"
@@ -196,8 +197,8 @@ PORT MAP(BTN_I => SYNTHESIZED_WIRE_9,
 b2v_STM_Rotary_Encoder : statemachine_rotary_encoder
 PORT MAP(reset => or_reset,
 		 clock => Clock_50,
-		 A => A,
-		 B => B,
+		 A => SYNTHESIZED_WIRE_10,
+		 B => SYNTHESIZED_WIRE_11,
 		 max => SYNTHESIZED_WIRE_14,
 		 min => SYNTHESIZED_WIRE_15,
 		 en => SYNTHESIZED_WIRE_5,
