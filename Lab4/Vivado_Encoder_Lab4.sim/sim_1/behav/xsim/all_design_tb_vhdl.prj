@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../StateMachine_Rotary_Encoder.vhd" \
+"../../../../btn_debounce_toggle.vhd" \
+"../../../../error_handler.vhd" \
+"../../../../lpm_constant_0.vhd" \
+"../../../../reset_delay.vhd" \
+"../../../../topLevel.vhd" \
+"../../../../univ_bin_counter.vhd" \
+"../../../../all_design_tb.vhd" \
+
+# Do not sort compile order
+nosort

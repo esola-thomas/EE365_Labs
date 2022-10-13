@@ -1,0 +1,12 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/schumae/Documents/GitHub/EE365/Lab4/StateMachine_Rotary_Encoder.vhd,1665625120,vhdl,,,,statemachine_rotary_encoder,,,,,,,,
+C:/Users/schumae/Documents/GitHub/EE365/Lab4/all_design_tb.vhd,1665633132,vhdl,,,,all_design_tb,,,,,,,,
+C:/Users/schumae/Documents/GitHub/EE365/Lab4/btn_debounce_toggle.vhd,1665634273,vhdl,,,,btn_debounce_toggle,,,,,,,,
+C:/Users/schumae/Documents/GitHub/EE365/Lab4/error_handler.vhd,1665632804,vhdl,,,,error_handler,,,,,,,,
+C:/Users/schumae/Documents/GitHub/EE365/Lab4/lpm_constant_0.vhd,1665625120,vhdl,,,,lpm_constant_0,,,,,,,,
+C:/Users/schumae/Documents/GitHub/EE365/Lab4/reset_delay.vhd,1665625120,vhdl,,,,reset_delay,,,,,,,,
+C:/Users/schumae/Documents/GitHub/EE365/Lab4/topLevel.vhd,1665635254,vhdl,,,,toplevel,,,,,,,,
+C:/Users/schumae/Documents/GitHub/EE365/Lab4/univ_bin_counter.vhd,1665625120,vhdl,,,,univ_bin_counter,,,,,,,,

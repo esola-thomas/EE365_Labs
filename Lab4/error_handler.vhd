@@ -48,8 +48,9 @@ begin
 	
 	MinorMax <= max_tick; --or min_tick;
 	
-	with MinorMax select 
-		led_out <= (LED_state, not LED_state, LED_state, not LED_state, LED_state, not LED_state, LED_state, not LED_state) when '1',
-		('0', '0', '0',led_in(4), led_in(3), led_in(2), led_in(1), led_in(0)) when '0';
+	with MinorMax select led_out <= 
+	(LED_state, not LED_state, LED_state, not LED_state, LED_state, not LED_state, LED_state, not LED_state) when '1',
+		('0', '0', '0',led_in(4), led_in(3), led_in(2), led_in(1), led_in(0)) when '0',
+		(LED_state, not LED_state, LED_state, not LED_state, LED_state, not LED_state, LED_state, not LED_state) when others;
 		
 end handle_min_max; 
