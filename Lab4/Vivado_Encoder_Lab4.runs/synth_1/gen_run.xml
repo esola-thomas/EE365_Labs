@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg225-1" LaunchTime="1665699116">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg225-1" LaunchTime="1665708116">
   <File Type="PA-TCL" Name="Vivado_encoder_Lab4_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="Vivado_encoder_Lab4_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Vivado_encoder_Lab4_wrapper_reports.tcl"/>
