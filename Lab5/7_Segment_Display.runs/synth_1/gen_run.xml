@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg225-3" LaunchTime="1666759300">
+  <File Type="PA-TCL" Name="Diagram_7_Segment_Display_wrapper.tcl"/>
+  <File Type="REPORTS-TCL" Name="Diagram_7_Segment_Display_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Diagram_7_Segment_Display_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="Diagram_7_Segment_Display_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Diagram_7_Segment_Display_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Diagram_7_Segment_Display_wrapper.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/Pos_Edge_Detector.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/btn_debounce_toggle.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/univ_bin_counter.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/out_LTU.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/count_loader.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/reset_delay.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/clk_enabler.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/OR_2.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/Diagram_7_Segment_Display/Diagram_7_Segment_Display.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/Diagram_7_Segment_Display/hdl/Diagram_7_Segment_Display_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Diagram_7_Segment_Display_wrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/TE0726.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="Diagram_7_Segment_Display_out_LTU_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Diagram_7_Segment_Display_univ_bin_counter_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Diagram_7_Segment_Display_count_loader_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Diagram_7_Segment_Display_Reset_Delay_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Diagram_7_Segment_Display_OR_2_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Diagram_7_Segment_Display_clk_enabler_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Diagram_7_Segment_Display_btn_debounce_toggle_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Diagram_7_Segment_Display_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Diagram_7_Segment_Display_btn_debounce_toggle_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Diagram_7_Segment_Display_Pos_Edge_Detector_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Diagram_7_Segment_Display_btn_debounce_toggle_1_0"/>
+</GenRun>
