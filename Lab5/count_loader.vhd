@@ -13,7 +13,8 @@ ENTITY count_loader is
 	generic(
 	constant d_size 			: integer := 16;
 	constant min_load			: integer := 0;
-	constant max_load			: integer := 9); -- Total - 1 (This case 10)
+	constant max_load			: integer := 9; -- Total - 1 (This case 10)
+	constant clk_en_max_count   : integer := 49999999);
 	port (
 	up								: in 	std_logic;
 	count_en						: in 	std_logic; 
@@ -21,7 +22,8 @@ ENTITY count_loader is
 	a_reset						: in 	std_logic; -- Active low SW0 load 0
 	clk 							: in 	std_logic;
 	load_value					: out std_logic_vector(d_size - 1 downto 0);
-	load_signal 				: out std_logic
+	load_signal 				: out std_logic;
+	clk_en                      : out std_logic
 	);
 end count_loader;
 
@@ -31,6 +33,7 @@ signal min_reg : std_logic := '0';
 signal max_reg : std_logic := '0';
 signal en_reg  : std_logic := '0';
 signal out_reg : std_logic_vector(d_size - 1 downto 0);
+signal clk_en_count : integer :=0; 
 
 begin
 	
@@ -48,6 +51,26 @@ begin
 	load_signal<= 	'1' when a_reset = '1' else
 						'1' when (count_en = '1' or en_reg = '1') and count_min = '1' and up = '0' else
 						'1' when (count_en = '1' or en_reg = '1') and count_max = '1' and up = '1' else
-						'0';					
-
+						'0';	
+			
+				
+    clock_enabler : process(clk, a_reset, count_en) begin
+        if a_reset = '0' then 
+            if count_en = '1' then
+                if rising_edge(clk) then
+                    if (clk_en_count = clk_en_max_count) then
+                        clk_en_count <= 0;
+                        clk_en <= '1';
+                    else
+                        clk_en_count <= clk_en_count + 1;
+                        clk_en <= '0';
+                    end if;
+                end if;
+             end if;
+           elsif a_reset = '1' then 
+                clk_en_count <= 0;   
+                clk_en <= '0';
+        end if;
+    end process clock_enabler;				
+        
 end loader;
