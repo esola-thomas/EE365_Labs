@@ -18,6 +18,7 @@ ENTITY count_loader is
 	port (
 	up								: in 	std_logic;
 	count_en						: in 	std_logic; 
+	busy_in                         : in    std_logic;
 	count_min, count_max 	: in 	std_logic; -- if max load min next clock cycle if min load max next clock cycle
 	a_reset						: in 	std_logic; -- Active low SW0 load 0
 	clk 							: in 	std_logic;
@@ -57,20 +58,27 @@ begin
     clock_enabler : process(clk, a_reset, count_en) begin
         if a_reset = '0' then 
             if count_en = '1' then
-                if rising_edge(clk) then
-                    if (clk_en_count = clk_en_max_count) then
-                        clk_en_count <= 0;
-                        clk_en <= '1';
-                    else
-                        clk_en_count <= clk_en_count + 1;
-                        clk_en <= '0';
+                if busy_in = '0' then 
+                    if rising_edge(clk) then
+                        if (clk_en_count = clk_en_max_count) then
+                            clk_en_count <= 0;
+                            clk_en <= '1';
+                        else
+                            clk_en_count <= clk_en_count + 1;
+                            clk_en <= '0';
+                        end if;
                     end if;
-                end if;
+                    elsif busy_in = '1' then
+                    clk_en_count <= clk_en_count + 1;
+                    clk_en <= '0';
+               end if;
+            elsif count_en = '1' then
+                clk_en_count <= 0;   
+                clk_en <= '0';
              end if;
            elsif a_reset = '1' then 
                 clk_en_count <= 0;   
                 clk_en <= '0';
         end if;
-    end process clock_enabler;				
-        
+    end process clock_enabler;				   
 end loader;

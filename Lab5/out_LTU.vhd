@@ -11,10 +11,11 @@ use ieee.std_logic_unsigned.all;
 
 ENTITY out_LTU is
 	generic(
-	constant in_out_size : integer := 16);
+	constant in_size : integer := 8;
+	constant out_size : integer := 16);
 	port(
-	count	: in 	std_logic_vector(in_out_size - 1 downto 0);
-	o		: out	std_logic_vector(in_out_size - 1 downto 0));
+	count	: in 	std_logic_vector(in_size - 1 downto 0);
+	o		: out	std_logic_vector(out_size - 1 downto 0));
 end out_LTU;
 
 ARCHITECTURE LTU of out_LTU is 
