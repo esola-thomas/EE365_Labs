@@ -7,12 +7,14 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity TTL_serial is
 	GENERIC (
-		CONSTANT cnt_max : integer := 5208); 
+		CONSTANT cnt_max : integer := 5208;
+		CONSTANT data_size : integer := 16
+		); 
 		port (
 		reset_n				: in std_logic; 
 		clk				: in std_logic; 
 		ena 				: in std_logic;	
-		idata				: in std_logic_vector(7 downto 0);
+		idata				: in std_logic_vector(data_size-1 downto 0);
 		busy 				: out std_logic;
 		TX				: out std_logic
 		);

@@ -31,6 +31,8 @@
   "../../../bd/Diagram_7_Segment_Display/ip/Diagram_7_Segment_Display_TTL_serial_0_0/sim/Diagram_7_Segment_Display_TTL_serial_0_0.v" \
   "../../../bd/Diagram_7_Segment_Display/ip/Diagram_7_Segment_Display_Not_1_in_0_0/sim/Diagram_7_Segment_Display_Not_1_in_0_0.v" \
   "../../../bd/Diagram_7_Segment_Display/ip/Diagram_7_Segment_Display_Display_Initializer_0_0/sim/Diagram_7_Segment_Display_Display_Initializer_0_0.v" \
+  "../../../bd/Diagram_7_Segment_Display/ip/Diagram_7_Segment_Display_Low_Signal_GND_0_0/sim/Diagram_7_Segment_Display_Low_Signal_GND_0_0.v" \
+  "../../../bd/Diagram_7_Segment_Display/ip/Diagram_7_Segment_Display_Not_1_in_0_1/sim/Diagram_7_Segment_Display_Not_1_in_0_1.v" \
   "../../../bd/Diagram_7_Segment_Display/sim/Diagram_7_Segment_Display.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \

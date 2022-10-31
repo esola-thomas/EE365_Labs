@@ -24,11 +24,11 @@
 ## GPIO11
 #set_property PACKAGE_PIN J15 [get_ports {GPIO_1_tri_io[9]}]
 ## GPIO12
-#set_property PACKAGE_PIN M15 [get_ports {GPIO_1_tri_io[10]}]
+set_property PACKAGE_PIN M15 [get_ports TX]
 ## GPIO13
 #set_property PACKAGE_PIN R13 [get_ports {GPIO_1_tri_io[11]}]
 ## GPIO16
-#set_property PACKAGE_PIN L13 [get_ports {GPIO_1_tri_io[12]}]
+set_property PACKAGE_PIN L13 [get_ports BTN_2]
 ## GPIO17
 #set_property PACKAGE_PIN G11 [get_ports {GPIO_1_tri_io[13]}]
 ## GPIO18
@@ -36,9 +36,9 @@
 ## GPIO19
 #set_property PACKAGE_PIN R12 [get_ports {GPIO_1_tri_io[15]}]
 ## GPIO20
-#set_property PACKAGE_PIN M14 [get_ports {GPIO_1_tri_io[16]}]
+set_property PACKAGE_PIN M14 [get_ports BTN_1]
 ## GPIO21
-#set_property PACKAGE_PIN P15 [get_ports {GPIO_1_tri_io[17]}]
+set_property PACKAGE_PIN P15 [get_ports BTN_0]
 ## GPIO22
 #set_property PACKAGE_PIN H13 [get_ports {GPIO_1_tri_io[18]}]
 ## GPIO23

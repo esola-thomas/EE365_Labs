@@ -60,11 +60,11 @@ module Diagram_7_Segment_Display_out_LTU_0_0 (
 );
 
 input wire [7 : 0] count;
-output wire [15 : 0] o;
+output wire [7 : 0] o;
 
   out_LTU #(
     .in_size(8),
-    .out_size(16)
+    .out_size(8)
   ) inst (
     .count(count),
     .o(o)

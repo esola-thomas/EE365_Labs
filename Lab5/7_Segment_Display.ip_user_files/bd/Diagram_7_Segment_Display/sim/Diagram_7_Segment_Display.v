@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-//Date        : Thu Oct 27 23:11:11 2022
+//Date        : Sun Oct 30 21:35:19 2022
 //Host        : ALIENWARE running 64-bit major release  (build 9200)
 //Command     : generate_target Diagram_7_Segment_Display.bd
 //Design      : Diagram_7_Segment_Display
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "Diagram_7_Segment_Display,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Diagram_7_Segment_Display,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=12,numReposBlks=12,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=11,numPkgbdBlks=0,bdsource=USER,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "Diagram_7_Segment_Display.hwdef" *) 
+(* CORE_GENERATION_INFO = "Diagram_7_Segment_Display,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Diagram_7_Segment_Display,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=14,numReposBlks=14,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=13,numPkgbdBlks=0,bdsource=USER,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "Diagram_7_Segment_Display.hwdef" *) 
 module Diagram_7_Segment_Display
    (BTN_0,
     BTN_1,
@@ -69,6 +69,8 @@ module Diagram_7_Segment_Display
   wire [7:0]Counter_Value;
   wire [7:0]Display_Initializer_data;
   wire Global_Reset;
+  wire Low_Signal_GND_0_GND;
+  wire Not_1_in_1_o;
   wire Reset_Delay_o;
   wire TTL_serial_0_busy;
   wire TTL_serial_TX;
@@ -79,7 +81,7 @@ module Diagram_7_Segment_Display
   wire debounce_direction_TOGGLE;
   wire enable_toggle;
   wire initializer_pre_debounce;
-  wire [15:0]out_LTU;
+  wire [7:0]out_LTU;
   wire [14:0]processing_system7_0_DDR_ADDR;
   wire [2:0]processing_system7_0_DDR_BA;
   wire processing_system7_0_DDR_CAS_N;
@@ -109,7 +111,7 @@ module Diagram_7_Segment_Display
   assign BTN_2_input = BTN_2;
   assign TX = TTL_serial_TX;
   Diagram_7_Segment_Display_Display_Initializer_0_0 Display_Initializer_0
-       (.LTU_in(out_LTU[7:0]),
+       (.LTU_in(out_LTU),
         .Reset(Global_Reset),
         .TTL_busy(TTL_serial_0_busy),
         .clk(Clock_50),
@@ -118,9 +120,14 @@ module Diagram_7_Segment_Display
        (.A(initializer_pre_debounce),
         .B(Reset_Delay_o),
         .o(Global_Reset));
+  Diagram_7_Segment_Display_Low_Signal_GND_0_0 Low_Signal_GND_0
+       (.GND(Low_Signal_GND_0_GND));
   Diagram_7_Segment_Display_Not_1_in_0_0 Not_1_in_0
        (.i(btn_2_debounce_toggle_2_TOGGLE_O),
         .o(debounce_direction_TOGGLE));
+  Diagram_7_Segment_Display_Not_1_in_0_1 Not_1_in_1
+       (.i(Low_Signal_GND_0_GND),
+        .o(Not_1_in_1_o));
   Diagram_7_Segment_Display_Reset_Delay_0_0 Reset_Delay_Startup
        (.iCLK(Clock_50),
         .oRESET(Reset_Delay_o));
@@ -130,7 +137,7 @@ module Diagram_7_Segment_Display
         .clk(Clock_50),
         .ena(clock_en),
         .idata(Display_Initializer_data),
-        .reset_n(1'b0));
+        .reset_n(Not_1_in_1_o));
   Diagram_7_Segment_Display_univ_bin_counter_0_0 Univ_Counter
        (.clk(Clock_50),
         .clk_en(clock_en),
@@ -140,8 +147,8 @@ module Diagram_7_Segment_Display
         .max_tick(univ_bin_counter_max_tick),
         .min_tick(univ_bin_counter_min_tick),
         .q(Counter_Value),
-        .reset(1'b0),
-        .syn_clr(1'b0),
+        .reset(Low_Signal_GND_0_GND),
+        .syn_clr(Low_Signal_GND_0_GND),
         .up(debounce_direction_TOGGLE));
   Diagram_7_Segment_Display_btn_debounce_toggle_0_0 btn_0_debounce
        (.BTN_I(BTN_0_input),
