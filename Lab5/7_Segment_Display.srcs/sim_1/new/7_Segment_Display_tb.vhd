@@ -41,13 +41,25 @@ architecture Test_Bench of Segment_Display_tb is
     signal TX                   : std_logic;                  
 begin
 
-    DUT: entity work.Diagram_7_Segment_Display_wrapper port map(
-
+    DUT: entity work.design_tb_wrapper port map(
+        
+        clk => clk,
         BTN_0 => BTN_0,
         BTN_1 => BTN_1,
         BTN_2 => BTN_2,
         TX => TX
     );
+   
+   clk <= not clk after 10 ns;
+    
+   process is begin 
+   
+   BTN_0 <= '1';
+   BTN_1 <= '1';
+   BTN_2 <= '1';
+   
+   end process;
+    
 
 
 end Test_Bench;

@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
--- Date        : Sun Oct 30 23:43:26 2022
+-- Date        : Sat Nov  5 13:57:02 2022
 -- Host        : ALIENWARE running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/ip/Diagram_7_Segment_Display_Display_Initializer_0_0/Diagram_7_Segment_Display_Display_Initializer_0_0_sim_netlist.vhdl
@@ -1699,23 +1699,23 @@ entity Diagram_7_Segment_Display_Display_Initializer_0_0 is
   attribute NotValidForBitStream of Diagram_7_Segment_Display_Display_Initializer_0_0 : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
   attribute CHECK_LICENSE_TYPE of Diagram_7_Segment_Display_Display_Initializer_0_0 : entity is "Diagram_7_Segment_Display_Display_Initializer_0_0,Display_Initializer,{}";
-  attribute DowngradeIPIdentifiedWarnings : string;
-  attribute DowngradeIPIdentifiedWarnings of Diagram_7_Segment_Display_Display_Initializer_0_0 : entity is "yes";
-  attribute IP_DEFINITION_SOURCE : string;
-  attribute IP_DEFINITION_SOURCE of Diagram_7_Segment_Display_Display_Initializer_0_0 : entity is "module_ref";
-  attribute X_CORE_INFO : string;
-  attribute X_CORE_INFO of Diagram_7_Segment_Display_Display_Initializer_0_0 : entity is "Display_Initializer,Vivado 2019.1";
+  attribute downgradeipidentifiedwarnings : string;
+  attribute downgradeipidentifiedwarnings of Diagram_7_Segment_Display_Display_Initializer_0_0 : entity is "yes";
+  attribute ip_definition_source : string;
+  attribute ip_definition_source of Diagram_7_Segment_Display_Display_Initializer_0_0 : entity is "module_ref";
+  attribute x_core_info : string;
+  attribute x_core_info of Diagram_7_Segment_Display_Display_Initializer_0_0 : entity is "Display_Initializer,Vivado 2019.1";
 end Diagram_7_Segment_Display_Display_Initializer_0_0;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_Display_Initializer_0_0 is
-  attribute X_INTERFACE_INFO : string;
-  attribute X_INTERFACE_INFO of Reset : signal is "xilinx.com:signal:reset:1.0 Reset RST";
-  attribute X_INTERFACE_PARAMETER : string;
-  attribute X_INTERFACE_PARAMETER of Reset : signal is "XIL_INTERFACENAME Reset, POLARITY ACTIVE_LOW, INSERT_VIP 0";
-  attribute X_INTERFACE_INFO of clk : signal is "xilinx.com:signal:clock:1.0 clk CLK";
-  attribute X_INTERFACE_PARAMETER of clk : signal is "XIL_INTERFACENAME clk, ASSOCIATED_RESET Reset, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  attribute x_interface_info : string;
+  attribute x_interface_info of Reset : signal is "xilinx.com:signal:reset:1.0 Reset RST";
+  attribute x_interface_parameter : string;
+  attribute x_interface_parameter of Reset : signal is "XIL_INTERFACENAME Reset, POLARITY ACTIVE_LOW, INSERT_VIP 0";
+  attribute x_interface_info of clk : signal is "xilinx.com:signal:clock:1.0 clk CLK";
+  attribute x_interface_parameter of clk : signal is "XIL_INTERFACENAME clk, ASSOCIATED_RESET Reset, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
 begin
-inst: entity work.Diagram_7_Segment_Display_Display_Initializer_0_0_Display_Initializer
+U0: entity work.Diagram_7_Segment_Display_Display_Initializer_0_0_Display_Initializer
      port map (
       LTU_in(15 downto 0) => LTU_in(15 downto 0),
       Reset => Reset,

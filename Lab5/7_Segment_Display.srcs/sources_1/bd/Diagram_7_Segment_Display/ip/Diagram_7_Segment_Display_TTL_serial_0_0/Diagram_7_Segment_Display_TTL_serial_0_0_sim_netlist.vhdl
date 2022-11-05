@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
--- Date        : Sun Oct 30 23:01:37 2022
+-- Date        : Sat Nov  5 13:57:02 2022
 -- Host        : ALIENWARE running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/ip/Diagram_7_Segment_Display_TTL_serial_0_0/Diagram_7_Segment_Display_TTL_serial_0_0_sim_netlist.vhdl
@@ -174,33 +174,33 @@ architecture STRUCTURE of Diagram_7_Segment_Display_TTL_serial_0_0_TTL_serial is
   signal \data_reg_n_0_[6]\ : STD_LOGIC;
   signal \data_reg_n_0_[7]\ : STD_LOGIC;
   signal state : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal \state1_carry__0_i_1_n_0\ : STD_LOGIC;
+  signal \state1_carry__0_i_2_n_0\ : STD_LOGIC;
+  signal \state1_carry__0_i_3_n_0\ : STD_LOGIC;
+  signal \state1_carry__0_i_4_n_0\ : STD_LOGIC;
   signal \state1_carry__0_n_0\ : STD_LOGIC;
   signal \state1_carry__0_n_1\ : STD_LOGIC;
   signal \state1_carry__0_n_2\ : STD_LOGIC;
   signal \state1_carry__0_n_3\ : STD_LOGIC;
+  signal \state1_carry__1_i_1_n_0\ : STD_LOGIC;
+  signal \state1_carry__1_i_2_n_0\ : STD_LOGIC;
+  signal \state1_carry__1_i_3_n_0\ : STD_LOGIC;
+  signal \state1_carry__1_i_4_n_0\ : STD_LOGIC;
   signal \state1_carry__1_n_0\ : STD_LOGIC;
   signal \state1_carry__1_n_1\ : STD_LOGIC;
   signal \state1_carry__1_n_2\ : STD_LOGIC;
   signal \state1_carry__1_n_3\ : STD_LOGIC;
+  signal \state1_carry__2_i_1_n_0\ : STD_LOGIC;
+  signal \state1_carry__2_i_2_n_0\ : STD_LOGIC;
+  signal \state1_carry__2_i_3_n_0\ : STD_LOGIC;
+  signal \state1_carry__2_i_4_n_0\ : STD_LOGIC;
   signal \state1_carry__2_n_0\ : STD_LOGIC;
   signal \state1_carry__2_n_1\ : STD_LOGIC;
   signal \state1_carry__2_n_2\ : STD_LOGIC;
   signal \state1_carry__2_n_3\ : STD_LOGIC;
-  signal \state1_carry_i_1__0_n_0\ : STD_LOGIC;
-  signal \state1_carry_i_1__1_n_0\ : STD_LOGIC;
-  signal \state1_carry_i_1__2_n_0\ : STD_LOGIC;
   signal state1_carry_i_1_n_0 : STD_LOGIC;
-  signal \state1_carry_i_2__0_n_0\ : STD_LOGIC;
-  signal \state1_carry_i_2__1_n_0\ : STD_LOGIC;
-  signal \state1_carry_i_2__2_n_0\ : STD_LOGIC;
   signal state1_carry_i_2_n_0 : STD_LOGIC;
-  signal \state1_carry_i_3__0_n_0\ : STD_LOGIC;
-  signal \state1_carry_i_3__1_n_0\ : STD_LOGIC;
-  signal \state1_carry_i_3__2_n_0\ : STD_LOGIC;
   signal state1_carry_i_3_n_0 : STD_LOGIC;
-  signal \state1_carry_i_4__0_n_0\ : STD_LOGIC;
-  signal \state1_carry_i_4__1_n_0\ : STD_LOGIC;
-  signal \state1_carry_i_4__2_n_0\ : STD_LOGIC;
   signal state1_carry_i_4_n_0 : STD_LOGIC;
   signal state1_carry_i_5_n_0 : STD_LOGIC;
   signal state1_carry_i_6_n_0 : STD_LOGIC;
@@ -1410,11 +1410,11 @@ state1_carry: unisim.vcomponents.CARRY4
       CO(0) => state1_carry_n_3,
       CYINIT => '0',
       DI(3 downto 2) => B"00",
-      DI(1) => \state1_carry_i_1__2_n_0\,
+      DI(1) => state1_carry_i_1_n_0,
       DI(0) => state1_carry_i_2_n_0,
       O(3 downto 0) => NLW_state1_carry_O_UNCONNECTED(3 downto 0),
-      S(3) => \state1_carry_i_3__2_n_0\,
-      S(2) => \state1_carry_i_4__2_n_0\,
+      S(3) => state1_carry_i_3_n_0,
+      S(2) => state1_carry_i_4_n_0,
       S(1) => state1_carry_i_5_n_0,
       S(0) => state1_carry_i_6_n_0
     );
@@ -1428,10 +1428,46 @@ state1_carry: unisim.vcomponents.CARRY4
       CYINIT => '0',
       DI(3 downto 0) => B"0000",
       O(3 downto 0) => \NLW_state1_carry__0_O_UNCONNECTED\(3 downto 0),
-      S(3) => \state1_carry_i_1__1_n_0\,
-      S(2) => \state1_carry_i_2__2_n_0\,
-      S(1) => \state1_carry_i_3__1_n_0\,
-      S(0) => \state1_carry_i_4__1_n_0\
+      S(3) => \state1_carry__0_i_1_n_0\,
+      S(2) => \state1_carry__0_i_2_n_0\,
+      S(1) => \state1_carry__0_i_3_n_0\,
+      S(0) => \state1_carry__0_i_4_n_0\
+    );
+\state1_carry__0_i_1\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => bit_cnt_reg(14),
+      I1 => bit_cnt_reg(15),
+      O => \state1_carry__0_i_1_n_0\
+    );
+\state1_carry__0_i_2\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => bit_cnt_reg(12),
+      I1 => bit_cnt_reg(13),
+      O => \state1_carry__0_i_2_n_0\
+    );
+\state1_carry__0_i_3\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => bit_cnt_reg(10),
+      I1 => bit_cnt_reg(11),
+      O => \state1_carry__0_i_3_n_0\
+    );
+\state1_carry__0_i_4\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => bit_cnt_reg(8),
+      I1 => bit_cnt_reg(9),
+      O => \state1_carry__0_i_4_n_0\
     );
 \state1_carry__1\: unisim.vcomponents.CARRY4
      port map (
@@ -1443,10 +1479,46 @@ state1_carry: unisim.vcomponents.CARRY4
       CYINIT => '0',
       DI(3 downto 0) => B"0000",
       O(3 downto 0) => \NLW_state1_carry__1_O_UNCONNECTED\(3 downto 0),
-      S(3) => \state1_carry_i_1__0_n_0\,
-      S(2) => \state1_carry_i_2__1_n_0\,
-      S(1) => \state1_carry_i_3__0_n_0\,
-      S(0) => \state1_carry_i_4__0_n_0\
+      S(3) => \state1_carry__1_i_1_n_0\,
+      S(2) => \state1_carry__1_i_2_n_0\,
+      S(1) => \state1_carry__1_i_3_n_0\,
+      S(0) => \state1_carry__1_i_4_n_0\
+    );
+\state1_carry__1_i_1\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => bit_cnt_reg(22),
+      I1 => bit_cnt_reg(23),
+      O => \state1_carry__1_i_1_n_0\
+    );
+\state1_carry__1_i_2\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => bit_cnt_reg(20),
+      I1 => bit_cnt_reg(21),
+      O => \state1_carry__1_i_2_n_0\
+    );
+\state1_carry__1_i_3\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => bit_cnt_reg(18),
+      I1 => bit_cnt_reg(19),
+      O => \state1_carry__1_i_3_n_0\
+    );
+\state1_carry__1_i_4\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => bit_cnt_reg(16),
+      I1 => bit_cnt_reg(17),
+      O => \state1_carry__1_i_4_n_0\
     );
 \state1_carry__2\: unisim.vcomponents.CARRY4
      port map (
@@ -1459,46 +1531,55 @@ state1_carry: unisim.vcomponents.CARRY4
       DI(3) => bit_cnt_reg(31),
       DI(2 downto 0) => B"000",
       O(3 downto 0) => \NLW_state1_carry__2_O_UNCONNECTED\(3 downto 0),
-      S(3) => state1_carry_i_1_n_0,
-      S(2) => \state1_carry_i_2__0_n_0\,
-      S(1) => state1_carry_i_3_n_0,
-      S(0) => state1_carry_i_4_n_0
+      S(3) => \state1_carry__2_i_1_n_0\,
+      S(2) => \state1_carry__2_i_2_n_0\,
+      S(1) => \state1_carry__2_i_3_n_0\,
+      S(0) => \state1_carry__2_i_4_n_0\
     );
-state1_carry_i_1: unisim.vcomponents.LUT2
+\state1_carry__2_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"1"
     )
         port map (
       I0 => bit_cnt_reg(30),
       I1 => bit_cnt_reg(31),
-      O => state1_carry_i_1_n_0
+      O => \state1_carry__2_i_1_n_0\
     );
-\state1_carry_i_1__0\: unisim.vcomponents.LUT2
+\state1_carry__2_i_2\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"1"
     )
         port map (
-      I0 => bit_cnt_reg(22),
-      I1 => bit_cnt_reg(23),
-      O => \state1_carry_i_1__0_n_0\
+      I0 => bit_cnt_reg(28),
+      I1 => bit_cnt_reg(29),
+      O => \state1_carry__2_i_2_n_0\
     );
-\state1_carry_i_1__1\: unisim.vcomponents.LUT2
+\state1_carry__2_i_3\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"1"
     )
         port map (
-      I0 => bit_cnt_reg(14),
-      I1 => bit_cnt_reg(15),
-      O => \state1_carry_i_1__1_n_0\
+      I0 => bit_cnt_reg(26),
+      I1 => bit_cnt_reg(27),
+      O => \state1_carry__2_i_3_n_0\
     );
-\state1_carry_i_1__2\: unisim.vcomponents.LUT2
+\state1_carry__2_i_4\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => bit_cnt_reg(24),
+      I1 => bit_cnt_reg(25),
+      O => \state1_carry__2_i_4_n_0\
+    );
+state1_carry_i_1: unisim.vcomponents.LUT2
     generic map(
       INIT => X"1"
     )
         port map (
       I0 => bit_cnt_reg(2),
       I1 => bit_cnt_reg(3),
-      O => \state1_carry_i_1__2_n_0\
+      O => state1_carry_i_1_n_0
     );
 state1_carry_i_2: unisim.vcomponents.LUT2
     generic map(
@@ -1509,104 +1590,23 @@ state1_carry_i_2: unisim.vcomponents.LUT2
       I1 => bit_cnt_reg(1),
       O => state1_carry_i_2_n_0
     );
-\state1_carry_i_2__0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"1"
-    )
-        port map (
-      I0 => bit_cnt_reg(28),
-      I1 => bit_cnt_reg(29),
-      O => \state1_carry_i_2__0_n_0\
-    );
-\state1_carry_i_2__1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"1"
-    )
-        port map (
-      I0 => bit_cnt_reg(20),
-      I1 => bit_cnt_reg(21),
-      O => \state1_carry_i_2__1_n_0\
-    );
-\state1_carry_i_2__2\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"1"
-    )
-        port map (
-      I0 => bit_cnt_reg(12),
-      I1 => bit_cnt_reg(13),
-      O => \state1_carry_i_2__2_n_0\
-    );
 state1_carry_i_3: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"1"
-    )
-        port map (
-      I0 => bit_cnt_reg(26),
-      I1 => bit_cnt_reg(27),
-      O => state1_carry_i_3_n_0
-    );
-\state1_carry_i_3__0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"1"
-    )
-        port map (
-      I0 => bit_cnt_reg(18),
-      I1 => bit_cnt_reg(19),
-      O => \state1_carry_i_3__0_n_0\
-    );
-\state1_carry_i_3__1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"1"
-    )
-        port map (
-      I0 => bit_cnt_reg(10),
-      I1 => bit_cnt_reg(11),
-      O => \state1_carry_i_3__1_n_0\
-    );
-\state1_carry_i_3__2\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"1"
     )
         port map (
       I0 => bit_cnt_reg(6),
       I1 => bit_cnt_reg(7),
-      O => \state1_carry_i_3__2_n_0\
+      O => state1_carry_i_3_n_0
     );
 state1_carry_i_4: unisim.vcomponents.LUT2
     generic map(
       INIT => X"1"
     )
         port map (
-      I0 => bit_cnt_reg(24),
-      I1 => bit_cnt_reg(25),
-      O => state1_carry_i_4_n_0
-    );
-\state1_carry_i_4__0\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"1"
-    )
-        port map (
-      I0 => bit_cnt_reg(16),
-      I1 => bit_cnt_reg(17),
-      O => \state1_carry_i_4__0_n_0\
-    );
-\state1_carry_i_4__1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"1"
-    )
-        port map (
-      I0 => bit_cnt_reg(8),
-      I1 => bit_cnt_reg(9),
-      O => \state1_carry_i_4__1_n_0\
-    );
-\state1_carry_i_4__2\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"1"
-    )
-        port map (
       I0 => bit_cnt_reg(4),
       I1 => bit_cnt_reg(5),
-      O => \state1_carry_i_4__2_n_0\
+      O => state1_carry_i_4_n_0
     );
 state1_carry_i_5: unisim.vcomponents.LUT2
     generic map(
@@ -1644,23 +1644,23 @@ entity Diagram_7_Segment_Display_TTL_serial_0_0 is
   attribute NotValidForBitStream of Diagram_7_Segment_Display_TTL_serial_0_0 : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
   attribute CHECK_LICENSE_TYPE of Diagram_7_Segment_Display_TTL_serial_0_0 : entity is "Diagram_7_Segment_Display_TTL_serial_0_0,TTL_serial,{}";
-  attribute DowngradeIPIdentifiedWarnings : string;
-  attribute DowngradeIPIdentifiedWarnings of Diagram_7_Segment_Display_TTL_serial_0_0 : entity is "yes";
-  attribute IP_DEFINITION_SOURCE : string;
-  attribute IP_DEFINITION_SOURCE of Diagram_7_Segment_Display_TTL_serial_0_0 : entity is "module_ref";
-  attribute X_CORE_INFO : string;
-  attribute X_CORE_INFO of Diagram_7_Segment_Display_TTL_serial_0_0 : entity is "TTL_serial,Vivado 2019.1";
+  attribute downgradeipidentifiedwarnings : string;
+  attribute downgradeipidentifiedwarnings of Diagram_7_Segment_Display_TTL_serial_0_0 : entity is "yes";
+  attribute ip_definition_source : string;
+  attribute ip_definition_source of Diagram_7_Segment_Display_TTL_serial_0_0 : entity is "module_ref";
+  attribute x_core_info : string;
+  attribute x_core_info of Diagram_7_Segment_Display_TTL_serial_0_0 : entity is "TTL_serial,Vivado 2019.1";
 end Diagram_7_Segment_Display_TTL_serial_0_0;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_TTL_serial_0_0 is
-  attribute X_INTERFACE_INFO : string;
-  attribute X_INTERFACE_INFO of clk : signal is "xilinx.com:signal:clock:1.0 clk CLK";
-  attribute X_INTERFACE_PARAMETER : string;
-  attribute X_INTERFACE_PARAMETER of clk : signal is "XIL_INTERFACENAME clk, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
-  attribute X_INTERFACE_INFO of reset_n : signal is "xilinx.com:signal:reset:1.0 reset_n RST";
-  attribute X_INTERFACE_PARAMETER of reset_n : signal is "XIL_INTERFACENAME reset_n, POLARITY ACTIVE_LOW, INSERT_VIP 0";
+  attribute x_interface_info : string;
+  attribute x_interface_info of clk : signal is "xilinx.com:signal:clock:1.0 clk CLK";
+  attribute x_interface_parameter : string;
+  attribute x_interface_parameter of clk : signal is "XIL_INTERFACENAME clk, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  attribute x_interface_info of reset_n : signal is "xilinx.com:signal:reset:1.0 reset_n RST";
+  attribute x_interface_parameter of reset_n : signal is "XIL_INTERFACENAME reset_n, POLARITY ACTIVE_LOW, INSERT_VIP 0";
 begin
-inst: entity work.Diagram_7_Segment_Display_TTL_serial_0_0_TTL_serial
+U0: entity work.Diagram_7_Segment_Display_TTL_serial_0_0_TTL_serial
      port map (
       TX => TX,
       busy => busy,

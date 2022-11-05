@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-// Date        : Sun Oct 30 21:48:17 2022
+// Date        : Sat Nov  5 13:55:45 2022
 // Host        : ALIENWARE running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/ip/Diagram_7_Segment_Display_btn_debounce_toggle_0_0/Diagram_7_Segment_Display_btn_debounce_toggle_0_0_sim_netlist.v
@@ -12,8 +12,8 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "Diagram_7_Segment_Display_btn_debounce_toggle_0_0,btn_debounce_toggle,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* IP_DEFINITION_SOURCE = "module_ref" *) 
-(* X_CORE_INFO = "btn_debounce_toggle,Vivado 2019.1" *) 
+(* CHECK_LICENSE_TYPE = "Diagram_7_Segment_Display_btn_debounce_toggle_0_0,btn_debounce_toggle,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_definition_source = "module_ref" *) 
+(* x_core_info = "btn_debounce_toggle,Vivado 2019.1" *) 
 (* NotValidForBitStream *)
 module Diagram_7_Segment_Display_btn_debounce_toggle_0_0
    (BTN_I,
@@ -22,7 +22,7 @@ module Diagram_7_Segment_Display_btn_debounce_toggle_0_0
     TOGGLE_O,
     PULSE_O);
   input BTN_I;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input CLK;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 CLK CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME CLK, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input CLK;
   output BTN_O;
   output TOGGLE_O;
   output PULSE_O;
@@ -33,7 +33,7 @@ module Diagram_7_Segment_Display_btn_debounce_toggle_0_0
   wire PULSE_O;
   wire TOGGLE_O;
 
-  Diagram_7_Segment_Display_btn_debounce_toggle_0_0_btn_debounce_toggle inst
+  Diagram_7_Segment_Display_btn_debounce_toggle_0_0_btn_debounce_toggle U0
        (.BTN_I(BTN_I),
         .CLK(CLK),
         .D(BTN_O),

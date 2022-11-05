@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-// Date        : Sun Oct 30 23:01:37 2022
+// Date        : Sat Nov  5 13:57:02 2022
 // Host        : ALIENWARE running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/ip/Diagram_7_Segment_Display_TTL_serial_0_0/Diagram_7_Segment_Display_TTL_serial_0_0_sim_netlist.v
@@ -12,8 +12,8 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "Diagram_7_Segment_Display_TTL_serial_0_0,TTL_serial,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* IP_DEFINITION_SOURCE = "module_ref" *) 
-(* X_CORE_INFO = "TTL_serial,Vivado 2019.1" *) 
+(* CHECK_LICENSE_TYPE = "Diagram_7_Segment_Display_TTL_serial_0_0,TTL_serial,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_definition_source = "module_ref" *) 
+(* x_core_info = "TTL_serial,Vivado 2019.1" *) 
 (* NotValidForBitStream *)
 module Diagram_7_Segment_Display_TTL_serial_0_0
    (reset_n,
@@ -22,8 +22,8 @@ module Diagram_7_Segment_Display_TTL_serial_0_0
     idata,
     busy,
     TX);
-  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 reset_n RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME reset_n, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input reset_n;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input clk;
+  (* x_interface_info = "xilinx.com:signal:reset:1.0 reset_n RST" *) (* x_interface_parameter = "XIL_INTERFACENAME reset_n, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input reset_n;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input clk;
   input ena;
   input [7:0]idata;
   output busy;
@@ -36,7 +36,7 @@ module Diagram_7_Segment_Display_TTL_serial_0_0
   wire [7:0]idata;
   wire reset_n;
 
-  Diagram_7_Segment_Display_TTL_serial_0_0_TTL_serial inst
+  Diagram_7_Segment_Display_TTL_serial_0_0_TTL_serial U0
        (.TX(TX),
         .busy(busy),
         .clk(clk),
@@ -210,33 +210,33 @@ module Diagram_7_Segment_Display_TTL_serial_0_0_TTL_serial
   wire [7:0]idata;
   wire reset_n;
   wire [1:0]state;
+  wire state1_carry__0_i_1_n_0;
+  wire state1_carry__0_i_2_n_0;
+  wire state1_carry__0_i_3_n_0;
+  wire state1_carry__0_i_4_n_0;
   wire state1_carry__0_n_0;
   wire state1_carry__0_n_1;
   wire state1_carry__0_n_2;
   wire state1_carry__0_n_3;
+  wire state1_carry__1_i_1_n_0;
+  wire state1_carry__1_i_2_n_0;
+  wire state1_carry__1_i_3_n_0;
+  wire state1_carry__1_i_4_n_0;
   wire state1_carry__1_n_0;
   wire state1_carry__1_n_1;
   wire state1_carry__1_n_2;
   wire state1_carry__1_n_3;
+  wire state1_carry__2_i_1_n_0;
+  wire state1_carry__2_i_2_n_0;
+  wire state1_carry__2_i_3_n_0;
+  wire state1_carry__2_i_4_n_0;
   wire state1_carry__2_n_0;
   wire state1_carry__2_n_1;
   wire state1_carry__2_n_2;
   wire state1_carry__2_n_3;
-  wire state1_carry_i_1__0_n_0;
-  wire state1_carry_i_1__1_n_0;
-  wire state1_carry_i_1__2_n_0;
   wire state1_carry_i_1_n_0;
-  wire state1_carry_i_2__0_n_0;
-  wire state1_carry_i_2__1_n_0;
-  wire state1_carry_i_2__2_n_0;
   wire state1_carry_i_2_n_0;
-  wire state1_carry_i_3__0_n_0;
-  wire state1_carry_i_3__1_n_0;
-  wire state1_carry_i_3__2_n_0;
   wire state1_carry_i_3_n_0;
-  wire state1_carry_i_4__0_n_0;
-  wire state1_carry_i_4__1_n_0;
-  wire state1_carry_i_4__2_n_0;
   wire state1_carry_i_4_n_0;
   wire state1_carry_i_5_n_0;
   wire state1_carry_i_6_n_0;
@@ -1052,54 +1052,108 @@ module Diagram_7_Segment_Display_TTL_serial_0_0_TTL_serial
        (.CI(1'b0),
         .CO({state1_carry_n_0,state1_carry_n_1,state1_carry_n_2,state1_carry_n_3}),
         .CYINIT(1'b0),
-        .DI({1'b0,1'b0,state1_carry_i_1__2_n_0,state1_carry_i_2_n_0}),
+        .DI({1'b0,1'b0,state1_carry_i_1_n_0,state1_carry_i_2_n_0}),
         .O(NLW_state1_carry_O_UNCONNECTED[3:0]),
-        .S({state1_carry_i_3__2_n_0,state1_carry_i_4__2_n_0,state1_carry_i_5_n_0,state1_carry_i_6_n_0}));
+        .S({state1_carry_i_3_n_0,state1_carry_i_4_n_0,state1_carry_i_5_n_0,state1_carry_i_6_n_0}));
   CARRY4 state1_carry__0
        (.CI(state1_carry_n_0),
         .CO({state1_carry__0_n_0,state1_carry__0_n_1,state1_carry__0_n_2,state1_carry__0_n_3}),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
         .O(NLW_state1_carry__0_O_UNCONNECTED[3:0]),
-        .S({state1_carry_i_1__1_n_0,state1_carry_i_2__2_n_0,state1_carry_i_3__1_n_0,state1_carry_i_4__1_n_0}));
+        .S({state1_carry__0_i_1_n_0,state1_carry__0_i_2_n_0,state1_carry__0_i_3_n_0,state1_carry__0_i_4_n_0}));
+  LUT2 #(
+    .INIT(4'h1)) 
+    state1_carry__0_i_1
+       (.I0(bit_cnt_reg[14]),
+        .I1(bit_cnt_reg[15]),
+        .O(state1_carry__0_i_1_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    state1_carry__0_i_2
+       (.I0(bit_cnt_reg[12]),
+        .I1(bit_cnt_reg[13]),
+        .O(state1_carry__0_i_2_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    state1_carry__0_i_3
+       (.I0(bit_cnt_reg[10]),
+        .I1(bit_cnt_reg[11]),
+        .O(state1_carry__0_i_3_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    state1_carry__0_i_4
+       (.I0(bit_cnt_reg[8]),
+        .I1(bit_cnt_reg[9]),
+        .O(state1_carry__0_i_4_n_0));
   CARRY4 state1_carry__1
        (.CI(state1_carry__0_n_0),
         .CO({state1_carry__1_n_0,state1_carry__1_n_1,state1_carry__1_n_2,state1_carry__1_n_3}),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
         .O(NLW_state1_carry__1_O_UNCONNECTED[3:0]),
-        .S({state1_carry_i_1__0_n_0,state1_carry_i_2__1_n_0,state1_carry_i_3__0_n_0,state1_carry_i_4__0_n_0}));
+        .S({state1_carry__1_i_1_n_0,state1_carry__1_i_2_n_0,state1_carry__1_i_3_n_0,state1_carry__1_i_4_n_0}));
+  LUT2 #(
+    .INIT(4'h1)) 
+    state1_carry__1_i_1
+       (.I0(bit_cnt_reg[22]),
+        .I1(bit_cnt_reg[23]),
+        .O(state1_carry__1_i_1_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    state1_carry__1_i_2
+       (.I0(bit_cnt_reg[20]),
+        .I1(bit_cnt_reg[21]),
+        .O(state1_carry__1_i_2_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    state1_carry__1_i_3
+       (.I0(bit_cnt_reg[18]),
+        .I1(bit_cnt_reg[19]),
+        .O(state1_carry__1_i_3_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    state1_carry__1_i_4
+       (.I0(bit_cnt_reg[16]),
+        .I1(bit_cnt_reg[17]),
+        .O(state1_carry__1_i_4_n_0));
   CARRY4 state1_carry__2
        (.CI(state1_carry__1_n_0),
         .CO({state1_carry__2_n_0,state1_carry__2_n_1,state1_carry__2_n_2,state1_carry__2_n_3}),
         .CYINIT(1'b0),
         .DI({bit_cnt_reg[31],1'b0,1'b0,1'b0}),
         .O(NLW_state1_carry__2_O_UNCONNECTED[3:0]),
-        .S({state1_carry_i_1_n_0,state1_carry_i_2__0_n_0,state1_carry_i_3_n_0,state1_carry_i_4_n_0}));
+        .S({state1_carry__2_i_1_n_0,state1_carry__2_i_2_n_0,state1_carry__2_i_3_n_0,state1_carry__2_i_4_n_0}));
+  LUT2 #(
+    .INIT(4'h1)) 
+    state1_carry__2_i_1
+       (.I0(bit_cnt_reg[30]),
+        .I1(bit_cnt_reg[31]),
+        .O(state1_carry__2_i_1_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    state1_carry__2_i_2
+       (.I0(bit_cnt_reg[28]),
+        .I1(bit_cnt_reg[29]),
+        .O(state1_carry__2_i_2_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    state1_carry__2_i_3
+       (.I0(bit_cnt_reg[26]),
+        .I1(bit_cnt_reg[27]),
+        .O(state1_carry__2_i_3_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    state1_carry__2_i_4
+       (.I0(bit_cnt_reg[24]),
+        .I1(bit_cnt_reg[25]),
+        .O(state1_carry__2_i_4_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     state1_carry_i_1
-       (.I0(bit_cnt_reg[30]),
-        .I1(bit_cnt_reg[31]),
-        .O(state1_carry_i_1_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    state1_carry_i_1__0
-       (.I0(bit_cnt_reg[22]),
-        .I1(bit_cnt_reg[23]),
-        .O(state1_carry_i_1__0_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    state1_carry_i_1__1
-       (.I0(bit_cnt_reg[14]),
-        .I1(bit_cnt_reg[15]),
-        .O(state1_carry_i_1__1_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    state1_carry_i_1__2
        (.I0(bit_cnt_reg[2]),
         .I1(bit_cnt_reg[3]),
-        .O(state1_carry_i_1__2_n_0));
+        .O(state1_carry_i_1_n_0));
   LUT2 #(
     .INIT(4'h7)) 
     state1_carry_i_2
@@ -1108,70 +1162,16 @@ module Diagram_7_Segment_Display_TTL_serial_0_0_TTL_serial
         .O(state1_carry_i_2_n_0));
   LUT2 #(
     .INIT(4'h1)) 
-    state1_carry_i_2__0
-       (.I0(bit_cnt_reg[28]),
-        .I1(bit_cnt_reg[29]),
-        .O(state1_carry_i_2__0_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    state1_carry_i_2__1
-       (.I0(bit_cnt_reg[20]),
-        .I1(bit_cnt_reg[21]),
-        .O(state1_carry_i_2__1_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    state1_carry_i_2__2
-       (.I0(bit_cnt_reg[12]),
-        .I1(bit_cnt_reg[13]),
-        .O(state1_carry_i_2__2_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
     state1_carry_i_3
-       (.I0(bit_cnt_reg[26]),
-        .I1(bit_cnt_reg[27]),
+       (.I0(bit_cnt_reg[6]),
+        .I1(bit_cnt_reg[7]),
         .O(state1_carry_i_3_n_0));
   LUT2 #(
     .INIT(4'h1)) 
-    state1_carry_i_3__0
-       (.I0(bit_cnt_reg[18]),
-        .I1(bit_cnt_reg[19]),
-        .O(state1_carry_i_3__0_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    state1_carry_i_3__1
-       (.I0(bit_cnt_reg[10]),
-        .I1(bit_cnt_reg[11]),
-        .O(state1_carry_i_3__1_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    state1_carry_i_3__2
-       (.I0(bit_cnt_reg[6]),
-        .I1(bit_cnt_reg[7]),
-        .O(state1_carry_i_3__2_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
     state1_carry_i_4
-       (.I0(bit_cnt_reg[24]),
-        .I1(bit_cnt_reg[25]),
-        .O(state1_carry_i_4_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    state1_carry_i_4__0
-       (.I0(bit_cnt_reg[16]),
-        .I1(bit_cnt_reg[17]),
-        .O(state1_carry_i_4__0_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    state1_carry_i_4__1
-       (.I0(bit_cnt_reg[8]),
-        .I1(bit_cnt_reg[9]),
-        .O(state1_carry_i_4__1_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    state1_carry_i_4__2
        (.I0(bit_cnt_reg[4]),
         .I1(bit_cnt_reg[5]),
-        .O(state1_carry_i_4__2_n_0));
+        .O(state1_carry_i_4_n_0));
   LUT2 #(
     .INIT(4'h2)) 
     state1_carry_i_5
