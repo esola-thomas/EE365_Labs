@@ -32,20 +32,20 @@
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSANumComputeUnits" Val="60"/>
-    <Option Name="WTXSimLaunchSim" Val="15"/>
+    <Option Name="WTXSimLaunchSim" Val="27"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="8"/>
-    <Option Name="WTModelSimExportSim" Val="8"/>
-    <Option Name="WTQuestaExportSim" Val="8"/>
-    <Option Name="WTIesExportSim" Val="8"/>
-    <Option Name="WTVcsExportSim" Val="8"/>
-    <Option Name="WTRivieraExportSim" Val="8"/>
-    <Option Name="WTActivehdlExportSim" Val="8"/>
+    <Option Name="WTXSimExportSim" Val="9"/>
+    <Option Name="WTModelSimExportSim" Val="9"/>
+    <Option Name="WTQuestaExportSim" Val="9"/>
+    <Option Name="WTIesExportSim" Val="9"/>
+    <Option Name="WTVcsExportSim" Val="9"/>
+    <Option Name="WTRivieraExportSim" Val="9"/>
+    <Option Name="WTActivehdlExportSim" Val="9"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -150,9 +150,6 @@
         <CompFileExtendedInfo CompFileName="Diagram_7_Segment_Display.bd" FileRelPathName="ip/Diagram_7_Segment_Display_Reset_Delay_0_0/Diagram_7_Segment_Display_Reset_Delay_0_0.xci">
           <Proxy FileSetName="Diagram_7_Segment_Display_Reset_Delay_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Diagram_7_Segment_Display.bd" FileRelPathName="ip/Diagram_7_Segment_Display_btn_debounce_toggle_1_0/Diagram_7_Segment_Display_btn_debounce_toggle_1_0.xci">
-          <Proxy FileSetName="Diagram_7_Segment_Display_btn_debounce_toggle_1_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="Diagram_7_Segment_Display.bd" FileRelPathName="ip/Diagram_7_Segment_Display_univ_bin_counter_0_0/Diagram_7_Segment_Display_univ_bin_counter_0_0.xci">
           <Proxy FileSetName="Diagram_7_Segment_Display_univ_bin_counter_0_0"/>
         </CompFileExtendedInfo>
@@ -168,17 +165,11 @@
         <CompFileExtendedInfo CompFileName="Diagram_7_Segment_Display.bd" FileRelPathName="ip/Diagram_7_Segment_Display_Display_Initializer_0_0/Diagram_7_Segment_Display_Display_Initializer_0_0.xci">
           <Proxy FileSetName="Diagram_7_Segment_Display_Display_Initializer_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Diagram_7_Segment_Display.bd" FileRelPathName="ip/Diagram_7_Segment_Display_btn_debounce_toggle_2_0/Diagram_7_Segment_Display_btn_debounce_toggle_2_0.xci">
-          <Proxy FileSetName="Diagram_7_Segment_Display_btn_debounce_toggle_2_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="Diagram_7_Segment_Display.bd" FileRelPathName="ip/Diagram_7_Segment_Display_system_ila_4_0/Diagram_7_Segment_Display_system_ila_4_0.xci">
           <Proxy FileSetName="Diagram_7_Segment_Display_system_ila_4_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="Diagram_7_Segment_Display.bd" FileRelPathName="ip/Diagram_7_Segment_Display_out_LTU_0_0/Diagram_7_Segment_Display_out_LTU_0_0.xci">
           <Proxy FileSetName="Diagram_7_Segment_Display_out_LTU_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Diagram_7_Segment_Display.bd" FileRelPathName="ip/Diagram_7_Segment_Display_btn_debounce_toggle_0_0/Diagram_7_Segment_Display_btn_debounce_toggle_0_0.xci">
-          <Proxy FileSetName="Diagram_7_Segment_Display_btn_debounce_toggle_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/Diagram_7_Segment_Display/hdl/Diagram_7_Segment_Display_wrapper.vhd">
@@ -276,27 +267,9 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="Diagram_7_Segment_Display_btn_debounce_toggle_2_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Diagram_7_Segment_Display_btn_debounce_toggle_2_0">
-      <Config>
-        <Option Name="TopModule" Val="Diagram_7_Segment_Display_btn_debounce_toggle_2_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="Diagram_7_Segment_Display_processing_system7_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Diagram_7_Segment_Display_processing_system7_0_0">
       <Config>
         <Option Name="TopModule" Val="Diagram_7_Segment_Display_processing_system7_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="Diagram_7_Segment_Display_btn_debounce_toggle_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Diagram_7_Segment_Display_btn_debounce_toggle_0_0">
-      <Config>
-        <Option Name="TopModule" Val="Diagram_7_Segment_Display_btn_debounce_toggle_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="Diagram_7_Segment_Display_btn_debounce_toggle_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Diagram_7_Segment_Display_btn_debounce_toggle_1_0">
-      <Config>
-        <Option Name="TopModule" Val="Diagram_7_Segment_Display_btn_debounce_toggle_1_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -424,34 +397,7 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="Diagram_7_Segment_Display_btn_debounce_toggle_2_0_synth_1" Type="Ft3:Synth" SrcSet="Diagram_7_Segment_Display_btn_debounce_toggle_2_0" Part="xc7z010clg225-3" ConstrsSet="Diagram_7_Segment_Display_btn_debounce_toggle_2_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Diagram_7_Segment_Display_btn_debounce_toggle_2_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
     <Run Id="Diagram_7_Segment_Display_processing_system7_0_0_synth_1" Type="Ft3:Synth" SrcSet="Diagram_7_Segment_Display_processing_system7_0_0" Part="xc7z010clg225-3" ConstrsSet="Diagram_7_Segment_Display_processing_system7_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Diagram_7_Segment_Display_processing_system7_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="Diagram_7_Segment_Display_btn_debounce_toggle_0_0_synth_1" Type="Ft3:Synth" SrcSet="Diagram_7_Segment_Display_btn_debounce_toggle_0_0" Part="xc7z010clg225-3" ConstrsSet="Diagram_7_Segment_Display_btn_debounce_toggle_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Diagram_7_Segment_Display_btn_debounce_toggle_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="Diagram_7_Segment_Display_btn_debounce_toggle_1_0_synth_1" Type="Ft3:Synth" SrcSet="Diagram_7_Segment_Display_btn_debounce_toggle_1_0" Part="xc7z010clg225-3" ConstrsSet="Diagram_7_Segment_Display_btn_debounce_toggle_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Diagram_7_Segment_Display_btn_debounce_toggle_1_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
         <Step Id="synth_design"/>
@@ -627,55 +573,7 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="Diagram_7_Segment_Display_btn_debounce_toggle_2_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg225-3" ConstrsSet="Diagram_7_Segment_Display_btn_debounce_toggle_2_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Diagram_7_Segment_Display_btn_debounce_toggle_2_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
     <Run Id="Diagram_7_Segment_Display_processing_system7_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg225-3" ConstrsSet="Diagram_7_Segment_Display_processing_system7_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Diagram_7_Segment_Display_processing_system7_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="Diagram_7_Segment_Display_btn_debounce_toggle_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg225-3" ConstrsSet="Diagram_7_Segment_Display_btn_debounce_toggle_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Diagram_7_Segment_Display_btn_debounce_toggle_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="Diagram_7_Segment_Display_btn_debounce_toggle_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg225-3" ConstrsSet="Diagram_7_Segment_Display_btn_debounce_toggle_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Diagram_7_Segment_Display_btn_debounce_toggle_1_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
         <Step Id="init_design"/>

@@ -5,14 +5,10 @@
       "device": "xc7z010clg225-3",
       "name": "Diagram_7_Segment_Display",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2019.1",
-      "validated": "true"
+      "tool_version": "2019.1"
     },
     "design_tree": {
       "processing_system7_0": "",
-      "btn_0_debounce": "",
-      "btn_1_debounce_toggle": "",
-      "btn_2_debounce_toggle_2": "",
       "Univ_Counter": "",
       "Reset_Delay_Startup": "",
       "Global_Reset_Or": "",
@@ -26,72 +22,19 @@
       "system_ila_2": "",
       "system_ila_3": "",
       "system_ila_4": "",
-      "Display_Initializer_0": ""
+      "Display_Initializer_0": "",
+      "btn_0_debounce": "",
+      "btn_1_debounce_toggle": "",
+      "btn_2_debounce_toggle_2": ""
     },
     "interface_ports": {
       "DDR": {
         "mode": "Master",
-        "vlnv": "xilinx.com:interface:ddrx_rtl:1.0",
-        "parameters": {
-          "AXI_ARBITRATION_SCHEME": {
-            "value": "TDM",
-            "value_src": "default"
-          },
-          "BURST_LENGTH": {
-            "value": "8",
-            "value_src": "default"
-          },
-          "CAN_DEBUG": {
-            "value": "false",
-            "value_src": "default"
-          },
-          "CAS_LATENCY": {
-            "value": "11",
-            "value_src": "default"
-          },
-          "CAS_WRITE_LATENCY": {
-            "value": "11",
-            "value_src": "default"
-          },
-          "CS_ENABLED": {
-            "value": "true",
-            "value_src": "default"
-          },
-          "DATA_MASK_ENABLED": {
-            "value": "true",
-            "value_src": "default"
-          },
-          "DATA_WIDTH": {
-            "value": "8",
-            "value_src": "default"
-          },
-          "MEMORY_TYPE": {
-            "value": "COMPONENTS",
-            "value_src": "default"
-          },
-          "MEM_ADDR_MAP": {
-            "value": "ROW_COLUMN_BANK",
-            "value_src": "default"
-          },
-          "SLOT": {
-            "value": "Single",
-            "value_src": "default"
-          },
-          "TIMEPERIOD_PS": {
-            "value": "1250",
-            "value_src": "default"
-          }
-        }
+        "vlnv": "xilinx.com:interface:ddrx_rtl:1.0"
       },
       "FIXED_IO": {
         "mode": "Master",
-        "vlnv": "xilinx.com:display_processing_system7:fixedio_rtl:1.0",
-        "parameters": {
-          "CAN_DEBUG": {
-            "value": "false",
-            "value_src": "default"
-          }
-        }
+        "vlnv": "xilinx.com:display_processing_system7:fixedio_rtl:1.0"
       }
     },
     "ports": {
@@ -253,117 +196,6 @@
           }
         }
       },
-      "btn_0_debounce": {
-        "vlnv": "xilinx.com:module_ref:btn_debounce_toggle:1.0",
-        "xci_name": "Diagram_7_Segment_Display_btn_debounce_toggle_0_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "btn_debounce_toggle",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "CLK": {
-            "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "CLK_DOMAIN": {
-                "value": "Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0",
-                "value_src": "default_prop"
-              },
-              "FREQ_HZ": {
-                "value": "50000000",
-                "value_src": "user_prop"
-              }
-            }
-          },
-          "BTN_I": {
-            "direction": "I"
-          },
-          "BTN_O": {
-            "direction": "O"
-          },
-          "TOGGLE_O": {
-            "direction": "O"
-          },
-          "PULSE_O": {
-            "direction": "O"
-          }
-        }
-      },
-      "btn_1_debounce_toggle": {
-        "vlnv": "xilinx.com:module_ref:btn_debounce_toggle:1.0",
-        "xci_name": "Diagram_7_Segment_Display_btn_debounce_toggle_1_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "btn_debounce_toggle",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "CLK": {
-            "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "CLK_DOMAIN": {
-                "value": "Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0",
-                "value_src": "default_prop"
-              },
-              "FREQ_HZ": {
-                "value": "50000000",
-                "value_src": "user_prop"
-              }
-            }
-          },
-          "BTN_I": {
-            "direction": "I"
-          },
-          "BTN_O": {
-            "direction": "O"
-          },
-          "TOGGLE_O": {
-            "direction": "O"
-          },
-          "PULSE_O": {
-            "direction": "O"
-          }
-        }
-      },
-      "btn_2_debounce_toggle_2": {
-        "vlnv": "xilinx.com:module_ref:btn_debounce_toggle:1.0",
-        "xci_name": "Diagram_7_Segment_Display_btn_debounce_toggle_2_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "btn_debounce_toggle",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "CLK": {
-            "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "CLK_DOMAIN": {
-                "value": "Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0",
-                "value_src": "default_prop"
-              },
-              "FREQ_HZ": {
-                "value": "50000000",
-                "value_src": "user_prop"
-              }
-            }
-          },
-          "BTN_I": {
-            "direction": "I"
-          },
-          "BTN_O": {
-            "direction": "O"
-          },
-          "TOGGLE_O": {
-            "direction": "O"
-          },
-          "PULSE_O": {
-            "direction": "O"
-          }
-        }
-      },
       "Univ_Counter": {
         "vlnv": "xilinx.com:module_ref:univ_bin_counter:1.0",
         "xci_name": "Diagram_7_Segment_Display_univ_bin_counter_0_0",
@@ -380,21 +212,7 @@
         "ports": {
           "clk": {
             "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "ASSOCIATED_RESET": {
-                "value": "reset",
-                "value_src": "constant"
-              },
-              "CLK_DOMAIN": {
-                "value": "Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0",
-                "value_src": "default_prop"
-              },
-              "FREQ_HZ": {
-                "value": "50000000",
-                "value_src": "user_prop"
-              }
-            }
+            "direction": "I"
           },
           "reset": {
             "type": "rst",
@@ -443,21 +261,7 @@
         },
         "ports": {
           "iCLK": {
-            "direction": "I",
-            "parameters": {
-              "CLK_DOMAIN": {
-                "value": "Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0",
-                "value_src": "default_prop"
-              },
-              "FREQ_HZ": {
-                "value": "50000000",
-                "value_src": "user_prop"
-              },
-              "PHASE": {
-                "value": "0.000",
-                "value_src": "default_prop"
-              }
-            }
+            "direction": "I"
           },
           "oRESET": {
             "direction": "O"
@@ -504,17 +308,7 @@
           },
           "clk": {
             "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "CLK_DOMAIN": {
-                "value": "Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0",
-                "value_src": "default_prop"
-              },
-              "FREQ_HZ": {
-                "value": "50000000",
-                "value_src": "user_prop"
-              }
-            }
+            "direction": "I"
           },
           "up": {
             "direction": "I"
@@ -638,17 +432,7 @@
           },
           "clk": {
             "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "CLK_DOMAIN": {
-                "value": "Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0",
-                "value_src": "default_prop"
-              },
-              "FREQ_HZ": {
-                "value": "50000000",
-                "value_src": "user_prop"
-              }
-            }
+            "direction": "I"
           },
           "ena": {
             "direction": "I"
@@ -765,21 +549,7 @@
           },
           "clk": {
             "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "ASSOCIATED_RESET": {
-                "value": "Reset",
-                "value_src": "constant"
-              },
-              "CLK_DOMAIN": {
-                "value": "Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0",
-                "value_src": "default_prop"
-              },
-              "FREQ_HZ": {
-                "value": "50000000",
-                "value_src": "user_prop"
-              }
-            }
+            "direction": "I"
           },
           "TTL_busy": {
             "direction": "I"
@@ -793,6 +563,87 @@
             "direction": "O",
             "left": "7",
             "right": "0"
+          }
+        }
+      },
+      "btn_0_debounce": {
+        "vlnv": "xilinx.com:module_ref:btn_debounce_toggle:1.0",
+        "xci_name": "Diagram_7_Segment_Display_btn_debounce_toggle_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "btn_debounce_toggle",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "BTN_I": {
+            "direction": "I"
+          },
+          "BTN_O": {
+            "direction": "O"
+          },
+          "TOGGLE_O": {
+            "direction": "O"
+          },
+          "PULSE_O": {
+            "direction": "O"
+          }
+        }
+      },
+      "btn_1_debounce_toggle": {
+        "vlnv": "xilinx.com:module_ref:btn_debounce_toggle:1.0",
+        "xci_name": "Diagram_7_Segment_Display_btn_debounce_toggle_1_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "btn_debounce_toggle",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "BTN_I": {
+            "direction": "I"
+          },
+          "BTN_O": {
+            "direction": "O"
+          },
+          "TOGGLE_O": {
+            "direction": "O"
+          },
+          "PULSE_O": {
+            "direction": "O"
+          }
+        }
+      },
+      "btn_2_debounce_toggle_2": {
+        "vlnv": "xilinx.com:module_ref:btn_debounce_toggle:1.0",
+        "xci_name": "Diagram_7_Segment_Display_btn_debounce_toggle_2_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "btn_debounce_toggle",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "BTN_I": {
+            "direction": "I"
+          },
+          "BTN_O": {
+            "direction": "O"
+          },
+          "TOGGLE_O": {
+            "direction": "O"
+          },
+          "PULSE_O": {
+            "direction": "O"
           }
         }
       }
@@ -815,8 +666,8 @@
       "BTN_0_input": {
         "ports": [
           "BTN_0",
-          "btn_0_debounce/BTN_I",
-          "system_ila_0/probe0"
+          "system_ila_0/probe0",
+          "btn_0_debounce/BTN_I"
         ],
         "hdl_attributes": {
           "DEBUG": {
@@ -830,8 +681,8 @@
       "BTN_1_input": {
         "ports": [
           "BTN_1",
-          "btn_1_debounce_toggle/BTN_I",
-          "system_ila_0/probe1"
+          "system_ila_0/probe1",
+          "btn_1_debounce_toggle/BTN_I"
         ],
         "hdl_attributes": {
           "DEBUG": {
@@ -845,8 +696,8 @@
       "BTN_2_input": {
         "ports": [
           "BTN_2",
-          "btn_2_debounce_toggle_2/BTN_I",
-          "system_ila_0/probe2"
+          "system_ila_0/probe2",
+          "btn_2_debounce_toggle_2/BTN_I"
         ],
         "hdl_attributes": {
           "DEBUG": {
@@ -875,9 +726,6 @@
       "Clock_50": {
         "ports": [
           "processing_system7_0/FCLK_CLK0",
-          "btn_0_debounce/CLK",
-          "btn_1_debounce_toggle/CLK",
-          "btn_2_debounce_toggle_2/CLK",
           "Univ_Counter/clk",
           "Reset_Delay_Startup/iCLK",
           "count_loader/clk",
@@ -886,7 +734,10 @@
           "system_ila_2/clk",
           "system_ila_4/clk",
           "system_ila_3/clk",
-          "Display_Initializer_0/clk"
+          "Display_Initializer_0/clk",
+          "btn_0_debounce/CLK",
+          "btn_1_debounce_toggle/CLK",
+          "btn_2_debounce_toggle_2/CLK"
         ]
       },
       "Counter_Value": {

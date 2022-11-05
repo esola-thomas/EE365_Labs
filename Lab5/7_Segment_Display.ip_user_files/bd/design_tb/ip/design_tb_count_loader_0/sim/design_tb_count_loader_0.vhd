@@ -105,7 +105,7 @@ BEGIN
       d_size => 8,
       min_load => 0,
       max_load => 9,
-      clk_en_max_count => 49999999
+      clk_en_max_count => 1
     )
     PORT MAP (
       up => up,

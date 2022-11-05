@@ -37,7 +37,7 @@ end Segment_Display_tb;
 
 architecture Test_Bench of Segment_Display_tb is
     signal BTN_0, BTN_1, BTN_2  : std_logic;
-    signal clk                  : std_logic;
+    signal clk                  : std_logic := '0';
     signal TX                   : std_logic;                  
 begin
 
@@ -54,9 +54,35 @@ begin
     
    process is begin 
    
+   BTN_0 <= '0';
+   BTN_1 <= '0';
+   BTN_2 <= '0';
+   
+   wait for 100 ns;
+   
    BTN_0 <= '1';
-   BTN_1 <= '1';
-   BTN_2 <= '1';
+   BTN_1 <= '0';
+   BTN_2 <= '0';
+   
+   wait for 500 ns;
+   
+   BTN_0 <= '0';
+   BTN_1 <= '0';
+   BTN_2 <= '0';
+   
+   wait for 100 ns;
+   
+   BTN_0 <= '0';
+   BTN_1 <= '0';
+   BTN_2 <= '0';
+   
+   wait for 100 ns;
+   
+   BTN_0 <= '0';
+   BTN_1 <= '0';
+   BTN_2 <= '0';
+   
+   wait for 100 ns;
    
    end process;
     

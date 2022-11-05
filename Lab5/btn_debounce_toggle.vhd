@@ -31,7 +31,7 @@ use IEEE.std_logic_unsigned.all;
 
 entity btn_debounce_toggle is
 GENERIC (
-	CONSTANT CNTR_MAX : std_logic_vector(15 downto 0) := X"FFFF");  
+	CONSTANT CNTR_MAX : std_logic_vector(15 downto 0) := X"0002");  
     Port ( BTN_I 	: in  STD_LOGIC;
            CLK 		: in  STD_LOGIC;
            BTN_O 	: out  STD_LOGIC;

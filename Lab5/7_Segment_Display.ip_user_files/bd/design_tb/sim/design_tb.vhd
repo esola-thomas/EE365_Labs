@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
---Date        : Sat Nov  5 14:32:08 2022
+--Date        : Sat Nov  5 16:50:05 2022
 --Host        : ALIENWARE running 64-bit major release  (build 9200)
 --Command     : generate_target design_tb.bd
 --Design      : design_tb
@@ -90,33 +90,6 @@ architecture STRUCTURE of design_tb is
     q : out STD_LOGIC_VECTOR ( 7 downto 0 )
   );
   end component design_tb_Univ_Counter_0;
-  component design_tb_btn_0_debounce_0 is
-  port (
-    BTN_I : in STD_LOGIC;
-    CLK : in STD_LOGIC;
-    BTN_O : out STD_LOGIC;
-    TOGGLE_O : out STD_LOGIC;
-    PULSE_O : out STD_LOGIC
-  );
-  end component design_tb_btn_0_debounce_0;
-  component design_tb_btn_1_debounce_toggle_0 is
-  port (
-    BTN_I : in STD_LOGIC;
-    CLK : in STD_LOGIC;
-    BTN_O : out STD_LOGIC;
-    TOGGLE_O : out STD_LOGIC;
-    PULSE_O : out STD_LOGIC
-  );
-  end component design_tb_btn_1_debounce_toggle_0;
-  component design_tb_btn_2_debounce_toggle_2_0 is
-  port (
-    BTN_I : in STD_LOGIC;
-    CLK : in STD_LOGIC;
-    BTN_O : out STD_LOGIC;
-    TOGGLE_O : out STD_LOGIC;
-    PULSE_O : out STD_LOGIC
-  );
-  end component design_tb_btn_2_debounce_toggle_2_0;
   component design_tb_count_loader_0 is
   port (
     up : in STD_LOGIC;
@@ -169,6 +142,33 @@ architecture STRUCTURE of design_tb is
     probe0 : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
   end component design_tb_system_ila_4_0;
+  component design_tb_btn_0_debounce_0 is
+  port (
+    BTN_I : in STD_LOGIC;
+    CLK : in STD_LOGIC;
+    BTN_O : out STD_LOGIC;
+    TOGGLE_O : out STD_LOGIC;
+    PULSE_O : out STD_LOGIC
+  );
+  end component design_tb_btn_0_debounce_0;
+  component design_tb_btn_1_debounce_toggle_0 is
+  port (
+    BTN_I : in STD_LOGIC;
+    CLK : in STD_LOGIC;
+    BTN_O : out STD_LOGIC;
+    TOGGLE_O : out STD_LOGIC;
+    PULSE_O : out STD_LOGIC
+  );
+  end component design_tb_btn_1_debounce_toggle_0;
+  component design_tb_btn_2_debounce_toggle_2_0 is
+  port (
+    BTN_I : in STD_LOGIC;
+    CLK : in STD_LOGIC;
+    BTN_O : out STD_LOGIC;
+    TOGGLE_O : out STD_LOGIC;
+    PULSE_O : out STD_LOGIC
+  );
+  end component design_tb_btn_2_debounce_toggle_2_0;
   signal BTN_0_input : STD_LOGIC;
   signal BTN_1_input : STD_LOGIC;
   signal BTN_2_input : STD_LOGIC;

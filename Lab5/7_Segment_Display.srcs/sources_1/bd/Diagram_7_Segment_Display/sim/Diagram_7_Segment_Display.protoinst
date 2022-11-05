@@ -1,9 +1,0 @@
-{
-	"version": "1.0",
-	"modules": {
-		"Diagram_7_Segment_Display": {
-			"proto_instances": {
-			}
-		}
-	}
-}
