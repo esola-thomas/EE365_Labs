@@ -48,8 +48,8 @@ preplace netloc TTL_serial_0_busy 1 2 6 520 440 NJ 440 NJ 440 1350 420 NJ 420 19
 preplace netloc TTL_serial_TX 1 7 2 2020 910 NJ
 preplace netloc Low_Signal_GND_0_GND 1 3 3 840 280 NJ 280 NJ
 preplace netloc Not_1_in_1_o 1 6 1 1640J 280n
-preplace netloc processing_system7_0_DDR 1 7 2 NJ 1180 NJ
 preplace netloc processing_system7_0_FIXED_IO 1 7 2 NJ 1200 NJ
+preplace netloc processing_system7_0_DDR 1 7 2 NJ 1180 NJ
 levelinfo -pg 1 -10 170 390 690 1000 1240 1510 1820 2120 2230
 pagesize -pg 1 -db -bbox -sgen -110 0 2350 1300
 "
