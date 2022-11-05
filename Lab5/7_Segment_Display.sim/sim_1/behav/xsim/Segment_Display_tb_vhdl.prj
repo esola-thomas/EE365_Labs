@@ -1,0 +1,43 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../7_Segment_Display.srcs/sources_1/new/Display_Initializer.vhd" \
+"../../../../7_Segment_Display.srcs/sources_1/new/OR_2.vhd" \
+"../../../../7_Segment_Display.srcs/sources_1/new/Low_Signal_GND.vhd" \
+"../../../../7_Segment_Display.srcs/sources_1/new/Not_1_in.vhd" \
+"../../../../reset_delay.vhd" \
+"../../../../TTL_serial.vhd" \
+"../../../../univ_bin_counter.vhd" \
+"../../../../btn_debounce_toggle.vhd" \
+"../../../../count_loader.vhd" \
+"../../../../out_LTU.vhd" \
+"../../../../7_Segment_Display.ip_user_files/bd/design_tb/ip/design_tb_Display_Initializer_0_0/sim/design_tb_Display_Initializer_0_0.vhd" \
+"../../../../7_Segment_Display.ip_user_files/bd/design_tb/ip/design_tb_Global_Reset_Or_0/sim/design_tb_Global_Reset_Or_0.vhd" \
+"../../../../7_Segment_Display.ip_user_files/bd/design_tb/ip/design_tb_Low_Signal_GND_0_0/sim/design_tb_Low_Signal_GND_0_0.vhd" \
+"../../../../7_Segment_Display.ip_user_files/bd/design_tb/ip/design_tb_Not_1_in_0_0/sim/design_tb_Not_1_in_0_0.vhd" \
+"../../../../7_Segment_Display.ip_user_files/bd/design_tb/ip/design_tb_Not_1_in_1_0/sim/design_tb_Not_1_in_1_0.vhd" \
+"../../../../7_Segment_Display.ip_user_files/bd/design_tb/ip/design_tb_Reset_Delay_Startup_0/sim/design_tb_Reset_Delay_Startup_0.vhd" \
+"../../../../7_Segment_Display.ip_user_files/bd/design_tb/ip/design_tb_TTL_serial_0_0/sim/design_tb_TTL_serial_0_0.vhd" \
+"../../../../7_Segment_Display.ip_user_files/bd/design_tb/ip/design_tb_Univ_Counter_0/sim/design_tb_Univ_Counter_0.vhd" \
+"../../../../7_Segment_Display.ip_user_files/bd/design_tb/ip/design_tb_btn_0_debounce_0/sim/design_tb_btn_0_debounce_0.vhd" \
+"../../../../7_Segment_Display.ip_user_files/bd/design_tb/ip/design_tb_btn_1_debounce_toggle_0/sim/design_tb_btn_1_debounce_toggle_0.vhd" \
+"../../../../7_Segment_Display.ip_user_files/bd/design_tb/ip/design_tb_btn_2_debounce_toggle_2_0/sim/design_tb_btn_2_debounce_toggle_2_0.vhd" \
+"../../../../7_Segment_Display.ip_user_files/bd/design_tb/ip/design_tb_count_loader_0/sim/design_tb_count_loader_0.vhd" \
+"../../../../7_Segment_Display.ip_user_files/bd/design_tb/ip/design_tb_out_LTU_to_display_0/sim/design_tb_out_LTU_to_display_0.vhd" \
+"../../../../7_Segment_Display.ip_user_files/bd/design_tb/ip/design_tb_system_ila_0_0/bd_0/ip/ip_0/sim/bd_6bad_ila_lib_0.vhd" \
+"../../../../7_Segment_Display.ip_user_files/bd/design_tb/ip/design_tb_system_ila_0_0/bd_0/sim/bd_6bad.vhd" \
+"../../../../7_Segment_Display.ip_user_files/bd/design_tb/ip/design_tb_system_ila_0_0/sim/design_tb_system_ila_0_0.vhd" \
+"../../../../7_Segment_Display.ip_user_files/bd/design_tb/ip/design_tb_system_ila_2_0/bd_0/ip/ip_0/sim/bd_ab0c_ila_lib_0.vhd" \
+"../../../../7_Segment_Display.ip_user_files/bd/design_tb/ip/design_tb_system_ila_2_0/bd_0/sim/bd_ab0c.vhd" \
+"../../../../7_Segment_Display.ip_user_files/bd/design_tb/ip/design_tb_system_ila_2_0/sim/design_tb_system_ila_2_0.vhd" \
+"../../../../7_Segment_Display.ip_user_files/bd/design_tb/ip/design_tb_system_ila_3_0/bd_0/ip/ip_0/sim/bd_6b5d_ila_lib_0.vhd" \
+"../../../../7_Segment_Display.ip_user_files/bd/design_tb/ip/design_tb_system_ila_3_0/bd_0/sim/bd_6b5d.vhd" \
+"../../../../7_Segment_Display.ip_user_files/bd/design_tb/ip/design_tb_system_ila_3_0/sim/design_tb_system_ila_3_0.vhd" \
+"../../../../7_Segment_Display.ip_user_files/bd/design_tb/ip/design_tb_system_ila_4_0/bd_0/ip/ip_0/sim/bd_aaec_ila_lib_0.vhd" \
+"../../../../7_Segment_Display.ip_user_files/bd/design_tb/ip/design_tb_system_ila_4_0/bd_0/sim/bd_aaec.vhd" \
+"../../../../7_Segment_Display.ip_user_files/bd/design_tb/ip/design_tb_system_ila_4_0/sim/design_tb_system_ila_4_0.vhd" \
+"../../../../7_Segment_Display.ip_user_files/bd/design_tb/sim/design_tb.vhd" \
+"../../../../7_Segment_Display.srcs/sources_1/bd/design_tb/hdl/design_tb_wrapper.vhd" \
+"../../../../7_Segment_Display.srcs/sim_1/new/7_Segment_Display_tb.vhd" \
+
+# Do not sort compile order
+nosort

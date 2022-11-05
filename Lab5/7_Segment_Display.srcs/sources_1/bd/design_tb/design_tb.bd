@@ -1,0 +1,715 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x23FF56B7A931AD0D",
+      "device": "xc7z010clg225-3",
+      "name": "design_tb",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "Display_Initializer_0": "",
+      "Global_Reset_Or": "",
+      "Low_Signal_GND_0": "",
+      "Not_1_in_0": "",
+      "Not_1_in_1": "",
+      "Reset_Delay_Startup": "",
+      "TTL_serial_0": "",
+      "Univ_Counter": "",
+      "count_loader": "",
+      "out_LTU_to_display": "",
+      "system_ila_0": "",
+      "system_ila_2": "",
+      "system_ila_3": "",
+      "system_ila_4": "",
+      "btn_0_debounce": "",
+      "btn_1_debounce_toggle": "",
+      "btn_2_debounce_toggle_2": ""
+    },
+    "ports": {
+      "BTN_0": {
+        "direction": "I"
+      },
+      "BTN_1": {
+        "direction": "I"
+      },
+      "BTN_2": {
+        "direction": "I"
+      },
+      "TX": {
+        "direction": "O"
+      },
+      "clk": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "Display_Initializer_0": {
+        "vlnv": "xilinx.com:module_ref:Display_Initializer:1.0",
+        "xci_name": "design_tb_Display_Initializer_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Display_Initializer",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "Reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "Reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "TTL_busy": {
+            "direction": "I"
+          },
+          "LTU_in": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "o_data": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "Global_Reset_Or": {
+        "vlnv": "xilinx.com:module_ref:OR_2:1.0",
+        "xci_name": "design_tb_Global_Reset_Or_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "OR_2",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "o": {
+            "direction": "O"
+          }
+        }
+      },
+      "Low_Signal_GND_0": {
+        "vlnv": "xilinx.com:module_ref:Low_Signal_GND:1.0",
+        "xci_name": "design_tb_Low_Signal_GND_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Low_Signal_GND",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "GND_o": {
+            "direction": "O"
+          }
+        }
+      },
+      "Not_1_in_0": {
+        "vlnv": "xilinx.com:module_ref:Not_1_in:1.0",
+        "xci_name": "design_tb_Not_1_in_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Not_1_in",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i": {
+            "direction": "I"
+          },
+          "o": {
+            "direction": "O"
+          }
+        }
+      },
+      "Not_1_in_1": {
+        "vlnv": "xilinx.com:module_ref:Not_1_in:1.0",
+        "xci_name": "design_tb_Not_1_in_1_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Not_1_in",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i": {
+            "direction": "I"
+          },
+          "o": {
+            "direction": "O"
+          }
+        }
+      },
+      "Reset_Delay_Startup": {
+        "vlnv": "xilinx.com:module_ref:Reset_Delay:1.0",
+        "xci_name": "design_tb_Reset_Delay_Startup_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Reset_Delay",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "iCLK": {
+            "direction": "I"
+          },
+          "oRESET": {
+            "direction": "O"
+          }
+        }
+      },
+      "TTL_serial_0": {
+        "vlnv": "xilinx.com:module_ref:TTL_serial:1.0",
+        "xci_name": "design_tb_TTL_serial_0_0",
+        "parameters": {
+          "data_size": {
+            "value": "8"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "TTL_serial",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "reset_n": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "ena": {
+            "direction": "I"
+          },
+          "idata": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "busy": {
+            "direction": "O"
+          },
+          "TX": {
+            "direction": "O"
+          }
+        }
+      },
+      "Univ_Counter": {
+        "vlnv": "xilinx.com:module_ref:univ_bin_counter:1.0",
+        "xci_name": "design_tb_Univ_Counter_0",
+        "parameters": {
+          "N": {
+            "value": "8"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "univ_bin_counter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "syn_clr": {
+            "direction": "I"
+          },
+          "load": {
+            "direction": "I"
+          },
+          "en": {
+            "direction": "I"
+          },
+          "up": {
+            "direction": "I"
+          },
+          "clk_en": {
+            "direction": "I"
+          },
+          "d": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "max_tick": {
+            "direction": "O"
+          },
+          "min_tick": {
+            "direction": "O"
+          },
+          "q": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "count_loader": {
+        "vlnv": "xilinx.com:module_ref:count_loader:1.0",
+        "xci_name": "design_tb_count_loader_0",
+        "parameters": {
+          "clk_en_max_count": {
+            "value": "1"
+          },
+          "d_size": {
+            "value": "8"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "count_loader",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a_reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "up": {
+            "direction": "I"
+          },
+          "count_en": {
+            "direction": "I"
+          },
+          "busy_in": {
+            "direction": "I"
+          },
+          "count_min": {
+            "direction": "I"
+          },
+          "count_max": {
+            "direction": "I"
+          },
+          "load_value": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "load_signal": {
+            "direction": "O"
+          },
+          "clk_en": {
+            "direction": "O"
+          }
+        }
+      },
+      "out_LTU_to_display": {
+        "vlnv": "xilinx.com:module_ref:out_LTU:1.0",
+        "xci_name": "design_tb_out_LTU_to_display_0",
+        "parameters": {
+          "out_size": {
+            "value": "16"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "out_LTU",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "count": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "o": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "system_ila_0": {
+        "vlnv": "xilinx.com:ip:system_ila:1.1",
+        "xci_name": "design_tb_system_ila_0_0",
+        "parameters": {
+          "C_MON_TYPE": {
+            "value": "NATIVE"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "9"
+          },
+          "C_PROBE0_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE1_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE2_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE3_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE4_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE5_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE6_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE7_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE8_TYPE": {
+            "value": "0"
+          }
+        }
+      },
+      "system_ila_2": {
+        "vlnv": "xilinx.com:ip:system_ila:1.1",
+        "xci_name": "design_tb_system_ila_2_0",
+        "parameters": {
+          "C_MON_TYPE": {
+            "value": "NATIVE"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "1"
+          },
+          "C_PROBE0_TYPE": {
+            "value": "0"
+          }
+        }
+      },
+      "system_ila_3": {
+        "vlnv": "xilinx.com:ip:system_ila:1.1",
+        "xci_name": "design_tb_system_ila_3_0",
+        "parameters": {
+          "C_MON_TYPE": {
+            "value": "NATIVE"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "1"
+          },
+          "C_PROBE0_TYPE": {
+            "value": "0"
+          }
+        }
+      },
+      "system_ila_4": {
+        "vlnv": "xilinx.com:ip:system_ila:1.1",
+        "xci_name": "design_tb_system_ila_4_0",
+        "parameters": {
+          "C_MON_TYPE": {
+            "value": "NATIVE"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "1"
+          },
+          "C_PROBE0_TYPE": {
+            "value": "0"
+          }
+        }
+      },
+      "btn_0_debounce": {
+        "vlnv": "xilinx.com:module_ref:btn_debounce_toggle:1.0",
+        "xci_name": "design_tb_btn_0_debounce_0",
+        "parameters": {
+          "CNTR_MAX": {
+            "value": "0x0002"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "btn_debounce_toggle",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "BTN_I": {
+            "direction": "I"
+          },
+          "BTN_O": {
+            "direction": "O"
+          },
+          "TOGGLE_O": {
+            "direction": "O"
+          },
+          "PULSE_O": {
+            "direction": "O"
+          }
+        }
+      },
+      "btn_1_debounce_toggle": {
+        "vlnv": "xilinx.com:module_ref:btn_debounce_toggle:1.0",
+        "xci_name": "design_tb_btn_1_debounce_toggle_0",
+        "parameters": {
+          "CNTR_MAX": {
+            "value": "0x0002"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "btn_debounce_toggle",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "BTN_I": {
+            "direction": "I"
+          },
+          "BTN_O": {
+            "direction": "O"
+          },
+          "TOGGLE_O": {
+            "direction": "O"
+          },
+          "PULSE_O": {
+            "direction": "O"
+          }
+        }
+      },
+      "btn_2_debounce_toggle_2": {
+        "vlnv": "xilinx.com:module_ref:btn_debounce_toggle:1.0",
+        "xci_name": "design_tb_btn_2_debounce_toggle_2_0",
+        "parameters": {
+          "CNTR_MAX": {
+            "value": "0x0002"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "btn_debounce_toggle",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "BTN_I": {
+            "direction": "I"
+          },
+          "BTN_O": {
+            "direction": "O"
+          },
+          "TOGGLE_O": {
+            "direction": "O"
+          },
+          "PULSE_O": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "BTN_0_input": {
+        "ports": [
+          "BTN_0",
+          "system_ila_0/probe0",
+          "btn_0_debounce/BTN_I"
+        ]
+      },
+      "BTN_1_input": {
+        "ports": [
+          "BTN_1",
+          "system_ila_0/probe1",
+          "btn_1_debounce_toggle/BTN_I"
+        ]
+      },
+      "BTN_2_input": {
+        "ports": [
+          "BTN_2",
+          "system_ila_0/probe2",
+          "btn_2_debounce_toggle_2/BTN_I"
+        ]
+      },
+      "Clock_50": {
+        "ports": [
+          "clk",
+          "Univ_Counter/clk",
+          "Reset_Delay_Startup/iCLK",
+          "count_loader/clk",
+          "TTL_serial_0/clk",
+          "system_ila_0/clk",
+          "system_ila_2/clk",
+          "system_ila_4/clk",
+          "system_ila_3/clk",
+          "Display_Initializer_0/clk",
+          "btn_0_debounce/CLK",
+          "btn_1_debounce_toggle/CLK",
+          "btn_2_debounce_toggle_2/CLK"
+        ]
+      },
+      "Counter_Value": {
+        "ports": [
+          "Univ_Counter/q",
+          "out_LTU_to_display/count",
+          "system_ila_0/probe4"
+        ]
+      },
+      "Display_Initializer_data": {
+        "ports": [
+          "Display_Initializer_0/o_data",
+          "TTL_serial_0/idata",
+          "system_ila_0/probe7"
+        ]
+      },
+      "Global_Reset": {
+        "ports": [
+          "Global_Reset_Or/o",
+          "count_loader/a_reset",
+          "system_ila_2/probe0",
+          "Display_Initializer_0/Reset"
+        ]
+      },
+      "Low_Signal_GND_0_GND": {
+        "ports": [
+          "Low_Signal_GND_0/GND_o",
+          "Univ_Counter/reset",
+          "Univ_Counter/syn_clr",
+          "Not_1_in_1/i"
+        ]
+      },
+      "Not_1_in_1_o": {
+        "ports": [
+          "Not_1_in_1/o",
+          "TTL_serial_0/reset_n"
+        ]
+      },
+      "Reset_Delay_o": {
+        "ports": [
+          "Reset_Delay_Startup/oRESET",
+          "Global_Reset_Or/B"
+        ]
+      },
+      "TTL_serial_0_busy": {
+        "ports": [
+          "TTL_serial_0/busy",
+          "count_loader/busy_in",
+          "Display_Initializer_0/TTL_busy"
+        ]
+      },
+      "TTL_serial_TX": {
+        "ports": [
+          "TTL_serial_0/TX",
+          "TX",
+          "system_ila_0/probe8"
+        ]
+      },
+      "btn_2_debounce_toggle_2_TOGGLE_O": {
+        "ports": [
+          "btn_2_debounce_toggle_2/TOGGLE_O",
+          "Not_1_in_0/i",
+          "system_ila_0/probe6"
+        ]
+      },
+      "clock_en": {
+        "ports": [
+          "count_loader/clk_en",
+          "Univ_Counter/clk_en",
+          "count_loader/count_en",
+          "TTL_serial_0/ena"
+        ]
+      },
+      "count_loade_value": {
+        "ports": [
+          "count_loader/load_value",
+          "Univ_Counter/d"
+        ]
+      },
+      "count_loader_load_signal": {
+        "ports": [
+          "count_loader/load_signal",
+          "Univ_Counter/load"
+        ]
+      },
+      "debounce_direction_TOGGLE": {
+        "ports": [
+          "Not_1_in_0/o",
+          "Univ_Counter/up",
+          "count_loader/up",
+          "system_ila_3/probe0"
+        ]
+      },
+      "enable_toggle": {
+        "ports": [
+          "btn_1_debounce_toggle/TOGGLE_O",
+          "Univ_Counter/en",
+          "system_ila_0/probe5"
+        ]
+      },
+      "initializer_pre_debounce": {
+        "ports": [
+          "btn_0_debounce/BTN_O",
+          "Global_Reset_Or/A",
+          "system_ila_0/probe3"
+        ]
+      },
+      "out_LTU": {
+        "ports": [
+          "out_LTU_to_display/o",
+          "system_ila_4/probe0",
+          "Display_Initializer_0/LTU_in"
+        ]
+      },
+      "univ_bin_counter_max_tick": {
+        "ports": [
+          "Univ_Counter/max_tick",
+          "count_loader/count_max"
+        ]
+      },
+      "univ_bin_counter_min_tick": {
+        "ports": [
+          "Univ_Counter/min_tick",
+          "count_loader/count_min"
+        ]
+      }
+    }
+  }
+}

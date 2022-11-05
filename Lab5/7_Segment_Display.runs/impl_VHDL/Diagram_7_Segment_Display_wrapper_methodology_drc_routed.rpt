@@ -1,0 +1,1129 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sat Nov  5 14:02:59 2022
+| Host         : ALIENWARE running 64-bit major release  (build 9200)
+| Command      : report_methodology -file Diagram_7_Segment_Display_wrapper_methodology_drc_routed.rpt -pb Diagram_7_Segment_Display_wrapper_methodology_drc_routed.pb -rpx Diagram_7_Segment_Display_wrapper_methodology_drc_routed.rpx
+| Design       : Diagram_7_Segment_Display_wrapper
+| Device       : xc7z010clg225-3
+| Speed File   : -3
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 218
++-----------+----------+-------------------------------------------------+------------+
+| Rule      | Severity | Description                                     | Violations |
++-----------+----------+-------------------------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert                    | 70         |
+| PDRC-190  | Warning  | Suboptimally placed synchronized register chain | 13         |
+| TIMING-16 | Warning  | Large setup violation                           | 63         |
+| TIMING-18 | Warning  | Missing input or output delay                   | 4          |
+| TIMING-20 | Warning  | Non-clocked latch                               | 68         |
++-----------+----------+-------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[0]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[0]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[0]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[0]_C/CLR, Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[0]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[10]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[10]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[10]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[10]_C/CLR, Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[10]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[11]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[11]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#6 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[11]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[11]_C/CLR, Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[11]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#7 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[12]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[12]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#8 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[12]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[12]_C/CLR, Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[12]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#9 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[13]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[13]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#10 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[13]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[13]_C/CLR, Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[13]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#11 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[14]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[14]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#12 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[14]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[14]_C/CLR, Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[14]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#13 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[15]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[15]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#14 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[15]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[15]_C/CLR, Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[15]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#15 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[16]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[16]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#16 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[16]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[16]_C/CLR, Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[16]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#17 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[17]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[17]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#18 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[17]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[17]_C/CLR, Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[17]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#19 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[18]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[18]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#20 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[18]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[18]_C/CLR, Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[18]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#21 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[19]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[19]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#22 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[19]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[19]_C/CLR, Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[19]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#23 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[1]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[1]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#24 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[1]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[1]_C/CLR, Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[1]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#25 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[20]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[20]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#26 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[20]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[20]_C/CLR, Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[20]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#27 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[21]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[21]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#28 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[21]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[21]_C/CLR, Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[21]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#29 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[22]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[22]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#30 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[22]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[22]_C/CLR, Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[22]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#31 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[23]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[23]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#32 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[23]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[23]_C/CLR, Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[23]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#33 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[24]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[24]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#34 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[24]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[24]_C/CLR, Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[24]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#35 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[25]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[25]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#36 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[25]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[25]_C/CLR, Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[25]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#37 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[26]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[26]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#38 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[26]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[26]_C/CLR, Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[26]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#39 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[27]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[27]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#40 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[27]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[27]_C/CLR, Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[27]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#41 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[28]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[28]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#42 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[28]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[28]_C/CLR, Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[28]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#43 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[29]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[29]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#44 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[29]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[29]_C/CLR, Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[29]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#45 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[2]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[2]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#46 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[2]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[2]_C/CLR, Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[2]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#47 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[30]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[30]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#48 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[30]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[30]_C/CLR, Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[30]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#49 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[31]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[31]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#50 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[31]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[31]_C/CLR, Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[31]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#51 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[3]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[3]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#52 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[3]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[3]_C/CLR, Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[3]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#53 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[4]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[4]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#54 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[4]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[4]_C/CLR, Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[4]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#55 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[5]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[5]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#56 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[5]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[5]_C/CLR, Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[5]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#57 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[6]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[6]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#58 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[6]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[6]_C/CLR, Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[6]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#59 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[7]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[7]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#60 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[7]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[7]_C/CLR, Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[7]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#61 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[8]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[8]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#62 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[8]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[8]_C/CLR, Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[8]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#63 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[9]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[9]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#64 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[9]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[9]_C/CLR, Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[9]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#65 Warning
+LUT drives async reset alert  
+LUT cell Diagram_7_Segment_Display_i/count_loader/U0/clk_en_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Diagram_7_Segment_Display_i/count_loader/U0/clk_en_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#66 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#67 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#68 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#69 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#70 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTDO_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[10]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[11]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[12]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[13]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[14]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[15]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[6]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[7]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[8]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[9]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[0] in site SLICE_X14Y23 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#2 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[1] in site SLICE_X13Y21 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#3 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[2] in site SLICE_X12Y21 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#4 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[3] in site SLICE_X11Y22 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#5 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[0] in site SLICE_X16Y21 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#6 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[1] in site SLICE_X14Y19 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#7 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[2] in site SLICE_X14Y21 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#8 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[3] in site SLICE_X17Y21 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#9 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[4] in site SLICE_X15Y20 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[4] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#10 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[5] in site SLICE_X16Y19 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[5] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#11 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[0] in site SLICE_X16Y24 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#12 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[1] in site SLICE_X17Y25 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#13 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[2] in site SLICE_X15Y25 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -54.356 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[18]_P/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -54.386 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[25]_C/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -54.389 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[21]_P/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -54.464 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[25]_P/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -54.476 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[9]_C/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -54.489 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[22]_C/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -54.492 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[23]_C/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -54.493 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[21]_C/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -54.521 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[16]_P/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -54.526 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[15]_P/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -54.527 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[19]_P/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -54.530 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[14]_C/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -54.532 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[19]_C/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -54.533 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[2]_C/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -54.535 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[9]_P/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#16 Warning
+Large setup violation  
+There is a large setup violation of -54.546 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[10]_P/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#17 Warning
+Large setup violation  
+There is a large setup violation of -54.547 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[1]_C/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#18 Warning
+Large setup violation  
+There is a large setup violation of -54.548 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[15]_C/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#19 Warning
+Large setup violation  
+There is a large setup violation of -54.558 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[1]_P/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#20 Warning
+Large setup violation  
+There is a large setup violation of -54.566 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[14]_P/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#21 Warning
+Large setup violation  
+There is a large setup violation of -54.575 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[4]_C/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#22 Warning
+Large setup violation  
+There is a large setup violation of -54.578 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[20]_P/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#23 Warning
+Large setup violation  
+There is a large setup violation of -54.579 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[22]_P/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#24 Warning
+Large setup violation  
+There is a large setup violation of -54.591 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[11]_P/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#25 Warning
+Large setup violation  
+There is a large setup violation of -54.592 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[2]_P/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#26 Warning
+Large setup violation  
+There is a large setup violation of -54.595 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[17]_P/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#27 Warning
+Large setup violation  
+There is a large setup violation of -54.596 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[31]_C/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#28 Warning
+Large setup violation  
+There is a large setup violation of -54.597 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[26]_P/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#29 Warning
+Large setup violation  
+There is a large setup violation of -54.598 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[12]_P/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#30 Warning
+Large setup violation  
+There is a large setup violation of -54.598 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[26]_C/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#31 Warning
+Large setup violation  
+There is a large setup violation of -54.605 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[5]_C/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#32 Warning
+Large setup violation  
+There is a large setup violation of -54.607 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[13]_C/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#33 Warning
+Large setup violation  
+There is a large setup violation of -54.608 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[30]_C/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#34 Warning
+Large setup violation  
+There is a large setup violation of -54.609 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[23]_P/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#35 Warning
+Large setup violation  
+There is a large setup violation of -54.612 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[29]_P/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#36 Warning
+Large setup violation  
+There is a large setup violation of -54.613 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[20]_C/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#37 Warning
+Large setup violation  
+There is a large setup violation of -54.615 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[17]_C/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#38 Warning
+Large setup violation  
+There is a large setup violation of -54.622 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[16]_C/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#39 Warning
+Large setup violation  
+There is a large setup violation of -54.626 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[3]_P/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#40 Warning
+Large setup violation  
+There is a large setup violation of -54.628 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[11]_C/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#41 Warning
+Large setup violation  
+There is a large setup violation of -54.628 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[12]_C/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#42 Warning
+Large setup violation  
+There is a large setup violation of -54.628 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[27]_P/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#43 Warning
+Large setup violation  
+There is a large setup violation of -54.632 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[3]_C/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#44 Warning
+Large setup violation  
+There is a large setup violation of -54.636 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[6]_P/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#45 Warning
+Large setup violation  
+There is a large setup violation of -54.637 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[7]_P/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#46 Warning
+Large setup violation  
+There is a large setup violation of -54.650 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[10]_C/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#47 Warning
+Large setup violation  
+There is a large setup violation of -54.656 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[13]_P/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#48 Warning
+Large setup violation  
+There is a large setup violation of -54.660 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[28]_P/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#49 Warning
+Large setup violation  
+There is a large setup violation of -54.661 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[18]_C/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#50 Warning
+Large setup violation  
+There is a large setup violation of -54.661 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[4]_P/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#51 Warning
+Large setup violation  
+There is a large setup violation of -54.677 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[29]_C/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#52 Warning
+Large setup violation  
+There is a large setup violation of -54.682 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[7]_C/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#53 Warning
+Large setup violation  
+There is a large setup violation of -54.683 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[24]_P/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#54 Warning
+Large setup violation  
+There is a large setup violation of -54.689 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[8]_P/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#55 Warning
+Large setup violation  
+There is a large setup violation of -54.690 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[28]_C/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#56 Warning
+Large setup violation  
+There is a large setup violation of -54.692 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[6]_C/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#57 Warning
+Large setup violation  
+There is a large setup violation of -54.694 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[5]_P/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#58 Warning
+Large setup violation  
+There is a large setup violation of -54.706 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[31]_P/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#59 Warning
+Large setup violation  
+There is a large setup violation of -54.713 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[27]_C/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#60 Warning
+Large setup violation  
+There is a large setup violation of -54.716 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[30]_P/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#61 Warning
+Large setup violation  
+There is a large setup violation of -54.720 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_reg/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#62 Warning
+Large setup violation  
+There is a large setup violation of -54.736 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[24]_C/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#63 Warning
+Large setup violation  
+There is a large setup violation of -54.760 ns between Diagram_7_Segment_Display_i/TTL_serial_0/U0/busy_reg/C (clocked by clk_fpga_0) and Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[8]_C/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on BTN_0 relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on BTN_1 relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on BTN_2 relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on TX relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[0] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[10] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[11] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[12] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[13] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[14] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[15] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[16] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[17] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[18] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[19] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[1] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[20] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[21] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[22] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[23] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[24] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[24]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[25] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[25]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[26] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[26]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[27] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[27]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[28] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[28]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[29] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[29]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[2] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[30] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[30]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[31] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[31]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[3] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[4] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#28 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[5] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#29 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[6] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#30 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[7] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#31 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[8] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#32 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[9] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_counter_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#33 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_display_singal_reg[0] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_display_singal_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#34 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_display_singal_reg[2] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_display_singal_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#35 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_display_singal_reg[3] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_display_singal_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#36 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_display_singal_reg[5] cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/init_display_singal_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#37 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/Display_Initializer_0/U0/reset_was_high_reg cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/Display_Initializer_0/U0/reset_was_high_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#38 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[10]_LDC cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[10]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#39 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[11]_LDC cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[11]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#40 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[12]_LDC cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[12]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#41 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[13]_LDC cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[13]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#42 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[14]_LDC cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[14]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#43 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[15]_LDC cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[15]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#44 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[16]_LDC cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[16]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#45 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[17]_LDC cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[17]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#46 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[18]_LDC cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[18]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#47 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[19]_LDC cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[19]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#48 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[1]_LDC cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[1]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#49 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[20]_LDC cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[20]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#50 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[21]_LDC cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[21]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#51 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[22]_LDC cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[22]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#52 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[23]_LDC cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[23]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#53 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[24]_LDC cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[24]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#54 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[25]_LDC cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[25]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#55 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[26]_LDC cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[26]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#56 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[27]_LDC cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[27]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#57 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[28]_LDC cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[28]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#58 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[29]_LDC cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[29]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#59 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[2]_LDC cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[2]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#60 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[30]_LDC cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[30]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#61 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[31]_LDC cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[31]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#62 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[3]_LDC cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[3]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#63 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[4]_LDC cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[4]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#64 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[5]_LDC cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[5]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#65 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[6]_LDC cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[6]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#66 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[7]_LDC cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[7]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#67 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[8]_LDC cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[8]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#68 Warning
+Non-clocked latch  
+The latch Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[9]_LDC cannot be properly analyzed as its control pin Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[9]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+

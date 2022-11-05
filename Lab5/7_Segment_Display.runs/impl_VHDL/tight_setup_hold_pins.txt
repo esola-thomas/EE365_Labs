@@ -1,0 +1,13 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|               clk_fpga_0 |               clk_fpga_0 |                                      Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[14]_C/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                      Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[10]_C/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                      Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[12]_C/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                       Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[9]_C/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                      Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[13]_C/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                       Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[4]_C/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                       Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[2]_C/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                       Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[1]_C/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                       Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[3]_C/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
