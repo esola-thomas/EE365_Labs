@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"bd_ab0c": {
+			"proto_instances": {
+			}
+		}
+	}
+}
