@@ -77,7 +77,7 @@ ARCHITECTURE design_tb_Reset_Delay_Startup_0_arch OF design_tb_Reset_Delay_Start
 BEGIN
   U0 : Reset_Delay
     GENERIC MAP (
-      MAX => 15
+      MAX => 20
     )
     PORT MAP (
       iCLK => iCLK,

@@ -19,7 +19,7 @@ proc create_report { reportName command } {
 }
 set_param chipscope.maxJobs 3
 set_param project.vivado.isBlockSynthRun true
-create_project -in_memory -part xc7z010clg225-3
+create_project -in_memory -part xc7z010clg225-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
@@ -50,7 +50,7 @@ set cached_ip [config_ip_cache -export -no_bom  -dir D:/My_DevOps/Fall_2022/EE36
 if { $cached_ip eq {} } {
 close [open __synthesis_is_running__ w]
 
-synth_design -top Diagram_7_Segment_Display_Reset_Delay_0_0 -part xc7z010clg225-3 -mode out_of_context
+synth_design -top Diagram_7_Segment_Display_Reset_Delay_0_0 -part xc7z010clg225-1 -mode out_of_context
 
 #---------------------------------------------------------
 # Generate Checkpoint/Stub/Simulation Files For IP Cache

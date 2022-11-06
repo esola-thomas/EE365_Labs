@@ -8,7 +8,7 @@ use IEEE.NUMERIC_STD.ALL;
 entity TTL_serial is
 	GENERIC (
 		CONSTANT cnt_max : integer := 5208;
-		CONSTANT data_size : integer := 16
+		CONSTANT data_size : integer := 8
 		); 
 		port (
 		reset_n				: in std_logic; 

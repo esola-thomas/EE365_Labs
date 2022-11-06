@@ -1,14 +1,14 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-// Date        : Sat Nov  5 13:56:00 2022
+// Date        : Sat Nov  5 21:01:05 2022
 // Host        : ALIENWARE running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/ip/Diagram_7_Segment_Display_Not_1_in_0_1/Diagram_7_Segment_Display_Not_1_in_0_1_sim_netlist.v
 // Design      : Diagram_7_Segment_Display_Not_1_in_0_1
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
-// Device      : xc7z010clg225-3
+// Device      : xc7z010clg225-1
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 

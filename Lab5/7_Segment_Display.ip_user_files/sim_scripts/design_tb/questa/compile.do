@@ -41,9 +41,6 @@ vcom -work xil_defaultlib -64 -93 \
 "../../../bd/design_tb/ip/design_tb_btn_2_debounce_toggle_2_0/sim/design_tb_btn_2_debounce_toggle_2_0.vhd" \
 "../../../bd/design_tb/ip/design_tb_count_loader_0/sim/design_tb_count_loader_0.vhd" \
 "../../../bd/design_tb/ip/design_tb_out_LTU_to_display_0/sim/design_tb_out_LTU_to_display_0.vhd" \
-"../../../bd/design_tb/ip/design_tb_system_ila_0_0/bd_0/ip/ip_0/sim/bd_6bad_ila_lib_0.vhd" \
-"../../../bd/design_tb/ip/design_tb_system_ila_0_0/bd_0/sim/bd_6bad.vhd" \
-"../../../bd/design_tb/ip/design_tb_system_ila_0_0/sim/design_tb_system_ila_0_0.vhd" \
 "../../../bd/design_tb/ip/design_tb_system_ila_2_0/bd_0/ip/ip_0/sim/bd_ab0c_ila_lib_0.vhd" \
 "../../../bd/design_tb/ip/design_tb_system_ila_2_0/bd_0/sim/bd_ab0c.vhd" \
 "../../../bd/design_tb/ip/design_tb_system_ila_2_0/sim/design_tb_system_ila_2_0.vhd" \

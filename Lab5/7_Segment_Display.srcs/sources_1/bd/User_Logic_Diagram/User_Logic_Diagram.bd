@@ -1,0 +1,512 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x23FF56B7A931AD0D",
+      "device": "xc7z010clg225-1",
+      "name": "User_Logic_Diagram",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "Global_Reset_Or": "",
+      "Low_Signal_GND_0": "",
+      "Not_1_in_0": "",
+      "Reset_Delay_Startup": "",
+      "Univ_Counter": "",
+      "btn_0_debounce": "",
+      "btn_1_debounce_toggle": "",
+      "btn_2_debounce_toggle_2": "",
+      "count_loader": "",
+      "out_LTU_to_display": "",
+      "TTL_Serial_user_logic_0": ""
+    },
+    "ports": {
+      "BTN_0": {
+        "direction": "I"
+      },
+      "BTN_1": {
+        "direction": "I"
+      },
+      "BTN_2": {
+        "direction": "I"
+      },
+      "clk": {
+        "direction": "I"
+      },
+      "TX": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "Global_Reset_Or": {
+        "vlnv": "xilinx.com:module_ref:OR_2:1.0",
+        "xci_name": "User_Logic_Diagram_Global_Reset_Or_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "OR_2",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "o": {
+            "direction": "O"
+          }
+        }
+      },
+      "Low_Signal_GND_0": {
+        "vlnv": "xilinx.com:module_ref:Low_Signal_GND:1.0",
+        "xci_name": "User_Logic_Diagram_Low_Signal_GND_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Low_Signal_GND",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "GND_o": {
+            "direction": "O"
+          }
+        }
+      },
+      "Not_1_in_0": {
+        "vlnv": "xilinx.com:module_ref:Not_1_in:1.0",
+        "xci_name": "User_Logic_Diagram_Not_1_in_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Not_1_in",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i": {
+            "direction": "I"
+          },
+          "o": {
+            "direction": "O"
+          }
+        }
+      },
+      "Reset_Delay_Startup": {
+        "vlnv": "xilinx.com:module_ref:Reset_Delay:1.0",
+        "xci_name": "User_Logic_Diagram_Reset_Delay_Startup_0",
+        "parameters": {
+          "MAX": {
+            "value": "20"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Reset_Delay",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "iCLK": {
+            "direction": "I"
+          },
+          "oRESET": {
+            "direction": "O"
+          }
+        }
+      },
+      "Univ_Counter": {
+        "vlnv": "xilinx.com:module_ref:univ_bin_counter:1.0",
+        "xci_name": "User_Logic_Diagram_Univ_Counter_0",
+        "parameters": {
+          "N": {
+            "value": "8"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "univ_bin_counter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "syn_clr": {
+            "direction": "I"
+          },
+          "load": {
+            "direction": "I"
+          },
+          "en": {
+            "direction": "I"
+          },
+          "up": {
+            "direction": "I"
+          },
+          "clk_en": {
+            "direction": "I"
+          },
+          "d": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "max_tick": {
+            "direction": "O"
+          },
+          "min_tick": {
+            "direction": "O"
+          },
+          "q": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "btn_0_debounce": {
+        "vlnv": "xilinx.com:module_ref:btn_debounce_toggle:1.0",
+        "xci_name": "User_Logic_Diagram_btn_0_debounce_0",
+        "parameters": {
+          "CNTR_MAX": {
+            "value": "0x0002"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "btn_debounce_toggle",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "BTN_I": {
+            "direction": "I"
+          },
+          "BTN_O": {
+            "direction": "O"
+          },
+          "TOGGLE_O": {
+            "direction": "O"
+          },
+          "PULSE_O": {
+            "direction": "O"
+          }
+        }
+      },
+      "btn_1_debounce_toggle": {
+        "vlnv": "xilinx.com:module_ref:btn_debounce_toggle:1.0",
+        "xci_name": "User_Logic_Diagram_btn_1_debounce_toggle_0",
+        "parameters": {
+          "CNTR_MAX": {
+            "value": "0x0002"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "btn_debounce_toggle",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "BTN_I": {
+            "direction": "I"
+          },
+          "BTN_O": {
+            "direction": "O"
+          },
+          "TOGGLE_O": {
+            "direction": "O"
+          },
+          "PULSE_O": {
+            "direction": "O"
+          }
+        }
+      },
+      "btn_2_debounce_toggle_2": {
+        "vlnv": "xilinx.com:module_ref:btn_debounce_toggle:1.0",
+        "xci_name": "User_Logic_Diagram_btn_2_debounce_toggle_2_0",
+        "parameters": {
+          "CNTR_MAX": {
+            "value": "0x0002"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "btn_debounce_toggle",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "BTN_I": {
+            "direction": "I"
+          },
+          "BTN_O": {
+            "direction": "O"
+          },
+          "TOGGLE_O": {
+            "direction": "O"
+          },
+          "PULSE_O": {
+            "direction": "O"
+          }
+        }
+      },
+      "count_loader": {
+        "vlnv": "xilinx.com:module_ref:count_loader:1.0",
+        "xci_name": "User_Logic_Diagram_count_loader_0",
+        "parameters": {
+          "clk_en_max_count": {
+            "value": "5"
+          },
+          "d_size": {
+            "value": "8"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "count_loader",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a_reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "up": {
+            "direction": "I"
+          },
+          "count_en": {
+            "direction": "I"
+          },
+          "busy_in": {
+            "direction": "I"
+          },
+          "count_min": {
+            "direction": "I"
+          },
+          "count_max": {
+            "direction": "I"
+          },
+          "load_value": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "load_signal": {
+            "direction": "O"
+          },
+          "clk_en": {
+            "direction": "O"
+          }
+        }
+      },
+      "out_LTU_to_display": {
+        "vlnv": "xilinx.com:module_ref:out_LTU:1.0",
+        "xci_name": "User_Logic_Diagram_out_LTU_to_display_0",
+        "parameters": {
+          "out_size": {
+            "value": "16"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "out_LTU",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "count": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "o": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "TTL_Serial_user_logic_0": {
+        "vlnv": "xilinx.com:module_ref:TTL_Serial_user_logic:1.0",
+        "xci_name": "User_Logic_Diagram_TTL_Serial_user_logic_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "TTL_Serial_user_logic",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "iData": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "TX": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "BTN_0_input": {
+        "ports": [
+          "BTN_0",
+          "btn_0_debounce/BTN_I"
+        ]
+      },
+      "BTN_1_input": {
+        "ports": [
+          "BTN_1",
+          "btn_1_debounce_toggle/BTN_I"
+        ]
+      },
+      "BTN_2_input": {
+        "ports": [
+          "BTN_2",
+          "btn_2_debounce_toggle_2/BTN_I"
+        ]
+      },
+      "Clock_50": {
+        "ports": [
+          "clk",
+          "Univ_Counter/clk",
+          "Reset_Delay_Startup/iCLK",
+          "count_loader/clk",
+          "btn_0_debounce/CLK",
+          "btn_1_debounce_toggle/CLK",
+          "btn_2_debounce_toggle_2/CLK",
+          "TTL_Serial_user_logic_0/clk"
+        ]
+      },
+      "Counter_Value": {
+        "ports": [
+          "Univ_Counter/q",
+          "out_LTU_to_display/count"
+        ]
+      },
+      "Global_Reset": {
+        "ports": [
+          "Global_Reset_Or/o",
+          "count_loader/a_reset"
+        ]
+      },
+      "Low_Signal_GND_0_GND": {
+        "ports": [
+          "Low_Signal_GND_0/GND_o",
+          "Univ_Counter/reset",
+          "Univ_Counter/syn_clr",
+          "count_loader/busy_in"
+        ]
+      },
+      "Reset_Delay_o": {
+        "ports": [
+          "Reset_Delay_Startup/oRESET",
+          "Global_Reset_Or/B"
+        ]
+      },
+      "btn_2_debounce_toggle_2_TOGGLE_O": {
+        "ports": [
+          "btn_2_debounce_toggle_2/TOGGLE_O",
+          "Not_1_in_0/i"
+        ]
+      },
+      "clock_en": {
+        "ports": [
+          "count_loader/clk_en",
+          "Univ_Counter/clk_en",
+          "count_loader/count_en"
+        ]
+      },
+      "count_loade_value": {
+        "ports": [
+          "count_loader/load_value",
+          "Univ_Counter/d"
+        ]
+      },
+      "count_loader_load_signal": {
+        "ports": [
+          "count_loader/load_signal",
+          "Univ_Counter/load"
+        ]
+      },
+      "debounce_direction_TOGGLE": {
+        "ports": [
+          "Not_1_in_0/o",
+          "Univ_Counter/up",
+          "count_loader/up"
+        ]
+      },
+      "enable_toggle": {
+        "ports": [
+          "btn_1_debounce_toggle/TOGGLE_O",
+          "Univ_Counter/en"
+        ]
+      },
+      "initializer_pre_debounce": {
+        "ports": [
+          "btn_0_debounce/BTN_O",
+          "Global_Reset_Or/A"
+        ]
+      },
+      "univ_bin_counter_max_tick": {
+        "ports": [
+          "Univ_Counter/max_tick",
+          "count_loader/count_max"
+        ]
+      },
+      "univ_bin_counter_min_tick": {
+        "ports": [
+          "Univ_Counter/min_tick",
+          "count_loader/count_min"
+        ]
+      },
+      "out_LTU_to_display_o": {
+        "ports": [
+          "out_LTU_to_display/o",
+          "TTL_Serial_user_logic_0/iData"
+        ]
+      },
+      "TTL_Serial_user_logic_0_TX": {
+        "ports": [
+          "TTL_Serial_user_logic_0/TX",
+          "TX"
+        ]
+      }
+    }
+  }
+}

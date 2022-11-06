@@ -15,10 +15,10 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bd_6bb8_ila_lib
 set_property DONT_TOUCH TRUE [get_cells U0 -quiet] -quiet
 
 # XDC: d:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/ip/Diagram_7_Segment_Display_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_6bb8_ila_lib_0 || ORIG_REF_NAME==bd_6bb8_ila_lib_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_6bb8_ila_lib_0 || ORIG_REF_NAME==bd_6bb8_ila_lib_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: d:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/ip/Diagram_7_Segment_Display_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc
-#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_6bb8_ila_lib_0 || ORIG_REF_NAME==bd_6bb8_ila_lib_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_6bb8_ila_lib_0 || ORIG_REF_NAME==bd_6bb8_ila_lib_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: d:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/ip/Diagram_7_Segment_Display_system_ila_0_0/bd_0/ip/ip_0/bd_6bb8_ila_lib_0_ooc.xdc
 
@@ -38,10 +38,10 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 #dup# set_property DONT_TOUCH TRUE [get_cells U0 -quiet] -quiet
 
 # XDC: d:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/ip/Diagram_7_Segment_Display_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc
-#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_6bb8_ila_lib_0 || ORIG_REF_NAME==bd_6bb8_ila_lib_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_6bb8_ila_lib_0 || ORIG_REF_NAME==bd_6bb8_ila_lib_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: d:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/ip/Diagram_7_Segment_Display_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc
-#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_6bb8_ila_lib_0 || ORIG_REF_NAME==bd_6bb8_ila_lib_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_6bb8_ila_lib_0 || ORIG_REF_NAME==bd_6bb8_ila_lib_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: d:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/ip/Diagram_7_Segment_Display_system_ila_0_0/bd_0/ip/ip_0/bd_6bb8_ila_lib_0_ooc.xdc
 

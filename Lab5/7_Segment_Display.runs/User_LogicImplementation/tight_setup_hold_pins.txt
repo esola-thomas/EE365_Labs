@@ -1,0 +1,8 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|               clk_fpga_0 |               clk_fpga_0 |                                      Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[29]_C/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                      Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[28]_C/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                      Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[23]_C/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                      Diagram_7_Segment_Display_i/count_loader/U0/clk_en_count_reg[30]_C/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

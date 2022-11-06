@@ -18,7 +18,7 @@ proc create_report { reportName command } {
   }
 }
 set_param chipscope.maxJobs 3
-create_project -in_memory -part xc7z010clg225-3
+create_project -in_memory -part xc7z010clg225-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
@@ -31,7 +31,7 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property ip_output_repo d:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/7_Segment_Display.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/hdl/Diagram_7_Segment_Display_wrapper.v
+read_vhdl -library xil_defaultlib D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/hdl/Diagram_7_Segment_Display_wrapper.vhd
 add_files D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/Diagram_7_Segment_Display.bd
 set_property used_in_implementation false [get_files -all d:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/ip/Diagram_7_Segment_Display_processing_system7_0_0/Diagram_7_Segment_Display_processing_system7_0_0.xdc]
 set_property used_in_implementation false [get_files -all d:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/ip/Diagram_7_Segment_Display_system_ila_0_0/Diagram_7_Segment_Display_system_ila_0_0_ooc.xdc]
@@ -76,7 +76,7 @@ set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
-synth_design -top Diagram_7_Segment_Display_wrapper -part xc7z010clg225-3
+synth_design -top Diagram_7_Segment_Display_wrapper -part xc7z010clg225-1
 
 
 # disable binary constraint mode for synth run checkpoints

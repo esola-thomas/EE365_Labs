@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
--- Date        : Sat Nov  5 13:59:03 2022
+-- Date        : Sat Nov  5 13:59:01 2022
 -- Host        : ALIENWARE running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/ip/Diagram_7_Segment_Display_system_ila_2_0/Diagram_7_Segment_Display_system_ila_2_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top Diagram_7_Segment_Display_system_ila_2_0 -prefix
+--               Diagram_7_Segment_Display_system_ila_2_0_ Diagram_7_Segment_Display_system_ila_2_0_sim_netlist.vhdl
 -- Design      : Diagram_7_Segment_Display_system_ila_2_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -25,8 +25,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_blk_mem_gen_v8_4_3_blk_mem_gen_p
     Q : in STD_LOGIC_VECTOR ( 9 downto 0 );
     DIADI : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_blk_mem_gen_v8_4_3_blk_mem_gen_prim_wrapper : entity is "blk_mem_gen_v8_4_3_blk_mem_gen_prim_wrapper";
 end Diagram_7_Segment_Display_system_ila_2_0_blk_mem_gen_v8_4_3_blk_mem_gen_prim_wrapper;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_system_ila_2_0_blk_mem_gen_v8_4_3_blk_mem_gen_prim_wrapper is
@@ -216,8 +214,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_all_typeA_slice is
     Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     \I_IS_TERMINATION_SLICE_W_OUTPUT_REG.DOUT_O_reg_0\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_all_typeA_slice : entity is "ltlib_v1_0_0_all_typeA_slice";
 end Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_all_typeA_slice;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_all_typeA_slice is
@@ -1172,8 +1168,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_async_edge_xfer is
     arm_ctrl : in STD_LOGIC;
     last_din : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_async_edge_xfer : entity is "ltlib_v1_0_0_async_edge_xfer";
 end Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_async_edge_xfer;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_async_edge_xfer is
@@ -1646,8 +1640,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_cfglut4 is
     A : in STD_LOGIC_VECTOR ( 3 downto 0 );
     s_dclk_o : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_cfglut4 : entity is "ltlib_v1_0_0_cfglut4";
 end Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_cfglut4;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_cfglut4 is
@@ -1722,8 +1714,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_cfglut5 is
     A : in STD_LOGIC_VECTOR ( 4 downto 0 );
     s_dclk_o : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_cfglut5 : entity is "ltlib_v1_0_0_cfglut5";
 end Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_cfglut5;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_cfglut5 is
@@ -1834,8 +1824,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_cfglut6 is
     s_dclk_o : in STD_LOGIC;
     u_wcnt_hcmp_q : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_cfglut6 : entity is "ltlib_v1_0_0_cfglut6";
 end Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_cfglut6;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_cfglut6 is
@@ -2087,8 +2075,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_cfglut7 is
     wcnt_hcmp : in STD_LOGIC;
     \I_YESLUT6.I_YES_OREG.O_reg_reg_2\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_cfglut7 : entity is "ltlib_v1_0_0_cfglut7";
 end Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_cfglut7;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_cfglut7 is
@@ -2336,8 +2322,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_generic_memrd is
     SR : in STD_LOGIC_VECTOR ( 0 to 0 );
     \input_data_reg[1]_1\ : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_generic_memrd : entity is "ltlib_v1_0_0_generic_memrd";
 end Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_generic_memrd;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_generic_memrd is
@@ -3001,8 +2985,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_rising_edge_detecti
     Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     \dout_pulse_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_rising_edge_detection : entity is "ltlib_v1_0_0_rising_edge_detection";
 end Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_rising_edge_detection;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_rising_edge_detection is
@@ -3192,8 +3174,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_xsdbs_v1_0_2_reg_ctl is
     s_di_o : in STD_LOGIC_VECTOR ( 15 downto 0 );
     s_dclk_o : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_xsdbs_v1_0_2_reg_ctl : entity is "xsdbs_v1_0_2_reg_ctl";
 end Diagram_7_Segment_Display_system_ila_2_0_xsdbs_v1_0_2_reg_ctl;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_system_ila_2_0_xsdbs_v1_0_2_reg_ctl is
@@ -8562,8 +8542,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_xsdbs_v1_0_2_reg_p2s is
     s_daddr_o : in STD_LOGIC_VECTOR ( 12 downto 0 );
     s_di_o : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_xsdbs_v1_0_2_reg_p2s : entity is "xsdbs_v1_0_2_reg_p2s";
 end Diagram_7_Segment_Display_system_ila_2_0_xsdbs_v1_0_2_reg_p2s;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_system_ila_2_0_xsdbs_v1_0_2_reg_p2s is
@@ -11306,8 +11284,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_xsdbs_v1_0_2_reg_stat is
     s_daddr_o : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \slaveRegDo_mux_3_reg[1]\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_xsdbs_v1_0_2_reg_stat : entity is "xsdbs_v1_0_2_reg_stat";
 end Diagram_7_Segment_Display_system_ila_2_0_xsdbs_v1_0_2_reg_stat;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_system_ila_2_0_xsdbs_v1_0_2_reg_stat is
@@ -11927,8 +11903,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_xsdbs_v1_0_2_xsdbs is
   attribute C_XDEVICEFAMILY of Diagram_7_Segment_Display_system_ila_2_0_xsdbs_v1_0_2_xsdbs : entity is "zynq";
   attribute C_XSDB_SLAVE_TYPE : integer;
   attribute C_XSDB_SLAVE_TYPE of Diagram_7_Segment_Display_system_ila_2_0_xsdbs_v1_0_2_xsdbs : entity is 17;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_xsdbs_v1_0_2_xsdbs : entity is "xsdbs_v1_0_2_xsdbs";
   attribute dont_touch : string;
   attribute dont_touch of Diagram_7_Segment_Display_system_ila_2_0_xsdbs_v1_0_2_xsdbs : entity is "true";
 end Diagram_7_Segment_Display_system_ila_2_0_xsdbs_v1_0_2_xsdbs;
@@ -15467,8 +15441,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_blk_mem_gen_v8_4_3_blk_mem_gen_p
     Q : in STD_LOGIC_VECTOR ( 9 downto 0 );
     DIADI : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_blk_mem_gen_v8_4_3_blk_mem_gen_prim_width : entity is "blk_mem_gen_v8_4_3_blk_mem_gen_prim_width";
 end Diagram_7_Segment_Display_system_ila_2_0_blk_mem_gen_v8_4_3_blk_mem_gen_prim_width;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_system_ila_2_0_blk_mem_gen_v8_4_3_blk_mem_gen_prim_width is
@@ -15500,8 +15472,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_reset_ctrl is
     halt_ctrl : in STD_LOGIC;
     arm_ctrl : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_reset_ctrl : entity is "ila_v6_2_9_ila_reset_ctrl";
 end Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_reset_ctrl;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_reset_ctrl is
@@ -15687,8 +15657,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_all_typeA is
     Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     \I_IS_TERMINATION_SLICE_W_OUTPUT_REG.DOUT_O_reg\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_all_typeA : entity is "ltlib_v1_0_0_all_typeA";
 end Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_all_typeA;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_all_typeA is
@@ -17460,8 +17428,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_xsdbs_v1_0_2_reg_stream is
     s_di_o : in STD_LOGIC_VECTOR ( 15 downto 0 );
     s_dclk_o : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_xsdbs_v1_0_2_reg_stream : entity is "xsdbs_v1_0_2_reg_stream";
 end Diagram_7_Segment_Display_system_ila_2_0_xsdbs_v1_0_2_reg_stream;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_system_ila_2_0_xsdbs_v1_0_2_reg_stream is
@@ -17547,8 +17513,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_blk_mem_gen_v8_4_3_blk_mem_gen_g
     Q : in STD_LOGIC_VECTOR ( 9 downto 0 );
     DIADI : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_blk_mem_gen_v8_4_3_blk_mem_gen_generic_cstr : entity is "blk_mem_gen_v8_4_3_blk_mem_gen_generic_cstr";
 end Diagram_7_Segment_Display_system_ila_2_0_blk_mem_gen_v8_4_3_blk_mem_gen_generic_cstr;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_system_ila_2_0_blk_mem_gen_v8_4_3_blk_mem_gen_generic_cstr is
@@ -17609,8 +17573,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_register is
     \xsdb_reg_reg[9]\ : in STD_LOGIC_VECTOR ( 9 downto 0 );
     \xsdb_reg_reg[1]_1\ : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_register : entity is "ila_v6_2_9_ila_register";
 end Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_register;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_register is
@@ -21722,8 +21684,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_allx_typeA is
     Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     \I_IS_TERMINATION_SLICE_W_OUTPUT_REG.DOUT_O_reg_0\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_allx_typeA : entity is "ltlib_v1_0_0_allx_typeA";
 end Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_allx_typeA;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_allx_typeA is
@@ -21830,8 +21790,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_allx_typeA_nodelay 
     SRL_D_I : in STD_LOGIC;
     \probeDelay1_reg[0]_0\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_allx_typeA_nodelay : entity is "ltlib_v1_0_0_allx_typeA_nodelay";
 end Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_allx_typeA_nodelay;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_allx_typeA_nodelay is
@@ -22121,8 +22079,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_blk_mem_gen_v8_4_3_blk_mem_gen_t
     Q : in STD_LOGIC_VECTOR ( 9 downto 0 );
     DIADI : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_blk_mem_gen_v8_4_3_blk_mem_gen_top : entity is "blk_mem_gen_v8_4_3_blk_mem_gen_top";
 end Diagram_7_Segment_Display_system_ila_2_0_blk_mem_gen_v8_4_3_blk_mem_gen_top;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_system_ila_2_0_blk_mem_gen_v8_4_3_blk_mem_gen_top is
@@ -22154,8 +22110,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_match is
     Q : in STD_LOGIC_VECTOR ( 1 downto 0 );
     \I_IS_TERMINATION_SLICE_W_OUTPUT_REG.DOUT_O_reg\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_match : entity is "ltlib_v1_0_0_match";
 end Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_match;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_match is
@@ -22264,8 +22218,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_match_nodelay is
     PROBES_I : in STD_LOGIC_VECTOR ( 19 downto 0 );
     SRL_D_I : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_match_nodelay : entity is "ltlib_v1_0_0_match_nodelay";
 end Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_match_nodelay;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_system_ila_2_0_ltlib_v1_0_0_match_nodelay is
@@ -22359,8 +22311,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_blk_mem_gen_v8_4_3_synth is
     Q : in STD_LOGIC_VECTOR ( 9 downto 0 );
     DIADI : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_blk_mem_gen_v8_4_3_synth : entity is "blk_mem_gen_v8_4_3_synth";
 end Diagram_7_Segment_Display_system_ila_2_0_blk_mem_gen_v8_4_3_synth;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_system_ila_2_0_blk_mem_gen_v8_4_3_synth is
@@ -22402,8 +22352,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_cap_sample_counte
     \out\ : in STD_LOGIC_VECTOR ( 9 downto 0 );
     Q : in STD_LOGIC_VECTOR ( 9 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_cap_sample_counter : entity is "ila_v6_2_9_ila_cap_sample_counter";
 end Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_cap_sample_counter;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_cap_sample_counter is
@@ -22815,8 +22763,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_cap_window_counte
     wcnt_hcmp_temp : in STD_LOGIC;
     \iwcnt_reg[9]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_cap_window_counter : entity is "ila_v6_2_9_ila_cap_window_counter";
 end Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_cap_window_counter;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_cap_window_counter is
@@ -23161,8 +23107,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_trig_match is
     \probeDelay1_reg[0]_0\ : in STD_LOGIC;
     probe0 : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_trig_match : entity is "ila_v6_2_9_ila_trig_match";
 end Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_trig_match;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_trig_match is
@@ -23196,8 +23140,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_blk_mem_gen_v8_4_3 is
     Q : in STD_LOGIC_VECTOR ( 9 downto 0 );
     DIADI : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_blk_mem_gen_v8_4_3 : entity is "blk_mem_gen_v8_4_3";
 end Diagram_7_Segment_Display_system_ila_2_0_blk_mem_gen_v8_4_3;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_system_ila_2_0_blk_mem_gen_v8_4_3 is
@@ -23244,8 +23186,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_cap_addrgen is
     u_scnt_cmp_q_1 : in STD_LOGIC;
     \captured_samples_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_cap_addrgen : entity is "ila_v6_2_9_ila_cap_addrgen";
 end Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_cap_addrgen;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_cap_addrgen is
@@ -24644,8 +24584,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_trigger is
     \probeDelay1_reg[0]\ : in STD_LOGIC;
     probe0 : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_trigger : entity is "ila_v6_2_9_ila_trigger";
 end Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_trigger;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_trigger is
@@ -24713,8 +24651,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_cap_ctrl_legacy i
     u_scnt_cmp_q : in STD_LOGIC_VECTOR ( 1 downto 0 );
     \captured_samples_reg[0]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_cap_ctrl_legacy : entity is "ila_v6_2_9_ila_cap_ctrl_legacy";
 end Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_cap_ctrl_legacy;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_cap_ctrl_legacy is
@@ -24885,8 +24821,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_trace_memory is
     Q : in STD_LOGIC_VECTOR ( 9 downto 0 );
     DIADI : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_trace_memory : entity is "ila_v6_2_9_ila_trace_memory";
 end Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_trace_memory;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_trace_memory is
@@ -24915,8 +24849,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_core is
     dummy_temp1_reg : in STD_LOGIC;
     probe0 : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_core : entity is "ila_v6_2_9_ila_core";
 end Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_core;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila_core is
@@ -45189,8 +45121,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila is
   attribute LC_TIME_TAG_WIDTH of Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila : entity is 1;
   attribute LC_TRIG_WIDTH : integer;
   attribute LC_TRIG_WIDTH of Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila : entity is "ila_v6_2_9_ila";
   attribute dont_touch : string;
   attribute dont_touch of Diagram_7_Segment_Display_system_ila_2_0_ila_v6_2_9_ila : entity is "true";
   attribute downgradeipidentifiedwarnings : string;
@@ -45329,8 +45259,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_bd_ab19_ila_lib_0 is
   );
   attribute CHECK_LICENSE_TYPE : string;
   attribute CHECK_LICENSE_TYPE of Diagram_7_Segment_Display_system_ila_2_0_bd_ab19_ila_lib_0 : entity is "bd_ab19_ila_lib_0,ila,{}";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_bd_ab19_ila_lib_0 : entity is "bd_ab19_ila_lib_0";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of Diagram_7_Segment_Display_system_ila_2_0_bd_ab19_ila_lib_0 : entity is "yes";
   attribute x_core_info : string;
@@ -64964,8 +64892,6 @@ entity Diagram_7_Segment_Display_system_ila_2_0_bd_ab19 is
     clk : in STD_LOGIC;
     probe0 : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Diagram_7_Segment_Display_system_ila_2_0_bd_ab19 : entity is "bd_ab19";
   attribute hw_handoff : string;
   attribute hw_handoff of Diagram_7_Segment_Display_system_ila_2_0_bd_ab19 : entity is "Diagram_7_Segment_Display_system_ila_2_0.hwdef";
 end Diagram_7_Segment_Display_system_ila_2_0_bd_ab19;

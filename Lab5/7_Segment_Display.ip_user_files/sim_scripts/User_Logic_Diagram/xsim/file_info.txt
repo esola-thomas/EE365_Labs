@@ -1,0 +1,13 @@
+User_Logic_Diagram_Global_Reset_Or_0.vhd,vhdl,xil_defaultlib,../../../bd/User_Logic_Diagram/ip/User_Logic_Diagram_Global_Reset_Or_0/sim/User_Logic_Diagram_Global_Reset_Or_0.vhd,
+User_Logic_Diagram_Low_Signal_GND_0_0.vhd,vhdl,xil_defaultlib,../../../bd/User_Logic_Diagram/ip/User_Logic_Diagram_Low_Signal_GND_0_0/sim/User_Logic_Diagram_Low_Signal_GND_0_0.vhd,
+User_Logic_Diagram_Not_1_in_0_0.vhd,vhdl,xil_defaultlib,../../../bd/User_Logic_Diagram/ip/User_Logic_Diagram_Not_1_in_0_0/sim/User_Logic_Diagram_Not_1_in_0_0.vhd,
+User_Logic_Diagram_Reset_Delay_Startup_0.vhd,vhdl,xil_defaultlib,../../../bd/User_Logic_Diagram/ip/User_Logic_Diagram_Reset_Delay_Startup_0/sim/User_Logic_Diagram_Reset_Delay_Startup_0.vhd,
+User_Logic_Diagram_Univ_Counter_0.vhd,vhdl,xil_defaultlib,../../../bd/User_Logic_Diagram/ip/User_Logic_Diagram_Univ_Counter_0/sim/User_Logic_Diagram_Univ_Counter_0.vhd,
+User_Logic_Diagram_btn_0_debounce_0.vhd,vhdl,xil_defaultlib,../../../bd/User_Logic_Diagram/ip/User_Logic_Diagram_btn_0_debounce_0/sim/User_Logic_Diagram_btn_0_debounce_0.vhd,
+User_Logic_Diagram_btn_1_debounce_toggle_0.vhd,vhdl,xil_defaultlib,../../../bd/User_Logic_Diagram/ip/User_Logic_Diagram_btn_1_debounce_toggle_0/sim/User_Logic_Diagram_btn_1_debounce_toggle_0.vhd,
+User_Logic_Diagram_btn_2_debounce_toggle_2_0.vhd,vhdl,xil_defaultlib,../../../bd/User_Logic_Diagram/ip/User_Logic_Diagram_btn_2_debounce_toggle_2_0/sim/User_Logic_Diagram_btn_2_debounce_toggle_2_0.vhd,
+User_Logic_Diagram_count_loader_0.vhd,vhdl,xil_defaultlib,../../../bd/User_Logic_Diagram/ip/User_Logic_Diagram_count_loader_0/sim/User_Logic_Diagram_count_loader_0.vhd,
+User_Logic_Diagram_out_LTU_to_display_0.vhd,vhdl,xil_defaultlib,../../../bd/User_Logic_Diagram/ip/User_Logic_Diagram_out_LTU_to_display_0/sim/User_Logic_Diagram_out_LTU_to_display_0.vhd,
+User_Logic_Diagram_TTL_Serial_user_logic_0_0.vhd,vhdl,xil_defaultlib,../../../bd/User_Logic_Diagram/ip/User_Logic_Diagram_TTL_Serial_user_logic_0_0/sim/User_Logic_Diagram_TTL_Serial_user_logic_0_0.vhd,
+User_Logic_Diagram.vhd,vhdl,xil_defaultlib,../../../bd/User_Logic_Diagram/sim/User_Logic_Diagram.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

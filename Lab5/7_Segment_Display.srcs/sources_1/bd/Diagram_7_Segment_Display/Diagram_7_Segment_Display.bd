@@ -2,7 +2,7 @@
   "design": {
     "design_info": {
       "boundary_crc": "0xF0460DF397BB1B9B",
-      "device": "xc7z010clg225-3",
+      "device": "xc7z010clg225-1",
       "name": "Diagram_7_Segment_Display",
       "synth_flow_mode": "Hierarchical",
       "tool_version": "2019.1"
@@ -17,7 +17,6 @@
       "out_LTU_to_display": "",
       "Not_1_in_1": "",
       "Low_Signal_GND_0": "",
-      "TTL_serial_0": "",
       "system_ila_0": "",
       "system_ila_2": "",
       "system_ila_3": "",
@@ -25,7 +24,8 @@
       "Display_Initializer_0": "",
       "btn_0_debounce": "",
       "btn_1_debounce_toggle": "",
-      "btn_2_debounce_toggle_2": ""
+      "btn_2_debounce_toggle_2": "",
+      "TTL_serial_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -412,44 +412,6 @@
           }
         }
       },
-      "TTL_serial_0": {
-        "vlnv": "xilinx.com:module_ref:TTL_serial:1.0",
-        "xci_name": "Diagram_7_Segment_Display_TTL_serial_0_0",
-        "parameters": {
-          "data_size": {
-            "value": "8"
-          }
-        },
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "TTL_serial",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "reset_n": {
-            "type": "rst",
-            "direction": "I"
-          },
-          "clk": {
-            "type": "clk",
-            "direction": "I"
-          },
-          "ena": {
-            "direction": "I"
-          },
-          "idata": {
-            "direction": "I",
-            "left": "7",
-            "right": "0"
-          },
-          "busy": {
-            "direction": "O"
-          },
-          "TX": {
-            "direction": "O"
-          }
-        }
-      },
       "system_ila_0": {
         "vlnv": "xilinx.com:ip:system_ila:1.1",
         "xci_name": "Diagram_7_Segment_Display_system_ila_0_0",
@@ -646,19 +608,57 @@
             "direction": "O"
           }
         }
+      },
+      "TTL_serial_0": {
+        "vlnv": "xilinx.com:module_ref:TTL_serial:1.0",
+        "xci_name": "Diagram_7_Segment_Display_TTL_serial_0_0",
+        "parameters": {
+          "data_size": {
+            "value": "8"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "TTL_serial",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "reset_n": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "ena": {
+            "direction": "I"
+          },
+          "idata": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "busy": {
+            "direction": "O"
+          },
+          "TX": {
+            "direction": "O"
+          }
+        }
       }
     },
     "interface_nets": {
-      "processing_system7_0_FIXED_IO": {
-        "interface_ports": [
-          "FIXED_IO",
-          "processing_system7_0/FIXED_IO"
-        ]
-      },
       "processing_system7_0_DDR": {
         "interface_ports": [
           "DDR",
           "processing_system7_0/DDR"
+        ]
+      },
+      "processing_system7_0_FIXED_IO": {
+        "interface_ports": [
+          "FIXED_IO",
+          "processing_system7_0/FIXED_IO"
         ]
       }
     },
@@ -729,7 +729,6 @@
           "Univ_Counter/clk",
           "Reset_Delay_Startup/iCLK",
           "count_loader/clk",
-          "TTL_serial_0/clk",
           "system_ila_0/clk",
           "system_ila_2/clk",
           "system_ila_4/clk",
@@ -737,7 +736,8 @@
           "Display_Initializer_0/clk",
           "btn_0_debounce/CLK",
           "btn_1_debounce_toggle/CLK",
-          "btn_2_debounce_toggle_2/CLK"
+          "btn_2_debounce_toggle_2/CLK",
+          "TTL_serial_0/clk"
         ]
       },
       "Counter_Value": {
@@ -858,8 +858,8 @@
       "Display_Initializer_data": {
         "ports": [
           "Display_Initializer_0/o_data",
-          "TTL_serial_0/idata",
-          "system_ila_0/probe7"
+          "system_ila_0/probe7",
+          "TTL_serial_0/idata"
         ],
         "hdl_attributes": {
           "DEBUG": {

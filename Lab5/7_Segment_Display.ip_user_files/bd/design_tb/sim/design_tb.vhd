@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
---Date        : Sat Nov  5 16:50:05 2022
+--Date        : Sat Nov  5 19:43:36 2022
 --Host        : ALIENWARE running 64-bit major release  (build 9200)
 --Command     : generate_target design_tb.bd
 --Design      : design_tb
@@ -20,7 +20,7 @@ entity design_tb is
     clk : in STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of design_tb : entity is "design_tb,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_tb,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=17,numReposBlks=17,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=13,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of design_tb : entity is "design_tb,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_tb,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=16,numReposBlks=16,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=13,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of design_tb : entity is "design_tb.hwdef";
 end design_tb;
@@ -110,20 +110,6 @@ architecture STRUCTURE of design_tb is
     o : out STD_LOGIC_VECTOR ( 15 downto 0 )
   );
   end component design_tb_out_LTU_to_display_0;
-  component design_tb_system_ila_0_0 is
-  port (
-    clk : in STD_LOGIC;
-    probe0 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe1 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe2 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe3 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe4 : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    probe5 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe6 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe7 : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    probe8 : in STD_LOGIC_VECTOR ( 0 to 0 )
-  );
-  end component design_tb_system_ila_0_0;
   component design_tb_system_ila_2_0 is
   port (
     clk : in STD_LOGIC;
@@ -300,19 +286,6 @@ out_LTU_to_display: component design_tb_out_LTU_to_display_0
      port map (
       count(7 downto 0) => Counter_Value(7 downto 0),
       o(15 downto 0) => out_LTU(15 downto 0)
-    );
-system_ila_0: component design_tb_system_ila_0_0
-     port map (
-      clk => Clock_50,
-      probe0(0) => BTN_0_input,
-      probe1(0) => BTN_1_input,
-      probe2(0) => BTN_2_input,
-      probe3(0) => initializer_pre_debounce,
-      probe4(7 downto 0) => Counter_Value(7 downto 0),
-      probe5(0) => enable_toggle,
-      probe6(0) => btn_2_debounce_toggle_2_TOGGLE_O,
-      probe7(7 downto 0) => Display_Initializer_data(7 downto 0),
-      probe8(0) => TTL_serial_TX
     );
 system_ila_2: component design_tb_system_ila_2_0
      port map (

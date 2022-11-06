@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="Diagram_7_Segment_Display_Display_Initializer_0_0_synth_1" LaunchPart="xc7z010clg225-3" LaunchTime="1667670870">
+<GenRun Id="Diagram_7_Segment_Display_Display_Initializer_0_0_synth_1" LaunchPart="xc7z010clg225-1" LaunchTime="1667696370">
   <File Type="PA-TCL" Name="Diagram_7_Segment_Display_Display_Initializer_0_0.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="Diagram_7_Segment_Display_Display_Initializer_0_0_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Diagram_7_Segment_Display_Display_Initializer_0_0_reports.tcl"/>
@@ -46,9 +46,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>
