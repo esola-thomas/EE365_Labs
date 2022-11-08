@@ -1,19 +1,19 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-// Date        : Sat Nov  5 21:02:30 2022
+// Date        : Sun Oct 30 23:43:26 2022
 // Host        : ALIENWARE running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/ip/Diagram_7_Segment_Display_Display_Initializer_0_0/Diagram_7_Segment_Display_Display_Initializer_0_0_sim_netlist.v
 // Design      : Diagram_7_Segment_Display_Display_Initializer_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
-// Device      : xc7z010clg225-1
+// Device      : xc7z010clg225-3
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "Diagram_7_Segment_Display_Display_Initializer_0_0,Display_Initializer,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_definition_source = "module_ref" *) 
-(* x_core_info = "Display_Initializer,Vivado 2019.1" *) 
+(* CHECK_LICENSE_TYPE = "Diagram_7_Segment_Display_Display_Initializer_0_0,Display_Initializer,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* IP_DEFINITION_SOURCE = "module_ref" *) 
+(* X_CORE_INFO = "Display_Initializer,Vivado 2019.1" *) 
 (* NotValidForBitStream *)
 module Diagram_7_Segment_Display_Display_Initializer_0_0
    (Reset,
@@ -21,10 +21,10 @@ module Diagram_7_Segment_Display_Display_Initializer_0_0
     LTU_in,
     clk,
     o_data);
-  (* x_interface_info = "xilinx.com:signal:reset:1.0 Reset RST" *) (* x_interface_parameter = "XIL_INTERFACENAME Reset, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input Reset;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 Reset RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME Reset, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input Reset;
   input TTL_busy;
   input [15:0]LTU_in;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk, ASSOCIATED_RESET Reset, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input clk;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, ASSOCIATED_RESET Reset, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input clk;
   output [7:0]o_data;
 
   wire [15:0]LTU_in;
@@ -33,7 +33,7 @@ module Diagram_7_Segment_Display_Display_Initializer_0_0
   wire clk;
   wire [7:0]o_data;
 
-  Diagram_7_Segment_Display_Display_Initializer_0_0_Display_Initializer U0
+  Diagram_7_Segment_Display_Display_Initializer_0_0_Display_Initializer inst
        (.LTU_in(LTU_in),
         .Reset(Reset),
         .TTL_busy(TTL_busy),

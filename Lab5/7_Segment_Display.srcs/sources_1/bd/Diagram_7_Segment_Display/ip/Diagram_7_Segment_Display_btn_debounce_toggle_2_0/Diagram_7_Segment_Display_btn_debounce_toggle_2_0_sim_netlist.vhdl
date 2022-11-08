@@ -1,14 +1,14 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
--- Date        : Sat Nov  5 21:02:34 2022
+-- Date        : Sun Oct 30 21:48:17 2022
 -- Host        : ALIENWARE running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/ip/Diagram_7_Segment_Display_btn_debounce_toggle_2_0/Diagram_7_Segment_Display_btn_debounce_toggle_2_0_sim_netlist.vhdl
 -- Design      : Diagram_7_Segment_Display_btn_debounce_toggle_2_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
--- Device      : xc7z010clg225-1
+-- Device      : xc7z010clg225-3
 -- --------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -369,40 +369,40 @@ btn_reg_i_1: unisim.vcomponents.LUT5
     );
 btn_reg_i_2: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"0010"
+      INIT => X"8000"
     )
         port map (
-      I0 => btn_cntr_reg(3),
-      I1 => btn_cntr_reg(2),
-      I2 => btn_cntr_reg(1),
-      I3 => btn_cntr_reg(0),
+      I0 => btn_cntr_reg(1),
+      I1 => btn_cntr_reg(0),
+      I2 => btn_cntr_reg(3),
+      I3 => btn_cntr_reg(2),
       O => btn_reg_i_2_n_0
     );
 btn_reg_i_3: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"0001"
+      INIT => X"8000"
     )
         port map (
-      I0 => btn_cntr_reg(7),
-      I1 => btn_cntr_reg(6),
-      I2 => btn_cntr_reg(5),
-      I3 => btn_cntr_reg(4),
+      I0 => btn_cntr_reg(5),
+      I1 => btn_cntr_reg(4),
+      I2 => btn_cntr_reg(7),
+      I3 => btn_cntr_reg(6),
       O => btn_reg_i_3_n_0
     );
 btn_reg_i_4: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"0001"
+      INIT => X"8000"
     )
         port map (
-      I0 => btn_cntr_reg(14),
-      I1 => btn_cntr_reg(15),
-      I2 => btn_cntr_reg(13),
-      I3 => btn_cntr_reg(12),
+      I0 => btn_cntr_reg(13),
+      I1 => btn_cntr_reg(12),
+      I2 => btn_cntr_reg(14),
+      I3 => btn_cntr_reg(15),
       O => btn_reg_i_4_n_0
     );
 btn_reg_i_5: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"FFFE"
+      INIT => X"7FFF"
     )
         port map (
       I0 => btn_cntr_reg(9),
@@ -481,21 +481,21 @@ entity Diagram_7_Segment_Display_btn_debounce_toggle_2_0 is
   attribute NotValidForBitStream of Diagram_7_Segment_Display_btn_debounce_toggle_2_0 : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
   attribute CHECK_LICENSE_TYPE of Diagram_7_Segment_Display_btn_debounce_toggle_2_0 : entity is "Diagram_7_Segment_Display_btn_debounce_toggle_2_0,btn_debounce_toggle,{}";
-  attribute downgradeipidentifiedwarnings : string;
-  attribute downgradeipidentifiedwarnings of Diagram_7_Segment_Display_btn_debounce_toggle_2_0 : entity is "yes";
-  attribute ip_definition_source : string;
-  attribute ip_definition_source of Diagram_7_Segment_Display_btn_debounce_toggle_2_0 : entity is "module_ref";
-  attribute x_core_info : string;
-  attribute x_core_info of Diagram_7_Segment_Display_btn_debounce_toggle_2_0 : entity is "btn_debounce_toggle,Vivado 2019.1";
+  attribute DowngradeIPIdentifiedWarnings : string;
+  attribute DowngradeIPIdentifiedWarnings of Diagram_7_Segment_Display_btn_debounce_toggle_2_0 : entity is "yes";
+  attribute IP_DEFINITION_SOURCE : string;
+  attribute IP_DEFINITION_SOURCE of Diagram_7_Segment_Display_btn_debounce_toggle_2_0 : entity is "module_ref";
+  attribute X_CORE_INFO : string;
+  attribute X_CORE_INFO of Diagram_7_Segment_Display_btn_debounce_toggle_2_0 : entity is "btn_debounce_toggle,Vivado 2019.1";
 end Diagram_7_Segment_Display_btn_debounce_toggle_2_0;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_btn_debounce_toggle_2_0 is
-  attribute x_interface_info : string;
-  attribute x_interface_info of CLK : signal is "xilinx.com:signal:clock:1.0 CLK CLK";
-  attribute x_interface_parameter : string;
-  attribute x_interface_parameter of CLK : signal is "XIL_INTERFACENAME CLK, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  attribute X_INTERFACE_INFO : string;
+  attribute X_INTERFACE_INFO of CLK : signal is "xilinx.com:signal:clock:1.0 CLK CLK";
+  attribute X_INTERFACE_PARAMETER : string;
+  attribute X_INTERFACE_PARAMETER of CLK : signal is "XIL_INTERFACENAME CLK, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
 begin
-U0: entity work.Diagram_7_Segment_Display_btn_debounce_toggle_2_0_btn_debounce_toggle
+inst: entity work.Diagram_7_Segment_Display_btn_debounce_toggle_2_0_btn_debounce_toggle
      port map (
       BTN_I => BTN_I,
       CLK => CLK,

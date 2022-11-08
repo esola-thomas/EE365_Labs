@@ -37,55 +37,17 @@ end Segment_Display_tb;
 
 architecture Test_Bench of Segment_Display_tb is
     signal BTN_0, BTN_1, BTN_2  : std_logic;
-    signal clk                  : std_logic := '0';
+    signal clk                  : std_logic;
     signal TX                   : std_logic;                  
 begin
 
-    DUT: entity work.User_Logic_Diagram_wrapper port map(
-        
-        clk => clk,
+    DUT: entity work.Diagram_7_Segment_Display_wrapper port map(
+
         BTN_0 => BTN_0,
         BTN_1 => BTN_1,
         BTN_2 => BTN_2,
         TX => TX
     );
-   
-   clk <= not clk after 10 ns;
-    
-   process is begin 
-   
-   BTN_0 <= '0';
-   BTN_1 <= '0';
-   BTN_2 <= '0';
-   
-   wait for 800 ns; -- Reset delay
-   
-   BTN_0 <= '0';
-   BTN_1 <= '0';
-   BTN_2 <= '0';
-   
-   wait for 2000 ns;
-   
-   BTN_0 <= '1';
-   BTN_1 <= '0';
-   BTN_2 <= '0';
-   
-   wait for 2000 ns;
-   
-   BTN_0 <= '0';
-   BTN_1 <= '0';
-   BTN_2 <= '0';
-   
-   wait for 2000 ns;
-   
-   BTN_0 <= '0';
-   BTN_1 <= '0';
-   BTN_2 <= '0';
-   
-   wait for 100 ns;
-   
-   end process;
-    
 
 
 end Test_Bench;

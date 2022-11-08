@@ -9,6 +9,9 @@ preplace port BTN_1 -pg 1 -lvl 0 -x -10 -y 430 -defaultsOSRD
 preplace port BTN_2 -pg 1 -lvl 0 -x -10 -y 1000 -defaultsOSRD
 preplace port TX -pg 1 -lvl 9 -x 2230 -y 910 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 7 -x 1820 -y 1210 -defaultsOSRD
+preplace inst btn_0_debounce -pg 1 -lvl 1 -x 170 -y 920 -defaultsOSRD
+preplace inst btn_1_debounce_toggle -pg 1 -lvl 3 -x 690 -y 580 -defaultsOSRD
+preplace inst btn_2_debounce_toggle_2 -pg 1 -lvl 1 -x 170 -y 1080 -defaultsOSRD
 preplace inst Univ_Counter -pg 1 -lvl 4 -x 1000 -y 140 -defaultsOSRD
 preplace inst Reset_Delay_Startup -pg 1 -lvl 1 -x 170 -y 690 -defaultsOSRD
 preplace inst Global_Reset_Or -pg 1 -lvl 2 -x 390 -y 680 -defaultsOSRD
@@ -17,15 +20,12 @@ preplace inst Not_1_in_0 -pg 1 -lvl 2 -x 390 -y 1060 -defaultsOSRD
 preplace inst out_LTU_to_display -pg 1 -lvl 5 -x 1240 -y 550 -defaultsOSRD
 preplace inst Not_1_in_1 -pg 1 -lvl 6 -x 1510 -y 280 -defaultsOSRD
 preplace inst Low_Signal_GND_0 -pg 1 -lvl 3 -x 690 -y 320 -defaultsOSRD
+preplace inst TTL_serial_0 -pg 1 -lvl 7 -x 1820 -y 330 -defaultsOSRD
 preplace inst system_ila_0 -pg 1 -lvl 8 -x 2120 -y 760 -defaultsOSRD
 preplace inst system_ila_2 -pg 1 -lvl 4 -x 1000 -y 680 -defaultsOSRD
 preplace inst system_ila_3 -pg 1 -lvl 4 -x 1000 -y 350 -defaultsOSRD
 preplace inst system_ila_4 -pg 1 -lvl 7 -x 1820 -y 610 -defaultsOSRD
 preplace inst Display_Initializer_0 -pg 1 -lvl 6 -x 1510 -y 520 -defaultsOSRD
-preplace inst btn_0_debounce -pg 1 -lvl 1 -x 170 -y 920 -defaultsOSRD
-preplace inst btn_1_debounce_toggle -pg 1 -lvl 3 -x 690 -y 580 -defaultsOSRD
-preplace inst btn_2_debounce_toggle_2 -pg 1 -lvl 1 -x 170 -y 1080 -defaultsOSRD
-preplace inst TTL_serial_0 -pg 1 -lvl 7 -x 1820 -y 330 -defaultsOSRD
 preplace netloc BTN_0_input 1 0 8 40 770 NJ 770 NJ 770 NJ 770 1110J 690 NJ 690 NJ 690 N
 preplace netloc BTN_1_input 1 0 8 NJ 430 NJ 430 500 430 NJ 430 NJ 430 NJ 430 NJ 430 2030
 preplace netloc BTN_2_input 1 0 8 30 750 NJ 750 NJ 750 NJ 750 NJ 750 NJ 750 NJ 750 1990

@@ -1,14 +1,14 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
--- Date        : Sat Nov  5 21:01:21 2022
+-- Date        : Sun Oct 30 21:48:18 2022
 -- Host        : ALIENWARE running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/ip/Diagram_7_Segment_Display_univ_bin_counter_0_0/Diagram_7_Segment_Display_univ_bin_counter_0_0_sim_netlist.vhdl
 -- Design      : Diagram_7_Segment_Display_univ_bin_counter_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
--- Device      : xc7z010clg225-1
+-- Device      : xc7z010clg225-3
 -- --------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -455,23 +455,23 @@ entity Diagram_7_Segment_Display_univ_bin_counter_0_0 is
   attribute NotValidForBitStream of Diagram_7_Segment_Display_univ_bin_counter_0_0 : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
   attribute CHECK_LICENSE_TYPE of Diagram_7_Segment_Display_univ_bin_counter_0_0 : entity is "Diagram_7_Segment_Display_univ_bin_counter_0_0,univ_bin_counter,{}";
-  attribute downgradeipidentifiedwarnings : string;
-  attribute downgradeipidentifiedwarnings of Diagram_7_Segment_Display_univ_bin_counter_0_0 : entity is "yes";
-  attribute ip_definition_source : string;
-  attribute ip_definition_source of Diagram_7_Segment_Display_univ_bin_counter_0_0 : entity is "module_ref";
-  attribute x_core_info : string;
-  attribute x_core_info of Diagram_7_Segment_Display_univ_bin_counter_0_0 : entity is "univ_bin_counter,Vivado 2019.1";
+  attribute DowngradeIPIdentifiedWarnings : string;
+  attribute DowngradeIPIdentifiedWarnings of Diagram_7_Segment_Display_univ_bin_counter_0_0 : entity is "yes";
+  attribute IP_DEFINITION_SOURCE : string;
+  attribute IP_DEFINITION_SOURCE of Diagram_7_Segment_Display_univ_bin_counter_0_0 : entity is "module_ref";
+  attribute X_CORE_INFO : string;
+  attribute X_CORE_INFO of Diagram_7_Segment_Display_univ_bin_counter_0_0 : entity is "univ_bin_counter,Vivado 2019.1";
 end Diagram_7_Segment_Display_univ_bin_counter_0_0;
 
 architecture STRUCTURE of Diagram_7_Segment_Display_univ_bin_counter_0_0 is
-  attribute x_interface_info : string;
-  attribute x_interface_info of clk : signal is "xilinx.com:signal:clock:1.0 clk CLK";
-  attribute x_interface_parameter : string;
-  attribute x_interface_parameter of clk : signal is "XIL_INTERFACENAME clk, ASSOCIATED_RESET reset, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
-  attribute x_interface_info of reset : signal is "xilinx.com:signal:reset:1.0 reset RST";
-  attribute x_interface_parameter of reset : signal is "XIL_INTERFACENAME reset, POLARITY ACTIVE_LOW, INSERT_VIP 0";
+  attribute X_INTERFACE_INFO : string;
+  attribute X_INTERFACE_INFO of clk : signal is "xilinx.com:signal:clock:1.0 clk CLK";
+  attribute X_INTERFACE_PARAMETER : string;
+  attribute X_INTERFACE_PARAMETER of clk : signal is "XIL_INTERFACENAME clk, ASSOCIATED_RESET reset, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  attribute X_INTERFACE_INFO of reset : signal is "xilinx.com:signal:reset:1.0 reset RST";
+  attribute X_INTERFACE_PARAMETER of reset : signal is "XIL_INTERFACENAME reset, POLARITY ACTIVE_LOW, INSERT_VIP 0";
 begin
-U0: entity work.Diagram_7_Segment_Display_univ_bin_counter_0_0_univ_bin_counter
+inst: entity work.Diagram_7_Segment_Display_univ_bin_counter_0_0_univ_bin_counter
      port map (
       Q(7 downto 0) => q(7 downto 0),
       clk => clk,

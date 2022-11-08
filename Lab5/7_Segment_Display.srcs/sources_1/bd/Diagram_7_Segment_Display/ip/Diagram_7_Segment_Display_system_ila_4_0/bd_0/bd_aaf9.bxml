@@ -2,17 +2,18 @@
 <Root MajorVersion="0" MinorVersion="37">
   <CompositeFile CompositeFileTopName="bd_aaf9" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="STALE" Timestamp="1667695928"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1667690810"/>
-    <Generation Name="SIMULATION" State="STALE" Timestamp="1667695928"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1667690810"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1667187762"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1667187762"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1667187762"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1667187762"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
-      <File Name="synth\bd_aaf9.vhd" Type="VHDL">
+      <File Name="synth\bd_aaf9.v" Type="Verilog">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
       </File>
-      <File Name="sim\bd_aaf9.vhd" Type="VHDL">
+      <File Name="sim\bd_aaf9.v" Type="Verilog">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SIMULATION"/>

@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-// Date        : Sat Nov  5 13:56:07 2022
+// Date        : Wed Oct 26 00:43:05 2022
 // Host        : ALIENWARE running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim -rename_top Diagram_7_Segment_Display_processing_system7_0_0 -prefix
 //               Diagram_7_Segment_Display_processing_system7_0_0_ Diagram_7_Segment_Display_processing_system7_0_0_sim_netlist.v

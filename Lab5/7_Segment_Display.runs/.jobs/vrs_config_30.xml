@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<Runs Version="1" Minor="0">
-	<Run Id="User_LogicImplementation" LaunchDir="D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/7_Segment_Display.runs/User_LogicImplementation" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design"/>
-	<Parameters>
-		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
-	</Parameters>
-</Runs>
-
