@@ -1,7 +1,0 @@
-Running: xsim.dir/Diagram_7_Segment_Display_wrapper_behav/xsimk.exe -simmode gui -wdb Diagram_7_Segment_Display_wrapper_behav.wdb -simrunnum 0 -socket 55459
-Design successfully loaded
-Design Loading Memory Usage: 17584 KB (Peak: 17584 KB)
-Design Loading CPU Usage: 0 ms
-Simulation completed
-Simulation Memory Usage: 4393256 KB (Peak: 4393256 KB)
-Simulation CPU Usage: 1281 ms

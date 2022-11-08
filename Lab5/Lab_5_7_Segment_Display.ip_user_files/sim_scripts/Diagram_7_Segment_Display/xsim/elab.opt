@@ -1,0 +1,1 @@
+--relax --debug typical --mt auto -L xil_defaultlib -L secureip -L xpm --snapshot Diagram_7_Segment_Display xil_defaultlib.Diagram_7_Segment_Display -log elaborate.log
