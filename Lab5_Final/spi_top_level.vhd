@@ -4,11 +4,12 @@ USE ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 ENTITY spi_top_level IS
+    GENERIC (baud_rate : integer := 99); -- 50 MHz => 500 KHz (50000000/500000-1) = 99
     PORT (
-        iReset : IN STD_LOGIC := '0';
         iClock : IN STD_LOGIC;
         iData : IN STD_LOGIC_vector(15 downto 0);
         iNewData : in std_logic;
+        iReset : IN STD_LOGIC := '0';
         MOSI : OUT STD_LOGIC;
         oClock : OUT STD_LOGIC;
         CSN : OUT STD_LOGIC
@@ -55,23 +56,23 @@ architecture behavioral of spi_top_level is
     signal serialBusy : std_logic;
     signal dataReady : std_LOGIC;
     signal data : std_LOGIC_vector(7 downto 0);
-    signal divClock : std_logic;
+    signal baud_rate_en : std_logic;
     signal serialClock : std_logic;
 begin
     oClock <= serialClock;
-    --set cnt_max to clock freq/serial baud
+    --set cnt_max to clock freq for spi
     inst_clk_enabler : clk_enabler
-        GENERIC map(cnt_max => 3) --251  
+        GENERIC map(cnt_max => baud_rate) --251  
         port map(    
             clock => iClock,     
-            clk_en => divClock
+            clk_en => baud_rate_en
         );    
 
     inst_spi_serial : spi_serial
     PORT map(
         reset => iReset,
-        clock => divClock,
-        dataReady => dataReady,
+        clock => baud_rate_en,
+        dataReady => iNewData,
         iData => data,
         busy => serialBusy,
         MOSI => MOSI,
@@ -79,16 +80,4 @@ begin
         SCK => serialClock
     );
     
-    inst_spi_logic : spi_logic
-    port map(
-        reset => iReset,
-        clock => iClock,
-        busy => serialBusy,
-        newData => iNewData,
-        oData => data,
-        iData => iData,
-        oSendData => dataReady,
-        outputClock => divClock
-    );
-
 end behavioral;

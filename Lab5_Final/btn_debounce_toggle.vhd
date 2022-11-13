@@ -32,7 +32,7 @@ use IEEE.std_logic_unsigned.all;
 entity btn_debounce_toggle is
 GENERIC (
 	CONSTANT CNTR_MAX : std_logic_vector(15 downto 0) := X"FFFF";
-	CONSTANT INIT_STAE : std_logic := '0');  
+	CONSTANT INIT_STATE : std_logic := '0');  
     Port ( BTN_I 	: in  STD_LOGIC;
            CLK 		: in  STD_LOGIC;
            BTN_O 	: out  STD_LOGIC;
@@ -43,10 +43,10 @@ end btn_debounce_toggle;
 architecture Behavioral of btn_debounce_toggle is
 
 signal btn_cntr   : std_logic_vector(15 downto 0) := (others => '0');
-signal btn_reg    : std_logic   			       	  := INIT_STAE;
-signal btn_toggle : std_logic                     := INIT_STAE;
+signal btn_reg    : std_logic   			       	  := INIT_STATE;
+signal btn_toggle : std_logic                     := '0';
 signal btn_sync   : std_logic_vector(1 downto 0)  := (others => '0');
-signal btn_pulse  : std_logic                     := INIT_STAE;
+signal btn_pulse  : std_logic                     := '0';
 
 
 begin

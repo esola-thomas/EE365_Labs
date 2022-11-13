@@ -86,20 +86,32 @@ component TTL_Serial_user_logic is
     TX        : OUT    STD_LOGIC);                    --serial data output
 end component TTL_Serial_user_logic;
 
-component TTL_SPI_user_logic is
-	GENERIC (
-		CONSTANT cnt_max : integer); 
-  PORT(
-    clk       : IN     STD_LOGIC;                     
-    iData     : IN     STD_LOGIC_VECTOR(15 DOWNTO 0); 
-    SSN       : OUT      STD_LOGIC;
-    SCK       : OUT      STD_LOGIC;
-    MOSI        : OUT    STD_LOGIC);                    
-end component TTL_SPI_user_logic;
+-- component TTL_SPI_user_logic is
+-- 	GENERIC (
+-- 		CONSTANT cnt_max : integer); 
+--   PORT(
+--     clk       : IN     STD_LOGIC;                     
+--     iData     : IN     STD_LOGIC_VECTOR(15 DOWNTO 0); 
+--     SSN       : OUT      STD_LOGIC;
+--     SCK       : OUT      STD_LOGIC;
+--     MOSI        : OUT    STD_LOGIC);                    
+-- end component TTL_SPI_user_logic;
 
-signal BTN2_not : std_logic;
-signal BTN1_not : std_logic;
-signal BTN0_not : std_logic;
+component spi_top_level is 
+	GENERIC (baud_rate : integer := 99); -- 50 MHz => 500 KHz (50000000/500000-1) = 99
+	PORT (
+		iReset : IN STD_LOGIC := '0';
+		iClock : IN STD_LOGIC;
+		iData : IN STD_LOGIC_vector(15 downto 0);
+		iNewData : in std_logic;
+		MOSI : OUT STD_LOGIC;
+		oClock : OUT STD_LOGIC;
+		CSN : OUT STD_LOGIC);
+end component spi_top_level;
+	
+signal BTN_2_not : std_logic;
+signal BTN_1_not : std_logic;
+signal BTN_0_not : std_logic;
 signal debounced_up   	   : std_LOGIC;
 signal debounced_areset    : std_LOGIC;
 signal debounced_cnt_en    : std_LOGIC;
@@ -109,9 +121,9 @@ signal pwrReset, SynReset	: std_logic;
 
 BEGIN
 
-BTN2_not <= not BTN_2;
-BTN1_not <= not BTN_1;
-BTN0_not <= not BTN_0;
+BTN_2_not <= not BTN_2;
+BTN_1_not <= not BTN_1;
+BTN_0_not <= not BTN_0;
 
 Inst_clk_enable : clk_enabler
 generic map(cnt_max => update_rate)
@@ -144,7 +156,7 @@ port map(
 
 up_debouncer : btn_debounce_toggle
 GENERIC MAP(CNTR_MAX => X"FFFF", INIT_STATE => '1')
-PORT MAP(BTN_I => BTN2_not,
+PORT MAP(BTN_I => BTN_2,
  CLK => iClk,
  TOGGLE_O => debounced_up);	
 
@@ -158,7 +170,7 @@ PORT MAP(BTN_I => BTN_0,
 
 en_debouncer : btn_debounce_toggle
 GENERIC MAP(CNTR_MAX => X"FFFF" , INIT_STATE => '1')
-PORT MAP(BTN_I => BTN1_not,
+PORT MAP(BTN_I => BTN_1,
  CLK => iCLK,
  TOGGLE_O => debounced_cnt_en
  );
@@ -180,17 +192,24 @@ port map(
 	TX => TX_o
 );
 
-Inst_SPI: TTL_SPI_user_logic 
-generic map(cnt_max => baud_rate)
-port map(
-clk => iCLK,
-iData => data,
-MOSI => MOSI_o,
-SSN => SSN_o,
-SCK => SCK_o
-);
+-- Inst_SPI: TTL_SPI_user_logic 
+-- generic map(cnt_max => baud_rate)
+-- port map(
+-- clk => iCLK,
+-- iData => data,
+-- MOSI => MOSI_o,
+-- SSN => SSN_o,
+-- SCK => SCK_o
+-- );
 
+spi_user_logic : spi_top_level
+	GENERIC map (baud_rate => 99) -- 50 MHz => 500 KHz (50000000/500000-1) = 99
+	PORT map (
+		iReset => BTN_0,
+		iClock => iCLK,
+		iData => data,
+		iNewData => '1',
+		MOSI => MOSI_o,
+		oClock => SCK_o,
+		CSN => SSN_o);
 END structural;
-
-
-
