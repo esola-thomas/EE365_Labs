@@ -8,7 +8,7 @@ ENTITY lab5 IS
    		constant upper: integer :=9;		
    		constant lower: integer :=0;
 		constant update_rate : integer := 49999999;
-		constant baud_rate : integer := baud_rate);
+		constant baud_rate : integer := 5208);
    PORT (
  -- 		Clock Input	
 			iCLK    : IN STD_LOGIC;						    -- On Board 50 MHz
@@ -143,21 +143,21 @@ port map(
 --debouncers inst
 
 up_debouncer : btn_debounce_toggle
-GENERIC MAP(CNTR_MAX => X"FFFF", INIT_STAE => '1')
+GENERIC MAP(CNTR_MAX => X"FFFF", INIT_STATE => '1')
 PORT MAP(BTN_I => BTN2_not,
  CLK => iClk,
  TOGGLE_O => debounced_up);	
 
 
 areset_debouncer : btn_debounce_toggle
-GENERIC MAP(CNTR_MAX => X"FFFF" , INIT_STAE => '0')
+GENERIC MAP(CNTR_MAX => X"FFFF" , INIT_STATE => '0')
 PORT MAP(BTN_I => BTN_0, 
  CLK => iClk,
  BTN_O => debounced_areset);
 
 
 en_debouncer : btn_debounce_toggle
-GENERIC MAP(CNTR_MAX => X"FFFF" , INIT_STAE => '1')
+GENERIC MAP(CNTR_MAX => X"FFFF" , INIT_STATE => '1')
 PORT MAP(BTN_I => BTN1_not,
  CLK => iCLK,
  TOGGLE_O => debounced_cnt_en
