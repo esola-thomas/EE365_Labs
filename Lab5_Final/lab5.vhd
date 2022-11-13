@@ -3,6 +3,12 @@ USE ieee.std_logic_1164.all;
 
 
 ENTITY lab5 IS
+   GENERIC (
+		constant N: integer :=4;	
+   		constant upper: integer :=9;		
+   		constant lower: integer :=0;
+		constant update_rate : integer := 49999999;
+		constant baud_rate : integer := baud_rate);
    PORT (
  -- 		Clock Input	
 			iCLK    : IN STD_LOGIC;						    -- On Board 50 MHz
@@ -20,12 +26,7 @@ END lab5;
 
 ARCHITECTURE structural OF lab5 IS
 
-constant N: integer :=4;	
-constant upper: integer :=9;		
-constant lower: integer :=0;
-
 -- TOP LEVEL COMPONENT
-
 component univ_bin_counter is
 	generic(N: integer := 4; N2: integer := 9; N1: integer := 0);
 	 port(
@@ -50,7 +51,7 @@ end component;
 
  component clk_enabler is
 		 GENERIC (
-			 CONSTANT cnt_max : integer := 49999999);      --  1.0 Hz Maybe this needs to be changed to 	4999999
+			 CONSTANT cnt_max : integer := update_rate);      --  1.0 Hz Maybe this needs to be changed to 	4999999
 		 PORT(	
 			clock					: in std_logic;	 
 			clk_en					: out std_logic
@@ -59,18 +60,16 @@ end component;
 end component;
 
 component Reset_Delay IS
-generic(MAX: integer 	:= 15);	
+generic(MAX: integer 	:= 50);	
  PORT (
 	  iCLK 					: IN std_logic;
 	  oRESET 				: OUT std_logic
 		);	
 end component;	
 
-signal clk_enable 			: std_logic;
-signal pwrReset, SynReset	: std_logic;
-
 component btn_debounce_toggle is
-GENERIC (CONSTANT CNTR_MAX : std_logic_vector(15 downto 0) := X"FFFF");  
+GENERIC (CONSTANT CNTR_MAX : std_logic_vector(15 downto 0) := X"FFFF";
+		CONSTANT INIT_STATE : std_logic := '0');  
 Port ( BTN_I 	: in  STD_LOGIC;
 	  CLK 		: in  STD_LOGIC;
 	   BTN_O 		: out  STD_LOGIC;
@@ -104,6 +103,8 @@ signal BTN0_not : std_logic;
 signal debounced_up   	   : std_LOGIC;
 signal debounced_areset    : std_LOGIC;
 signal debounced_cnt_en    : std_LOGIC;
+signal clk_enable 			: std_logic;
+signal pwrReset, SynReset	: std_logic;
 
 
 BEGIN
@@ -113,7 +114,7 @@ BTN1_not <= not BTN_1;
 BTN0_not <= not BTN_0;
 
 Inst_clk_enable : clk_enabler
-generic map(cnt_max => 49999999)
+generic map(cnt_max => update_rate)
 port map(
 	clock => iCLK,
 	clk_en => clk_enable
@@ -142,21 +143,21 @@ port map(
 --debouncers inst
 
 up_debouncer : btn_debounce_toggle
-GENERIC MAP(CNTR_MAX => X"FFFF")
+GENERIC MAP(CNTR_MAX => X"FFFF", INIT_STAE => '1')
 PORT MAP(BTN_I => BTN2_not,
  CLK => iClk,
  TOGGLE_O => debounced_up);	
 
 
 areset_debouncer : btn_debounce_toggle
-GENERIC MAP(CNTR_MAX => X"FFFF")
-PORT MAP(BTN_I => BTN0_not, 
+GENERIC MAP(CNTR_MAX => X"FFFF" , INIT_STAE => '0')
+PORT MAP(BTN_I => BTN_0, 
  CLK => iClk,
  BTN_O => debounced_areset);
 
 
 en_debouncer : btn_debounce_toggle
-GENERIC MAP(CNTR_MAX => X"FFFF")
+GENERIC MAP(CNTR_MAX => X"FFFF" , INIT_STAE => '1')
 PORT MAP(BTN_I => BTN1_not,
  CLK => iCLK,
  TOGGLE_O => debounced_cnt_en
@@ -172,7 +173,7 @@ port map(
 -- new
 
 Inst_TTL_serial: TTL_Serial_user_Logic
-generic map(cnt_max => 5208)
+generic map(cnt_max => baud_rate)
 port map(
 	clk => iCLK,
 	iData => data,
@@ -180,7 +181,7 @@ port map(
 );
 
 Inst_SPI: TTL_SPI_user_logic 
-generic map(cnt_max => 5208)
+generic map(cnt_max => baud_rate)
 port map(
 clk => iCLK,
 iData => data,

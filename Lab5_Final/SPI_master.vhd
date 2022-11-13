@@ -1,9 +1,10 @@
+-- Nicholas file
 library IEEE;
 USE ieee.std_logic_1164.all;
 use IEEE.NUMERIC_STD.ALL;
 
 entity SPI_master is
-    Generic (Constant CntMax : integer:= 99);  -- (125 MHz/500 KHz) - 1 = 249
+    Generic (Constant CntMax : integer:= 99);  -- (50 MHz/500 KHz) - 1 = 99
     Port ( clock             : in std_logic; -- board clock
            iData             : in std_logic_vector(7 downto 0); 
            iReset_n          : in std_logic;  
