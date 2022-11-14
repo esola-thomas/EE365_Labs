@@ -70,6 +70,13 @@ ARCHITECTURE design_1_lab5_0_0_arch OF design_1_lab5_0_0 IS
   ATTRIBUTE DowngradeIPIdentifiedWarnings : STRING;
   ATTRIBUTE DowngradeIPIdentifiedWarnings OF design_1_lab5_0_0_arch: ARCHITECTURE IS "yes";
   COMPONENT lab5 IS
+    GENERIC (
+      N : INTEGER;
+      upper : INTEGER;
+      lower : INTEGER;
+      update_rate : INTEGER;
+      baud_rate : INTEGER
+    );
     PORT (
       iCLK : IN STD_LOGIC;
       BTN_0 : IN STD_LOGIC;
@@ -86,11 +93,18 @@ ARCHITECTURE design_1_lab5_0_0_arch OF design_1_lab5_0_0 IS
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_1_lab5_0_0_arch : ARCHITECTURE IS "design_1_lab5_0_0,lab5,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_1_lab5_0_0_arch: ARCHITECTURE IS "design_1_lab5_0_0,lab5,{x_ipProduct=Vivado 2019.1,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=lab5,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=VHDL}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design_1_lab5_0_0_arch: ARCHITECTURE IS "design_1_lab5_0_0,lab5,{x_ipProduct=Vivado 2019.1,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=lab5,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=VHDL,N=4,upper=9,lower=0,update_rate=49999999,baud_rate=5208}";
   ATTRIBUTE IP_DEFINITION_SOURCE : STRING;
   ATTRIBUTE IP_DEFINITION_SOURCE OF design_1_lab5_0_0_arch: ARCHITECTURE IS "module_ref";
 BEGIN
   U0 : lab5
+    GENERIC MAP (
+      N => 4,
+      upper => 9,
+      lower => 0,
+      update_rate => 49999999,
+      baud_rate => 5208
+    )
     PORT MAP (
       iCLK => iCLK,
       BTN_0 => BTN_0,
