@@ -79,5 +79,17 @@ begin
         CSN => CSN,
         SCK => serialClock
     );
+
+    inst_spi_logic : spi_logic
+    port map(
+        reset => iReset,
+        clock => iClock,
+        busy => serialBusy,
+        newData => iNewData,
+        oData => data,
+        iData => iData,
+        oSendData => dataReady,
+        outputClock => baud_rate_en
+    );
     
 end behavioral;
