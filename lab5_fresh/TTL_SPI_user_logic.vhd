@@ -5,7 +5,7 @@ use IEEE.numeric_std.all;
 
 ENTITY TTL_SPI_user_logic IS
 	GENERIC (
-		CONSTANT CntMax : integer := 99); 
+		CONSTANT CntMax : integer := 200); 
   PORT(
     clk       : IN     STD_LOGIC;                     --system clock
     iData     : IN     STD_LOGIC_VECTOR(15 DOWNTO 0); --input data
@@ -28,9 +28,12 @@ signal count 	  : unsigned(27 DOWNTO 0):=X"000000F";
 signal byteSel    : integer range 0 to 12:=0;
 signal sig_MOSI, sig_SCK, sig_SSN     : std_logic;
 
+attribute keep : string;
+attribute keep of data : signal is "true";
+attribute keep of data_wr : signal is "true";
 
 COMPONENT SPI_master is
-    Generic (Constant CntMax : integer:= 99);  -- (125 MHz/500 KHz) - 1 = 249
+    Generic (Constant CntMax : integer:= 200);  -- (125 MHz/500 KHz) - 1 = 249
     Port ( clock             : in std_logic; -- board clock
            iData             : in std_logic_vector(7 downto 0); 
            iReset_n          : in std_logic;  
@@ -67,7 +70,7 @@ end process;
       
 Inst_SPI_master: SPI_master
 	GENERIC map(
-		CntMax => 99)
+		CntMax => 200)
 	port map(
 		iReset_n	=> reset_n, 		
 		clock	=> clk, 		
@@ -82,7 +85,7 @@ Inst_SPI_master: SPI_master
         
 process(clk)
 begin  
-if(clk'event and clk = '1') then
+if(clk'event and clk = '1') then 
   case state is 
   when start =>
 	      if count /= X"0000000" then                         

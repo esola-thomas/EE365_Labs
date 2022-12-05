@@ -24,27 +24,27 @@
 ## GPIO11
 #set_property PACKAGE_PIN J15 [get_ports {GPIO_1_tri_io[9]}]
 ## GPIO12
-set_property PACKAGE_PIN M15 [get_ports {TX_o}]
-set_property IOSTANDARD LVCMOS33 [get_ports {TX_o}]
-## GPIO13
-set_property PACKAGE_PIN R13 [get_ports {MOSI_o}] 
-set_property IOSTANDARD LVCMOS33 [get_ports {MOSI_o}]
+set_property PACKAGE_PIN M15 [get_ports TX_o]
+set_property IOSTANDARD LVCMOS33 [get_ports TX_o]
+## GPIO13 PURPULE wire
+set_property PACKAGE_PIN R13 [get_ports MOSI_o]
+set_property IOSTANDARD LVCMOS33 [get_ports MOSI_o]
 ## GPIO16
-set_property PACKAGE_PIN L13 [get_ports {BTN_2}]
-set_property IOSTANDARD LVCMOS33 [get_ports {BTN_2}]
+set_property PACKAGE_PIN L13 [get_ports BTN_2]
+set_property IOSTANDARD LVCMOS33 [get_ports BTN_2]
 ## GPIO17
 #set_property PACKAGE_PIN G11 [get_ports {GPIO_1_tri_io[13]}]
 ## GPIO18
 #set_property PACKAGE_PIN H11 [get_ports {GPIO_1_tri_io[14]}]
-## GPIO19
-set_property PACKAGE_PIN R12 [get_ports {SSN_o}] 
-set_property IOSTANDARD LVCMOS33 [get_ports {SSN_o}]
+## GPIO19 RED wire
+set_property PACKAGE_PIN R12 [get_ports SSN_o]
+set_property IOSTANDARD LVCMOS33 [get_ports SSN_o]
 ## GPIO20
-set_property PACKAGE_PIN M14 [get_ports {BTN_1}]
-set_property IOSTANDARD LVCMOS33 [get_ports {BTN_1}]
+set_property PACKAGE_PIN M14 [get_ports BTN_1]
+set_property IOSTANDARD LVCMOS33 [get_ports BTN_1]
 ## GPIO21
-set_property PACKAGE_PIN P15 [get_ports {BTN_0}]
-set_property IOSTANDARD LVCMOS33 [get_ports {BTN_0}]
+set_property PACKAGE_PIN P15 [get_ports BTN_0]
+set_property IOSTANDARD LVCMOS33 [get_ports BTN_0]
 ## GPIO22
 #set_property PACKAGE_PIN H13 [get_ports {GPIO_1_tri_io[18]}]
 ## GPIO23
@@ -53,9 +53,9 @@ set_property IOSTANDARD LVCMOS33 [get_ports {BTN_0}]
 #set_property PACKAGE_PIN K11 [get_ports {GPIO_1_tri_io[20]}]
 ## GPIO25
 #set_property PACKAGE_PIN K13 [get_ports {GPIO_1_tri_io[21]}]
-## GPIO26
-set_property PACKAGE_PIN L12 [get_ports {SCK_o}] 
-set_property IOSTANDARD LVCMOS33 [get_ports {SCK_o}]
+## GPIO26 Yellow wire
+set_property PACKAGE_PIN L12 [get_ports SCK_o]
+set_property IOSTANDARD LVCMOS33 [get_ports SCK_o]
 ## GPIO27
 #set_property PACKAGE_PIN G12 [get_ports {GPIO_1_tri_io[23]}]
 
@@ -94,3 +94,5 @@ set_property IOSTANDARD LVCMOS33 [get_ports {SCK_o}]
 ## PWM_L
 #set_property PACKAGE_PIN N7 [get_ports PWM_L]
 #set_property IOSTANDARD LVCMOS33 [get_ports PWM_*]
+
+

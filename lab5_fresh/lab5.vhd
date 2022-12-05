@@ -180,7 +180,7 @@ port map(
 );
 
 Inst_SPI: TTL_SPI_user_logic 
-generic map(CntMax => 99)
+generic map(CntMax => 52084)
 port map(
 clk => iCLK,
 iData => data,
