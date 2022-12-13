@@ -1,0 +1,46 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu Nov 10 11:08:51 2022
+| Host         : ALIENWARE running 64-bit major release  (build 9200)
+| Command      : report_drc -file Lab_5_wrapper_drc_routed.rpt -pb Lab_5_wrapper_drc_routed.pb -rpx Lab_5_wrapper_drc_routed.rpx
+| Design       : Lab_5_wrapper
+| Device       : xc7z010clg225-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 2
++----------+----------+-------------------+------------+
+| Rule     | Severity | Description       | Violations |
++----------+----------+-------------------+------------+
+| PDRC-153 | Warning  | Gated clock check | 2          |
++----------+----------+-------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-153#1 Warning
+Gated clock check  
+Net Lab_5_i/top_level_0/U0/counter/reset_delay_len_reg[31]_i_5_0 is a gated clock net sourced by a combinational pin Lab_5_i/top_level_0/U0/counter/reset_delay_len_reg[31]_i_1/O, cell Lab_5_i/top_level_0/U0/counter/reset_delay_len_reg[31]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net Lab_5_i/top_level_0/U0/debounce_BTN_2/btn_toggle_reg_0 is a gated clock net sourced by a combinational pin Lab_5_i/top_level_0/U0/debounce_BTN_2/r_reg_reg[3]_LDC_i_1/O, cell Lab_5_i/top_level_0/U0/debounce_BTN_2/r_reg_reg[3]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+

@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/TTL_user_logic.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TTL_Serial_user_logic'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/top_level.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top_level'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.srcs/sim_1/new/Top_Level_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Top_Level_tb'

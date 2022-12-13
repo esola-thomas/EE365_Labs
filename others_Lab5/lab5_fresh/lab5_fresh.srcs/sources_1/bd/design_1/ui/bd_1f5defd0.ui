@@ -1,0 +1,32 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 3 -x 380 -y -200 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 3 -x 380 -y -170 -defaultsOSRD
+preplace port BTN_0 -pg 1 -lvl 0 -x -210 -y 0 -defaultsOSRD
+preplace port BTN_1 -pg 1 -lvl 0 -x -210 -y 30 -defaultsOSRD
+preplace port BTN_2 -pg 1 -lvl 0 -x -210 -y 60 -defaultsOSRD
+preplace port TX_o -pg 1 -lvl 3 -x 380 -y -30 -defaultsOSRD
+preplace port SSN_o -pg 1 -lvl 3 -x 380 -y 0 -defaultsOSRD
+preplace port SCK_o -pg 1 -lvl 3 -x 380 -y 30 -defaultsOSRD
+preplace port MOSI_o -pg 1 -lvl 3 -x 380 -y 60 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x -40 -y -160 -defaultsOSRD
+preplace inst lab5_0 -pg 1 -lvl 2 -x 240 -y 30 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 1 1 110 -150n
+preplace netloc BTN_0_1 1 0 2 -190 20 NJ
+preplace netloc BTN_1_1 1 0 2 NJ 30 110
+preplace netloc BTN_2_1 1 0 2 NJ 60 N
+preplace netloc lab5_0_TX_o 1 2 1 340 -30n
+preplace netloc lab5_0_SSN_o 1 2 1 350 0n
+preplace netloc lab5_0_SCK_o 1 2 1 340 30n
+preplace netloc lab5_0_MOSI_o 1 2 1 N 60
+preplace netloc processing_system7_0_DDR 1 1 2 NJ -190 340
+preplace netloc processing_system7_0_FIXED_IO 1 1 2 NJ -170 N
+levelinfo -pg 1 -210 -40 240 380
+pagesize -pg 1 -db -bbox -sgen -300 -250 490 200
+"
+}
+{
+   "da_ps7_cnt":"2"
+}

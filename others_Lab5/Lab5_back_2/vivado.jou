@@ -1,0 +1,636 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Nov  8 14:27:35 2022
+# Process ID: 15480
+# Current directory: D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9000 D:\My_DevOps\Fall_2022\EE365\EE365_Labs\Lab5\Lab_5_7_Segment_Display.xpr
+# Log file: D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/vivado.log
+# Journal file: D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.xpr
+update_compile_order -fileset sources_1
+write_project_tcl -dump_project_info -force {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/Lab_5_7_Segment_Display.tcl}
+open_bd_design {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/Diagram_7_Segment_Display.bd}
+create_bd_cell -type module -reference TTL_Serial_user_logic TTL_Serial_user_logic_0
+set_property location {346 248} [get_bd_ports tx]
+connect_bd_net [get_bd_ports tx] [get_bd_pins TTL_Serial_user_logic_0/TX]
+set_property name TX_port [get_bd_nets TTL_Serial_user_logic_0_TX]
+regenerate_bd_layout
+regenerate_bd_layout -routing
+connect_bd_net [get_bd_pins TTL_Serial_user_logic_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+set_property name Clock_50 [get_bd_nets processing_system7_0_FCLK_CLK0]
+set_property name CLK_50 [get_bd_nets Clock_50]
+create_bd_cell -type module -reference btn_debounce_toggle btn_debounce_toggle_0
+create_bd_cell -type module -reference btn_debounce_toggle btn_debounce_toggle_1
+create_bd_cell -type module -reference btn_debounce_toggle btn_debounce_toggle_2
+set_property location {1 168 -83} [get_bd_cells btn_debounce_toggle_0]
+connect_bd_net [get_bd_pins btn_debounce_toggle_0/CLK] [get_bd_pins btn_debounce_toggle_1/CLK]
+connect_bd_net [get_bd_pins btn_debounce_toggle_2/CLK] [get_bd_pins btn_debounce_toggle_0/CLK]
+connect_bd_net [get_bd_pins btn_debounce_toggle_2/CLK] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_ports BTN_2] [get_bd_pins btn_debounce_toggle_2/BTN_I]
+connect_bd_net [get_bd_ports BTN_1] [get_bd_pins btn_debounce_toggle_1/BTN_I]
+connect_bd_net [get_bd_ports BTN_0] [get_bd_pins btn_debounce_toggle_0/BTN_I]
+set_property name BTN_0_in [get_bd_nets BTN_0_1]
+set_property name BTN_1_in [get_bd_nets BTN_1_1]
+set_property name BTN_2_in [get_bd_nets BTN_2_1]
+create_bd_cell -type module -reference count_loader count_loader_0
+create_bd_cell -type module -reference out_LTU out_LTU_0
+create_bd_cell -type module -reference univ_bin_counter univ_bin_counter_0
+delete_bd_objs [get_bd_cells count_loader_0]
+connect_bd_net [get_bd_pins out_LTU_0/count] [get_bd_pins univ_bin_counter_0/q]
+connect_bd_net [get_bd_pins out_LTU_0/o] [get_bd_pins TTL_Serial_user_logic_0/iData]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (50 MHz)" }  [get_bd_pins univ_bin_counter_0/clk]
+regenerate_bd_layout
+connect_bd_net [get_bd_pins btn_debounce_toggle_0/BTN_O] [get_bd_pins univ_bin_counter_0/syn_clr]
+set_property name System_Init_While_High [get_bd_nets btn_debounce_toggle_0_BTN_O]
+connect_bd_net [get_bd_pins btn_debounce_toggle_1/TOGGLE_O] [get_bd_pins univ_bin_counter_0/en]
+set_property name System_Enable [get_bd_nets btn_debounce_toggle_1_TOGGLE_O]
+connect_bd_net [get_bd_pins btn_debounce_toggle_2/TOGGLE_O] [get_bd_pins univ_bin_counter_0/up]
+set_property name Up_Down [get_bd_nets btn_debounce_toggle_2_TOGGLE_O]
+regenerate_bd_layout
+save_bd_design
+update_compile_order -fileset sources_1
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_RESET0_N] [get_bd_nets rst_ps7_0_50M_peripheral_aresetn] [get_bd_cells rst_ps7_0_50M]
+close [ open D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/new/Counter_Loader.vhd w ]
+add_files D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/new/Counter_Loader.vhd
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference Counter_Loader Counter_Loader_0
+connect_bd_net [get_bd_pins Counter_Loader_0/clk_en] [get_bd_pins univ_bin_counter_0/clk_en]
+update_module_reference Diagram_7_Segment_Display_Counter_Loader_0_0
+update_compile_order -fileset sources_1
+delete_bd_objs [get_bd_nets Counter_Loader_0_clk_en] [get_bd_cells Counter_Loader_0]
+update_compile_order -fileset sources_1
+undo
+update_compile_order -fileset sources_1
+add_files -norecurse D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/new/Counter_Loader.vhd
+create_bd_cell -type module -reference Counter_Loader Counter_Loader_1
+delete_bd_objs [get_bd_cells Counter_Loader_1]
+connect_bd_net [get_bd_pins Counter_Loader_0/load_data] [get_bd_pins univ_bin_counter_0/d]
+connect_bd_net [get_bd_pins Counter_Loader_0/load_signal] [get_bd_pins univ_bin_counter_0/load]
+connect_bd_net [get_bd_pins Counter_Loader_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins Counter_Loader_0/min] [get_bd_pins univ_bin_counter_0/min_tick]
+connect_bd_net [get_bd_pins Counter_Loader_0/max] [get_bd_pins univ_bin_counter_0/max_tick]
+set_property name counter_max [get_bd_nets univ_bin_counter_0_max_tick]
+set_property name counter_min [get_bd_nets univ_bin_counter_0_min_tick]
+set_property name load_signal_to_counter [get_bd_nets Counter_Loader_0_load_signal]
+set_property name load_data_to_counter [get_bd_nets Counter_Loader_0_load_data]
+set_property name counter_clock_en [get_bd_nets Counter_Loader_0_clk_en]
+set_property name Counter_Value_out [get_bd_nets univ_bin_counter_0_q]
+set_property name LUT_Value [get_bd_nets out_LTU_0_o]
+update_module_reference {Diagram_7_Segment_Display_Counter_Loader_0_0 Diagram_7_Segment_Display_Counter_Loader_1_0}
+update_compile_order -fileset sources_1
+update_module_reference {Diagram_7_Segment_Display_Counter_Loader_0_0 Diagram_7_Segment_Display_Counter_Loader_1_0}
+update_compile_order -fileset sources_1
+validate_bd_design
+regenerate_bd_layout
+update_module_reference {Diagram_7_Segment_Display_Counter_Loader_0_0 Diagram_7_Segment_Display_Counter_Loader_1_0}
+update_module_reference {Diagram_7_Segment_Display_Counter_Loader_0_0 Diagram_7_Segment_Display_Counter_Loader_1_0}
+update_module_reference {Diagram_7_Segment_Display_Counter_Loader_0_0 Diagram_7_Segment_Display_Counter_Loader_1_0}
+connect_bd_net [get_bd_pins univ_bin_counter_0/reset] [get_bd_pins btn_debounce_toggle_0/BTN_O]
+connect_bd_net [get_bd_pins Counter_Loader_0/reset] [get_bd_pins btn_debounce_toggle_0/BTN_O]
+update_module_reference {Diagram_7_Segment_Display_Counter_Loader_0_0 Diagram_7_Segment_Display_Counter_Loader_1_0}
+update_module_reference {Diagram_7_Segment_Display_Counter_Loader_0_0 Diagram_7_Segment_Display_Counter_Loader_1_0}
+update_compile_order -fileset sources_1
+update_module_reference {Diagram_7_Segment_Display_Counter_Loader_0_0 Diagram_7_Segment_Display_Counter_Loader_1_0}
+update_compile_order -fileset sources_1
+update_module_reference {Diagram_7_Segment_Display_Counter_Loader_0_0 Diagram_7_Segment_Display_Counter_Loader_1_0}
+update_module_reference {Diagram_7_Segment_Display_Counter_Loader_0_0 Diagram_7_Segment_Display_Counter_Loader_1_0}
+update_compile_order -fileset sources_1
+update_module_reference {Diagram_7_Segment_Display_Counter_Loader_0_0 Diagram_7_Segment_Display_Counter_Loader_1_0}
+update_compile_order -fileset sources_1
+connect_bd_net [get_bd_pins Counter_Loader_0/load_value] [get_bd_pins univ_bin_counter_0/d]
+update_module_reference {Diagram_7_Segment_Display_Counter_Loader_0_0 Diagram_7_Segment_Display_Counter_Loader_1_0}
+connect_bd_net [get_bd_pins Counter_Loader_0/count_min] [get_bd_pins univ_bin_counter_0/min_tick]
+connect_bd_net [get_bd_pins Counter_Loader_0/count_max] [get_bd_pins univ_bin_counter_0/max_tick]
+connect_bd_net [get_bd_pins Counter_Loader_0/up_down] [get_bd_pins btn_debounce_toggle_2/TOGGLE_O]
+update_module_reference {Diagram_7_Segment_Display_btn_debounce_toggle_0_0 Diagram_7_Segment_Display_btn_debounce_toggle_1_0 Diagram_7_Segment_Display_btn_debounce_toggle_2_0}
+connect_bd_net [get_bd_pins Counter_Loader_0/clk_en_o] [get_bd_pins univ_bin_counter_0/clk_en]
+regenerate_bd_layout
+regenerate_bd_layout -routing
+validate_bd_design
+validate_bd_design -force
+save_bd_design
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+export_ip_user_files -of_objects  [get_files D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/new/count_loader.vhd] -no_script -reset -force -quiet
+remove_files  D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/new/count_loader.vhd
+update_module_reference Diagram_7_Segment_Display_Counter_Loader_0_0
+validate_bd_design
+reset_run Diagram_7_Segment_Display_TTL_Serial_user_logic_0_0_synth_1
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+update_module_reference Diagram_7_Segment_Display_Counter_Loader_0_0
+update_module_reference Diagram_7_Segment_Display_TTL_Serial_user_logic_0_0
+update_module_reference Diagram_7_Segment_Display_Counter_Loader_0_0
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/Diagram_7_Segment_Display.bd]
+synth_design -rtl -name rtl_1
+open_bd_design {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/Diagram_7_Segment_Display.bd}
+create_bd_port -dir I clk
+disconnect_bd_net /CLK_50 [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_ports clk] [get_bd_pins btn_debounce_toggle_2/CLK]
+startgroup
+set_property -dict [list CONFIG.update_delay {2}] [get_bd_cells Counter_Loader_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.CNTR_MAX {0x0001}] [get_bd_cells btn_debounce_toggle_2]
+endgroup
+startgroup
+set_property -dict [list CONFIG.CNTR_MAX {0x0001}] [get_bd_cells btn_debounce_toggle_0]
+endgroup
+undo
+undo
+undo
+save_bd_design
+update_compile_order -fileset sim_1
+set_property source_mgmt_mode DisplayOnly [current_project]
+update_module_reference Diagram_7_Segment_Display_Counter_Loader_0_0
+open_bd_design {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/Diagram_7_Segment_Display.bd}
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+delete_bd_objs [get_bd_ports clk]
+delete_bd_objs [get_bd_nets CLK_50]
+undo
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins univ_bin_counter_0/clk]
+save_bd_design
+launch_runs synth_1 -jobs 12
+create_bd_port -dir I clk
+disconnect_bd_net /CLK_50 [get_bd_pins TTL_Serial_user_logic_0/clk]
+connect_bd_net [get_bd_pins TTL_Serial_user_logic_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+disconnect_bd_net /CLK_50 [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_ports clk] [get_bd_pins univ_bin_counter_0/clk]
+save_bd_design
+launch_runs synth_1 -jobs 12
+launch_runs synth_1 -jobs 12
+delete_bd_objs [get_bd_ports clk]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins univ_bin_counter_0/clk]
+save_bd_design
+validate_bd_design
+make_wrapper -files [get_files D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/Diagram_7_Segment_Display.bd] -top
+generate_target all [get_files D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/Diagram_7_Segment_Display.bd]
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/Diagram_7_Segment_Display.bd]
+refresh_design
+open_bd_design {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/Diagram_7_Segment_Display.bd}
+export_ip_user_files -of_objects  [get_files D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/hdl/Diagram_7_Segment_Display_wrapper.vhd] -no_script -reset -force -quiet
+remove_files  D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/hdl/Diagram_7_Segment_Display_wrapper.vhd
+make_wrapper -files [get_files D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/Diagram_7_Segment_Display.bd] -top
+add_files -norecurse D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/hdl/Diagram_7_Segment_Display_wrapper.vhd
+launch_runs synth_1 -jobs 12
+export_ip_user_files -of_objects  [get_files D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/new/SPI_master.vhd] -no_script -reset -force -quiet
+remove_files  D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/new/SPI_master.vhd
+launch_runs synth_1 -jobs 12
+delete_bd_objs [get_bd_intf_nets processing_system7_0_FIXED_IO]
+delete_bd_objs [get_bd_intf_ports FIXED_IO]
+delete_bd_objs [get_bd_intf_nets processing_system7_0_DDR] [get_bd_intf_ports DDR]
+delete_bd_objs [get_bd_cells processing_system7_0]
+set_property source_mgmt_mode All [current_project]
+create_bd_port -dir I clk
+connect_bd_net [get_bd_ports clk] [get_bd_pins univ_bin_counter_0/clk]
+update_compile_order -fileset sources_1
+startgroup
+set_property -dict [list CONFIG.start_value {"1"}] [get_bd_cells btn_debounce_toggle_1]
+endgroup
+startgroup
+set_property -dict [list CONFIG.start_value {"0"}] [get_bd_cells btn_debounce_toggle_1]
+endgroup
+startgroup
+set_property -dict [list CONFIG.start_value {"1"}] [get_bd_cells btn_debounce_toggle_1]
+endgroup
+startgroup
+set_property -dict [list CONFIG.start_value {"1"}] [get_bd_cells btn_debounce_toggle_2]
+endgroup
+create_bd_design "top_level"
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+set_property -dict [list CONFIG.PCW_USE_M_AXI_GP0 {0} CONFIG.PCW_UART1_PERIPHERAL_ENABLE {1} CONFIG.PCW_UART1_UART1_IO {MIO 8 .. 9}] [get_bd_cells processing_system7_0]
+update_compile_order -fileset sources_1
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+endgroup
+open_bd_design {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/Diagram_7_Segment_Display.bd}
+make_wrapper -files [get_files D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/Diagram_7_Segment_Display.bd] -top
+open_bd_design {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/Diagram_7_Segment_Display.bd}
+open_bd_design {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/top_level/top_level.bd}
+generate_target all [get_files  D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/Diagram_7_Segment_Display.bd]
+export_ip_user_files -of_objects [get_files D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/Diagram_7_Segment_Display.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/Diagram_7_Segment_Display.bd]
+launch_runs -jobs 12 {Diagram_7_Segment_Display_btn_debounce_toggle_1_0_synth_1 Diagram_7_Segment_Display_btn_debounce_toggle_2_0_synth_1}
+export_simulation -of_objects [get_files D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/Diagram_7_Segment_Display.bd] -directory D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.ip_user_files/sim_scripts -ip_user_files_dir D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.ip_user_files -ipstatic_source_dir D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.cache/compile_simlib/modelsim} {questa=D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.cache/compile_simlib/questa} {riviera=D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.cache/compile_simlib/riviera} {activehdl=D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+save_bd_design
+file mkdir D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.sdk
+write_hwdef -force  -file D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.sdk/Diagram_7_Segment_Display_wrapper.hdf
+add_files -norecurse D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/synth/Diagram_7_Segment_Display.vhd
+update_compile_order -fileset sources_1
+open_bd_design {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/Diagram_7_Segment_Display.bd}
+export_ip_user_files -of_objects  [get_files D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/top_level/top_level.bd] -no_script -reset -force -quiet
+remove_files  D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/top_level/top_level.bd
+file delete -force D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/top_level
+copy_bd_objs /  [get_bd_cells {out_LTU_0 btn_debounce_toggle_0 btn_debounce_toggle_1 btn_debounce_toggle_2 Counter_Loader_0 univ_bin_counter_0 TTL_Serial_user_logic_0}] [get_bd_ports {BTN_2 BTN_1 tx BTN_0 clk}] [get_bd_nets {load_signal_to_counter BTN_1_in LUT_Value System_Init_While_High counter_min TX_port load_data_to_counter BTN_0_in counter_clock_en CLK_50 System_Enable counter_max Counter_Value_out Up_Down BTN_2_in}]
+undo
+regenerate_bd_layout
+regenerate_bd_layout -routing
+export_ip_user_files -of_objects  [get_files D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/Diagram_7_Segment_Display.bd] -no_script -reset -force -quiet
+remove_files  D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/Diagram_7_Segment_Display.bd
+file delete -force D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display
+export_ip_user_files -of_objects  [get_files D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/hdl/Diagram_7_Segment_Display_wrapper.vhd] -no_script -reset -force -quiet
+remove_files  D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/hdl/Diagram_7_Segment_Display_wrapper.vhd
+update_compile_order -fileset sources_1
+set_property top Counter_Loader [current_fileset]
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/synth/Diagram_7_Segment_Display.vhd] -no_script -reset -force -quiet
+remove_files  D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/Diagram_7_Segment_Display/synth/Diagram_7_Segment_Display.vhd
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+create_bd_design "root_level"
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference univ_bin_counter univ_bin_counter_0
+create_bd_cell -type module -reference btn_debounce_toggle btn_debounce_toggle_0
+create_bd_cell -type module -reference btn_debounce_toggle btn_debounce_toggle_1
+create_bd_cell -type module -reference btn_debounce_toggle btn_debounce_toggle_2
+set_property location {1 193 363} [get_bd_cells btn_debounce_toggle_1]
+set_property location {1 126 39} [get_bd_cells btn_debounce_toggle_1]
+set_property location {1 134 419} [get_bd_cells btn_debounce_toggle_2]
+set_property location {1 102 283} [get_bd_cells btn_debounce_toggle_1]
+set_property location {1 147 173} [get_bd_cells btn_debounce_toggle_0]
+set_property location {1 127 145} [get_bd_cells btn_debounce_toggle_0]
+create_bd_cell -type module -reference Counter_Loader Counter_Loader_0
+create_bd_cell -type module -reference out_LTU out_LTU_0
+create_bd_cell -type module -reference TTL_Serial_user_logic TTL_Serial_user_logic_0
+connect_bd_net [get_bd_pins out_LTU_0/o] [get_bd_pins TTL_Serial_user_logic_0/iData]
+create_bd_port -dir I BTN_0
+create_bd_port -dir I BTN_1
+create_bd_port -dir I BTN_2
+connect_bd_net [get_bd_ports BTN_0] [get_bd_pins btn_debounce_toggle_0/BTN_I]
+connect_bd_net [get_bd_ports BTN_1] [get_bd_pins btn_debounce_toggle_1/BTN_I]
+connect_bd_net [get_bd_ports BTN_2] [get_bd_pins btn_debounce_toggle_2/BTN_I]
+connect_bd_net [get_bd_pins btn_debounce_toggle_2/CLK] [get_bd_pins btn_debounce_toggle_1/CLK]
+connect_bd_net [get_bd_pins btn_debounce_toggle_0/CLK] [get_bd_pins btn_debounce_toggle_2/CLK]
+connect_bd_net [get_bd_pins univ_bin_counter_0/clk] [get_bd_pins btn_debounce_toggle_2/CLK]
+set_property name CLK_50 [get_bd_nets Net]
+set_property name BTN_2_in [get_bd_nets BTN_2_1]
+set_property name BTN_1_in [get_bd_nets BTN_1_1]
+set_property name BTN_0_in [get_bd_nets BTN_0_1]
+connect_bd_net [get_bd_pins Counter_Loader_0/clk_en_o] [get_bd_pins univ_bin_counter_0/clk_en]
+connect_bd_net [get_bd_pins Counter_Loader_0/load_value] [get_bd_pins univ_bin_counter_0/d]
+connect_bd_net [get_bd_pins Counter_Loader_0/load_signal] [get_bd_pins univ_bin_counter_0/load]
+connect_bd_net [get_bd_pins out_LTU_0/count] [get_bd_pins univ_bin_counter_0/q]
+connect_bd_net [get_bd_pins univ_bin_counter_0/min_tick] [get_bd_pins Counter_Loader_0/count_min]
+connect_bd_net [get_bd_pins univ_bin_counter_0/max_tick] [get_bd_pins Counter_Loader_0/count_max]
+connect_bd_net [get_bd_pins Counter_Loader_0/clk] [get_bd_pins btn_debounce_toggle_2/CLK]
+connect_bd_net [get_bd_pins TTL_Serial_user_logic_0/clk] [get_bd_pins btn_debounce_toggle_2/CLK]
+set_property name clk_en_counter [get_bd_nets Counter_Loader_0_clk_en_o]
+set_property name Load_value_counter [get_bd_nets Counter_Loader_0_load_value]
+set_property name load_signal_counter [get_bd_nets Counter_Loader_0_load_signal]
+set_property name counter_min [get_bd_nets univ_bin_counter_0_min_tick]
+set_property name counter_max [get_bd_nets counter_min]
+set_property name out_LTU_o [get_bd_nets out_LTU_0_o]
+set_property name Count_to_LTU [get_bd_nets univ_bin_counter_0_q]
+connect_bd_net [get_bd_pins btn_debounce_toggle_2/TOGGLE_O] [get_bd_pins univ_bin_counter_0/up]
+set_property name up_down [get_bd_nets btn_debounce_toggle_2_TOGGLE_O]
+connect_bd_net [get_bd_pins btn_debounce_toggle_1/TOGGLE_O] [get_bd_pins univ_bin_counter_0/en]
+set_property name counter_enable [get_bd_nets btn_debounce_toggle_1_TOGGLE_O]
+connect_bd_net [get_bd_pins btn_debounce_toggle_0/BTN_O] [get_bd_pins Counter_Loader_0/reset]
+set_property name System_Initialize [get_bd_nets btn_debounce_toggle_0_BTN_O]
+connect_bd_net [get_bd_pins Counter_Loader_0/up_down] [get_bd_pins btn_debounce_toggle_2/TOGGLE_O]
+connect_bd_net [get_bd_pins univ_bin_counter_0/syn_clr] [get_bd_pins univ_bin_counter_0/reset]
+connect_bd_net [get_bd_pins univ_bin_counter_0/reset] [get_bd_pins btn_debounce_toggle_0/BTN_O]
+create_bd_port -dir O TX
+startgroup
+connect_bd_net [get_bd_ports TX] [get_bd_pins TTL_Serial_user_logic_0/TX]
+endgroup
+regenerate_bd_layout
+regenerate_bd_layout -routing
+create_bd_port -dir I clk
+connect_bd_net [get_bd_ports clk] [get_bd_pins btn_debounce_toggle_2/CLK]
+regenerate_bd_layout
+regenerate_bd_layout -routing
+save_bd_design
+make_wrapper -files [get_files D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/root_level/root_level.bd] -top
+import_files -force -norecurse D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/root_level/hdl/root_level_wrapper.vhd
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top root_level_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+create_bd_design "top_level"
+update_compile_order -fileset sources_1
+generate_target Simulation [get_files D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/root_level/root_level.bd]
+export_ip_user_files -of_objects [get_files D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/root_level/root_level.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/root_level/root_level.bd] -directory D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.ip_user_files/sim_scripts -ip_user_files_dir D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.ip_user_files -ipstatic_source_dir D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.cache/compile_simlib/modelsim} {questa=D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.cache/compile_simlib/questa} {riviera=D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.cache/compile_simlib/riviera} {activehdl=D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_bd_design {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/root_level/root_level.bd}
+launch_simulation
+source Lab_5_tb.tcl
+current_wave_config {Untitled 1}
+add_wave {{/Lab_5_tb/DUT/root_level_i/univ_bin_counter_0/clk}} 
+restart
+run 1000 ns
+relaunch_sim
+restart
+run 1 s
+restart
+run 500 ms
+restart
+current_wave_config {Untitled 1}
+add_wave {{/Lab_5_tb/DUT/root_level_i/Counter_Loader_0/clk_en_o}} 
+current_wave_config {Untitled 1}
+add_wave {{/Lab_5_tb/DUT/root_level_i/out_LTU_0/o}} 
+current_wave_config {Untitled 1}
+add_wave {{/Lab_5_tb/DUT/root_level_i/univ_bin_counter_0/d}} 
+current_wave_config {Untitled 1}
+add_wave {{/Lab_5_tb/DUT/root_level_i/TTL_Serial_user_logic_0/U0/data}} 
+current_wave_config {Untitled 1}
+add_wave {{/Lab_5_tb/DUT/root_level_i/TTL_Serial_user_logic_0/U0/iData}} 
+run 250 ms
+restart
+run 1000 ms
+restart
+open_bd_design {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/root_level/root_level.bd}
+current_wave_config {Untitled 1}
+add_wave {{/Lab_5_tb/DUT/root_level_i/Counter_Loader_0/reset}} 
+current_wave_config {Untitled 1}
+add_wave {{/Lab_5_tb/DUT/root_level_i/Counter_Loader_0/up_down}} 
+current_wave_config {Untitled 1}
+add_wave {{/Lab_5_tb/DUT/root_level_i/univ_bin_counter_0/en}} 
+run 1000 ms
+current_wave_config {Untitled 1}
+add_wave {{/Lab_5_tb/DUT/root_level_i/Counter_Loader_0/U0/clk_en_count}} 
+restart
+run 1000 ms
+relaunch_sim
+run 1000 ms
+restart
+relaunch_sim
+add_bp {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/new/Counter_Loader.vhd} 54
+remove_bps -file {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/new/Counter_Loader.vhd} -line 54
+add_bp {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/new/Counter_Loader.vhd} 57
+relaunch_sim
+restart
+run 1000 ms
+run 1000 ms
+add_force {/Lab_5_tb/BTN_1} -radix hex {1 0ns}
+add_force {/Lab_5_tb/BTN_2} -radix hex {1 0ns}
+update_module_reference root_level_out_LTU_0_0
+update_module_reference root_level_Counter_Loader_0_0
+current_wave_config {Untitled 1}
+add_wave {{/Lab_5_tb/DUT/root_level_i/univ_bin_counter_0/syn_clr}} 
+restart
+run 1000 ms
+run 1000 ms
+relaunch_sim
+restart
+run 1000 ms
+remove_bps -file {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/new/Counter_Loader.vhd} -line 57
+update_module_reference root_level_Counter_Loader_0_0
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+open_bd_design {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/top_level/top_level.bd}
+close [ open D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/new/root.vhd w ]
+add_files D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/new/root.vhd
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/new/root.vhd] -no_script -reset -force -quiet
+remove_files  D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/new/root.vhd
+file delete -force D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/new/root.vhd
+open_bd_design {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/top_level/top_level.bd}
+relaunch_sim
+run 1000 ms
+open_bd_design {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/top_level/top_level.bd}
+update_module_reference root_level_Counter_Loader_0_0
+open_bd_design {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/root_level/root_level.bd}
+open_bd_design {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/root_level/root_level.bd}
+open_bd_design {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/root_level/root_level.bd}
+open_bd_design {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/top_level/top_level.bd}
+open_bd_design {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/top_level/top_level.bd}
+open_bd_design {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/root_level/root_level.bd}
+open_bd_design {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/root_level/root_level.bd}
+open_bd_design {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/top_level/top_level.bd}
+set_property used_in_simulation false [get_files  D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/top_level/top_level.bd]
+set_property used_in_implementation false [get_files  D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/top_level/top_level.bd]
+open_bd_design {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/top_level/top_level.bd}
+open_bd_design {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/root_level/root_level.bd}
+open_bd_design {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/top_level/top_level.bd}
+open_bd_design {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/top_level/top_level.bd}
+open_bd_design {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/root_level/root_level.bd}
+open_bd_design {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/root_level/root_level.bd}
+save_wave_config {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_tb_behav.wcfg
+set_property xsim.view D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_tb_behav.wcfg [get_filesets sim_1]
+close_sim
+update_module_reference root_level_Counter_Loader_0_0
+generate_target Simulation [get_files D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/root_level/root_level.bd]
+export_ip_user_files -of_objects [get_files D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/root_level/root_level.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/root_level/root_level.bd] -directory D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.ip_user_files/sim_scripts -ip_user_files_dir D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.ip_user_files -ipstatic_source_dir D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.cache/compile_simlib/modelsim} {questa=D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.cache/compile_simlib/questa} {riviera=D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.cache/compile_simlib/riviera} {activehdl=D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_tb_behav.wcfg
+source Lab_5_tb.tcl
+run 2 s
+current_wave_config {Lab_5_tb_behav.wcfg}
+add_wave {{/Lab_5_tb/DUT/root_level_i/TTL_Serial_user_logic_0/iData}} 
+restart
+run all
+restart
+add_force {/Lab_5_tb/BTN_2} -radix bin {1 0ns}
+add_force {/Lab_5_tb/BTN_1} -radix bin {1 0ns}
+run 2 s
+restart
+remove_forces { {/Lab_5_tb/BTN_1} }
+remove_forces { {/Lab_5_tb/BTN_2} }
+run all
+current_wave_config {Lab_5_tb_behav.wcfg}
+add_wave {{/Lab_5_tb/DUT/root_level_i/univ_bin_counter_0/load}} 
+restart
+run 2 s
+current_wave_config {Lab_5_tb_behav.wcfg}
+add_wave {{/Lab_5_tb/DUT/root_level_i/univ_bin_counter_0/reset}} 
+current_wave_config {Lab_5_tb_behav.wcfg}
+add_wave {{/Lab_5_tb/DUT/root_level_i/univ_bin_counter_0/U0/r_1}} 
+current_wave_config {Lab_5_tb_behav.wcfg}
+add_wave {{/Lab_5_tb/DUT/root_level_i/univ_bin_counter_0/U0/r_2}} 
+current_wave_config {Lab_5_tb_behav.wcfg}
+add_wave {{/Lab_5_tb/DUT/root_level_i/univ_bin_counter_0/U0/r_reg}} 
+current_wave_config {Lab_5_tb_behav.wcfg}
+add_wave {{/Lab_5_tb/DUT/root_level_i/univ_bin_counter_0/U0/r_next}} 
+restart
+run all
+current_wave_config {Lab_5_tb_behav.wcfg}
+add_wave {{/Lab_5_tb/DUT/root_level_i/univ_bin_counter_0/U0/reset}} 
+current_wave_config {Lab_5_tb_behav.wcfg}
+add_wave {{/Lab_5_tb/DUT/root_level_i/univ_bin_counter_0/U0/clk}} 
+restart
+run all
+current_wave_config {Lab_5_tb_behav.wcfg}
+add_wave {{/Lab_5_tb/DUT/root_level_i/univ_bin_counter_0/U0/q}} 
+restart
+run all
+current_wave_config {Lab_5_tb_behav.wcfg}
+add_wave {{/Lab_5_tb/DUT/root_level_i/univ_bin_counter_0/clk_en}} 
+update_module_reference root_level_Counter_Loader_0_0
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+relaunch_sim
+relaunch_sim
+run all
+add_force {/Lab_5_tb/DUT/root_level_i/univ_bin_counter_0/clk_en} -radix bin {1 0ns}
+run all
+restart
+create_bd_design "FINAL_DIAGRAM"
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+update_module_reference root_level_Counter_Loader_0_0
+update_compile_order -fileset sources_1
+open_bd_design {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/FINAL_DIAGRAM/FINAL_DIAGRAM.bd}
+set_property -dict [list CONFIG.PCW_USE_M_AXI_GP0 {0} CONFIG.PCW_UART1_PERIPHERAL_ENABLE {1} CONFIG.PCW_UART1_UART1_IO {MIO 8 .. 9}] [get_bd_cells processing_system7_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+endgroup
+create_bd_cell -type module -reference Counter_Loader Counter_Loader_0
+create_bd_cell -type module -reference TTL_Serial_user_logic TTL_Serial_user_logic_0
+create_bd_cell -type module -reference btn_debounce_toggle btn_debounce_toggle_0
+create_bd_cell -type module -reference btn_debounce_toggle btn_debounce_toggle_1
+create_bd_cell -type module -reference btn_debounce_toggle btn_debounce_toggle_2
+create_bd_cell -type module -reference out_LTU out_LTU_0
+create_bd_cell -type module -reference univ_bin_counter univ_bin_counter_0
+create_bd_port -dir I BTN_0
+create_bd_port -dir I BTN_1
+create_bd_port -dir I BTN_2
+connect_bd_net [get_bd_ports BTN_0] [get_bd_pins btn_debounce_toggle_0/BTN_I]
+connect_bd_net [get_bd_ports BTN_2] [get_bd_pins btn_debounce_toggle_1/BTN_I]
+delete_bd_objs [get_bd_nets BTN_2_1]
+connect_bd_net [get_bd_ports BTN_1] [get_bd_pins btn_debounce_toggle_1/BTN_I]
+connect_bd_net [get_bd_ports BTN_2] [get_bd_pins btn_debounce_toggle_2/BTN_I]
+connect_bd_net [get_bd_pins btn_debounce_toggle_2/CLK] [get_bd_pins btn_debounce_toggle_1/CLK]
+connect_bd_net [get_bd_pins btn_debounce_toggle_0/CLK] [get_bd_pins btn_debounce_toggle_2/CLK]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins btn_debounce_toggle_2/CLK]
+connect_bd_net [get_bd_pins TTL_Serial_user_logic_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins btn_debounce_toggle_0/TOGGLE_O] [get_bd_pins univ_bin_counter_0/up]
+delete_bd_objs [get_bd_nets btn_debounce_toggle_0_TOGGLE_O]
+connect_bd_net [get_bd_pins btn_debounce_toggle_2/TOGGLE_O] [get_bd_pins univ_bin_counter_0/up]
+connect_bd_net [get_bd_pins btn_debounce_toggle_1/TOGGLE_O] [get_bd_pins univ_bin_counter_0/en]
+connect_bd_net [get_bd_pins btn_debounce_toggle_0/BTN_O] [get_bd_pins Counter_Loader_0/reset]
+connect_bd_net [get_bd_pins univ_bin_counter_0/reset] [get_bd_pins univ_bin_counter_0/syn_clr]
+connect_bd_net [get_bd_pins univ_bin_counter_0/reset] [get_bd_pins btn_debounce_toggle_0/BTN_O]
+connect_bd_net [get_bd_pins univ_bin_counter_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins TTL_Serial_user_logic_0/iData] [get_bd_pins out_LTU_0/o]
+connect_bd_net [get_bd_pins out_LTU_0/count] [get_bd_pins univ_bin_counter_0/q]
+connect_bd_net [get_bd_pins univ_bin_counter_0/max_tick] [get_bd_pins Counter_Loader_0/count_max]
+connect_bd_net [get_bd_pins univ_bin_counter_0/min_tick] [get_bd_pins Counter_Loader_0/count_min]
+connect_bd_net [get_bd_pins Counter_Loader_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+set_property location {2 294 -327} [get_bd_cells TTL_Serial_user_logic_0]
+connect_bd_net [get_bd_pins Counter_Loader_0/load_value] [get_bd_pins univ_bin_counter_0/d]
+connect_bd_net [get_bd_pins Counter_Loader_0/clk_en_o] [get_bd_pins univ_bin_counter_0/clk_en]
+connect_bd_net [get_bd_pins Counter_Loader_0/load_signal] [get_bd_pins univ_bin_counter_0/load]
+create_bd_port -dir I TX
+set_property location {1182 -428} [get_bd_ports TX]
+delete_bd_objs [get_bd_ports TX]
+create_bd_port -dir O TX
+startgroup
+connect_bd_net [get_bd_ports TX] [get_bd_pins TTL_Serial_user_logic_0/TX]
+endgroup
+regenerate_bd_layout
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout
+set_property location {2 443 63} [get_bd_cells processing_system7_0]
+set_property location {3 756 538} [get_bd_cells out_LTU_0]
+set_property location {3.5 979 385} [get_bd_cells TTL_Serial_user_logic_0]
+regenerate_bd_layout
+regenerate_bd_layout -routing
+save_bd_design
+make_wrapper -files [get_files D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/FINAL_DIAGRAM/FINAL_DIAGRAM.bd] -top
+add_files -norecurse D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/bd/FINAL_DIAGRAM/hdl/FINAL_DIAGRAM_wrapper.vhd
+connect_bd_net [get_bd_pins Counter_Loader_0/up_down] [get_bd_pins btn_debounce_toggle_2/TOGGLE_O]
+save_bd_design
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top FINAL_DIAGRAM_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+startgroup
+set_property -dict [list CONFIG.start_value {"1"}] [get_bd_cells btn_debounce_toggle_1]
+endgroup
+startgroup
+set_property -dict [list CONFIG.start_value {"1"}] [get_bd_cells btn_debounce_toggle_2]
+endgroup
+create_bd_cell -type module -reference Reset_Delay Reset_Delay_0
+connect_bd_net [get_bd_pins Reset_Delay_0/iCLK] [get_bd_pins processing_system7_0/FCLK_CLK0]
+disconnect_bd_net /btn_debounce_toggle_0_BTN_O [get_bd_pins univ_bin_counter_0/syn_clr]
+connect_bd_net [get_bd_pins univ_bin_counter_0/syn_clr] [get_bd_pins Reset_Delay_0/oRESET]
+startgroup
+set_property -dict [list CONFIG.MAX {60}] [get_bd_cells Reset_Delay_0]
+endgroup
+save_bd_design
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+reset_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+file copy -force D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.runs/impl_1/FINAL_DIAGRAM_wrapper.sysdef D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.sdk/FINAL_DIAGRAM_wrapper.hdf
+
+launch_sdk -workspace D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.sdk -hwspec D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.sdk/FINAL_DIAGRAM_wrapper.hdf
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.runs/impl_1/FINAL_DIAGRAM_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+launch_sdk -workspace D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.sdk -hwspec D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.sdk/FINAL_DIAGRAM_wrapper.hdf
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.runs/impl_1/FINAL_DIAGRAM_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+create_run synth_2 -flow {Vivado Synthesis 2019} -strategy {Vivado Synthesis Defaults} -report_strategy {Vivado Synthesis Default Reports}
+current_run [get_runs synth_2]
+set_property part xc7z020clg484-1 [current_project]
+reset_run root_level_univ_bin_counter_0_0_synth_1
+reset_run root_level_btn_debounce_toggle_0_0_synth_1
+reset_run root_level_out_LTU_0_0_synth_1
+reset_run root_level_TTL_Serial_user_logic_0_0_synth_1
+reset_run root_level_btn_debounce_toggle_1_0_synth_1
+reset_run root_level_btn_debounce_toggle_2_0_synth_1
+reset_run FINAL_DIAGRAM_out_LTU_0_0_synth_1
+reset_run FINAL_DIAGRAM_btn_debounce_toggle_2_0_synth_1
+reset_run FINAL_DIAGRAM_TTL_Serial_user_logic_0_0_synth_1
+reset_run FINAL_DIAGRAM_Counter_Loader_0_0_synth_1
+reset_run FINAL_DIAGRAM_btn_debounce_toggle_0_0_synth_1
+reset_run FINAL_DIAGRAM_btn_debounce_toggle_1_0_synth_1
+reset_run FINAL_DIAGRAM_univ_bin_counter_0_0_synth_1
+reset_run FINAL_DIAGRAM_Reset_Delay_0_0_synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+wait_on_run impl_2
+reset_run synth_2
+reset_run root_level_univ_bin_counter_0_0_synth_1
+reset_run FINAL_DIAGRAM_univ_bin_counter_0_0_synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+wait_on_run impl_2
+update_module_reference {FINAL_DIAGRAM_univ_bin_counter_0_0 root_level_univ_bin_counter_0_0}

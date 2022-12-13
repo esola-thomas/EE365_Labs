@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"root_level": {
+			"proto_instances": {
+			}
+		}
+	}
+}

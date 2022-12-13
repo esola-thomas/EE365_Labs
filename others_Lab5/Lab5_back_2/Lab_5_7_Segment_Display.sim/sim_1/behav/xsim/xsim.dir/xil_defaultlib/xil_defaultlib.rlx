@@ -1,0 +1,20 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.ip_user_files/bd/root_level/ip/root_level_Counter_Loader_0_0/sim/root_level_Counter_Loader_0_0.vhd,1668013195,vhdl,,,,root_level_counter_loader_0_0,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.ip_user_files/bd/root_level/ip/root_level_TTL_Serial_user_logic_0_0/sim/root_level_TTL_Serial_user_logic_0_0.vhd,1668013987,vhdl,,,,root_level_ttl_serial_user_logic_0_0,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.ip_user_files/bd/root_level/ip/root_level_btn_debounce_toggle_0_0/sim/root_level_btn_debounce_toggle_0_0.vhd,1668013195,vhdl,,,,root_level_btn_debounce_toggle_0_0,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.ip_user_files/bd/root_level/ip/root_level_btn_debounce_toggle_1_0/sim/root_level_btn_debounce_toggle_1_0.vhd,1668013195,vhdl,,,,root_level_btn_debounce_toggle_1_0,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.ip_user_files/bd/root_level/ip/root_level_btn_debounce_toggle_2_0/sim/root_level_btn_debounce_toggle_2_0.vhd,1668013195,vhdl,,,,root_level_btn_debounce_toggle_2_0,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.ip_user_files/bd/root_level/ip/root_level_out_LTU_0_0/sim/root_level_out_LTU_0_0.vhd,1668013195,vhdl,,,,root_level_out_ltu_0_0,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.ip_user_files/bd/root_level/ip/root_level_univ_bin_counter_0_0/sim/root_level_univ_bin_counter_0_0.vhd,1668013194,vhdl,,,,root_level_univ_bin_counter_0_0,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.ip_user_files/bd/root_level/sim/root_level.vhd,1668013986,vhdl,,,,root_level,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sim_1/new/Lab_5_tb.vhd,1667961179,vhdl,,,,lab_5_tb,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/imports/hdl/root_level_wrapper.vhd,1667960007,vhdl,D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sim_1/new/Lab_5_tb.vhd,,,root_level_wrapper,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/new/Counter_Loader.vhd,1667965160,vhdl,,,,counter_loader,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/new/TTL_serial.vhd,1667946824,vhdl,,,,ttl_serial,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/new/TTL_user_logic.vhd,1668013442,vhdl,,,,ttl_serial_user_logic,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/new/btn_debounce_toggle.vhd,1667945826,vhdl,,,,btn_debounce_toggle,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/new/out_LTU.vhd,1667961973,vhdl,,,,out_ltu,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.srcs/sources_1/new/univ_bin_counter.vhd,1667970141,vhdl,,,,univ_bin_counter,,,,,,,,

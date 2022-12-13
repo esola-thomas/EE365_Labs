@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Nov  9 12:13:07 2022" VIVADOVERSION="2019.1">
+
+  <SYSTEMINFO ARCH="zynq" DEVICE="7z010" NAME="root_level" PACKAGE="clg225" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="BTN_0" SIGIS="undef" SIGNAME="External_Ports_BTN_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="btn_debounce_toggle_0" PORT="BTN_I"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="BTN_1" SIGIS="undef" SIGNAME="External_Ports_BTN_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="btn_debounce_toggle_1" PORT="BTN_I"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="BTN_2" SIGIS="undef" SIGNAME="External_Ports_BTN_2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="btn_debounce_toggle_2" PORT="BTN_I"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="TX" SIGIS="undef" SIGNAME="TTL_Serial_user_logic_0_TX">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="TTL_Serial_user_logic_0" PORT="TX"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="btn_debounce_toggle_2" PORT="CLK"/>
+        <CONNECTION INSTANCE="btn_debounce_toggle_1" PORT="CLK"/>
+        <CONNECTION INSTANCE="btn_debounce_toggle_0" PORT="CLK"/>
+        <CONNECTION INSTANCE="Counter_Loader_0" PORT="clk"/>
+        <CONNECTION INSTANCE="univ_bin_counter_0" PORT="clk"/>
+        <CONNECTION INSTANCE="TTL_Serial_user_logic_0" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/Counter_Loader_0" HWVERSION="1.0" INSTANCE="Counter_Loader_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Counter_Loader" VLNV="xilinx.com:module_ref:Counter_Loader:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="update_delay" VALUE="49999999"/>
+        <PARAMETER NAME="load_value_size" VALUE="7"/>
+        <PARAMETER NAME="min_load" VALUE="0"/>
+        <PARAMETER NAME="max_load" VALUE="9"/>
+        <PARAMETER NAME="Component_Name" VALUE="root_level_Counter_Loader_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="count_min" SIGIS="undef" SIGNAME="univ_bin_counter_0_min_tick">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="univ_bin_counter_0" PORT="min_tick"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="count_max" SIGIS="undef" SIGNAME="univ_bin_counter_0_max_tick">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="univ_bin_counter_0" PORT="max_tick"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="up_down" SIGIS="undef" SIGNAME="btn_debounce_toggle_2_TOGGLE_O">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="btn_debounce_toggle_2" PORT="TOGGLE_O"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="btn_debounce_toggle_0_BTN_O">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="btn_debounce_toggle_0" PORT="BTN_O"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="load_signal" SIGIS="undef" SIGNAME="Counter_Loader_0_load_signal">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="univ_bin_counter_0" PORT="load"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="load_value" RIGHT="0" SIGIS="undef" SIGNAME="Counter_Loader_0_load_value">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="univ_bin_counter_0" PORT="d"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clk_en_o" SIGIS="undef" SIGNAME="Counter_Loader_0_clk_en_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="univ_bin_counter_0" PORT="clk_en"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/TTL_Serial_user_logic_0" HWVERSION="1.0" INSTANCE="TTL_Serial_user_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="TTL_Serial_user_logic" VLNV="xilinx.com:module_ref:TTL_Serial_user_logic:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="cnt_max" VALUE="5208"/>
+        <PARAMETER NAME="Component_Name" VALUE="root_level_TTL_Serial_user_logic_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="iData" RIGHT="0" SIGIS="undef" SIGNAME="out_LTU_0_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="out_LTU_0" PORT="o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="TX" SIGIS="undef" SIGNAME="TTL_Serial_user_logic_0_TX">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="TX"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/btn_debounce_toggle_0" HWVERSION="1.0" INSTANCE="btn_debounce_toggle_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="btn_debounce_toggle" VLNV="xilinx.com:module_ref:btn_debounce_toggle:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CNTR_MAX" VALUE="0xFFFF"/>
+        <PARAMETER NAME="start_value" VALUE="&quot;0&quot;"/>
+        <PARAMETER NAME="Component_Name" VALUE="root_level_btn_debounce_toggle_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="BTN_I" SIGIS="undef" SIGNAME="External_Ports_BTN_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BTN_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="BTN_O" SIGIS="undef" SIGNAME="btn_debounce_toggle_0_BTN_O">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Counter_Loader_0" PORT="reset"/>
+            <CONNECTION INSTANCE="univ_bin_counter_0" PORT="reset"/>
+            <CONNECTION INSTANCE="univ_bin_counter_0" PORT="syn_clr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="TOGGLE_O" SIGIS="undef"/>
+        <PORT DIR="O" NAME="PULSE_O" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/btn_debounce_toggle_1" HWVERSION="1.0" INSTANCE="btn_debounce_toggle_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="btn_debounce_toggle" VLNV="xilinx.com:module_ref:btn_debounce_toggle:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CNTR_MAX" VALUE="0xFFFF"/>
+        <PARAMETER NAME="start_value" VALUE="&quot;0&quot;"/>
+        <PARAMETER NAME="Component_Name" VALUE="root_level_btn_debounce_toggle_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="BTN_I" SIGIS="undef" SIGNAME="External_Ports_BTN_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BTN_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="BTN_O" SIGIS="undef"/>
+        <PORT DIR="O" NAME="TOGGLE_O" SIGIS="undef" SIGNAME="btn_debounce_toggle_1_TOGGLE_O">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="univ_bin_counter_0" PORT="en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="PULSE_O" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/btn_debounce_toggle_2" HWVERSION="1.0" INSTANCE="btn_debounce_toggle_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="btn_debounce_toggle" VLNV="xilinx.com:module_ref:btn_debounce_toggle:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CNTR_MAX" VALUE="0xFFFF"/>
+        <PARAMETER NAME="start_value" VALUE="&quot;0&quot;"/>
+        <PARAMETER NAME="Component_Name" VALUE="root_level_btn_debounce_toggle_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="BTN_I" SIGIS="undef" SIGNAME="External_Ports_BTN_2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BTN_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="BTN_O" SIGIS="undef"/>
+        <PORT DIR="O" NAME="TOGGLE_O" SIGIS="undef" SIGNAME="btn_debounce_toggle_2_TOGGLE_O">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Counter_Loader_0" PORT="up_down"/>
+            <CONNECTION INSTANCE="univ_bin_counter_0" PORT="up"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="PULSE_O" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/out_LTU_0" HWVERSION="1.0" INSTANCE="out_LTU_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="out_LTU" VLNV="xilinx.com:module_ref:out_LTU:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="in_size" VALUE="8"/>
+        <PARAMETER NAME="out_size" VALUE="16"/>
+        <PARAMETER NAME="Component_Name" VALUE="root_level_out_LTU_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="count" RIGHT="0" SIGIS="undef" SIGNAME="univ_bin_counter_0_q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="univ_bin_counter_0" PORT="q"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="o" RIGHT="0" SIGIS="undef" SIGNAME="out_LTU_0_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TTL_Serial_user_logic_0" PORT="iData"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/univ_bin_counter_0" HWVERSION="1.0" INSTANCE="univ_bin_counter_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="univ_bin_counter" VLNV="xilinx.com:module_ref:univ_bin_counter:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="N" VALUE="8"/>
+        <PARAMETER NAME="N2" VALUE="9"/>
+        <PARAMETER NAME="N1" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="root_level_univ_bin_counter_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="btn_debounce_toggle_0_BTN_O">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="btn_debounce_toggle_0" PORT="BTN_O"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="syn_clr" SIGIS="undef" SIGNAME="btn_debounce_toggle_0_BTN_O">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="btn_debounce_toggle_0" PORT="BTN_O"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="load" SIGIS="undef" SIGNAME="Counter_Loader_0_load_signal">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Counter_Loader_0" PORT="load_signal"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="en" SIGIS="undef" SIGNAME="btn_debounce_toggle_1_TOGGLE_O">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="btn_debounce_toggle_1" PORT="TOGGLE_O"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="up" SIGIS="undef" SIGNAME="btn_debounce_toggle_2_TOGGLE_O">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="btn_debounce_toggle_2" PORT="TOGGLE_O"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clk_en" SIGIS="undef" SIGNAME="Counter_Loader_0_clk_en_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Counter_Loader_0" PORT="clk_en_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="d" RIGHT="0" SIGIS="undef" SIGNAME="Counter_Loader_0_load_value">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Counter_Loader_0" PORT="load_value"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="max_tick" SIGIS="undef" SIGNAME="univ_bin_counter_0_max_tick">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Counter_Loader_0" PORT="count_max"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="min_tick" SIGIS="undef" SIGNAME="univ_bin_counter_0_min_tick">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Counter_Loader_0" PORT="count_min"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="q" RIGHT="0" SIGIS="undef" SIGNAME="univ_bin_counter_0_q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="out_LTU_0" PORT="count"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

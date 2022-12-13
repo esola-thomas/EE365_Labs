@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Nov  9 18:14:24 2022
+# Process ID: 20624
+# Current directory: D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.runs/impl_1
+# Command line: vivado.exe -log Lab_5_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Lab_5_wrapper.tcl -notrace
+# Log file: D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.runs/impl_1/Lab_5_wrapper.vdi
+# Journal file: D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Lab_5_wrapper.tcl -notrace

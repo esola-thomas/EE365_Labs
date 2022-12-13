@@ -1,0 +1,43 @@
+00:08:00 INFO  : Registering command handlers for SDK TCF services
+00:08:01 INFO  : Launching XSCT server: xsct.bat -interactive D:\My_DevOps\Fall_2022\EE365\EE365_Labs\Lab5\Lab_5_7_Segment_Display.sdk\temp_xsdb_launch_script.tcl
+00:08:03 INFO  : XSCT server has started successfully.
+00:08:03 INFO  : Successfully done setting XSCT server connection channel  
+00:08:03 INFO  : Successfully done setting SDK workspace  
+00:08:03 INFO  : Processing command line option -hwspec D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.sdk/FINAL_DIAGRAM_wrapper.hdf.
+00:08:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:08:54 WARN  : Part name present in the hardware specification 'xc7z020clg484-1' doesn't match the one present on the target 'xc7z010'.
+00:10:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+12:07:01 INFO  : Launching XSCT server: xsct.bat -interactive D:\My_DevOps\Fall_2022\EE365\EE365_Labs\Lab5\Lab_5_7_Segment_Display.sdk\temp_xsdb_launch_script.tcl
+12:07:03 INFO  : XSCT server has started successfully.
+12:07:03 INFO  : Successfully done setting XSCT server connection channel  
+12:07:06 INFO  : Successfully done setting SDK workspace  
+12:07:13 INFO  : Registering command handlers for SDK TCF services
+12:07:13 INFO  : Processing command line option -hwspec D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.sdk/FINAL_DIAGRAM_wrapper.hdf.
+12:07:13 INFO  : Checking for hwspec changes in the project FINAL_DIAGRAM_wrapper_hw_platform_0.
+12:07:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:07:56 WARN  : Part name present in the hardware specification 'xc7z020clg484-1' doesn't match the one present on the target 'xc7z010'.
+12:08:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+12:11:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:11:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+12:17:01 INFO  : Launching XSCT server: xsct.bat -interactive D:\My_DevOps\Fall_2022\EE365\EE365_Labs\Lab5\Lab_5_7_Segment_Display.sdk\temp_xsdb_launch_script.tcl
+12:17:03 INFO  : XSCT server has started successfully.
+12:17:03 INFO  : Successfully done setting XSCT server connection channel  
+12:17:03 INFO  : Successfully done setting SDK workspace  
+12:17:08 INFO  : Registering command handlers for SDK TCF services
+12:17:08 INFO  : Processing command line option -hwspec D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.sdk/FINAL_DIAGRAM_wrapper.hdf.
+12:17:09 INFO  : Checking for hwspec changes in the project FINAL_DIAGRAM_wrapper_hw_platform_0.
+12:17:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:17:20 WARN  : Part name present in the hardware specification 'xc7z020clg484-1' doesn't match the one present on the target 'xc7z010'.
+12:18:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+

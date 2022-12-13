@@ -1,0 +1,15 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../LUT.vhd" \
+"../../../../SPI_master.vhd" \
+"../../../../TTL_SPI_user_logic.vhd" \
+"../../../../TTL_serial.vhd" \
+"../../../../TTL_user_logic.vhd" \
+"../../../../btn_debounce_toggle.vhd" \
+"../../../../clk_enabler.vhd" \
+"../../../../reset_delay.vhd" \
+"../../../../univ_bin_counter.vhd" \
+"../../../../lab5.vhd" \
+
+# Do not sort compile order
+nosort

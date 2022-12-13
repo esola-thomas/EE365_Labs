@@ -1,0 +1,19 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/lab5_fresh/LUT.vhd,1668541980,vhdl,,,,lut,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/lab5_fresh/SPI_master.vhd,1668533391,vhdl,,,,spi_master,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/lab5_fresh/TTL_SPI_user_logic.vhd,1668479797,vhdl,,,,ttl_spi_user_logic,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/lab5_fresh/TTL_serial.vhd,1668410697,vhdl,,,,ttl_serial,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/lab5_fresh/TTL_user_logic.vhd,1668410697,vhdl,,,,ttl_serial_user_logic,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/lab5_fresh/btn_debounce_toggle.vhd,1668410696,vhdl,,,,btn_debounce_toggle,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/lab5_fresh/clk_enabler.vhd,1668410696,vhdl,,,,clk_enabler,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/lab5_fresh/lab5.vhd,1668541957,vhdl,,,,lab5,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/lab5_fresh/lab5_fresh.ip_user_files/bd/design_1/ip/design_1_lab5_0_0_1/sim/design_1_lab5_0_0.vhd,1668478851,vhdl,,,,design_1_lab5_0_0,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/lab5_fresh/lab5_fresh.ip_user_files/bd/design_1/ip/design_1_processing_system7_0_0_1/sim/design_1_processing_system7_0_0.v,1668410741,verilog,,,,design_1_processing_system7_0_0,,axi_vip_v1_1_5;processing_system7_vip_v1_0_7;xilinx_vip,../../../../lab5_fresh.srcs/sources_1/bd/design_1/ipshared/8c62/hdl;../../../../lab5_fresh.srcs/sources_1/bd/design_1/ipshared/ec67/hdl;C:/Xilinx/Vivado/2019.1/data/xilinx_vip/include,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/lab5_fresh/lab5_fresh.ip_user_files/bd/design_1/sim/design_1.vhd,1668478851,vhdl,,,,design_1,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/lab5_fresh/lab5_fresh.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,axi_vip_v1_1_5;processing_system7_vip_v1_0_7;xilinx_vip,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/lab5_fresh/lab5_fresh.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd,1668642628,vhdl,,,,design_1_wrapper,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/lab5_fresh/reset_delay.vhd,1668410696,vhdl,,,,reset_delay,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/lab5_fresh/univ_bin_counter.vhd,1668410697,vhdl,,,,univ_bin_counter,,,,,,,,

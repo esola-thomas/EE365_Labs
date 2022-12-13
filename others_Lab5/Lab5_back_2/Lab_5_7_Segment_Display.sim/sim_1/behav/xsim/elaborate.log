@@ -1,0 +1,33 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto f75f7697e7654cad84b5dff0eef44c76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L secureip -L xpm --snapshot Lab_5_tb_behav xil_defaultlib.Lab_5_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture loader of entity xil_defaultlib.Counter_Loader [counter_loader_default]
+Compiling architecture root_level_counter_loader_0_0_arch of entity xil_defaultlib.root_level_Counter_Loader_0_0 [root_level_counter_loader_0_0_de...]
+Compiling architecture state_machine of entity xil_defaultlib.TTL_serial [ttl_serial_default]
+Compiling architecture user_logic of entity xil_defaultlib.TTL_Serial_user_logic [ttl_serial_user_logic_default]
+Compiling architecture root_level_ttl_serial_user_logic_0_0_arch of entity xil_defaultlib.root_level_TTL_Serial_user_logic_0_0 [root_level_ttl_serial_user_logic...]
+Compiling architecture behavioral of entity xil_defaultlib.btn_debounce_toggle [btn_debounce_toggle_default]
+Compiling architecture root_level_btn_debounce_toggle_0_0_arch of entity xil_defaultlib.root_level_btn_debounce_toggle_0_0 [root_level_btn_debounce_toggle_0...]
+Compiling architecture root_level_btn_debounce_toggle_1_0_arch of entity xil_defaultlib.root_level_btn_debounce_toggle_1_0 [root_level_btn_debounce_toggle_1...]
+Compiling architecture root_level_btn_debounce_toggle_2_0_arch of entity xil_defaultlib.root_level_btn_debounce_toggle_2_0 [root_level_btn_debounce_toggle_2...]
+Compiling architecture ltu of entity xil_defaultlib.out_LTU [out_ltu_default]
+Compiling architecture root_level_out_ltu_0_0_arch of entity xil_defaultlib.root_level_out_LTU_0_0 [root_level_out_ltu_0_0_default]
+Compiling architecture arch of entity xil_defaultlib.univ_bin_counter [univ_bin_counter_default]
+Compiling architecture root_level_univ_bin_counter_0_0_arch of entity xil_defaultlib.root_level_univ_bin_counter_0_0 [root_level_univ_bin_counter_0_0_...]
+Compiling architecture structure of entity xil_defaultlib.root_level [root_level_default]
+Compiling architecture structure of entity xil_defaultlib.root_level_wrapper [root_level_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.lab_5_tb
+Built simulation snapshot Lab_5_tb_behav

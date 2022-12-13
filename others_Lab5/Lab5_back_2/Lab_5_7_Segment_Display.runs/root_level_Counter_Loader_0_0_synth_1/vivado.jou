@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Nov  9 12:20:59 2022
+# Process ID: 25460
+# Current directory: D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.runs/root_level_Counter_Loader_0_0_synth_1
+# Command line: vivado.exe -log root_level_Counter_Loader_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source root_level_Counter_Loader_0_0.tcl
+# Log file: D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.runs/root_level_Counter_Loader_0_0_synth_1/root_level_Counter_Loader_0_0.vds
+# Journal file: D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.runs/root_level_Counter_Loader_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source root_level_Counter_Loader_0_0.tcl -notrace

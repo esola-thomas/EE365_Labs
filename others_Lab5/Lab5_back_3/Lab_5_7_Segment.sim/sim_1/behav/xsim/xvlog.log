@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.ip_user_files/bd/Lab_5/ip/Lab_5_processing_system7_0_0/sim/Lab_5_processing_system7_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Lab_5_processing_system7_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

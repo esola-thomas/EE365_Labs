@@ -1,0 +1,5 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.sim/sim_1/synth/func/xsim/Lab_5_wrapper_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Lab_5_processing_system7_0_0_processing_system7_v5_5_processing_system7'
+INFO: [VRFC 10-3107] analyzing entity 'Lab_5_processing_system7_0_0'
+INFO: [VRFC 10-3107] analyzing entity 'Lab_5'
+INFO: [VRFC 10-3107] analyzing entity 'Lab_5_wrapper'

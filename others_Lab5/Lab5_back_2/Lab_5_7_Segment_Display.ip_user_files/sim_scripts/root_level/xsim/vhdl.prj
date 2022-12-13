@@ -1,0 +1,11 @@
+vhdl xil_defaultlib  \
+"../../../bd/root_level/ip/root_level_univ_bin_counter_0_0/sim/root_level_univ_bin_counter_0_0.vhd" \
+"../../../bd/root_level/ip/root_level_btn_debounce_toggle_0_0/sim/root_level_btn_debounce_toggle_0_0.vhd" \
+"../../../bd/root_level/ip/root_level_btn_debounce_toggle_1_0/sim/root_level_btn_debounce_toggle_1_0.vhd" \
+"../../../bd/root_level/ip/root_level_btn_debounce_toggle_2_0/sim/root_level_btn_debounce_toggle_2_0.vhd" \
+"../../../bd/root_level/ip/root_level_Counter_Loader_0_0/sim/root_level_Counter_Loader_0_0.vhd" \
+"../../../bd/root_level/ip/root_level_out_LTU_0_0/sim/root_level_out_LTU_0_0.vhd" \
+"../../../bd/root_level/ip/root_level_TTL_Serial_user_logic_0_0/sim/root_level_TTL_Serial_user_logic_0_0.vhd" \
+"../../../bd/root_level/sim/root_level.vhd" \
+
+nosort

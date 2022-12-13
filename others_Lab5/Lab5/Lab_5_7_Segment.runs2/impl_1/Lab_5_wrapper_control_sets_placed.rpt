@@ -1,0 +1,95 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu Nov 10 12:05:09 2022
+| Host         : CB195-UL-41 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Lab_5_wrapper_control_sets_placed.rpt
+| Design       : Lab_5_wrapper
+| Device       : xc7z010
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    17 |
+|    Minimum number of control sets                        |    17 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    50 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    17 |
+| >= 0 to < 4        |     4 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     8 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              51 |           19 |
+| No           | No                    | Yes                    |               6 |            3 |
+| No           | Yes                   | No                     |              93 |           24 |
+| Yes          | No                    | No                     |              44 |           13 |
+| Yes          | No                    | Yes                    |              36 |           10 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------------------------------+-----------------------------------------------------+----------------------------------------------------------------+------------------+----------------+
+|                          Clock Signal                         |                    Enable Signal                    |                        Set/Reset Signal                        | Slice Load Count | Bel Load Count |
++---------------------------------------------------------------+-----------------------------------------------------+----------------------------------------------------------------+------------------+----------------+
+|  Lab_5_i/top_level_0/U0/counter/r_reg_reg[3]_LDC_i_1_n_0      |                                                     | Lab_5_i/top_level_0/U0/debounce_BTN_2/r_reg2                   |                1 |              1 |
+|  Lab_5_i/processing_system7_0/inst/FCLK_CLK0                  |                                                     | Lab_5_i/top_level_0/U0/debounce_BTN_2/r_reg2                   |                1 |              2 |
+|  Lab_5_i/processing_system7_0/inst/FCLK_CLK0                  | Lab_5_i/top_level_0/U0/debounce_BTN_1/E[0]          | Lab_5_i/top_level_0/U0/counter/r_reg[2]_i_3_n_0                |                1 |              2 |
+|  Lab_5_i/processing_system7_0/inst/FCLK_CLK0                  | Lab_5_i/top_level_0/U0/debounce_BTN_1/E[0]          | Lab_5_i/top_level_0/U0/counter/r_reg_reg[3]_LDC_i_1_n_0        |                1 |              2 |
+|  Lab_5_i/processing_system7_0/inst/FCLK_CLK0                  |                                                     | Lab_5_i/top_level_0/U0/TTL/Inst_TTL_serial/TX_i_2_n_0          |                2 |              4 |
+|  Lab_5_i/processing_system7_0/inst/FCLK_CLK0                  | Lab_5_i/top_level_0/U0/TTL/byteSel[3]_i_1_n_0       |                                                                |                1 |              4 |
+|  Lab_5_i/processing_system7_0/inst/FCLK_CLK0                  | Lab_5_i/top_level_0/U0/TTL/Inst_TTL_serial/data0    |                                                                |                2 |              6 |
+|  Lab_5_i/processing_system7_0/inst/FCLK_CLK0                  | Lab_5_i/top_level_0/U0/TTL/data_wr[7]_i_1_n_0       |                                                                |                3 |              6 |
+|  Lab_5_i/processing_system7_0/inst/FCLK_CLK0                  |                                                     | Lab_5_i/top_level_0/U0/TTL/Inst_TTL_serial/clk_cnt[12]_i_1_n_0 |                3 |             13 |
+|  Lab_5_i/processing_system7_0/inst/FCLK_CLK0                  |                                                     | Lab_5_i/top_level_0/U0/debounce_BTN_0/btn_cntr[0]_i_1_n_0      |                4 |             16 |
+|  Lab_5_i/processing_system7_0/inst/FCLK_CLK0                  |                                                     | Lab_5_i/top_level_0/U0/debounce_BTN_1/btn_cntr[0]_i_1__0_n_0   |                4 |             16 |
+|  Lab_5_i/processing_system7_0/inst/FCLK_CLK0                  |                                                     | Lab_5_i/top_level_0/U0/debounce_BTN_2/btn_cntr[0]_i_1__1_n_0   |                4 |             16 |
+|  Lab_5_i/processing_system7_0/inst/FCLK_CLK0                  |                                                     |                                                                |               10 |             19 |
+|  Lab_5_i/processing_system7_0/inst/FCLK_CLK0                  | Lab_5_i/top_level_0/U0/TTL/count[0]_i_1_n_0         |                                                                |                7 |             28 |
+|  Lab_5_i/processing_system7_0/inst/FCLK_CLK0                  |                                                     | Lab_5_i/top_level_0/U0/count_enable[31]_i_1_n_0                |                8 |             31 |
+|  Lab_5_i/top_level_0/U0/counter/reset_delay_len_reg[31]_i_5_0 |                                                     |                                                                |                9 |             32 |
+|  Lab_5_i/processing_system7_0/inst/FCLK_CLK0                  | Lab_5_i/top_level_0/U0/TTL/Inst_TTL_serial/bit_cnt0 | Lab_5_i/top_level_0/U0/TTL/Inst_TTL_serial/TX_i_2_n_0          |                8 |             32 |
++---------------------------------------------------------------+-----------------------------------------------------+----------------------------------------------------------------+------------------+----------------+
+
+

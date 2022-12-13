@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# 
+# Start of session at: Sat Nov 12 02:47:32 2022
+# Process ID: 1160
+# Current directory: D:/school/sem7/EE365/lab5_fresh/lab5_fresh.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: D:/school/sem7/EE365/lab5_fresh/lab5_fresh.sdk/webtalk/webtalk.log
+# Journal file: D:/school/sem7/EE365/lab5_fresh/lab5_fresh.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

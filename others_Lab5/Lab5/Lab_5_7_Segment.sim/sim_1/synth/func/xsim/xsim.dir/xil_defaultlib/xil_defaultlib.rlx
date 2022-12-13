@@ -1,0 +1,12 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.sim/sim_1/synth/func/xsim/Lab_5_wrapper_func_synth.vhd,1668138795,vhdl,,,,lab_5;lab_5_processing_system7_0_0;lab_5_processing_system7_0_0_processing_system7_v5_5_processing_system7;lab_5_wrapper,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.srcs/sim_1/new/Top_Level_tb.vhd,1668111945,vhdl,,,,top_level_tb,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/TTL_serial.vhd,1668111916,vhdl,,,,ttl_serial,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/TTL_user_logic.vhd,1668111916,vhdl,,,,ttl_serial_user_logic,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/btn_debounce_toggle.vhd,1668111916,vhdl,,,,btn_debounce_toggle,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/out_LTU.vhd,1668113805,vhdl,,,,out_lut,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/top_level.vhd,1668137456,vhdl,D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.srcs/sim_1/new/Top_Level_tb.vhd,,,top_level,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/univ_bin_counter.vhd,1668111916,vhdl,,,,univ_bin_counter,,,,,,,,

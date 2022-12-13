@@ -1,0 +1,16 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.ip_user_files/bd/Lab_5/ip/Lab_5_processing_system7_0_0/sim/Lab_5_processing_system7_0_0.v,1668111917,verilog,,,,Lab_5_processing_system7_0_0,,axi_vip_v1_1_5;processing_system7_vip_v1_0_7;xilinx_vip,../../../../Lab_5_7_Segment.srcs/sources_1/bd/Lab_5/ipshared/8c62/hdl;../../../../Lab_5_7_Segment.srcs/sources_1/bd/Lab_5/ipshared/ec67/hdl;C:/Xilinx/Vivado/2019.1/data/xilinx_vip/include,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.ip_user_files/bd/Lab_5/ip/Lab_5_top_level_0_0/sim/Lab_5_top_level_0_0.vhd,1668111917,vhdl,,,,lab_5_top_level_0_0,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.ip_user_files/bd/Lab_5/sim/Lab_5.vhd,1668111918,vhdl,,,,lab_5,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,axi_vip_v1_1_5;processing_system7_vip_v1_0_7;xilinx_vip,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.srcs/sim_1/new/Top_Level_tb.vhd,1668111945,vhdl,,,,top_level_tb,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.srcs/sources_1/bd/Lab_5/hdl/Lab_5_wrapper.vhd,1668138773,vhdl,,,,lab_5_wrapper,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/TTL_serial.vhd,1668111916,vhdl,,,,ttl_serial,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/TTL_user_logic.vhd,1668111916,vhdl,,,,ttl_serial_user_logic,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/btn_debounce_toggle.vhd,1668111916,vhdl,,,,btn_debounce_toggle,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/out_LTU.vhd,1668113805,vhdl,,,,out_lut,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/top_level.vhd,1668137456,vhdl,D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.srcs/sim_1/new/Top_Level_tb.vhd,,,top_level,,,,,,,,
+D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/univ_bin_counter.vhd,1668111916,vhdl,,,,univ_bin_counter,,,,,,,,

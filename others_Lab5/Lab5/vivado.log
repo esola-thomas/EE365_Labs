@@ -1,0 +1,286 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Nov 10 16:52:00 2022
+# Process ID: 40624
+# Current directory: D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30804 D:\My_DevOps\Fall_2022\EE365\EE365_Labs\Lab5\Lab_5_7_Segment.xpr
+# Log file: D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/vivado.log
+# Journal file: D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'Lab_5_processing_system7_0_0_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'synth_2' not found
+WARNING: [Project 1-509] GeneratedRun file for 'Lab_5_top_level_0_0_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'impl_2' not found
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_runs impl_2 -jobs 12
+[Thu Nov 10 16:53:07 2022] Launched Lab_5_processing_system7_0_0_synth_1, Lab_5_top_level_0_0_synth_1, synth_2...
+Run output will be captured here:
+Lab_5_processing_system7_0_0_synth_1: D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.runs/Lab_5_processing_system7_0_0_synth_1/runme.log
+Lab_5_top_level_0_0_synth_1: D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.runs/Lab_5_top_level_0_0_synth_1/runme.log
+synth_2: D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.runs/synth_2/runme.log
+[Thu Nov 10 16:53:07 2022] Launched impl_2...
+Run output will be captured here: D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.runs/impl_2/runme.log
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Thu Nov 10 17:08:07 2022] Launched impl_2...
+Run output will be captured here: D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+Warning: Cannot create '3000:arm' GDB server: An attempt was made to access a socket in a way forbidden by its access permissions
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/251633007573A
+open_hw_target: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2011.855 ; gain = 1115.906
+set_property PROGRAM.FILE {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.runs/impl_2/Lab_5_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.runs/impl_2/Lab_5_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.runs/impl_2/Lab_5_wrapper.ltx} [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+WARNING: Simulation object Lab_5_i/top_level_0/U0/r_next was not found in the design.
+WARNING: Simulation object Lab_5_i/top_level_0/U0/BTN_O was not found in the design.
+WARNING: Simulation object Lab_5_i/top_level_0/U0/clk_en_reg_n_0 was not found in the design.
+WARNING: Simulation object Lab_5_i/top_level_0/U0/counter_n_1 was not found in the design.
+WARNING: Simulation object Lab_5_i/top_level_0/U0/counter_n_7 was not found in the design.
+WARNING: Simulation object Lab_5_i/top_level_0/U0/counter_n_8 was not found in the design.
+WARNING: Simulation object Lab_5_i/top_level_0/U0/counter_n_11 was not found in the design.
+WARNING: Simulation object Lab_5_i/top_level_0/U0/counter_n_12 was not found in the design.
+WARNING: Simulation object Lab_5_i/top_level_0/U0/counter_n_13 was not found in the design.
+WARNING: Simulation object Lab_5_i/top_level_0/U0/counter_n_14 was not found in the design.
+WARNING: Simulation object Lab_5_i/top_level_0/U0/counter_n_15 was not found in the design.
+open_run synth_2 -name synth_2
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg225-1
+INFO: [Device 21-403] Loading part xc7z010clg225-1
+INFO: [Project 1-454] Reading design checkpoint 'd:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.srcs/sources_1/bd/Lab_5/ip/Lab_5_processing_system7_0_0/Lab_5_processing_system7_0_0.dcp' for cell 'Lab_5_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.srcs/sources_1/bd/Lab_5/ip/Lab_5_top_level_0_0/Lab_5_top_level_0_0.dcp' for cell 'Lab_5_i/top_level_0'
+INFO: [Netlist 29-17] Analyzing 38 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.srcs/sources_1/bd/Lab_5/ip/Lab_5_processing_system7_0_0/Lab_5_processing_system7_0_0.xdc] for cell 'Lab_5_i/processing_system7_0/inst'
+Finished Parsing XDC File [d:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.srcs/sources_1/bd/Lab_5/ip/Lab_5_processing_system7_0_0/Lab_5_processing_system7_0_0.xdc] for cell 'Lab_5_i/processing_system7_0/inst'
+Parsing XDC File [D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/TE0726.xdc]
+Finished Parsing XDC File [D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/TE0726.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2418.906 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 2549.156 ; gain = 473.410
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 8192 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_ADV_TRIGGER true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_0 ]
+endgroup
+connect_debug_port u_ila_0/clk [get_nets [list Lab_5_i/processing_system7_0/inst/FCLK_CLK0 ]]
+set_property port_width 4 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {Lab_5_i/top_level_0/U0/counter_value[0]} {Lab_5_i/top_level_0/U0/counter_value[1]} {Lab_5_i/top_level_0/U0/counter_value[2]} {Lab_5_i/top_level_0/U0/counter_value[3]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {Lab_5_i/top_level_0/U0/LUT_o[0]} {Lab_5_i/top_level_0/U0/LUT_o[1]} {Lab_5_i/top_level_0/U0/LUT_o[2]} {Lab_5_i/top_level_0/U0/LUT_o[3]} {Lab_5_i/top_level_0/U0/LUT_o[4]} {Lab_5_i/top_level_0/U0/LUT_o[5]} {Lab_5_i/top_level_0/U0/LUT_o[6]} {Lab_5_i/top_level_0/U0/LUT_o[7]} {Lab_5_i/top_level_0/U0/LUT_o[8]} {Lab_5_i/top_level_0/U0/LUT_o[9]} {Lab_5_i/top_level_0/U0/LUT_o[10]} {Lab_5_i/top_level_0/U0/LUT_o[11]} {Lab_5_i/top_level_0/U0/LUT_o[12]} {Lab_5_i/top_level_0/U0/LUT_o[13]} {Lab_5_i/top_level_0/U0/LUT_o[14]} {Lab_5_i/top_level_0/U0/LUT_o[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {Lab_5_i/top_level_0/U0/o[0]} {Lab_5_i/top_level_0/U0/o[1]} {Lab_5_i/top_level_0/U0/o[2]} {Lab_5_i/top_level_0/U0/o[3]} {Lab_5_i/top_level_0/U0/o[4]} {Lab_5_i/top_level_0/U0/o[5]} {Lab_5_i/top_level_0/U0/o[6]} {Lab_5_i/top_level_0/U0/o[7]} {Lab_5_i/top_level_0/U0/o[8]} {Lab_5_i/top_level_0/U0/o[9]} {Lab_5_i/top_level_0/U0/o[10]} {Lab_5_i/top_level_0/U0/o[11]} {Lab_5_i/top_level_0/U0/o[12]} {Lab_5_i/top_level_0/U0/o[13]} {Lab_5_i/top_level_0/U0/o[14]} {Lab_5_i/top_level_0/U0/o[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list Lab_5_i/top_level_0/U0/clk_en ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list Lab_5_i/top_level_0/U0/reset ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list Lab_5_i/top_level_0/U0/TOGGLE_O ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list TX_OBUF ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list Lab_5_i/top_level_0/U0/up_down ]]
+save_constraints
+reset_run impl_2
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2569.949 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.123 . Memory (MB): peak = 2583.422 ; gain = 13.473
+[Thu Nov 10 17:13:48 2022] Launched impl_2...
+Run output will be captured here: D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.runs/impl_2/runme.log
+set_property PROBES.FILE {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.runs/impl_2/Lab_5_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.runs/impl_2/Lab_5_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.runs/impl_2/Lab_5_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {Lab_5_i/top_level_0/U0/counter_value} {TX_OBUF} {u_ila_0_TOGGLE_O} {u_ila_0_counter_value} {u_ila_0_reset} {u_ila_0_up_down} }
+set_property NAME.CUSTOM TX [get_hw_probes TX_OBUF] 
+set_property CONTROL.TRIGGER_CONDITION OR [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes u_ila_0_clk_en -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property CONTROL.TRIGGER_MODE ADVANCED_ONLY [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+set_property CONTROL.TRIGGER_MODE BASIC_ONLY [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+startgroup 
+set_property CONTROL.DATA_DEPTH 512 [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+set_property CONTROL.WINDOW_COUNT 12 [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+endgroup
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Nov-10 17:21:32
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-2214] The ILA core 'hw_ila_1' triggered in the last of '12' windows, at 2022-Nov-10 17:21:43.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Lab_5_wrapper' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_5 -L processing_system7_vip_v1_0_7 -L xilinx_vip -prj Lab_5_wrapper_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.ip_user_files/bd/Lab_5/ip/Lab_5_processing_system7_0_0/sim/Lab_5_processing_system7_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Lab_5_processing_system7_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj Lab_5_wrapper_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/TTL_serial.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TTL_serial'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/TTL_user_logic.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TTL_Serial_user_logic'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/btn_debounce_toggle.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'btn_debounce_toggle'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/out_LTU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'out_LUT'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/univ_bin_counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'univ_bin_counter'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/top_level.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top_level'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.ip_user_files/bd/Lab_5/ip/Lab_5_top_level_0_0/sim/Lab_5_top_level_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Lab_5_top_level_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.ip_user_files/bd/Lab_5/sim/Lab_5.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Lab_5'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.srcs/sources_1/bd/Lab_5/hdl/Lab_5_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Lab_5_wrapper'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.sim/sim_1/behav/xsim'
+"xelab -wto 0a60af8b059245528113a446aaf09217 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_5 -L processing_system7_vip_v1_0_7 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Lab_5_wrapper_behav xil_defaultlib.Lab_5_wrapper xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0a60af8b059245528113a446aaf09217 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_5 -L processing_system7_vip_v1_0_7 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Lab_5_wrapper_behav xil_defaultlib.Lab_5_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-718] formal port <TX> does not exist in entity <top_level>.  Please compare the definition of block <top_level> to its component declaration and its instantion to detect the mismatch. [D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.ip_user_files/bd/Lab_5/ip/Lab_5_top_level_0_0/sim/Lab_5_top_level_0_0.vhd:79]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 2601.633 ; gain = 15.430
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run impl_2 -prev_step 
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Thu Nov 10 17:27:17 2022] Launched impl_2...
+Run output will be captured here: D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.runs/impl_2/runme.log
+open_run impl_2
+INFO: [Netlist 29-17] Analyzing 785 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3720.016 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3720.016 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 3720.016 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 414 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 376 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 32 instances
+
+open_run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3720.016 ; gain = 699.906
+open_report: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3720.016 ; gain = 0.000
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+set_property PROBES.FILE {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.runs/impl_2/Lab_5_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.runs/impl_2/Lab_5_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.runs/impl_2/Lab_5_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+WARNING: [Designutils 20-1462] Could not set parameter 'DISPLAY_AS_ENUM'='1' on probe probe_17 because there is no spec definition found
+WARNING: [Designutils 20-1462] Could not set parameter 'DISPLAY_RADIX'='HEX' on probe probe_17 because there is no spec definition found
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {Lab_5_i/top_level_0/U0/TOGGLE_O} {Lab_5_i/top_level_0/U0/counter_value} {Lab_5_i/top_level_0/U0/reset} {Lab_5_i/top_level_0/U0/up_down} }
+set_property NAME.CUSTOM System_Enable [get_hw_probes Lab_5_i/top_level_0/U0/TOGGLE_O] 
+set_property NAME.CUSTOM up_down [get_hw_probes Lab_5_i/top_level_0/U0/up_down] 
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Nov-10 17:29:47
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-2214] The ILA core 'hw_ila_1' triggered in the last of '12' windows, at 2022-Nov-10 17:29:47.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Nov-10 17:30:16
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-2214] The ILA core 'hw_ila_1' triggered in the last of '12' windows, at 2022-Nov-10 17:30:16.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes Lab_5_i/top_level_0/U0/clk_en -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Nov-10 17:30:29
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-2214] The ILA core 'hw_ila_1' triggered in the last of '12' windows, at 2022-Nov-10 17:30:40.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+save_wave_config {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 10 19:55:00 2022...

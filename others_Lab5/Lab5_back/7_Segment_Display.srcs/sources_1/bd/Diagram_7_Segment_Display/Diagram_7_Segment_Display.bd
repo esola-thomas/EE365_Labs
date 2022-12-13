@@ -1,0 +1,1077 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xF0460DF397BB1B9B",
+      "device": "xc7z010clg225-3",
+      "name": "Diagram_7_Segment_Display",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "processing_system7_0": "",
+      "btn_0_debounce": "",
+      "btn_1_debounce_toggle": "",
+      "btn_2_debounce_toggle_2": "",
+      "Univ_Counter": "",
+      "Reset_Delay_Startup": "",
+      "Global_Reset_Or": "",
+      "count_loader": "",
+      "Not_1_in_0": "",
+      "out_LTU_to_display": "",
+      "Not_1_in_1": "",
+      "Low_Signal_GND_0": "",
+      "TTL_serial_0": "",
+      "system_ila_0": "",
+      "system_ila_2": "",
+      "system_ila_3": "",
+      "system_ila_4": "",
+      "Display_Initializer_0": ""
+    },
+    "interface_ports": {
+      "DDR": {
+        "mode": "Master",
+        "vlnv": "xilinx.com:interface:ddrx_rtl:1.0",
+        "parameters": {
+          "AXI_ARBITRATION_SCHEME": {
+            "value": "TDM",
+            "value_src": "default"
+          },
+          "BURST_LENGTH": {
+            "value": "8",
+            "value_src": "default"
+          },
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          },
+          "CAS_LATENCY": {
+            "value": "11",
+            "value_src": "default"
+          },
+          "CAS_WRITE_LATENCY": {
+            "value": "11",
+            "value_src": "default"
+          },
+          "CS_ENABLED": {
+            "value": "true",
+            "value_src": "default"
+          },
+          "DATA_MASK_ENABLED": {
+            "value": "true",
+            "value_src": "default"
+          },
+          "DATA_WIDTH": {
+            "value": "8",
+            "value_src": "default"
+          },
+          "MEMORY_TYPE": {
+            "value": "COMPONENTS",
+            "value_src": "default"
+          },
+          "MEM_ADDR_MAP": {
+            "value": "ROW_COLUMN_BANK",
+            "value_src": "default"
+          },
+          "SLOT": {
+            "value": "Single",
+            "value_src": "default"
+          },
+          "TIMEPERIOD_PS": {
+            "value": "1250",
+            "value_src": "default"
+          }
+        }
+      },
+      "FIXED_IO": {
+        "mode": "Master",
+        "vlnv": "xilinx.com:display_processing_system7:fixedio_rtl:1.0",
+        "parameters": {
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "ports": {
+      "BTN_0": {
+        "direction": "I"
+      },
+      "BTN_1": {
+        "direction": "I"
+      },
+      "BTN_2": {
+        "direction": "I"
+      },
+      "TX": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "processing_system7_0": {
+        "vlnv": "xilinx.com:ip:processing_system7:5.5",
+        "xci_name": "Diagram_7_Segment_Display_processing_system7_0_0",
+        "parameters": {
+          "PCW_ACT_APU_PERIPHERAL_FREQMHZ": {
+            "value": "666.666687"
+          },
+          "PCW_ACT_CAN_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_DCI_PERIPHERAL_FREQMHZ": {
+            "value": "10.158730"
+          },
+          "PCW_ACT_ENET0_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_ENET1_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_FPGA0_PERIPHERAL_FREQMHZ": {
+            "value": "50.000000"
+          },
+          "PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_FPGA2_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_FPGA3_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_PCAP_PERIPHERAL_FREQMHZ": {
+            "value": "200.000000"
+          },
+          "PCW_ACT_QSPI_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_SDIO_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_SMC_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_SPI_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_TPIU_PERIPHERAL_FREQMHZ": {
+            "value": "200.000000"
+          },
+          "PCW_ACT_TTC0_CLK0_PERIPHERAL_FREQMHZ": {
+            "value": "111.111115"
+          },
+          "PCW_ACT_TTC0_CLK1_PERIPHERAL_FREQMHZ": {
+            "value": "111.111115"
+          },
+          "PCW_ACT_TTC0_CLK2_PERIPHERAL_FREQMHZ": {
+            "value": "111.111115"
+          },
+          "PCW_ACT_TTC1_CLK0_PERIPHERAL_FREQMHZ": {
+            "value": "111.111115"
+          },
+          "PCW_ACT_TTC1_CLK1_PERIPHERAL_FREQMHZ": {
+            "value": "111.111115"
+          },
+          "PCW_ACT_TTC1_CLK2_PERIPHERAL_FREQMHZ": {
+            "value": "111.111115"
+          },
+          "PCW_ACT_UART_PERIPHERAL_FREQMHZ": {
+            "value": "100.000000"
+          },
+          "PCW_ACT_WDT_PERIPHERAL_FREQMHZ": {
+            "value": "111.111115"
+          },
+          "PCW_CLK0_FREQ": {
+            "value": "50000000"
+          },
+          "PCW_CLK1_FREQ": {
+            "value": "10000000"
+          },
+          "PCW_CLK2_FREQ": {
+            "value": "10000000"
+          },
+          "PCW_CLK3_FREQ": {
+            "value": "10000000"
+          },
+          "PCW_EN_EMIO_UART0": {
+            "value": "0"
+          },
+          "PCW_EN_UART0": {
+            "value": "0"
+          },
+          "PCW_EN_UART1": {
+            "value": "1"
+          },
+          "PCW_FPGA_FCLK0_ENABLE": {
+            "value": "1"
+          },
+          "PCW_MIO_8_IOTYPE": {
+            "value": "LVCMOS 3.3V"
+          },
+          "PCW_MIO_8_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_9_IOTYPE": {
+            "value": "LVCMOS 3.3V"
+          },
+          "PCW_MIO_9_PULLUP": {
+            "value": "enabled"
+          },
+          "PCW_MIO_9_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_TREE_PERIPHERALS": {
+            "value": "unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#UART 1#UART 1#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#Unbonded#Unbonded#Unbonded#Unbonded#Unbonded#Unbonded#Unbonded#Unbonded#Unbonded#Unbonded#Unbonded#Unbonded#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#Unbonded#Unbonded#Unbonded#Unbonded#Unbonded#Unbonded#Unbonded#Unbonded#unassigned#unassigned#Unbonded#Unbonded#unassigned#unassigned"
+          },
+          "PCW_MIO_TREE_SIGNALS": {
+            "value": "unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#tx#rx#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#Unbonded#Unbonded#Unbonded#Unbonded#Unbonded#Unbonded#Unbonded#Unbonded#Unbonded#Unbonded#Unbonded#Unbonded#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#Unbonded#Unbonded#Unbonded#Unbonded#Unbonded#Unbonded#Unbonded#Unbonded#unassigned#unassigned#Unbonded#Unbonded#unassigned#unassigned"
+          },
+          "PCW_UART0_PERIPHERAL_ENABLE": {
+            "value": "0"
+          },
+          "PCW_UART1_GRP_FULL_ENABLE": {
+            "value": "0"
+          },
+          "PCW_UART1_PERIPHERAL_ENABLE": {
+            "value": "1"
+          },
+          "PCW_UART1_UART1_IO": {
+            "value": "MIO 8 .. 9"
+          },
+          "PCW_UART_PERIPHERAL_FREQMHZ": {
+            "value": "100"
+          },
+          "PCW_UART_PERIPHERAL_VALID": {
+            "value": "1"
+          },
+          "PCW_UIPARAM_ACT_DDR_FREQ_MHZ": {
+            "value": "533.333374"
+          },
+          "PCW_USE_M_AXI_GP0": {
+            "value": "0"
+          }
+        }
+      },
+      "btn_0_debounce": {
+        "vlnv": "xilinx.com:module_ref:btn_debounce_toggle:1.0",
+        "xci_name": "Diagram_7_Segment_Display_btn_debounce_toggle_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "btn_debounce_toggle",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "50000000",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "BTN_I": {
+            "direction": "I"
+          },
+          "BTN_O": {
+            "direction": "O"
+          },
+          "TOGGLE_O": {
+            "direction": "O"
+          },
+          "PULSE_O": {
+            "direction": "O"
+          }
+        }
+      },
+      "btn_1_debounce_toggle": {
+        "vlnv": "xilinx.com:module_ref:btn_debounce_toggle:1.0",
+        "xci_name": "Diagram_7_Segment_Display_btn_debounce_toggle_1_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "btn_debounce_toggle",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "50000000",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "BTN_I": {
+            "direction": "I"
+          },
+          "BTN_O": {
+            "direction": "O"
+          },
+          "TOGGLE_O": {
+            "direction": "O"
+          },
+          "PULSE_O": {
+            "direction": "O"
+          }
+        }
+      },
+      "btn_2_debounce_toggle_2": {
+        "vlnv": "xilinx.com:module_ref:btn_debounce_toggle:1.0",
+        "xci_name": "Diagram_7_Segment_Display_btn_debounce_toggle_2_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "btn_debounce_toggle",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "50000000",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "BTN_I": {
+            "direction": "I"
+          },
+          "BTN_O": {
+            "direction": "O"
+          },
+          "TOGGLE_O": {
+            "direction": "O"
+          },
+          "PULSE_O": {
+            "direction": "O"
+          }
+        }
+      },
+      "Univ_Counter": {
+        "vlnv": "xilinx.com:module_ref:univ_bin_counter:1.0",
+        "xci_name": "Diagram_7_Segment_Display_univ_bin_counter_0_0",
+        "parameters": {
+          "N": {
+            "value": "8"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "univ_bin_counter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "50000000",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "syn_clr": {
+            "direction": "I"
+          },
+          "load": {
+            "direction": "I"
+          },
+          "en": {
+            "direction": "I"
+          },
+          "up": {
+            "direction": "I"
+          },
+          "clk_en": {
+            "direction": "I"
+          },
+          "d": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "max_tick": {
+            "direction": "O"
+          },
+          "min_tick": {
+            "direction": "O"
+          },
+          "q": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "Reset_Delay_Startup": {
+        "vlnv": "xilinx.com:module_ref:Reset_Delay:1.0",
+        "xci_name": "Diagram_7_Segment_Display_Reset_Delay_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Reset_Delay",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "iCLK": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "50000000",
+                "value_src": "user_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "oRESET": {
+            "direction": "O"
+          }
+        }
+      },
+      "Global_Reset_Or": {
+        "vlnv": "xilinx.com:module_ref:OR_2:1.0",
+        "xci_name": "Diagram_7_Segment_Display_OR_2_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "OR_2",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "o": {
+            "direction": "O"
+          }
+        }
+      },
+      "count_loader": {
+        "vlnv": "xilinx.com:module_ref:count_loader:1.0",
+        "xci_name": "Diagram_7_Segment_Display_count_loader_0_0",
+        "parameters": {
+          "d_size": {
+            "value": "8"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "count_loader",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a_reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "50000000",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "up": {
+            "direction": "I"
+          },
+          "count_en": {
+            "direction": "I"
+          },
+          "busy_in": {
+            "direction": "I"
+          },
+          "count_min": {
+            "direction": "I"
+          },
+          "count_max": {
+            "direction": "I"
+          },
+          "load_value": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "load_signal": {
+            "direction": "O"
+          },
+          "clk_en": {
+            "direction": "O"
+          }
+        }
+      },
+      "Not_1_in_0": {
+        "vlnv": "xilinx.com:module_ref:Not_1_in:1.0",
+        "xci_name": "Diagram_7_Segment_Display_Not_1_in_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Not_1_in",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i": {
+            "direction": "I"
+          },
+          "o": {
+            "direction": "O"
+          }
+        }
+      },
+      "out_LTU_to_display": {
+        "vlnv": "xilinx.com:module_ref:out_LTU:1.0",
+        "xci_name": "Diagram_7_Segment_Display_out_LTU_0_0",
+        "parameters": {
+          "out_size": {
+            "value": "16"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "out_LTU",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "count": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "o": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "Not_1_in_1": {
+        "vlnv": "xilinx.com:module_ref:Not_1_in:1.0",
+        "xci_name": "Diagram_7_Segment_Display_Not_1_in_0_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Not_1_in",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i": {
+            "direction": "I"
+          },
+          "o": {
+            "direction": "O"
+          }
+        }
+      },
+      "Low_Signal_GND_0": {
+        "vlnv": "xilinx.com:module_ref:Low_Signal_GND:1.0",
+        "xci_name": "Diagram_7_Segment_Display_Low_Signal_GND_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Low_Signal_GND",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "GND_o": {
+            "direction": "O"
+          }
+        }
+      },
+      "TTL_serial_0": {
+        "vlnv": "xilinx.com:module_ref:TTL_serial:1.0",
+        "xci_name": "Diagram_7_Segment_Display_TTL_serial_0_0",
+        "parameters": {
+          "data_size": {
+            "value": "8"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "TTL_serial",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "reset_n": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "50000000",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "ena": {
+            "direction": "I"
+          },
+          "idata": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "busy": {
+            "direction": "O"
+          },
+          "TX": {
+            "direction": "O"
+          }
+        }
+      },
+      "system_ila_0": {
+        "vlnv": "xilinx.com:ip:system_ila:1.1",
+        "xci_name": "Diagram_7_Segment_Display_system_ila_0_0",
+        "parameters": {
+          "C_MON_TYPE": {
+            "value": "NATIVE"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "9"
+          },
+          "C_PROBE0_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE1_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE2_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE3_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE4_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE5_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE6_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE7_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE8_TYPE": {
+            "value": "0"
+          }
+        }
+      },
+      "system_ila_2": {
+        "vlnv": "xilinx.com:ip:system_ila:1.1",
+        "xci_name": "Diagram_7_Segment_Display_system_ila_2_0",
+        "parameters": {
+          "C_MON_TYPE": {
+            "value": "NATIVE"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "1"
+          },
+          "C_PROBE0_TYPE": {
+            "value": "0"
+          }
+        }
+      },
+      "system_ila_3": {
+        "vlnv": "xilinx.com:ip:system_ila:1.1",
+        "xci_name": "Diagram_7_Segment_Display_system_ila_3_0",
+        "parameters": {
+          "C_MON_TYPE": {
+            "value": "NATIVE"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "1"
+          },
+          "C_PROBE0_TYPE": {
+            "value": "0"
+          }
+        }
+      },
+      "system_ila_4": {
+        "vlnv": "xilinx.com:ip:system_ila:1.1",
+        "xci_name": "Diagram_7_Segment_Display_system_ila_4_0",
+        "parameters": {
+          "C_MON_TYPE": {
+            "value": "NATIVE"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "1"
+          },
+          "C_PROBE0_TYPE": {
+            "value": "0"
+          }
+        }
+      },
+      "Display_Initializer_0": {
+        "vlnv": "xilinx.com:module_ref:Display_Initializer:1.0",
+        "xci_name": "Diagram_7_Segment_Display_Display_Initializer_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Display_Initializer",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "Reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "Reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "Diagram_7_Segment_Display_processing_system7_0_0_FCLK_CLK0",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "50000000",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "TTL_busy": {
+            "direction": "I"
+          },
+          "LTU_in": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "o_data": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "processing_system7_0_FIXED_IO": {
+        "interface_ports": [
+          "FIXED_IO",
+          "processing_system7_0/FIXED_IO"
+        ]
+      },
+      "processing_system7_0_DDR": {
+        "interface_ports": [
+          "DDR",
+          "processing_system7_0/DDR"
+        ]
+      }
+    },
+    "nets": {
+      "BTN_0_input": {
+        "ports": [
+          "BTN_0",
+          "btn_0_debounce/BTN_I",
+          "system_ila_0/probe0"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "BTN_1_input": {
+        "ports": [
+          "BTN_1",
+          "btn_1_debounce_toggle/BTN_I",
+          "system_ila_0/probe1"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "BTN_2_input": {
+        "ports": [
+          "BTN_2",
+          "btn_2_debounce_toggle_2/BTN_I",
+          "system_ila_0/probe2"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "initializer_pre_debounce": {
+        "ports": [
+          "btn_0_debounce/BTN_O",
+          "Global_Reset_Or/A",
+          "system_ila_0/probe3"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "Clock_50": {
+        "ports": [
+          "processing_system7_0/FCLK_CLK0",
+          "btn_0_debounce/CLK",
+          "btn_1_debounce_toggle/CLK",
+          "btn_2_debounce_toggle_2/CLK",
+          "Univ_Counter/clk",
+          "Reset_Delay_Startup/iCLK",
+          "count_loader/clk",
+          "TTL_serial_0/clk",
+          "system_ila_0/clk",
+          "system_ila_2/clk",
+          "system_ila_4/clk",
+          "system_ila_3/clk",
+          "Display_Initializer_0/clk"
+        ]
+      },
+      "Counter_Value": {
+        "ports": [
+          "Univ_Counter/q",
+          "out_LTU_to_display/count",
+          "system_ila_0/probe4"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "univ_bin_counter_min_tick": {
+        "ports": [
+          "Univ_Counter/min_tick",
+          "count_loader/count_min"
+        ]
+      },
+      "univ_bin_counter_max_tick": {
+        "ports": [
+          "Univ_Counter/max_tick",
+          "count_loader/count_max"
+        ]
+      },
+      "count_loade_value": {
+        "ports": [
+          "count_loader/load_value",
+          "Univ_Counter/d"
+        ]
+      },
+      "count_loader_load_signal": {
+        "ports": [
+          "count_loader/load_signal",
+          "Univ_Counter/load"
+        ]
+      },
+      "clock_en": {
+        "ports": [
+          "count_loader/clk_en",
+          "Univ_Counter/clk_en",
+          "count_loader/count_en",
+          "TTL_serial_0/ena"
+        ]
+      },
+      "Reset_Delay_o": {
+        "ports": [
+          "Reset_Delay_Startup/oRESET",
+          "Global_Reset_Or/B"
+        ]
+      },
+      "Global_Reset": {
+        "ports": [
+          "Global_Reset_Or/o",
+          "count_loader/a_reset",
+          "system_ila_2/probe0",
+          "Display_Initializer_0/Reset"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "debounce_direction_TOGGLE": {
+        "ports": [
+          "Not_1_in_0/o",
+          "Univ_Counter/up",
+          "count_loader/up",
+          "system_ila_3/probe0"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "enable_toggle": {
+        "ports": [
+          "btn_1_debounce_toggle/TOGGLE_O",
+          "Univ_Counter/en",
+          "system_ila_0/probe5"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "btn_2_debounce_toggle_2_TOGGLE_O": {
+        "ports": [
+          "btn_2_debounce_toggle_2/TOGGLE_O",
+          "Not_1_in_0/i",
+          "system_ila_0/probe6"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "Display_Initializer_data": {
+        "ports": [
+          "Display_Initializer_0/o_data",
+          "TTL_serial_0/idata",
+          "system_ila_0/probe7"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "out_LTU": {
+        "ports": [
+          "out_LTU_to_display/o",
+          "system_ila_4/probe0",
+          "Display_Initializer_0/LTU_in"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true",
+            "value_src": "undefined"
+          },
+          "MARK_DEBUG": {
+            "value": "true",
+            "value_src": "undefined"
+          }
+        }
+      },
+      "TTL_serial_0_busy": {
+        "ports": [
+          "TTL_serial_0/busy",
+          "count_loader/busy_in",
+          "Display_Initializer_0/TTL_busy"
+        ]
+      },
+      "TTL_serial_TX": {
+        "ports": [
+          "TTL_serial_0/TX",
+          "TX",
+          "system_ila_0/probe8"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "Low_Signal_GND_0_GND": {
+        "ports": [
+          "Low_Signal_GND_0/GND_o",
+          "Univ_Counter/reset",
+          "Univ_Counter/syn_clr",
+          "Not_1_in_1/i"
+        ]
+      },
+      "Not_1_in_1_o": {
+        "ports": [
+          "Not_1_in_1/o",
+          "TTL_serial_0/reset_n"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"Top_Level_tb_func_synth.vhd" \
+"../../../../../TTL_serial.vhd" \
+"../../../../../TTL_user_logic.vhd" \
+"../../../../../top_level.vhd" \
+"../../../../../btn_debounce_toggle.vhd" \
+"../../../../../out_LTU.vhd" \
+"../../../../../univ_bin_counter.vhd" \
+"../../../../../Lab_5_7_Segment.srcs/sim_1/new/Top_Level_tb.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Nov 14 14:56:49 2022
+# Process ID: 5204
+# Current directory: D:/My_DevOps/Fall_2022/EE365/EE365_Labs/lab5_fresh
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7748 D:\My_DevOps\Fall_2022\EE365\EE365_Labs\lab5_fresh\lab5_fresh.xpr
+# Log file: D:/My_DevOps/Fall_2022/EE365/EE365_Labs/lab5_fresh/vivado.log
+# Journal file: D:/My_DevOps/Fall_2022/EE365/EE365_Labs/lab5_fresh\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/My_DevOps/Fall_2022/EE365/EE365_Labs/lab5_fresh/lab5_fresh.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/My_DevOps/Fall_2022/EE365/EE365_Labs/lab5_fresh/design_1_wrapper_behav.wcfg
+source design_1_wrapper.tcl
+add_force {/design_1_wrapper/BTN_0} -radix hex {0 0ns}
+add_force {/design_1_wrapper/BTN_1} -radix hex {0 0ns}
+add_force {/design_1_wrapper/BTN_2} -radix hex {0 0ns}
+run all
+close_sim

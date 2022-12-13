@@ -1,0 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/My_DevOps/Fall_2022/EE365/EE365_Labs/lab5_fresh/LUT.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LUT'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/My_DevOps/Fall_2022/EE365/EE365_Labs/lab5_fresh/SPI_master.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SPI_master'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/My_DevOps/Fall_2022/EE365/EE365_Labs/lab5_fresh/lab5.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'lab5'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/My_DevOps/Fall_2022/EE365/EE365_Labs/lab5_fresh/lab5_fresh.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_wrapper'

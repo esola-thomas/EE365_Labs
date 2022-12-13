@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Nov 10 22:31:04 2022
+# Process ID: 33352
+# Current directory: D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.sim/sim_1/synth/func/xsim
+# Command line: wbtcv.exe -mode batch -source D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.sim/sim_1/synth/func/xsim/xsim.dir/Lab_5_wrapper_func_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.sim/sim_1/synth/func/xsim/webtalk.log
+# Journal file: D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.sim/sim_1/synth/func/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.sim/sim_1/synth/func/xsim/xsim.dir/Lab_5_wrapper_func_synth/webtalk/xsim_webtalk.tcl -notrace

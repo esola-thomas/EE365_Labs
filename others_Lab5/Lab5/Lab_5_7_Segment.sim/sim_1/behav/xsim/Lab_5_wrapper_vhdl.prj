@@ -1,0 +1,14 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../TTL_serial.vhd" \
+"../../../../TTL_user_logic.vhd" \
+"../../../../btn_debounce_toggle.vhd" \
+"../../../../out_LTU.vhd" \
+"../../../../univ_bin_counter.vhd" \
+"../../../../top_level.vhd" \
+"../../../../Lab_5_7_Segment.ip_user_files/bd/Lab_5/ip/Lab_5_top_level_0_0/sim/Lab_5_top_level_0_0.vhd" \
+"../../../../Lab_5_7_Segment.ip_user_files/bd/Lab_5/sim/Lab_5.vhd" \
+"../../../../Lab_5_7_Segment.srcs/sources_1/bd/Lab_5/hdl/Lab_5_wrapper.vhd" \
+
+# Do not sort compile order
+nosort

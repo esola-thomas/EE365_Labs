@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Nov  8 23:53:05 2022" VIVADOVERSION="2019.1">
+
+  <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="top_level" PACKAGE="clg484" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS/>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES/>
+
+</EDKSYSTEM>

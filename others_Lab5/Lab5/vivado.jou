@@ -1,0 +1,120 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Nov 10 16:52:00 2022
+# Process ID: 40624
+# Current directory: D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30804 D:\My_DevOps\Fall_2022\EE365\EE365_Labs\Lab5\Lab_5_7_Segment.xpr
+# Log file: D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/vivado.log
+# Journal file: D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.xpr
+update_compile_order -fileset sources_1
+launch_runs impl_2 -jobs 12
+wait_on_run impl_2
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+wait_on_run impl_2
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.runs/impl_2/Lab_5_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.runs/impl_2/Lab_5_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.runs/impl_2/Lab_5_wrapper.ltx} [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+open_run synth_2 -name synth_2
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 8192 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_ADV_TRIGGER true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_0 ]
+endgroup
+connect_debug_port u_ila_0/clk [get_nets [list Lab_5_i/processing_system7_0/inst/FCLK_CLK0 ]]
+set_property port_width 4 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {Lab_5_i/top_level_0/U0/counter_value[0]} {Lab_5_i/top_level_0/U0/counter_value[1]} {Lab_5_i/top_level_0/U0/counter_value[2]} {Lab_5_i/top_level_0/U0/counter_value[3]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {Lab_5_i/top_level_0/U0/LUT_o[0]} {Lab_5_i/top_level_0/U0/LUT_o[1]} {Lab_5_i/top_level_0/U0/LUT_o[2]} {Lab_5_i/top_level_0/U0/LUT_o[3]} {Lab_5_i/top_level_0/U0/LUT_o[4]} {Lab_5_i/top_level_0/U0/LUT_o[5]} {Lab_5_i/top_level_0/U0/LUT_o[6]} {Lab_5_i/top_level_0/U0/LUT_o[7]} {Lab_5_i/top_level_0/U0/LUT_o[8]} {Lab_5_i/top_level_0/U0/LUT_o[9]} {Lab_5_i/top_level_0/U0/LUT_o[10]} {Lab_5_i/top_level_0/U0/LUT_o[11]} {Lab_5_i/top_level_0/U0/LUT_o[12]} {Lab_5_i/top_level_0/U0/LUT_o[13]} {Lab_5_i/top_level_0/U0/LUT_o[14]} {Lab_5_i/top_level_0/U0/LUT_o[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {Lab_5_i/top_level_0/U0/o[0]} {Lab_5_i/top_level_0/U0/o[1]} {Lab_5_i/top_level_0/U0/o[2]} {Lab_5_i/top_level_0/U0/o[3]} {Lab_5_i/top_level_0/U0/o[4]} {Lab_5_i/top_level_0/U0/o[5]} {Lab_5_i/top_level_0/U0/o[6]} {Lab_5_i/top_level_0/U0/o[7]} {Lab_5_i/top_level_0/U0/o[8]} {Lab_5_i/top_level_0/U0/o[9]} {Lab_5_i/top_level_0/U0/o[10]} {Lab_5_i/top_level_0/U0/o[11]} {Lab_5_i/top_level_0/U0/o[12]} {Lab_5_i/top_level_0/U0/o[13]} {Lab_5_i/top_level_0/U0/o[14]} {Lab_5_i/top_level_0/U0/o[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list Lab_5_i/top_level_0/U0/clk_en ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list Lab_5_i/top_level_0/U0/reset ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list Lab_5_i/top_level_0/U0/TOGGLE_O ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list TX_OBUF ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list Lab_5_i/top_level_0/U0/up_down ]]
+save_constraints
+reset_run impl_2
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+wait_on_run impl_2
+set_property PROBES.FILE {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.runs/impl_2/Lab_5_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.runs/impl_2/Lab_5_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.runs/impl_2/Lab_5_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {Lab_5_i/top_level_0/U0/counter_value} {TX_OBUF} {u_ila_0_TOGGLE_O} {u_ila_0_counter_value} {u_ila_0_reset} {u_ila_0_up_down} }
+set_property NAME.CUSTOM TX [get_hw_probes TX_OBUF] 
+set_property CONTROL.TRIGGER_CONDITION OR [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes u_ila_0_clk_en -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property CONTROL.TRIGGER_MODE ADVANCED_ONLY [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+set_property CONTROL.TRIGGER_MODE BASIC_ONLY [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+startgroup 
+set_property CONTROL.DATA_DEPTH 512 [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+set_property CONTROL.WINDOW_COUNT 12 [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+endgroup
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+launch_simulation
+reset_run impl_2 -prev_step 
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+wait_on_run impl_2
+open_run impl_2
+set_property PROBES.FILE {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.runs/impl_2/Lab_5_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.runs/impl_2/Lab_5_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.runs/impl_2/Lab_5_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {Lab_5_i/top_level_0/U0/TOGGLE_O} {Lab_5_i/top_level_0/U0/counter_value} {Lab_5_i/top_level_0/U0/reset} {Lab_5_i/top_level_0/U0/up_down} }
+set_property NAME.CUSTOM System_Enable [get_hw_probes Lab_5_i/top_level_0/U0/TOGGLE_O] 
+set_property NAME.CUSTOM up_down [get_hw_probes Lab_5_i/top_level_0/U0/up_down] 
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes Lab_5_i/top_level_0/U0/clk_en -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+save_wave_config {D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}

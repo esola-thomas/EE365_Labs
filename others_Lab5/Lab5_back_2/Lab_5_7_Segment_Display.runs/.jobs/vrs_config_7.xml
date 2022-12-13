@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="root_level_univ_bin_counter_0_0_synth_1" LaunchDir="D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.runs/root_level_univ_bin_counter_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="root_level_btn_debounce_toggle_0_0_synth_1" LaunchDir="D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.runs/root_level_btn_debounce_toggle_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="root_level_out_LTU_0_0_synth_1" LaunchDir="D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.runs/root_level_out_LTU_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="root_level_TTL_Serial_user_logic_0_0_synth_1" LaunchDir="D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.runs/root_level_TTL_Serial_user_logic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="root_level_btn_debounce_toggle_1_0_synth_1" LaunchDir="D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.runs/root_level_btn_debounce_toggle_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="root_level_btn_debounce_toggle_2_0_synth_1" LaunchDir="D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.runs/root_level_btn_debounce_toggle_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="root_level_Counter_Loader_0_0_synth_1" LaunchDir="D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.runs/root_level_Counter_Loader_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab5/Lab_5_7_Segment_Display.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="root_level_univ_bin_counter_0_0_synth_1"/>
+		<Parent Id="root_level_btn_debounce_toggle_0_0_synth_1"/>
+		<Parent Id="root_level_out_LTU_0_0_synth_1"/>
+		<Parent Id="root_level_TTL_Serial_user_logic_0_0_synth_1"/>
+		<Parent Id="root_level_btn_debounce_toggle_1_0_synth_1"/>
+		<Parent Id="root_level_btn_debounce_toggle_2_0_synth_1"/>
+		<Parent Id="root_level_Counter_Loader_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+
