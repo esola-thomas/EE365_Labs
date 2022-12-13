@@ -1,0 +1,16 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ip/design_1_rst_ps7_0_50M_0/sim/design_1_rst_ps7_0_50M_0.vhd" \
+"../../../bd/design_1/ipshared/62f3/hdl/Serial_7seg_v1_0_S00_AXI.vhd" \
+"../../../bd/design_1/ipshared/62f3/src/TTL_serial.vhd" \
+"../../../bd/design_1/ipshared/62f3/src/TTL_user_logic.vhd" \
+"../../../bd/design_1/ipshared/62f3/hdl/Serial_7seg_v1_0.vhd" \
+"../../../bd/design_1/ip/design_1_Serial_7seg_0_3/sim/design_1_Serial_7seg_0_3.vhd" \
+"../../../bd/design_1/ipshared/ec0f/src/HEX2Ascii.vhd" \
+"../../../bd/design_1/ipshared/ec0f/src/LCD_Master.vhd" \
+"../../../bd/design_1/ipshared/ec0f/src/LCD_USER_LOGIC.vhd" \
+"../../../bd/design_1/ipshared/ec0f/hdl/myipLCD_ip_v1_0_S00_AXI.vhd" \
+"../../../bd/design_1/ipshared/ec0f/hdl/myipLCD_ip_v1_0.vhd" \
+"../../../bd/design_1/ip/design_1_LCD_ip_0_0/sim/design_1_LCD_ip_0_0.vhd" \
+"../../../bd/design_1/sim/design_1.vhd" \
+
+nosort
