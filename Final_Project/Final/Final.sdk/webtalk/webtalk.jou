@@ -2,11 +2,11 @@
 # Webtalk v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # 
-# Start of session at: Mon Dec 12 21:16:45 2022
-# Process ID: 15696
-# Current directory: C:/Users/schumae/Documents/My_DevOps/Fall_2022/EE365/Final_Project/Final/Final.sdk/webtalk
+# Start of session at: Wed Dec 14 10:28:49 2022
+# Process ID: 29952
+# Current directory: D:/My_DevOps/Fall_2022/EE365/Final_Project/Final/Final.sdk/webtalk
 # Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
-# Log file: C:/Users/schumae/Documents/My_DevOps/Fall_2022/EE365/Final_Project/Final/Final.sdk/webtalk/webtalk.log
-# Journal file: C:/Users/schumae/Documents/My_DevOps/Fall_2022/EE365/Final_Project/Final/Final.sdk/webtalk\webtalk.jou
+# Log file: D:/My_DevOps/Fall_2022/EE365/Final_Project/Final/Final.sdk/webtalk/webtalk.log
+# Journal file: D:/My_DevOps/Fall_2022/EE365/Final_Project/Final/Final.sdk/webtalk\webtalk.jou
 #-----------------------------------------------------------
 source sdk_webtalk.tcl

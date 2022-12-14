@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Dec 13 22:18:00 2022
+# Process ID: 15580
+# Current directory: D:/My_DevOps/Fall_2022/EE365/Final_Project/Final/Final.tmp/lcd_ip_v1_0_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14324 D:\My_DevOps\Fall_2022\EE365\Final_Project\Final\Final.tmp\lcd_ip_v1_0_project\LCD_ip_v1_0_project.xpr
+# Log file: D:/My_DevOps/Fall_2022/EE365/Final_Project/Final/Final.tmp/lcd_ip_v1_0_project/vivado.log
+# Journal file: D:/My_DevOps/Fall_2022/EE365/Final_Project/Final/Final.tmp/lcd_ip_v1_0_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/My_DevOps/Fall_2022/EE365/Final_Project/Final/Final.tmp/lcd_ip_v1_0_project/LCD_ip_v1_0_project.xpr
+update_compile_order -fileset sources_1

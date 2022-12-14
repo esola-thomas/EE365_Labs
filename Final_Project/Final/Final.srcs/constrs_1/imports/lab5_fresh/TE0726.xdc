@@ -4,57 +4,63 @@
 #set_property IOSTANDARD LVCMOS33 [get_ports {GPIO_1_tri_io[*]}]
 ## GPIO Pins
 ## GPIO2
-#set_property IOSTANDARD LVCMOS33 [get_ports {iReset_n}]
 set_property PACKAGE_PIN K15 [get_ports iReset_n]
+set_property IOSTANDARD LVCMOS33 [get_ports iReset_n]
 ## GPIO3
-set_property PACKAGE_PIN J14 [get_ports TX]
-#set_property IOSTANDARD LVCMOS33 [get_ports {TX}]
+#set_property PACKAGE_PIN J14 [get_ports {GPIO_1_tri_io[1]}]
 ## GPIO4
-#set_property IOSTANDARD LVCMOS33 [get_ports {LCD_DATA[*]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {LCD_DATA[*]}]
-set_property PACKAGE_PIN H12 [get_ports {LCD_DATA[0]}]
+#set_property PACKAGE_PIN H12 [get_ports {GPIO_1_tri_io[2]}]
 ## GPIO5
-set_property PACKAGE_PIN N14 [get_ports {LCD_DATA[1]}]
+#set_property PACKAGE_PIN N14 [get_ports {GPIO_1_tri_io[3]}]
 ## GPIO6
-set_property PACKAGE_PIN R15 [get_ports {LCD_DATA[2]}]
+#set_property PACKAGE_PIN R15 [get_ports {GPIO_1_tri_io[4]}]
 ## GPIO7
 set_property PACKAGE_PIN L14 [get_ports {LCD_DATA[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LCD_DATA[3]}]
 ## GPIO8
-set_property PACKAGE_PIN L15 [get_ports {LCD_DATA[4]}]
+set_property PACKAGE_PIN L15 [get_ports {LCD_DATA[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LCD_DATA[2]}]
 ## GPIO9
-set_property PACKAGE_PIN J13 [get_ports {LCD_DATA[5]}]
+#set_property PACKAGE_PIN J13 [get_ports {GPIO_1_tri_io[7]}]
 ## GPIO10
-set_property PACKAGE_PIN H14 [get_ports {LCD_DATA[6]}]
+#set_property PACKAGE_PIN H14 [get_ports {GPIO_1_tri_io[8]}]
 ## GPIO11
-set_property PACKAGE_PIN J15 [get_ports {LCD_DATA[7]}]
+#set_property PACKAGE_PIN J15 [get_ports {GPIO_1_tri_io[9]}]
 ## GPIO12
-set_property PACKAGE_PIN M15 [get_ports LCD_EN]
-#set_property IOSTANDARD LVCMOS33 [get_ports {LCD_EN}]
+set_property PACKAGE_PIN M15 [get_ports {LCD_DATA[4]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LCD_DATA[4]}]
 ## GPIO13
-set_property PACKAGE_PIN R13 [get_ports LCD_RS]
-#set_property IOSTANDARD LVCMOS33 [get_ports {LCD_RS}]
+set_property PACKAGE_PIN R13 [get_ports TX]
+set_property IOSTANDARD LVCMOS33 [get_ports TX]
 ## GPIO16
-#set_property PACKAGE_PIN L13 [get_ports {GPIO_1_tri_io[12]}]
+set_property PACKAGE_PIN L13 [get_ports {LCD_DATA[5]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LCD_DATA[5]}]
 ## GPIO17
 #set_property PACKAGE_PIN G11 [get_ports {GPIO_1_tri_io[13]}]
 ## GPIO18
 #set_property PACKAGE_PIN H11 [get_ports {GPIO_1_tri_io[14]}]
 ## GPIO19
-#set_property PACKAGE_PIN R12 [get_ports {GPIO_1_tri_io[15]}]
+set_property PACKAGE_PIN R12 [get_ports LCD_RS]
+set_property IOSTANDARD LVCMOS33 [get_ports LCD_RS]
 ## GPIO20
-#set_property PACKAGE_PIN M14 [get_ports {GPIO_1_tri_io[16]}]
+set_property PACKAGE_PIN M14 [get_ports {LCD_DATA[6]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LCD_DATA[6]}]
 ## GPIO21
-#set_property PACKAGE_PIN P15 [get_ports {GPIO_1_tri_io[17]}]
+set_property PACKAGE_PIN P15 [get_ports {LCD_DATA[7]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LCD_DATA[7]}]
 ## GPIO22
 #set_property PACKAGE_PIN H13 [get_ports {GPIO_1_tri_io[18]}]
 ## GPIO23
 #set_property PACKAGE_PIN J11 [get_ports {GPIO_1_tri_io[19]}]
 ## GPIO24
-#set_property PACKAGE_PIN K11 [get_ports {GPIO_1_tri_io[20]}]
+set_property PACKAGE_PIN K11 [get_ports {LCD_DATA[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LCD_DATA[0]}]
 ## GPIO25
-#set_property PACKAGE_PIN K13 [get_ports {GPIO_1_tri_io[21]}]
+set_property PACKAGE_PIN K13 [get_ports {LCD_DATA[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LCD_DATA[1]}]
 ## GPIO26
-#set_property PACKAGE_PIN L12 [get_ports {GPIO_1_tri_io[22]}]
+set_property PACKAGE_PIN L12 [get_ports LCD_EN]
+set_property IOSTANDARD LVCMOS33 [get_ports LCD_EN]
 ## GPIO27
 #set_property PACKAGE_PIN G12 [get_ports {GPIO_1_tri_io[23]}]
 
@@ -92,4 +98,6 @@ set_property PACKAGE_PIN R13 [get_ports LCD_RS]
 #set_property PACKAGE_PIN N8 [get_ports PWM_R]
 ## PWM_L
 #set_property PACKAGE_PIN N7 [get_ports PWM_L]
-set_property IOSTANDARD LVCMOS33 [get_ports *]
+#
+
+set_property PULLUP true [get_ports iReset_n]

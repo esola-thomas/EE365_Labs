@@ -84,6 +84,8 @@ uint16_t arr[] = {0x0000,0xFADE,0xCAFE,0x4B1D,0xFEED,0x1BAD,0xD00D,0xDEAD,0xBEEF
 // Variable for memory addresses of the interfaces
 #define LCD_AXI 0x43C10000
 #define Serial_7Seg_AXI 0x43C00000
+
+
 /************************** Constant Definitions *****************************/
 #ifndef TESTAPP_GEN
 /*
@@ -355,21 +357,21 @@ void TimerCounterHandler(void *CallBackRef, u8 TmrCtrNumber)
 	 */
 	if (XTmrCtr_IsExpired(InstancePtr, TmrCtrNumber)) {
 		// Print data to Computer Terminal
-		xil_printf("\rTimerExpired = %d\r\n", TimerExpired);
+		xil_printf("\rLCD_DATA[%d] = %04X \n\r", loop_count, arr[loop_count]);
 
-		if (loop_count == arr_size){
-			loop_count = 0;
-		}else{
-			loop_count = loop_count + 1;
-		}
-		xil_printf("\rTimerExpired = %d\r\n", TimerExpired);
 		// Print data to LCD
 		Xil_Out32(LCD_AXI, arr[loop_count]);
 		// Print data to 7 segment display
 		Xil_Out32(Serial_7Seg_AXI, arr[loop_count]);
 
-		TimerExpired++;
-		while (1) {//if (TimerExpired == 3) {
+		loop_count = loop_count + 1;
+
+		if (loop_count == arr_size){
+			loop_count = 0;
+		}
+
+
+		if (TimerExpired == 3) {
 			XTmrCtr_SetOptions(InstancePtr, TmrCtrNumber, 0);
 		}
 	}

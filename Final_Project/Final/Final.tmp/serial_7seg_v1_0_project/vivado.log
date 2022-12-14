@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Dec 13 22:17:53 2022
+# Process ID: 3516
+# Current directory: D:/My_DevOps/Fall_2022/EE365/Final_Project/Final/Final.tmp/serial_7seg_v1_0_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26700 D:\My_DevOps\Fall_2022\EE365\Final_Project\Final\Final.tmp\serial_7seg_v1_0_project\Serial_7seg_v1_0_project.xpr
+# Log file: D:/My_DevOps/Fall_2022/EE365/Final_Project/Final/Final.tmp/serial_7seg_v1_0_project/vivado.log
+# Journal file: D:/My_DevOps/Fall_2022/EE365/Final_Project/Final/Final.tmp/serial_7seg_v1_0_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/My_DevOps/Fall_2022/EE365/Final_Project/Final/Final.tmp/serial_7seg_v1_0_project/Serial_7seg_v1_0_project.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/My_DevOps/Fall_2022/EE365/Final_Project/Final/Final.tmp/serial_7seg_v1_0_project'
+INFO: [Project 1-313] Project file moved from 'd:/school/sem7/ee365/exams/final/final.tmp/serial_7seg_v1_0_project' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/My_DevOps/Fall_2022/EE365/Exams/ip_repo/Serial_7seg_1.0/hdl/Serial_7seg_v1_0_S00_AXI.vhd', nor could it be found using path 'd:/school/sem7/EE365/Exams/ip_repo/Serial_7seg_1.0/hdl/Serial_7seg_v1_0_S00_AXI.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/My_DevOps/Fall_2022/EE365/Exams/ip_repo/Serial_7seg_1.0/src/TTL_serial.vhd', nor could it be found using path 'd:/school/sem7/EE365/Exams/ip_repo/Serial_7seg_1.0/src/TTL_serial.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/My_DevOps/Fall_2022/EE365/Exams/ip_repo/Serial_7seg_1.0/src/TTL_user_logic.vhd', nor could it be found using path 'd:/school/sem7/EE365/Exams/ip_repo/Serial_7seg_1.0/src/TTL_user_logic.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/My_DevOps/Fall_2022/EE365/Exams/ip_repo/Serial_7seg_1.0/hdl/Serial_7seg_v1_0.vhd', nor could it be found using path 'd:/school/sem7/EE365/Exams/ip_repo/Serial_7seg_1.0/hdl/Serial_7seg_v1_0.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/My_DevOps/Fall_2022/EE365/Exams/ip_repo/Serial_7seg_1.0/component.xml', nor could it be found using path 'd:/school/sem7/EE365/Exams/ip_repo/Serial_7seg_1.0/component.xml'.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'D:/My_DevOps/Fall_2022/EE365/Exams/ip_repo/myipLCD_ip_1.0', nor could it be found using path 'd:/school/sem7/EE365/Exams/ip_repo/myipLCD_ip_1.0'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'D:/My_DevOps/Fall_2022/EE365/Exams/ip_repo/Serial_7seg_1.0', nor could it be found using path 'd:/school/sem7/EE365/Exams/ip_repo/Serial_7seg_1.0'.
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'D:/My_DevOps/Fall_2022/EE365/Final_Project/Final/Final.tmp/serial_7seg_v1_0_project/Serial_7seg_v1_0_project.ip_user_files', nor could it be found using path 'd:/school/sem7/ee365/exams/final/final.tmp/serial_7seg_v1_0_project/Serial_7seg_v1_0_project.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/My_DevOps/Fall_2022/EE365/Exams/ip_repo/myipLCD_ip_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/My_DevOps/Fall_2022/EE365/Exams/ip_repo/Serial_7seg_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 722.602 ; gain = 40.195
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 13 22:19:14 2022...

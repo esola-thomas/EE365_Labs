@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Dec 14 10:25:50 2022
+# Process ID: 1884
+# Current directory: D:/My_DevOps/Fall_2022/EE365/Final_Project/Final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32572 D:\My_DevOps\Fall_2022\EE365\Final_Project\Final\Final.xpr
+# Log file: D:/My_DevOps/Fall_2022/EE365/Final_Project/Final/vivado.log
+# Journal file: D:/My_DevOps/Fall_2022/EE365/Final_Project/Final\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/My_DevOps/Fall_2022/EE365/Final_Project/Final/Final.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/schumae/Documents/My_DevOps/Fall_2022/EE365/Final_Project/Final' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/My_DevOps/Fall_2022/EE365/Final_Project/ip_repo/myipLCD_ip_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/My_DevOps/Fall_2022/EE365/Final_Project/ip_repo/Serial_7seg_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 745.680 ; gain = 118.273
+update_compile_order -fileset sources_1
+ipx::edit_ip_in_project -upgrade true -name LCD_ip_v1_0_project -directory D:/My_DevOps/Fall_2022/EE365/Final_Project/Final/Final.tmp/LCD_ip_v1_0_project d:/My_DevOps/Fall_2022/EE365/Final_Project/ip_repo/myipLCD_ip_1.0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/My_DevOps/Fall_2022/EE365/Final_Project/ip_repo/myipLCD_ip_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/My_DevOps/Fall_2022/EE365/Final_Project/ip_repo/Serial_7seg_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 816.367 ; gain = 0.000
+update_compile_order -fileset sources_1
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 14 14:14:05 2022...
