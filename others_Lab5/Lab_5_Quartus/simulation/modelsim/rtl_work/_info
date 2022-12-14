@@ -1,0 +1,431 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/simulation/modelsim
+T_opt
+!s110 1668183631
+VAJ:Q6ERo_I^OHP=McLh^Q3
+04 10 2 work project_tb tb 1
+=1-7478276e9360-636e764f-232-5b24
+!s124 OEM10U1 
+o-quiet -auto_acc_if_foreign -work work
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;2021.2;73
+R1
+T_opt1
+!s110 1668185351
+VU`U:_X?Aa?M^mRS>iVQQ_1
+04 21 8 work lab_7_segment_display bdf_type 1
+=1-7478276e9360-636e7d07-8-667c
+!s124 OEM10U10 
+o-quiet -auto_acc_if_foreign -work work +acc
+R2
+n@_opt1
+R3
+Ebtn_debounce_toggle
+Z4 w1668111916
+Z5 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z6 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 6
+R1
+Z9 8D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/btn_debounce_toggle.vhd
+Z10 FD:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/btn_debounce_toggle.vhd
+l0
+L32 1
+VNGVIY@l[ZZZVL?@98i4<i1
+!s100 :`_>cl1R>NDK3?YS^GZBX3
+Z11 OL;C;2021.2;73
+31
+Z12 !s110 1668181340
+!i10b 1
+Z13 !s108 1668181340.000000
+Z14 !s90 -reportprogress|300|-93|-work|work|D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/btn_debounce_toggle.vhd|
+Z15 !s107 D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/btn_debounce_toggle.vhd|
+!i113 0
+Z16 o-93 -work work
+Z17 tExplicit 1 CvgOpt 0
+Abehavioral
+R5
+R6
+R7
+R8
+DEx4 work 19 btn_debounce_toggle 0 22 NGVIY@l[ZZZVL?@98i4<i1
+!i122 6
+l52
+L42 52
+V[L3b;C5VUER55M1RZIJz53
+!s100 Hdj6]`18ShHBQcj:9Nck@1
+R11
+31
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 0
+R16
+R17
+Eclk_enabler
+Z18 w1664337066
+Z19 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R7
+R8
+!i122 0
+R1
+Z20 8D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/clk_enabler.vhd
+Z21 FD:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/clk_enabler.vhd
+l0
+L7 1
+VL_0AlcO_m8Vm_AKgDm`eV0
+!s100 ]h7F=J[^cW5em>MMdlM9m0
+R11
+31
+Z22 !s110 1668181339
+!i10b 1
+Z23 !s108 1668181339.000000
+Z24 !s90 -reportprogress|300|-93|-work|work|D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/clk_enabler.vhd|
+Z25 !s107 D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/clk_enabler.vhd|
+!i113 0
+R16
+R17
+Abehv
+R19
+R7
+R8
+DEx4 work 11 clk_enabler 0 22 L_0AlcO_m8Vm_AKgDm`eV0
+!i122 0
+l22
+L18 20
+V0CF<SbI;iRm26cXOZflY70
+!s100 gmm_3SlCh@f^?H_Ch9jIl1
+R11
+31
+R22
+!i10b 1
+R23
+R24
+R25
+!i113 0
+R16
+R17
+Elab_7_segment_display
+Z26 w1668185327
+R5
+R6
+R7
+R8
+!i122 22
+R1
+Z27 8D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/Lab_7_segment_display.vhd
+Z28 FD:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/Lab_7_segment_display.vhd
+l0
+L25 1
+V@;EbQXDFFNc_>_[K5LlDj2
+!s100 `2678ENZkX2h;Y?bmIiTA2
+R11
+32
+Z29 !s110 1668185340
+!i10b 1
+Z30 !s108 1668185340.000000
+Z31 !s90 -reportprogress|300|-work|work|D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/Lab_7_segment_display.vhd|
+Z32 !s107 D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/Lab_7_segment_display.vhd|
+!i113 0
+Z33 o-work work
+R17
+Abdf_type
+R5
+R6
+R7
+R8
+DEx4 work 21 lab_7_segment_display 0 22 @;EbQXDFFNc_>_[K5LlDj2
+!i122 22
+l111
+L36 151
+VR7eVd0LYnihXm<fHVoh5T1
+!s100 _7FeXMzT=?_Blb[<HCHIb2
+R11
+32
+R29
+!i10b 1
+R30
+R31
+R32
+!i113 0
+R33
+R17
+Eout_lut
+Z34 w1668113805
+R5
+R6
+R7
+R8
+!i122 5
+R1
+Z35 8D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/out_LTU.vhd
+Z36 FD:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/out_LTU.vhd
+l0
+L12 1
+V1IUIA]EPbOA4mbdQ3R]D;2
+!s100 zCLZSGLjU?KYab2jFdX073
+R11
+31
+R12
+!i10b 1
+R13
+Z37 !s90 -reportprogress|300|-93|-work|work|D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/out_LTU.vhd|
+Z38 !s107 D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/out_LTU.vhd|
+!i113 0
+R16
+R17
+Alut
+R5
+R6
+R7
+R8
+DEx4 work 7 out_lut 0 22 1IUIA]EPbOA4mbdQ3R]D;2
+!i122 5
+l22
+L21 15
+V_PQF5_5`f1oJz;5ld<oEB0
+!s100 JRIR0_7j_nbj;0e_NH7VH0
+R11
+31
+R12
+!i10b 1
+R13
+R37
+R38
+!i113 0
+R16
+R17
+Eproject_tb
+Z39 w1668183590
+R5
+R6
+R7
+R8
+!i122 18
+R1
+Z40 8D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/project_tb.vhd
+Z41 FD:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/project_tb.vhd
+l0
+L6 1
+V9^FS1N=dlSVcmjcA3N9Zo1
+!s100 C4k[5^YT[>InP:kUP6dAF3
+R11
+32
+Z42 !s110 1668183794
+!i10b 1
+Z43 !s108 1668183794.000000
+Z44 !s90 -reportprogress|300|-work|work|D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/project_tb.vhd|
+Z45 !s107 D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/project_tb.vhd|
+!i113 0
+R33
+R17
+Atb
+R5
+R6
+R7
+R8
+DEx4 work 10 project_tb 0 22 9^FS1N=dlSVcmjcA3N9Zo1
+!i122 18
+l27
+L10 36
+V87MTLCU2VF^KPmIji3^c90
+!s100 [jWj7eaRP1]c[Ej4Him`X3
+R11
+32
+R42
+!i10b 1
+R43
+R44
+R45
+!i113 0
+R33
+R17
+Ereset_delay
+Z46 w1665978448
+R19
+R7
+R8
+!i122 1
+R1
+Z47 8D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/reset_delay.vhd
+Z48 FD:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/reset_delay.vhd
+l0
+L8 1
+Vm1k>Z;[DA7mIHJU@LmI<M3
+!s100 J]OH_6:h=cYAaV[moJmX90
+R11
+31
+R12
+!i10b 1
+R23
+Z49 !s90 -reportprogress|300|-93|-work|work|D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/reset_delay.vhd|
+Z50 !s107 D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/reset_delay.vhd|
+!i113 0
+R16
+R17
+Aarch
+R19
+R7
+R8
+DEx4 work 11 reset_delay 0 22 m1k>Z;[DA7mIHJU@LmI<M3
+!i122 1
+l21
+L17 19
+V`QRBNI=[>DUCzI^8P;WJZ3
+!s100 ?2MK=89<<CZT94:l;ncTz0
+R11
+31
+R12
+!i10b 1
+R23
+R49
+R50
+!i113 0
+R16
+R17
+Ettl_serial
+R4
+R19
+R7
+R8
+!i122 4
+R1
+Z51 8D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/TTL_serial.vhd
+Z52 FD:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/TTL_serial.vhd
+l0
+L8 1
+VM_<khAdFDN7N]gaaK:h>03
+!s100 XAEPWWc5=goVB=6UX@XmV0
+R11
+31
+R12
+!i10b 1
+R13
+Z53 !s90 -reportprogress|300|-93|-work|work|D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/TTL_serial.vhd|
+Z54 !s107 D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/TTL_serial.vhd|
+!i113 0
+R16
+R17
+Astate_machine
+R19
+R7
+R8
+DEx4 work 10 ttl_serial 0 22 M_<khAdFDN7N]gaaK:h>03
+!i122 4
+l30
+L21 70
+VA77IFbHn`jL@_9Wmc;Dkh1
+!s100 RFj`Sz=DHK[D<8T?Hn:[50
+R11
+31
+R12
+!i10b 1
+R13
+R53
+R54
+!i113 0
+R16
+R17
+Ettl_serial_user_logic
+R4
+R19
+R7
+R8
+!i122 3
+R1
+Z55 8D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/TTL_user_logic.vhd
+Z56 FD:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/TTL_user_logic.vhd
+l0
+L6 1
+V_8Yl^MB;4WV;oZzAk^JlR0
+!s100 YBIn994YVSAiZ@>Toae=:0
+R11
+31
+R12
+!i10b 1
+R13
+Z57 !s90 -reportprogress|300|-93|-work|work|D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/TTL_user_logic.vhd|
+Z58 !s107 D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/TTL_user_logic.vhd|
+!i113 0
+R16
+R17
+Auser_logic
+R19
+R7
+R8
+DEx4 work 21 ttl_serial_user_logic 0 22 _8Yl^MB;4WV;oZzAk^JlR0
+!i122 3
+l43
+L15 111
+Vo:6mFA<:BLcfQa6SzhTjD0
+!s100 R<c<BSX=NC9SZ>;S7Gd7>3
+R11
+31
+R12
+!i10b 1
+R13
+R57
+R58
+!i113 0
+R16
+R17
+Euniv_bin_counter
+R4
+R19
+R7
+R8
+!i122 2
+R1
+Z59 8D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/univ_bin_counter.vhd
+Z60 FD:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/univ_bin_counter.vhd
+l0
+L10 1
+VCR`Ua8bnP3JQHHH[^lV880
+!s100 HiJFaiz<9D;F`fUX4Aa<a3
+R11
+31
+R12
+!i10b 1
+R13
+Z61 !s90 -reportprogress|300|-93|-work|work|D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/univ_bin_counter.vhd|
+Z62 !s107 D:/My_DevOps/Fall_2022/EE365/EE365_Labs/Lab_5_Quartus/univ_bin_counter.vhd|
+!i113 0
+R16
+R17
+Aarch
+R19
+R7
+R8
+DEx4 work 16 univ_bin_counter 0 22 CR`Ua8bnP3JQHHH[^lV880
+!i122 2
+l33
+L22 50
+VWRKo2_VH8J`e<]O6jdAlz0
+!s100 o6IW9=NaCLPhMnMGkhMgn1
+R11
+31
+R12
+!i10b 1
+R13
+R61
+R62
+!i113 0
+R16
+R17

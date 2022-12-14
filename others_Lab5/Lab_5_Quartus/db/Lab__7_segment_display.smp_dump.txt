@@ -1,0 +1,15 @@
+
+State Machine - |Lab_5_7_segment_display|TTL_Serial_user_logic:inst|state
+Name state.repeat state.busy_high state.data_valid state.ready state.start 
+state.start 0 0 0 0 0 
+state.ready 0 0 0 1 1 
+state.data_valid 0 0 1 0 1 
+state.busy_high 0 1 0 0 1 
+state.repeat 1 0 0 0 1 
+
+State Machine - |Lab_5_7_segment_display|TTL_Serial_user_logic:inst|TTL_serial:Inst_TTL_serial|state
+Name state.Stop state.Send state.Start state.ready 
+state.ready 0 0 0 0 
+state.Start 0 0 1 1 
+state.Send 0 1 0 1 
+state.Stop 1 0 0 1 
